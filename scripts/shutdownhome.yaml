@@ -1,0 +1,23 @@
+shutdownhome:
+ alias: Shutdown Procedure
+ sequence:
+   -  service: tts.google_say
+      entity_id: media_player.escritorioghome
+      data:
+        message: 'Shutdown Procedure has been initiated'
+        language: 'en'
+   -  delay: 00:00:15
+   -  service: media_player.turn_off
+      entity_id: media_player.escritorioghome
+   -  service: media_player.turn_off
+      entity_id: media_player.main_tv
+   -  service: media_player.turn_off
+      entity_id: media_player.office_tv
+   -  service: script.turn_off
+      entity_id: script.shutdownhome
+   -  service: input_boolean.turn_off
+      entity_id: input_boolean.workfromhome_mode
+   -  service: input_boolean.turn_off
+      entity_id: input_boolean.sleep_mode
+   -  service: light.turn_off
+      entity_id: light.office_ceiling_light

@@ -1,0 +1,81 @@
+
+
+<dom-module id='state-card-guestwifi'>
+  <template>
+    <style>
+	.layout.horizontal, .layout.vertical { display:-ms-flexbox;display:-webkit-flex;display:flex;}
+	.layout.horizontal {  -ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;}
+	.layout.justified {  -ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+	.state { font-family: var(--paper-font-body1_-_font-family); -webkit-font-smoothing: var(--paper-font-body1_-_-webkit-font-smoothing); font-size: var(--paper-font-body1_-_font-size); font-weight: var(--paper-font-body1_-_font-weight); line-height: var(--paper-font-body1_-_line-height);color:var(--primary-text-color);margin-left:16px;text-align:right;line-height:40px;}
+    .qrcode img { display:block;margin:auto;}
+	.qrcode { background-color: #fff; padding: 5px;}
+	</style>
+	<div>
+		<div class="horizontal justified layout">
+			<div class="state state-info">SSID/Network Name:</div>
+			<div class="state" id="SSID"></div>
+		</div>
+		<div class="horizontal justified layout">
+			<div class="state state-info">Password:</div>
+			<div class="state" id="Password"></div>
+		</div>
+		<div class="horizontal justified layout">
+			<div class="state state-info">Network Type:</div>
+			<div class="state" id="NetworkType"></div>
+		</div>
+		<div class="state qrcode">
+			<img  id="container"  height="180px" width="180px">
+		</div>
+	</div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'state-card-guestwifi',
+
+    properties: {
+      hass: {
+        type: Object,
+      },
+      stateObj: {
+        type: Object,
+      },
+    },
+	ready: function() {
+		var password ="redacted";
+		var ssid ="ZON-Pedro & Ana GUEST";
+		var key ="WPA"; //WPA, WEP, none
+		
+		this.$.container.src = this.buildUrl(ssid,password,key);
+		
+		this.$.NetworkType.innerText = key;
+		this.$.SSID.innerText = ssid;
+		this.$.Password.innerText = password;
+	},
+	mecard_escape(str) {
+		str = str.replace(/\\/g, "\\\\");
+		str = str.replace(/\"/g, "\\\"");
+		str = str.replace(/;/g, "\\;");
+		str = str.replace(/:/g, "\\:");
+		str = str.replace(/,/g, "\\,");
+		return str;
+	},
+	buildUrl(ssidName,password, networkSecType){
+		var type = networkSecType;
+		var ssid = this.mecard_escape(ssidName);
+		var key = this.mecard_escape(password);
+		var url = "WIFI:" +
+			"T:" + type + ";" +
+			"S:" + ssid + ";" +
+			"P:" + key + ";";
+			
+		url = url.replace(/:/g, "%3A");
+		url = url.replace(/;/g, "%3B");
+		url = url.replace(/&/g, "%26");
+		url = url.replace(/ /g, "+");
+		return "https://api.qrserver.com/v1/create-qr-code/?data="+ url +"&size=180x180&margin=0";
+	}
+});
+
+</script>

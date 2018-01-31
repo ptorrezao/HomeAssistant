@@ -1,0 +1,63 @@
+homeassistant:
+ name: Casa
+ latitude: !secret home_lat
+ longitude: !secret home_long
+ elevation: 4.2
+ unit_system: metric
+ time_zone: Europe/Lisbon
+ customize: !include_dir_merge_named customize
+
+# HTTP Configs
+http:
+ api_password: !secret http_password
+ ssl_certificate: !secret http_ssl_certificate
+ ssl_key: !secret http_ssl_key
+ base_url: !secret http_url
+ 
+# Frontend Configs
+frontend: 
+ javascript_version: latest
+ themes: !include_dir_merge_named includes/themes/
+ extra_html_url:
+  - /local/custom_ui/state-card-floorplan.html
+  - /local/custom_ui/state-card-guestwifi.html
+
+# Updater Configs
+updater:
+ include_used_components: true
+
+# Logger
+logger:
+ default: warn
+ logs:
+  homeassistant.components.device_tracker: warn
+  homeassistant.core: warn
+  homeassistant.setup: warn
+
+config:    # Configuration Links
+logbook:   # LogBook 
+history:   # History
+discovery: # Enable Discovery
+map:       # Map
+sun:       # Find if is night or not
+zone: !include includes/zones.yaml
+tts: !include includes/tts.yaml
+automation: !include_dir_merge_list automation
+script: !include_dir_merge_named scripts
+google_assistant: !include includes/google_assistant.yaml
+recorder: !include includes/recorder.yaml
+
+# Groups
+group: !include_dir_merge_named includes/group
+
+light: !include includes/light.yaml
+panel_custom: !include includes/panel_custom.yaml
+sensor: !include_dir_merge_list includes/sensor
+notify: !include includes/notify.yaml
+device_tracker: !include includes/device_tracker.yaml
+telegram_bot: !include includes/telegram_bot.yaml
+binary_sensor: !include includes/binary_sensor.yaml
+media_player: !include includes/media_player.yaml
+input_boolean: !include includes/input_boolean.yaml
+input_select: !include includes/input_select.yaml
+switch: !include includes/switch.yaml

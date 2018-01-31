@@ -1,0 +1,12 @@
+radio_station:
+  name: 'Select Radio Station:'
+  options:
+    - Radio Comercial
+    - RFM
+chromecast_radio:
+ name: 'Select Speakers:'
+ options:
+  - Escritório
+  - Office TV
+ initial: Escritório
+ icon: mdi:speaker-wireless

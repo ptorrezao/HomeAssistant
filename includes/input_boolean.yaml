@@ -1,0 +1,6 @@
+vacation_mode:
+ initial: off
+workfromhome_mode:
+ initial: off
+sleep_mode:
+ initial: off

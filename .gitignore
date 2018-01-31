@@ -1,0 +1,14 @@
+*
+!*.yaml
+!scenes
+!.gitignore
+secrets.yaml
+known_devices.yaml
+!themes/
+!includes/
+!configs/
+!panels/
+!automation/
+!customize/
+!scripts/
+!docs/

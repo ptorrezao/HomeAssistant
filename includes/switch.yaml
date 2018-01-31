@@ -1,0 +1,8 @@
+- platform: broadlink
+  host: 192.168.88.60
+  mac: '34:EA:34:42:A6:B2'
+  switches:
+   tv_hisense:
+        friendly_name: "Hisense H39N2110C"
+        command_on: 'JgBOABsdNh4bHRodGx0bHBsdGx0aOBsdNx0bAAsCGx02HhodGx0bHBsdGx0bHBs4Gx02HhsACwEbHTcdGxwbHRsdGh0bHRscGzgbHTYeGwANBQAAAAAAAAAAAAA='
+        command_off: 'JgBOABsdNh4bHRodGx0bHBsdGx0aOBsdNx0bAAsCGx02HhodGx0bHBsdGx0bHBs4Gx02HhsACwEbHTcdGxwbHRsdGh0bHRscGzgbHTYeGwANBQAAAAAAAAAAAAA='
