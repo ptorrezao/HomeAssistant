@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    printer:
+     friendly_name: "Epson Stylus Office BX305FX"
+     value_template: >-
+        {% if is_state('device_tracker.epsond11b70home', 'home') %}
+          Ligada
+        {% else %}
+          Desligada
+        {% endif %}

@@ -1,0 +1,5 @@
+card_lightsOffice:
+    name: Office Ligths
+    view: no
+    entities:
+      - light.office_ceiling_light

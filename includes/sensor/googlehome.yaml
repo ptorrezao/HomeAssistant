@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    googlehomeoffice:
+     friendly_name: "Google Home Mini (Escritório)"
+     value_template: >-
+        {% if is_state('device_tracker.googlehomehome', 'home') %}
+          Ligado
+        {% else %}
+          Desligado
+        {% endif %}

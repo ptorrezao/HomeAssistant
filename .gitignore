@@ -6,9 +6,12 @@ secrets.yaml
 known_devices.yaml
 !themes/
 !includes/
+!includes/*
 !configs/
 !panels/
 !automation/
+!automation/*
 !customize/
 !scripts/
+!scripts/*
 !docs/

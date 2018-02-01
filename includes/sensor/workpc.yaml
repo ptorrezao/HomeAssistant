@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    workpc:
+      friendly_name: "Work PC (Global Shares)"
+      value_template: >-
+        {% if is_state('device_tracker.dellptptorrhome', 'home') %}
+          Laptop @Home 
+        {% else %}
+          Laptop @Work
+        {% endif %}
