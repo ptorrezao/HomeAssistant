@@ -14,4 +14,5 @@ known_devices.yaml
 !customize/
 !scripts/
 !scripts/*
+!docs/*
 !docs/
