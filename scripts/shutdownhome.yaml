@@ -21,3 +21,7 @@ shutdownhome:
       entity_id: input_boolean.sleep_mode
    -  service: light.turn_off
       entity_id: light.office_ceiling_light
+   -  service: broadlink.send_packet_192_168_88_60
+      data:
+          packet: 
+            - "JgBOABsdNh4bHRodGx0bHBsdGx0aOBsdNx0bAAsCGx02HhodGx0bHBsdGx0bHBs4Gx02HhsACwEbHTcdGxwbHRsdGh0bHRscGzgbHTYeGwANBQAAAAAAAAAAAAA="

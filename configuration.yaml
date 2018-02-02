@@ -51,6 +51,7 @@ recorder: !include includes/recorder.yaml
 group: !include_dir_merge_named includes/group
 
 light: !include includes/light.yaml
+switch: !include includes/switch/switch.yaml
 panel_custom: !include includes/panel_custom.yaml
 sensor: !include_dir_merge_list includes/sensor
 notify: !include includes/notify.yaml
@@ -60,4 +61,3 @@ binary_sensor: !include includes/binary_sensor.yaml
 media_player: !include includes/media_player.yaml
 input_boolean: !include includes/input_boolean.yaml
 input_select: !include includes/input_select.yaml
-switch: !include includes/switch.yaml
