@@ -57,6 +57,7 @@ groups:
        - device_tracker.c041f6297b6b
        - device_tracker.maintv
        - device_tracker.officetv
+       - device_tracker.rmmini42a6b2home
     states:
       - state: 'home'
         class: 'device-on'
