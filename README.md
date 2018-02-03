@@ -1,8 +1,19 @@
 # Home-Assistant-Configs
 My personal home setup for home assistant.
 
+### 2018/02/03 - Work Arround for TV/Shutdown Script
+![Home](docs/20180203.gif)
+
+UI Changes on following card:
+
+ - Add Work Arround to Fix the TV issue (Toggle Button IR Command)
+ - FloorPlan
+	- Add Ceiling Ligt
+	- Add Hisense TV
+ - Add Ping Sensor to Find if the ChromeCast is on (Powered Via USB from the TV, so if the TV is off so the chrome cast)
+------------------------
+
 ### 2018/01/31 - Cleanup/Ceiling Light/Broadlink/Automations
-![Home](docs/20180103.gif)
 
 UI Changes on following card:
 
@@ -13,7 +24,7 @@ UI Changes on following card:
     - Shutdown
 	- Reset the SleepMode @7AM
 	- Trigger SleepMode Scripts
-
+------------------------
 ### 2017/12/27 - Automations/Radio/
 
 UI Changes on following card:
