@@ -1,7 +1,7 @@
 input_boolean.vacation_mode:
   friendly_name: Vacation Mode
   icon: mdi:beach
-  google_assistant: true
+  google_assistant: false
   google_assistant_name: Vacation Mode
   aliases:
         - Vacation Mode
@@ -26,4 +26,3 @@ input_boolean.sleep_mode:
   aliases:
         - Sleep Mode
   google_assistant_type: switch
-  
