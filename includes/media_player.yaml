@@ -2,5 +2,3 @@
   host: 192.168.88.25
 - platform: cast
   host: 192.168.88.55
-- platform: cast
-  host: 192.168.88.58

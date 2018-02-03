@@ -40,8 +40,8 @@
      id="namedview4631"
      showgrid="false"
      inkscape:zoom="8.2024385"
-     inkscape:cx="48.583449"
-     inkscape:cy="343.7639"
+     inkscape:cx="64.200641"
+     inkscape:cy="326.83289"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -144,7 +144,7 @@
   </g>
   <g
      id="device_tracker.googlehomehome"
-     transform="matrix(0.02101287,0,0,0.02101287,95.261699,109.97108)"
+     transform="matrix(0.02513277,0,0,0.02513277,99.857893,92.965593)"
      inkscape:label="device_tracker.googlehomehome">
     <circle
        id="circle1975"
@@ -170,7 +170,7 @@
   </g>
   <g
      id="device_tracker.ps4home"
-     transform="matrix(0.02568244,0,0,0.02554836,96.116879,84.223178)"
+     transform="matrix(0.03818866,0,0,0.03798929,95.803375,72.796855)"
      inkscape:label="device_tracker.ps4home">
     <path
        id="path1997"
@@ -897,7 +897,7 @@
   </g>
   <g
      id="device_tracker.officetv"
-     transform="matrix(0.01680557,0,0,0.01680557,95.774099,99.104256)"
+     transform="matrix(0.0246739,0,0,0.0246739,95.472118,128.81603)"
      inkscape:label="device_tracker.officetv">
     <g
        id="g1058-7">
@@ -1015,7 +1015,7 @@
   </g>
   <g
      id="device_tracker.rmmini42a6b2home"
-     transform="matrix(0.02530828,0,0,0.02530828,93.210949,69.756403)"
+     transform="matrix(0.02246953,0,0,0.02246953,107.53326,128.73417)"
      inkscape:label="device_tracker.rmmini42a6b2home">
     <path
        id="path3939"
@@ -1123,5 +1123,77 @@
        id="g3997" />
     <g
        id="g3999" />
+  </g>
+  <g
+     id="binary_sensor.hisense_h39n2110c"
+     transform="matrix(0.37921728,0,0,0.37921728,95.108117,107.61564)"
+     inkscape:label="binary_sensor.hisense_h39n2110c">
+    <rect
+       id="rect2600-4"
+       height="38"
+       width="58"
+       style="fill:#556080"
+       y="6"
+       x="0" />
+    <rect
+       id="rect2602-0"
+       height="4"
+       width="4"
+       style="fill:#61b872"
+       y="10"
+       x="49" />
+    <path
+       id="path2604-1"
+       d="m 39.326,34.814 c 0.162,-0.11 0.329,-0.211 0.488,-0.325 -0.289,-0.255 -0.609,-0.479 -0.964,-0.656 l -4.664,-3.018 c -0.693,-0.346 -2,-0.225 -2,-1 V 27.71 c 0.151,-0.171 1.323,-0.885 1.507,-1.145 0.731,-1.032 1.476,-2.168 1.86,-3.359 0.688,-0.212 1.633,-0.847 1.633,-1.602 v -2.246 c 0,-0.195 -0.102,-0.382 -0.248,-0.556 -0.464,-0.556 -0.752,-1.237 -0.752,-1.961 v -1.027 c 0,0 -0.158,-6 -7,-6 -6.842,0 -7,6 -7,6 v 1.027 c 0,0.724 -0.288,1.406 -0.752,1.961 -0.145,0.174 -0.248,0.361 -0.248,0.556 v 2.246 c 0,0.592 0.75,1.112 1.215,1.413 0.561,2.443 3.785,4.201 3.785,4.201 v 2.052 c 0,0.748 -1.838,1.437 -2.495,1.796 l -4.707,2.732 c -0.342,0.187 -0.648,0.42 -0.925,0.68 0.163,0.118 0.337,0.224 0.504,0.337 h 20.763 z"
+       style="fill:#fbce9d"
+       inkscape:connector-curvature="0" />
+    <rect
+       id="rect2606-1"
+       height="5"
+       width="5"
+       style="fill:#ebba16"
+       y="34"
+       x="5" />
+    <polygon
+       id="polygon2608-3"
+       points="27,49 22,49 22,52 36,52 36,49 31,49 31,44 27,44 "
+       style="fill:#424a60" />
+    <rect
+       id="rect2610-2"
+       height="5"
+       width="39"
+       style="fill:#d75a4a"
+       y="34"
+       x="14" />
+    <g
+       id="g2612-1" />
+    <g
+       id="g2614-1" />
+    <g
+       id="g2616-6" />
+    <g
+       id="g2618-0" />
+    <g
+       id="g2620-0" />
+    <g
+       id="g2622-6" />
+    <g
+       id="g2624-9" />
+    <g
+       id="g2626-6" />
+    <g
+       id="g2628-8" />
+    <g
+       id="g2630-1" />
+    <g
+       id="g2632-8" />
+    <g
+       id="g2634-1" />
+    <g
+       id="g2636-0" />
+    <g
+       id="g2638-2" />
+    <g
+       id="g2640-3" />
   </g>
 </svg>

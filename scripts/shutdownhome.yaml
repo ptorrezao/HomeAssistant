@@ -6,7 +6,6 @@ shutdownhome:
       data:
         message: 'Shutdown Procedure has been initiated'
         language: 'en'
-   -  delay: 00:00:15
    -  service: media_player.turn_off
       entity_id: media_player.escritorioghome
    -  service: media_player.turn_off
@@ -21,7 +20,18 @@ shutdownhome:
       entity_id: input_boolean.sleep_mode
    -  service: light.turn_off
       entity_id: light.office_ceiling_light
-   -  service: broadlink.send_packet_192_168_88_60
-      data:
-          packet: 
-            - "JgBOABsdNh4bHRodGx0bHBsdGx0aOBsdNx0bAAsCGx02HhodGx0bHBsdGx0bHBs4Gx02HhsACwEbHTcdGxwbHRsdGh0bHRscGzgbHTYeGwANBQAAAAAAAAAAAAA="
+   -  delay: 00:00:06 
+   -  service: script.turn_on
+      entity_id: script.turnoffofficetv
+
+
+turnoffofficetv:
+ alias: "Turn Off Hisense H39N2110C"
+ sequence:
+   - condition: state
+     entity_id: binary_sensor.hisense_h39n2110c
+     state: 'on'
+   - service: broadlink.send_packet_192_168_88_60
+     data:
+      packet: 
+       - "JgBOABsdNh4bHRodGx0bHBsdGx0aOBsdNx0bAAsCGx02HhodGx0bHBsdGx0bHBs4Gx02HhsACwEbHTcdGxwbHRsdGh0bHRscGzgbHTYeGwANBQAAAAAAAAAAAAA="

@@ -7,3 +7,7 @@
 - platform: workday
   country: PT
   excludes : [ sat, sun, holiday ]
+- platform: ping
+  name: Hisense H39N2110C
+  host: 192.168.88.58
+  scan_interval: 5

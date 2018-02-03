@@ -5,7 +5,7 @@
     - 192.168.88.0/24
   exclude:
     - 192.168.88.53
-  interval_seconds: 12
+  interval_seconds: 30
   consider_home: 300
   track_new_devices: no
 #  scan_options: "--disable-arp-ping -sn -n -PU1-10 --max-rate 100"
