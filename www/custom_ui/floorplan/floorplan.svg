@@ -39,13 +39,13 @@
      inkscape:window-height="1017"
      id="namedview4631"
      showgrid="false"
-     inkscape:zoom="8.2024385"
-     inkscape:cx="64.200641"
-     inkscape:cy="326.83289"
+     inkscape:zoom="2.0506096"
+     inkscape:cx="-91.060854"
+     inkscape:cy="285.50952"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4629"
+     inkscape:current-layer="g4903"
      scale-x="1.3" />
   <defs
      id="defs4617">
@@ -116,9 +116,10 @@
     <path
        d="m 97.8,15.028 h 91.213 V 179.284 H 97.8 Z"
        class="cls-1"
-       id="input_boolean.presence_office"
+       id="light.office_ceiling_light"
        inkscape:connector-curvature="0"
-       style="fill:#282828;fill-opacity:1;fill-rule:evenodd;stroke:#535353;stroke-width:0.52700001px" />
+       style="fill:#282828;fill-opacity:1;fill-rule:evenodd;stroke:#535353;stroke-width:0.52700001px"
+       inkscape:label="light.office_ceiling_light" />
     <path
        d="m 14.236,15.819 h 84.885 v 161.356 h 4.745 V 210.4 H 13.445 Z"
        class="cls-1"

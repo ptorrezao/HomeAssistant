@@ -9,25 +9,16 @@ stylesheet: /local/custom_ui/floorplan/floorplan.css
 # date_format: DD-MMM-YYYY   # Date format to use in hover-over text
 
 groups:
-  #- name: Lights
-   # entities:
-   #    # - input_boolean.office_desk_light
-   #     - input_boolean.office_ceiling_light
-   #    # - input_boolean.hall_ceiling_light
-   #    # - input_boolean.bedroomwc_ceiling_light
-   #    # - input_boolean.storage_ceiling_light
-   #    # - input_boolean.bedroom_ceiling_light
-   #    # - input_boolean.livingroom_ceiling_light
-   #    # - input_boolean.wc_ceiling_light
-   #    # - input_boolean.kitchen_ceiling_light
-   #    # - input_boolean.nursery_ceiling_light
-   # states:
-   #   - state: 'on'
-   #     class: 'light-on'
-   #   - state: 'off'
-   #     class: 'light-off'
-   # action:
-   #   service: toggle
+  - name: Lights
+    entities:
+       - light.office_ceiling_light
+    states:
+      - state: 'on'
+        class: 'light-on'
+      - state: 'off'
+        class: 'light-off'
+    action:
+      service: toggle
 
   #- name: Presence
     #entities:
@@ -46,7 +37,14 @@ groups:
      #   class: 'presence-on'
      # - state: 'off'
      #   class: 'presence-off'
-        
+  - name: Devices Sensor
+    entities:
+       - binary_sensor.hisense_h39n2110c
+    states:
+     - state: 'on'
+       class: 'device-on'
+     - state: 'off'
+       class: 'device-off'
   - name: Devices
     entities:
        - device_tracker.ps4home
