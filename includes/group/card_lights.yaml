@@ -3,3 +3,4 @@ card_lightsOffice:
     view: no
     entities:
       - light.office_ceiling_light
+      - light.office_lego_light

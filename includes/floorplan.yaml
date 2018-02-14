@@ -19,7 +19,10 @@ groups:
         class: 'light-off'
     action:
       service: toggle
-
+  # - name: Sensors
+     # entities:
+       # - 
+     # class_template: 'return "entity.state.attributes.rgb_color";'
   #- name: Presence
     #entities:
        # - input_boolean.presence_kitchen
@@ -40,6 +43,7 @@ groups:
   - name: Devices Sensor
     entities:
        - binary_sensor.hisense_h39n2110c
+       - light.office_lego_light
     states:
      - state: 'on'
        class: 'device-on'
