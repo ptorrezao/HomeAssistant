@@ -11,28 +11,3 @@
   action:
   - service: script.turn_on
     entity_id: script.shutdownhome
-###
-# Check if You Still At Home At 8h20
-###
-- alias: "[Work] - Check if You Still At Home At 8h20"
-  id: '1514281697812'
-  trigger:
-    - platform: time
-      at: '08:20:00'
-  condition:  
-    condition: and
-    conditions: 
-      - condition: state
-        entity_id: binary_sensor.workday_sensor
-        state: 'on'
-      - condition: state
-        entity_id: 'device_tracker.pedro_cppedrohome'
-        state: 'home'
-      - condition: state
-        entity_id: input_boolean.vacation_mode
-        state: 'off'
-  action:
-  - service: notify.telegram
-    data: 
-     title: "*Atrasado*"
-     message: "Mexe-te crlh vais chegar atrasado!! ETA para Escritório: {{ states.sensor.eta_pedro.state }}mins"
