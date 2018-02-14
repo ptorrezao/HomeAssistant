@@ -6,3 +6,6 @@ device_tracker.cpanahome:
   
 device_tracker.rmmini42a6b2home:
     entity_picture: /local/devices/RMMINI.jpg
+    
+switch.hisense_h39n2110c:
+    entity_picture: /local/devices/RMMINI.jpg

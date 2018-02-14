@@ -1,6 +1,16 @@
 # Home-Assistant-Configs
 My personal home setup for home assistant.
 
+### 2018/02/14 - Add Arilux LC01 Module/Add Automations
+![Home](docs/20180214.gif)
+
+UI Changes on following card:
+
+ - Add Arilux LC01 Module
+ - FloorPlan
+	- Add Arilux LC01 Module
+ - Add Automations based on the hour to let you know if you're late (Red = Late, Yellow = Caution, Green = You have time)
+------------------------
 ### 2018/02/03 - Work Arround for TV/Shutdown Script
 ![Home](docs/20180203.gif)
 

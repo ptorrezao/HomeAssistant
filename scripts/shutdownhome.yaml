@@ -1,29 +1,24 @@
 shutdownhome:
  alias: Shutdown Procedure
  sequence:
-   -  service: tts.google_say
-      entity_id: media_player.escritorioghome
-      data:
-        message: 'Shutdown Procedure has been initiated'
-        language: 'en'
    -  service: media_player.turn_off
       entity_id: media_player.escritorioghome
    -  service: media_player.turn_off
       entity_id: media_player.main_tv
    -  service: media_player.turn_off
       entity_id: media_player.office_tv
-   -  service: script.turn_off
-      entity_id: script.shutdownhome
+   -  service: light.turn_off
+      entity_id: group.card_lightsoffice
+   -  service: script.turn_on
+      entity_id: script.resetModes
+   -  service: script.turn_on
+      entity_id: script.turnoffofficetv
    -  service: input_boolean.turn_off
       entity_id: input_boolean.workfromhome_mode
    -  service: input_boolean.turn_off
       entity_id: input_boolean.sleep_mode
-   -  service: light.turn_off
-      entity_id: light.office_ceiling_light
-   -  delay: 00:00:06 
-   -  service: script.turn_on
-      entity_id: script.turnoffofficetv
-
+   -  service: script.turn_off
+      entity_id: script.shutdownhome
 
 turnoffofficetv:
  alias: "Turn Off Hisense H39N2110C"
@@ -35,3 +30,5 @@ turnoffofficetv:
      data:
       packet: 
        - "JgBOABsdNh4bHRodGx0bHBsdGx0aOBsdNx0bAAsCGx02HhodGx0bHBsdGx0bHBs4Gx02HhsACwEbHTcdGxwbHRsdGh0bHRscGzgbHTYeGwANBQAAAAAAAAAAAAA="
+   - service: script.turn_off
+     entity_id: script.turnoffofficetv

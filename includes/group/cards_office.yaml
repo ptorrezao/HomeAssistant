@@ -29,3 +29,4 @@ card_office_entertainment_group:
    - sensor.playstation
    - sensor.googlehomeoffice
    - group.card_radio
+   - switch.hisense_h39n2110c
