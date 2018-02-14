@@ -3,3 +3,6 @@ device_tracker.pedro_cppedrohome:
 
 device_tracker.cpanahome:
   order: 2
+  
+device_tracker.rmmini42a6b2home:
+    entity_picture: /local/devices/RMMINI.jpg
