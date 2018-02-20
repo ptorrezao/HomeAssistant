@@ -1,5 +1,11 @@
 # Home-Assistant-Configs
 My personal home setup for home assistant.
+### 2018/02/14 - Add Automations
+
+ - Add Automation
+	- Turn On Ceiling Light will turn on the leds
+	- Turn Off Ceiling Light will turn off the leds
+------------------------
 
 ### 2018/02/14 - Add Arilux LC01 Module/Add Automations
 ![Home](docs/20180214.gif)
