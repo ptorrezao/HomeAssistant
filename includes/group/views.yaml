@@ -1,5 +1,5 @@
-#default_view:
-view_default:
+default_view:
+#view_default:
  view: yes
  icon: mdi:home
  entities:

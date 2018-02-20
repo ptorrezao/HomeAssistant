@@ -1,0 +1,26 @@
+###
+# Console 
+###
+- alias: "[Game] - If PS4 is turn on, turn on the Leds under the TV-"
+  id: '1514281297812'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.hisense_h39n2110c
+    from: 'off'
+    to: 'on'
+  action:
+  - service: light.turn_on
+    data:
+       entity_id: light.office_lego_light
+       color_name: blue
+- alias: "[Game] - If PS4 is turned off, turn off the Leds under the TV-"
+  id: '1514281297812'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.hisense_h39n2110c
+    from: 'on'
+    to: 'off'
+  action:
+  - service: light.turn_off
+    data:
+       entity_id: light.office_lego_light
