@@ -1,6 +1,6 @@
 # Home-Assistant-Configs
 My personal home setup for home assistant.
-### 2018/02/14 - Add Automations
+### 2018/02/20 - Add Automations
 
  - Add Automation
 	- Turn On Ceiling Light will turn on the leds
