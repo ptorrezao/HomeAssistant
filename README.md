@@ -18,7 +18,6 @@ UI Changes on following card:
  - Add Automations based on the hour to let you know if you're late (Red = Late, Yellow = Caution, Green = You have time)
 ------------------------
 ### 2018/02/03 - Work Arround for TV/Shutdown Script
-![Home](docs/20180203.gif)
 
 UI Changes on following card:
 
