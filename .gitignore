@@ -16,3 +16,4 @@ known_devices.yaml
 !scripts/*
 !docs/*
 !docs/
+*.bak

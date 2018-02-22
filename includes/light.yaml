@@ -11,6 +11,18 @@
   retain: true
 
 - platform: mqtt
+  name: "Office Desk Light"
+  state_topic: "stat/officelight-desk/POWER"
+  command_topic: "cmnd/officelight-desk/POWER"
+  availability_topic: "tele/officelight-desk/LWT"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
+ 
+- platform: mqtt
   name: "Office Lego Light"
   state_topic: "stat/ledlight/POWER"
   command_topic: "cmnd/ledlight/POWER"

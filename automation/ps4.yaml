@@ -1,7 +1,7 @@
 ###
 # Console 
 ###
-- alias: "[Game] - If PS4 is turn on, turn on the Leds under the TV-"
+- alias: "[Game] - If TV is turn on, turn on the Leds under the TV-"
   id: '1514281297812'
   trigger:
     platform: state
@@ -13,7 +13,7 @@
     data:
        entity_id: light.office_lego_light
        color_name: blue
-- alias: "[Game] - If PS4 is turned off, turn off the Leds under the TV-"
+- alias: "[Game] - If TV is turned off, turn off the Leds under the TV-"
   id: '1514281297812'
   trigger:
     platform: state

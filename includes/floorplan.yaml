@@ -44,6 +44,7 @@ groups:
     entities:
        - binary_sensor.hisense_h39n2110c
        - light.office_lego_light
+       - light.office_desk_light
     states:
      - state: 'on'
        class: 'device-on'

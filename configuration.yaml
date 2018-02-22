@@ -45,6 +45,7 @@ automation: !include_dir_merge_list automation
 script: !include_dir_merge_named scripts
 google_assistant: !include includes/google_assistant.yaml
 recorder: !include includes/recorder.yaml
+scene: !include_dir_merge_named includes/scenes
 
 # Groups
 group: !include_dir_merge_named includes/group

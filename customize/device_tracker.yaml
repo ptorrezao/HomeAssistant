@@ -4,6 +4,18 @@ device_tracker.pedro_cppedrohome:
 device_tracker.cpanahome:
   order: 2
   
+device_tracker.officeledlighthome:
+  friendly_name: Office Light Leds
+  icon: mdi:lightbulb
+
+device_tracker.officedesklighthome:
+  friendly_name: Office Desk Leds
+  icon: mdi:lightbulb
+  
+device_tracker.officeceilinglighthome:
+  friendly_name: Office Ceiling Leds
+  icon: mdi:lightbulb
+  
 device_tracker.rmmini42a6b2home:
     entity_picture: /local/devices/RMMINI.jpg
     
