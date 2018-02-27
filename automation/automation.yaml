@@ -8,28 +8,12 @@
     entity_id: group.card_family
     from: 'home'
     to: 'not_home'
+  condition:  
+    condition: and
+    conditions: 
+      - condition: state
+        entity_id: 'input_boolean.workfromhome_mode'
+        state: 'off'
   action:
   - service: script.turn_on
     entity_id: script.shutdownhome
-- alias: "[Office] - Lights on"
-  id: '1514581217816'
-  trigger:
-    platform: state
-    entity_id: light.office_ceiling_light
-    from: 'off'
-    to: 'on'
-  action:
-  - service: light.turn_on
-    data:
-       entity_id: light.office_lego_light
-- alias: "[Office] - Lights off"
-  id: '1544581217816'
-  trigger:
-    platform: state
-    entity_id: light.office_ceiling_light
-    from: 'on'
-    to: 'off'
-  action:
-  - service: light.turn_off
-    data:
-       entity_id: light.office_lego_light
