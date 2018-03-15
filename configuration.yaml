@@ -33,10 +33,12 @@ updater:
 logger:
  default: warn
 
+ffmpeg:
+ ffmpeg_bin: /usr/bin/ffmpeg
+ 
 config:    # Configuration Links
 logbook:   # LogBook 
 history:   # History
-discovery: # Enable Discovery
 map:       # Map
 sun:       # Find if is night or not
 zone: !include includes/zones.yaml
@@ -61,3 +63,4 @@ binary_sensor: !include includes/binary_sensor.yaml
 media_player: !include includes/media_player.yaml
 input_boolean: !include includes/input_boolean.yaml
 input_select: !include includes/input_select.yaml
+camera: !include includes/camera.yaml
