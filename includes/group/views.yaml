@@ -28,7 +28,12 @@ view_bedRoom:
   icon: mdi:hotel
   entities:
     - group.card_bedroom_suite
-    - group.card_bedroom_small
+view_nursery:
+  name: Quarto Bebe
+  view: yes
+  icon: mdi:baby-buggy
+  entities:
+   - camera.baby_room
 view_office:
   name: Escritório
   view: yes
