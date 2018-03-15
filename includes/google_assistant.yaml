@@ -7,5 +7,3 @@ exposed_domains:
   - switch
   - light
   - script
-  - media_player
-  
