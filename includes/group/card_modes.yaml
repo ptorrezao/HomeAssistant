@@ -1,7 +1,0 @@
-card_modes:
- name: Modes
- view: no
- entities:
-   - input_boolean.vacation_mode
-   - input_boolean.workfromhome_mode
-   - input_boolean.sleep_mode

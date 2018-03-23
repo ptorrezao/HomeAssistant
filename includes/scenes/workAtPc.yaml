@@ -1,7 +1,0 @@
-name: WorkAtPc
-entities:
-  light.office_lego_light:
-    state: on
-    brightness: 100
-  light.office_desk_light: on
-  light.office_ceiling_light: off

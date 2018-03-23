@@ -1,6 +1,0 @@
-card_bedroom_suite:
-  name: Suite
-  view: no
-  entities:
-   - input_boolean.presence_bedroom
-   - input_boolean.presence_bedroomwc

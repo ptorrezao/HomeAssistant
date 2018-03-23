@@ -1,0 +1,6 @@
+card_family:
+ name: Família
+ view: no
+ entities:
+   - device_tracker.bq_pedro
+   - device_tracker.bq_ana

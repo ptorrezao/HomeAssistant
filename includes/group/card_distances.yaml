@@ -1,4 +1,0 @@
-card_distances:
- name: Distancias
- entities:
-  - sensor.eta_pedro

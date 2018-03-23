@@ -10,11 +10,3 @@
   recipient:
     - pedro.torrezao@gmail.com
   sender_name: My Home Assistant
-- name: telegram
-  platform: telegram
-  chat_id: !secret telegram_chat_id_pedro
-- name: allNotifiers
-  platform: group
-  services:
-    - service: telegram
-    - service: gmail_smtp

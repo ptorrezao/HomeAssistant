@@ -1,0 +1,69 @@
+##
+# Media Players
+##
+input_text.minimediaplayer_officeghome:
+ icon: mdi:cast
+ custom_ui_state_card: state-card-mini-media-player
+ config:
+   player: media_player.escritorioghome
+   buttons:
+    - name: Radio Comercial
+      icon: mdi:music-note
+      script: script.play_radiocomercial
+    - name: Radio RFM
+      icon: mdi:music-note
+      script: script.play_radiorfm
+input_text.minimediaplayer_officetv:
+ icon: mdi:cast
+ custom_ui_state_card: state-card-mini-media-player
+ config:
+   player: media_player.office_tv
+input_text.minimediaplayer_officetv2:
+ icon: mdi:cast
+ custom_ui_state_card: state-card-mini-media-player
+ config:
+   player: media_player.office_tv_2
+input_text.minimediaplayer_maintv:
+ icon: mdi:cast
+ custom_ui_state_card: state-card-mini-media-player
+ config:
+   player: media_player.main_tv
+media_player.escritorioghome:
+  hidden: true
+media_player.office_tv:
+  hidden: true
+media_player.office_tv_2:
+  hidden: true 
+media_player.main_tv:
+  hidden: true 
+##
+#Modes
+##
+input_boolean.onvacations:
+  friendly_name: Vacation Mode
+  icon: mdi:beach
+  google_assistant: false
+  google_assistant_name: Vacation Mode
+  aliases:
+        - Vacation Mode
+  google_assistant_type: switch
+input_boolean.bedtime:
+  friendly_name: Time to Bed
+  icon: mdi:sleep
+  google_assistant: false
+  google_assistant_name: BedTime
+  aliases:
+        - Vacation Mode
+  google_assistant_type: switch
+##
+#Sensors
+##
+sensor.ptorrezaoduckdnsorg:
+  friendly_name: External IP (ptorrezao.duckdns.org)
+  icon: mdi:web
+  
+binary_sensor.guestWifi:
+  custom_ui_state_card: state-card-guestwifi
+binary_sensor.floorplan:
+  custom_ui_state_card: state-card-floorplan
+  config: !include ./includes/floorplan.yaml

@@ -1,6 +1,12 @@
+- platform: broadlink
+  name: Office TV
+  host: broadlink
+  mac: '34:ea:34:42:a6:b2'
+  ircodes_ini: 'includes/media_player_ircodes/hisense_officeTv.ini'
+  ping_host: chromecast-officetv
 - platform: cast
-  host: 192.168.88.25
+  host: google-home
 - platform: cast
-  host: 192.168.88.55
+  host: chromecast-maintv
 - platform: cast
-  host: 192.168.88.58
+  host: chromecast-officetv

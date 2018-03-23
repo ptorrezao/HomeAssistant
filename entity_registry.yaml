@@ -1,0 +1,12 @@
+media_player.escritorioghome:
+  name:
+  platform: cast
+  unique_id: 5243e46f-0624-ee26-e069-46dd85a8d1cd
+media_player.office_tv_2:
+  name:
+  platform: cast
+  unique_id: 0e0bb4c1-5850-26df-62d7-85c648f5a9f4
+media_player.main_tv:
+  name:
+  platform: cast
+  unique_id: 3eea68b6-3dce-9f66-85fe-eb40dac5fcd9
