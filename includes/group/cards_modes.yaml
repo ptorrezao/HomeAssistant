@@ -1,0 +1,6 @@
+card_modes:
+ name: Modes
+ view: no
+ entities:
+   - input_boolean.onvacations
+   - input_boolean.bedtime

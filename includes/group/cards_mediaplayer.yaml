@@ -1,0 +1,13 @@
+card_mediaPlayersOffice:
+    name: Media Player
+    view: no
+    entities:
+      - input_text.minimediaplayer_officetv
+      - input_text.minimediaplayer_officetv2
+      - input_text.minimediaplayer_officeghome
+ 
+card_mediaPlayersLivingRoom:
+    name: Media Player
+    view: no
+    entities:
+      - input_text.minimediaplayer_maintv

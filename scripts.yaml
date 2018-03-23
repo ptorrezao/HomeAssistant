@@ -1,0 +1,27 @@
+play_radiocomercial:
+ alias: Play Radio Comercial
+ sequence:
+   -  service: media_player.play_media
+      data_template:
+        entity_id: media_player.escritorioghome
+        media_content_id: http://mcrscast.mcr.iol.pt/comercial.mp3
+        media_content_type: 'audio/mp4'
+play_radiorfm:
+ alias: Play Radio RFM
+ sequence:
+   -  service: media_player.play_media
+      data_template:
+        entity_id: media_player.escritorioghome
+        media_content_id: http://19553.live.streamtheworld.com:3690/RFM_SC
+        media_content_type: 'audio/mp4'
+shutdownhome:
+ alias: Shutdown Procedure
+ sequence:
+   -  service: media_player.turn_off
+      entity_id: media_player.escritorioghome
+   -  service: media_player.turn_off
+      entity_id: media_player.main_tv
+   -  service: media_player.turn_off
+      entity_id: media_player.office_tv
+   -  service: light.turn_off
+      entity_id: group.card_lightsoffice

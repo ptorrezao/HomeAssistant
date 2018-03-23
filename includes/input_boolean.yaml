@@ -1,6 +1,4 @@
-vacation_mode:
+onvacations:
  initial: off
-workfromhome_mode:
- initial: off
-sleep_mode:
+bedtime:
  initial: off

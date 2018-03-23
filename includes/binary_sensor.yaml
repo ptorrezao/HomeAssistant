@@ -1,13 +1,6 @@
-- platform: mqtt
-  state_topic: dummy/floorplan/sensor
-  name: Floorplan
-- platform: mqtt
-  state_topic: dummy/guestWifi/sensor
-  name: guestWifi
 - platform: workday
   country: PT
   excludes : [ sat, sun, holiday ]
-- platform: ping
-  name: Hisense H39N2110C
-  host: 192.168.88.58
-  scan_interval: 5
+- platform: mqtt
+  state_topic: dummy/guestWifi/sensor
+  name: guestWifi
