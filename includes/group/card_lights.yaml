@@ -1,7 +1,0 @@
-card_lightsOffice:
-    name: Office Ligths
-    view: no
-    entities:
-      - light.office_ceiling_light
-      - light.office_lego_light
-      - light.office_desk_light

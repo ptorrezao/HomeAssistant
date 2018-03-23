@@ -1,9 +1,0 @@
-binary_sensor.floorplan:
-  custom_ui_state_card: state-card-floorplan
-  config: !include ../includes/floorplan.yaml
-
-binary_sensor.guestWifi:
-  custom_ui_state_card: state-card-guestwifi
-
-binary_sensor.hisense_h39n2110c:
-  hidden: true
