@@ -67,3 +67,24 @@ binary_sensor.guestWifi:
 binary_sensor.floorplan:
   custom_ui_state_card: state-card-floorplan
   config: !include ./includes/floorplan.yaml
+##
+#Device Tracker
+##
+device_tracker.rmmini42a6b2home:
+  entity_picture: /local/rm_mini.jpg
+device_tracker.ps4home:
+  entity_picture: /local/ps4.jpg
+device_tracker.openwrthome:
+  entity_picture: /local/openwrt.jpg
+device_tracker.officetv:
+  entity_picture: /local/chromecastv1.jpg
+device_tracker.maintv:
+  entity_picture: /local/chromecastv2.jpg
+device_tracker.epsond11b70home:
+  entity_picture: /local/epson11b70.jpg
+device_tracker.googlehomehome:
+  entity_picture: /local/home-mini.jpg
+device_tracker.ipcam01home:
+  entity_picture: /local/ysa_cipc.jpg
+device_tracker.c041f6297b6b:
+  entity_picture: /local/LG42LS5600.jpg
