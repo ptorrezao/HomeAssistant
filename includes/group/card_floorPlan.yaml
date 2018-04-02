@@ -1,5 +1,0 @@
-card_floorplan:
-    name: Floor Plan
-    view: no
-    entities:
-      - binary_sensor.floorplan
