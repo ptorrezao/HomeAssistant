@@ -7,6 +7,8 @@ homeassistant:
   time_zone: Europe/Lisbon
   customize: !include customize.yaml
 
+config:
+
 ffmpeg:
  ffmpeg_bin: /usr/bin/ffmpeg
 
@@ -41,8 +43,8 @@ http:
  base_url: !secret http_url
 
 google_assistant: !include google_assistant.yaml
- 
-config:
+panel_custom: !include panel_custom.yaml
+
 scene: !include scenes.yaml
 mqtt: !include includes/mqtt.yaml
 group: !include_dir_merge_named includes/group
