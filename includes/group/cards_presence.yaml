@@ -2,5 +2,23 @@ card_family:
  name: Família
  view: no
  entities:
-   - device_tracker.bq_pedro
-   - device_tracker.bq_ana
+   - device_tracker.cppedrohome
+   - device_tracker.cpanahome
+card_itdevices:
+ name: IT Devices
+ view: no
+ entities:
+   - device_tracker.openwrthome
+   - device_tracker.tlsg108ehome
+   - device_tracker.epsond11b70home
+   - device_tracker.dellptptorrhome
+   - device_tracker.dtofficehome
+card_smarthomedevices:
+ name: Smart Home Devices
+ view: no
+ entities:
+   - device_tracker.chromecastmaintvhome
+   - device_tracker.chromecastofficetvhome
+   - device_tracker.googlehomehome
+   - device_tracker.broadlinkhome
+   - device_tracker.ipcam01home
