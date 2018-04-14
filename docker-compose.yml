@@ -1,0 +1,39 @@
+version: '3.1'
+
+services:
+  homeassistant:
+    image: homeassistant/home-assistant:latest
+    restart: always
+    ports:
+      - "8123:8123"
+    volumes:
+      - ha_config:/config
+      - /etc/letsencrypt/:/ssl
+  mqtt:
+    image: eclipse-mosquitto:latest
+    restart: always
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - mqtt_config:/mosquitto/config
+      - mqtt_data:/mosquitto/data
+      - mqtt_log:/mosquitto/log
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+
+  mysql:
+    image: mysql:5.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_PWD}"
+      
+volumes:
+  mqtt_config:
+  mqtt_data:
+  mqtt_log:
+  ha_config:

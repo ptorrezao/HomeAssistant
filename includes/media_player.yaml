@@ -5,7 +5,7 @@
   ircodes_ini: 'includes/media_player_ircodes/hisense_officeTv.ini'
   ping_host: chromecast-officetv
 - platform: cast
-  host: google-home
+  host: Google-Home-Mini
 - platform: cast
   host: chromecast-maintv
 - platform: cast

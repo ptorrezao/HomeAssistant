@@ -3,4 +3,4 @@
     - 192.168.88.0/24
   interval_seconds: 30
   consider_home: 300
-  track_new_devices: no
+  track_new_devices: yes
