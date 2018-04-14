@@ -31,9 +31,12 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: "${MYSQL_PWD}"
+    volumes:
+      - mysql:/var/lib/mysql
       
 volumes:
   mqtt_config:
   mqtt_data:
   mqtt_log:
   ha_config:
+  mysql:
