@@ -42,6 +42,9 @@ http:
  ssl_key: !secret http_ssl_key
  base_url: !secret http_url
 
+logger:
+  default: warning
+
 google_assistant: !include google_assistant.yaml
 panel_custom: !include panel_custom.yaml
 
