@@ -2,8 +2,8 @@ card_family:
  name: Família
  view: no
  entities:
-   - device_tracker.cppedrohome
-   - device_tracker.cpanahome
+   - device_tracker.cppedro
+   - device_tracker.cpana
 card_itdevices:
  name: IT Devices
  view: no
