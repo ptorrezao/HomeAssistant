@@ -5,3 +5,5 @@ secrets.yaml
 deps/
 
 *.pyc
+
+custom_components/media_player/__pycache__/
