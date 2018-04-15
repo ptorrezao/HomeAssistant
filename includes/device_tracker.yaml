@@ -1,6 +1,4 @@
-- platform: nmap_tracker
-  hosts: 
-    - 192.168.88.0/24
-  interval_seconds: 30
-  consider_home: 300
-  track_new_devices: yes
+- platform: ubus
+  host: 192.168.88.1
+  username: !secret ubus_user
+  password: !secret ubus_pwd

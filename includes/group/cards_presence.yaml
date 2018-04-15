@@ -2,23 +2,24 @@ card_family:
  name: Família
  view: no
  entities:
-   - device_tracker.cppedrohome
-   - device_tracker.cpanahome
+   - device_tracker.cppedro
+   - device_tracker.cpana
 card_itdevices:
  name: IT Devices
  view: no
  entities:
-   - device_tracker.openwrthome
-   - device_tracker.tlsg108ehome
-   - device_tracker.epsond11b70home
-   - device_tracker.dellptptorrhome
-   - device_tracker.dtofficehome
+   - binary_sensor.openwrt
+   - binary_sensor.tlsg108e
+   - binary_sensor.epson_bx305fw
+   - binary_sensor.dtoffice
+   - binary_sensor.aphrodite
+   - binary_sensor.ares
 card_smarthomedevices:
  name: Smart Home Devices
  view: no
  entities:
-   - device_tracker.chromecastmaintvhome
-   - device_tracker.chromecastofficetvhome
-   - device_tracker.googlehomehome
-   - device_tracker.broadlinkhome
-   - device_tracker.ipcam01home
+   - binary_sensor.chromecast_main_tv
+   - binary_sensor.chromecast_office_tv
+   - binary_sensor.google_home_mini
+   - binary_sensor.broadlink
+   - binary_sensor.ip_cam_01

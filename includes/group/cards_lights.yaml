@@ -1,7 +1,13 @@
 card_lightsOffice:
-    name: Ligths
+    name: Lights
     view: no
     entities:
       - light.office_ceiling_light
       - light.office_lego_light
       - light.office_desk_light
+      
+card_lightslivingroom:
+    name: Lights
+    view: no
+    entities:
+      - light.living_room_cabinet
