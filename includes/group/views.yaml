@@ -5,6 +5,7 @@ view_livingRoom:
  entities:
   - group.card_family
   - group.card_mediaPlayersLivingRoom
+  - group.card_lightslivingroom
   
 view_bedRoom:
   name: Quarto

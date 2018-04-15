@@ -1,3 +1,4 @@
+##Office
 - platform: mqtt
   name: "Office Ceiling Light"
   state_topic: "stat/officelight/POWER"
@@ -39,3 +40,16 @@
   rgb_command_mode: RGB
   rgb_state_topic: "stat/ledlight/RESULT"
   rgb_value_template: "{{ value_json.Color[0:2] | int(base=16) }},{{ value_json.Color[2:4] | int(base=16) }},{{ value_json.Color[4:6] | int(base=16) }}"
+  
+##LivingRoom
+- platform: mqtt
+  name: "Living Room Cabinet"
+  state_topic: "stat/livingroom-cabinet/POWER"
+  command_topic: "cmnd/livingroom-cabinet/POWER"
+  availability_topic: "tele/livingroom-cabinet/LWT"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
