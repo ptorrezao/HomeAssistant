@@ -19,32 +19,11 @@ groups:
         class: 'light-off'
     action:
       service: toggle
-  # - name: Sensors
-     # entities:
-       # - 
-     # class_template: 'return "entity.state.attributes.rgb_color";'
-  #- name: Presence
-    #entities:
-       # - input_boolean.presence_kitchen
-       # - input_boolean.presence_bedroom
-       # - input_boolean.presence_bathroom
-       # - input_boolean.presence_bedroomwc
-       # - input_boolean.presence_hall
-       # - input_boolean.presence_nursery
-       # - input_boolean.presence_storage
-       # - input_boolean.presence_wc
-       # - input_boolean.presence_office
-       # - input_boolean.presence_livingroom
-   # states:
-    #  - state: 'on'
-     #   class: 'presence-on'
-     # - state: 'off'
-     #   class: 'presence-off'
   - name: Devices Sensor
     entities:
-       - binary_sensor.hisense_h39n2110c
        - light.office_lego_light
        - light.office_desk_light
+       - light.living_room_cabinet
     states:
      - state: 'on'
        class: 'device-on'
@@ -52,17 +31,22 @@ groups:
        class: 'device-off'
   - name: Devices
     entities:
-       - device_tracker.ps4home
-       - device_tracker.epsond11b70home
-       - device_tracker.dtofficehome
-       - device_tracker.googlehomehome
-       - device_tracker.openwrthome
-       - device_tracker.c041f6297b6b
-       - device_tracker.maintv
-       - device_tracker.officetv
-       - device_tracker.rmmini42a6b2home
+       - binary_sensor.openwrt
+       - binary_sensor.tlsg108e
+       - binary_sensor.epson_bx305fw
+       - binary_sensor.dtoffice
+       - binary_sensor.aphrodite
+       - binary_sensor.ares
+       - binary_sensor.google_home_mini
+       - binary_sensor.chromecast_office_tv
+       - binary_sensor.chromecast_main_tv
+       - binary_sensor.ip_cam_01
+       - binary_sensor.hisense_h39n2110c
+       - binary_sensor.broadlink
+       - binary_sensor.playstation
+       - binary_sensor.lg_tv_5600
     states:
-      - state: 'home'
+      - state: 'on'
         class: 'device-on'
-      - state: 'not_home'
+      - state: 'off'
         class: 'device-off'

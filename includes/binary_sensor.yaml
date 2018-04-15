@@ -4,3 +4,72 @@
 - platform: mqtt
   state_topic: dummy/guestWifi/sensor
   name: guestWifi
+- platform: ping
+  host: OpenWrt
+  name: OpenWrt
+  count: 2
+- platform: ping
+  host: TL-SG108E
+  name: TL-SG108E
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: EPSOND11B70
+  name: EPSON BX305FW
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: Aphrodite
+  name: Aphrodite
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: Ares
+  name: Ares
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: dt-office
+  name: dtoffice
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: Google-Home-Mini
+  name: Google Home Mini
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: chromecast-maintv
+  name: Chromecast Main TV
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: chromecast-officetv
+  name: Hisense H39N2110C
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: chromecast-officetv
+  name: Chromecast Office TV
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: LG-Tv-5600
+  name: LG TV 5600
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: ipcam01
+  name: IP Cam 01
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: broadlink
+  name: Broadlink
+  count: 2
+  scan_interval: 30
+- platform: ping
+  host: ps4
+  name: Playstation
+  count: 2
+  scan_interval: 30
