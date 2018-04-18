@@ -153,3 +153,27 @@
   action:
   - service: script.turn_on
     entity_id: scene.PlayingAtOfficeTv
+##
+- alias: "[Ligts] - Sunset lights - Turn On"
+  id: '6001'
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: "-00:30:00"
+  condition:
+    condition: state
+    entity_id: group.all_devices
+    state: home
+  action:
+    service: light.turn_on
+    entity_id: light.living_room_cabinet
+##
+- alias: "[Ligts] - Sunset lights - Turn Off"
+  id: '6002'
+  trigger:
+   - platform: sun
+     event: sunrise
+     offset: '-05:00:00'
+  action:
+    service: light.turn_off
+    entity_id: light.living_room_cabinet

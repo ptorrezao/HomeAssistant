@@ -44,7 +44,6 @@ groups:
        - binary_sensor.hisense_h39n2110c
        - binary_sensor.broadlink
        - binary_sensor.playstation
-       - binary_sensor.lg_tv_5600
     states:
       - state: 'on'
         class: 'device-on'

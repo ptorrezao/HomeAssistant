@@ -4,6 +4,7 @@ card_family:
  entities:
    - device_tracker.cppedro
    - device_tracker.cpana
+   - device_tracker.cpdavid
 card_itdevices:
  name: IT Devices
  view: no

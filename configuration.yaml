@@ -48,6 +48,10 @@ logger:
 google_assistant: !include google_assistant.yaml
 panel_custom: !include panel_custom.yaml
 
+tts:
+  - platform: google
+    language: 'pt'
+    
 scene: !include scenes.yaml
 mqtt: !include includes/mqtt.yaml
 group: !include_dir_merge_named includes/group

@@ -29,7 +29,7 @@
   count: 2
   scan_interval: 30
 - platform: ping
-  host: dt-office
+  host: Dt-Office
   name: dtoffice
   count: 2
   scan_interval: 30
@@ -69,7 +69,7 @@
   count: 2
   scan_interval: 30
 - platform: ping
-  host: ps4
+  host: playstation
   name: Playstation
   count: 2
   scan_interval: 30
