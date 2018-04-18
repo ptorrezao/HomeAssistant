@@ -7,3 +7,10 @@ deps/
 *.pyc
 
 custom_components/media_player/__pycache__/
+
+
+tts/
+
+www/bq_ana.jpg
+www/david.jpg
+www/patricia.jpg
