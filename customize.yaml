@@ -95,3 +95,16 @@ binary_sensor.lg_tv_5600:
   entity_picture: /local/LG42LS5600.jpg
 binary_sensor.hisense_h39n2110c:
   entity_picture: /local/hisense_h39n2110c.jpg
+##
+# Input Numeric
+##
+input_number.edp_vazio:
+ entity_picture: /local/edp.png
+input_number.edp_ponta:
+ entity_picture: /local/edp.png
+input_number.edp_cheias:
+ entity_picture: /local/edp.png
+input_number.ar_contagem:
+ entity_picture: /local/aguasdoribatejo01.png
+input_number.galp_contagem:
+ entity_picture: /local/galp.png

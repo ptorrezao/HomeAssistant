@@ -48,3 +48,10 @@ view_configuration:
    - group.card_family
    - group.card_itdevices
    - group.card_smarthomedevices
+   
+view_servicos:
+  name: Configurations
+  icon: mdi:marker-check
+  view: yes
+  entities:
+   - group.card_contagens

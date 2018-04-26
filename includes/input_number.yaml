@@ -1,21 +1,32 @@
 edp_vazio:
- name: Contagem (Vazio)
- initial: 548
+ name: Contagem (Eletricidade - Horario Vazio)
  min: 0
- max: 5000
+ max: 999
  step: 1
  mode: box
 edp_ponta:
- name: Contagem (Ponta)
- initial: 299
+ name: Contagem (Eletricidade - Horario Ponta)
  min: 0
- max: 5000
+ max: 999
  step: 1
  mode: box
 edp_cheias:
- name: Contagem (Cheias)
- initial: 634
+ name: Contagem (Eletricidade - Horario Cheio)
  min: 0
- max: 5000
+ max: 999
+ step: 1
+ mode: box
+ 
+ar_contagem:
+ name: Contagem Água (Águas do Ribatejo)
+ min: 0
+ max: 999
+ step: 1
+ mode: box
+ 
+galp_contagem:
+ name: Contagem Gás (Galp)
+ min: 0
+ max: 999
  step: 1
  mode: box

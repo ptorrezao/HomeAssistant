@@ -1,7 +1,0 @@
-card_EDPContagem:
- name: Contagem EDP
- view: no
- entities:
-   - input_number.edp_vazio
-   - input_number.edp_ponta
-   - input_number.edp_cheias
