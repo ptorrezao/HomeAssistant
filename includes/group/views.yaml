@@ -8,10 +8,10 @@ view_livingRoom:
   - group.card_lightslivingroom
   - group.card_guestWifi
   
-view_bedRoom:
-  name: Quarto
-  view: yes
-  icon: mdi:hotel
+#view_bedRoom:
+#  name: Quarto
+#  view: yes
+#  icon: mdi:hotel
   
 view_nursery:
   name: Quarto
@@ -30,10 +30,10 @@ view_office:
     - group.card_ITSensor
     - group.card_itdevices
 
-view_cozinha:
-    name: Cozinha
-    view: yes
-    icon: mdi:fridge
+#view_cozinha:
+#    name: Cozinha
+#    view: yes
+#    icon: mdi:fridge
     
 view_configuration:
   name: Configurations
