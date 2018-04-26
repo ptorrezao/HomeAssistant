@@ -6,6 +6,7 @@ view_livingRoom:
   - group.card_family
   - group.card_mediaPlayersLivingRoom
   - group.card_lightslivingroom
+  - group.card_guestWifi
   
 view_bedRoom:
   name: Quarto

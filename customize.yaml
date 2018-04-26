@@ -67,3 +67,31 @@ binary_sensor.guestWifi:
 binary_sensor.floorplan:
   custom_ui_state_card: state-card-floorplan
   config: !include ./includes/floorplan.yaml
+  
+##
+#Images
+##
+binary_sensor.openwrt:
+  entity_picture: /local/openwrt.jpg
+binary_sensor.tlsg108e:
+  entity_picture: /local/tlsg108e.jpg
+binary_sensor.ip_cam_01:
+  entity_picture: /local/ysa_cipc.jpg
+binary_sensor.chromecast_office_tv:
+  entity_picture: /local/chromecastv1.jpg
+binary_sensor.chromecast_main_tv:
+  entity_picture: /local/chromecastv2.jpg
+binary_sensor.epson_bx305fw:
+  entity_picture: /local/epson11b70.jpg
+binary_sensor.google_home_mini:
+  entity_picture: /local/home-mini.jpg
+binary_sensor.broadlink:
+  entity_picture: /local/rm_mini.jpg
+binary_sensor.dtoffice:
+  friendly_name: PC
+binary_sensor.playstation:
+  entity_picture: /local/ps4.jpg
+binary_sensor.lg_tv_5600:
+  entity_picture: /local/LG42LS5600.jpg
+binary_sensor.hisense_h39n2110c:
+  entity_picture: /local/hisense_h39n2110c.jpg

@@ -10,3 +10,6 @@
   host: chromecast-maintv
 - platform: cast
   host: chromecast-officetv
+# - platform: ps4
+  # host: 192.168.88.100
+  # filename: .ps4-wake.credentials.json

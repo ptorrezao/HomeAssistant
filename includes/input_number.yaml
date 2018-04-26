@@ -1,0 +1,21 @@
+edp_vazio:
+ name: Contagem (Vazio)
+ initial: 548
+ min: 0
+ max: 5000
+ step: 1
+ mode: box
+edp_ponta:
+ name: Contagem (Ponta)
+ initial: 299
+ min: 0
+ max: 5000
+ step: 1
+ mode: box
+edp_cheias:
+ name: Contagem (Cheias)
+ initial: 634
+ min: 0
+ max: 5000
+ step: 1
+ mode: box

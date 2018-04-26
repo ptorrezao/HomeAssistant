@@ -157,9 +157,8 @@
 - alias: "[Ligts] - Sunset lights - Turn On"
   id: '6001'
   trigger:
-    - platform: sun
-      event: sunset
-      offset: "-00:30:00"
+    - platform: time
+      at: '20:00:00'
   condition:
     condition: state
     entity_id: group.all_devices
@@ -171,9 +170,21 @@
 - alias: "[Ligts] - Sunset lights - Turn Off"
   id: '6002'
   trigger:
-   - platform: sun
-     event: sunrise
-     offset: '-05:00:00'
+    - platform: time
+      at: '03:00:00'
   action:
     service: light.turn_off
     entity_id: light.living_room_cabinet
+##
+- alias: "[Wellcome] -  Bemvindo Pedro"
+  id: "7001"
+  trigger:
+   platform: zone
+   entity_id: device_tracker.cpPedro
+   zone: zone.home
+   event: enter
+  action:
+  - service: tts.google_say
+    entity_id: media_player.escritorioghome
+    data:
+     message: 'Bemvindo Pedro' 
