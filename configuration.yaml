@@ -16,6 +16,9 @@ map:
 zone: !include zones.yaml
 
 history:
+  exclude:
+    domains:
+      - automation
 logbook:
 recorder:
   purge_keep_days: 30
