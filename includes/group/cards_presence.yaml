@@ -5,7 +5,7 @@ card_family:
    - device_tracker.cppedro
    - device_tracker.cpana
    - device_tracker.cpdavid
-   - device_tracker.9cb6d0da9cbb
+   - device_tracker.maeAna
 card_itdevices:
  name: IT Devices
  view: no
