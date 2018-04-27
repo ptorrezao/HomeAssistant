@@ -15,6 +15,7 @@ sun:
 group: !include_dir_merge_named includes/core/group
 scene: !include_dir_merge_named includes/scenes
 script: !include_dir_merge_named includes/scripts
+shell_command: !include_dir_merge_named includes/shell_command
 
 zone: !include includes/core/zones.yaml
 history: !include includes/core/history.yaml
