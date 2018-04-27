@@ -1,0 +1,119 @@
+- alias: 'Show Menu'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_command
+    event_data:
+     command: '/menu'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        title: '*Home Assistant - Casa Pedro & Ana*'
+        target: '{{ trigger.event.data.user_id }}'
+        message: 'Olá, o que desejas?'
+        disable_notification: true
+        inline_keyboard:
+          - "External IP:/externalip, Quarto Madalena:/quartomadalena"
+          - "Desligar Sistemas:/shutdown, Esquece..!:/nevermind"
+- alias: 'Show Menu'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_text
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        title: '*Home Assistant - Casa Pedro & Ana*'
+        target: '{{ trigger.event.data.user_id }}'
+        message: 'Não foi possivel processar o teu pedido 
+        
+        ({{ trigger.event.data.text }})'
+        disable_notification: true
+        inline_keyboard:
+          - "External IP:/externalip, Quarto Madalena:/quartomadalena"
+          - "Desligar Sistemas:/shutdown, Esquece..!:/nevermind"
+- alias: 'Show External IP'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_callback
+    event_data:
+      data: '/externalip'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        message_id: '{{ trigger.event.data.message.message_id }}'
+        chat_id: '{{ trigger.event.data.chat_id }}'
+        title: '*External IP*'
+        
+        message: >
+          IP actual é:{{states.sensor.ptorrezaoduckdnsorg.state}}
+- alias: 'Quarto madalena'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_callback
+    event_data:
+      data: '/quartomadalena'
+  action:
+    - service: telegram_bot.answer_callback_query
+      data_template:
+        callback_query_id: '{{ trigger.event.data.id }}'
+        message: 'A processar'
+    - service: shell_command.generate_babyroomcameraimage
+    - service: notify.telegram_pedro
+      data:
+        title: Send an images
+        message: That's an example that sends an image.
+        data:
+         photo:
+            - file: /config/www/tmp/baby_room.jpg
+              caption: Quarto Madalena
+          
+- alias: 'Shutdown'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_callback
+    event_data:
+      data: '/shutdown'
+  action:
+    - service: telegram_bot.answer_callback_query
+      data_template:
+        callback_query_id: '{{ trigger.event.data.id }}'
+        message: 'A processar'
+    - service: script.turn_on
+      entity_id: script.shutdownhome
+- alias: 'Nevermind'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_callback
+    event_data:
+      data: '/nevermind'
+  action:
+    - service: telegram_bot.edit_message
+      data_template:
+        message_id: '{{ trigger.event.data.message.message_id }}'
+        chat_id: '{{ trigger.event.data.chat_id }}'
+        title: '*Home Assistant - Casa Pedro & Ana*'
+        inline_keyboard:
+          - "External IP:/externalip, Quarto Madalena:/quartomadalena"
+          - "Desligar Sistemas:/shutdown, Não..!:/Nao"
+        message: >
+          Não precisa mesmo de nada?
+- alias: 'Nao'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_callback
+    event_data:
+      data: '/Nao'
+  action:
+    - service: telegram_bot.edit_message
+      data_template:
+        message_id: '{{ trigger.event.data.message.message_id }}'
+        chat_id: '{{ trigger.event.data.chat_id }}'
+        title: '*Home Assistant - Casa Pedro & Ana*'
+        message: >
+          Ok...
