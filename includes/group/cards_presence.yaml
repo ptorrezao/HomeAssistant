@@ -6,6 +6,7 @@ card_family:
    - device_tracker.cpana
    - device_tracker.cpdavid
    - device_tracker.maeAna
+   - device_tracker.patricia
 card_itdevices:
  name: IT Devices
  view: no
