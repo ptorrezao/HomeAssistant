@@ -3,10 +3,14 @@
   server: smtp.gmail.com
   port: 587
   timeout: 15
-  sender: pedro.torrezao@gmail.com
+  sender: !secret gmail_appuser
   encryption: starttls
-  username: pedro.torrezao@gmail.com
+  username: !secret gmail_appuser
   password: !secret gmail_appkey
   recipient:
-    - pedro.torrezao@gmail.com
+    - !secret gmail_appuser
   sender_name: My Home Assistant
+
+- name: telegram_pedro
+  platform: telegram
+  chat_id: !secret telegram_chat_id_pedro

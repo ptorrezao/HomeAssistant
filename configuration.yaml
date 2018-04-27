@@ -55,6 +55,7 @@ tts:
   - platform: google
     language: 'pt'
     
+telegram_bot: !include includes/telegram_bot.yaml
 scene: !include scenes.yaml
 mqtt: !include includes/mqtt.yaml
 group: !include_dir_merge_named includes/group
