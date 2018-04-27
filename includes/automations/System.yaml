@@ -1,0 +1,48 @@
+- alias: '[System] - Update Available Notifications'
+  id: '1000'
+  trigger:
+    platform: state
+    entity_id: updater.updater
+  action:
+    service: notify.everyone
+    data:
+      message: 'Update for Home Assistant is available.'
+
+- alias: "[System] - Public IP Has Changed"
+  id: '1001'
+  trigger:
+    platform: state
+    entity_id: sensor.ptorrezaoduckdnsorg
+  action:
+  - service: notify.everyone
+    data_template: 
+      message: "IP changed: {{ trigger.from_state.state }} → {{ trigger.to_state.state }}"
+
+- alias: "[System] - Time to Bed"
+  id: '1010'
+  trigger:
+    platform: state
+    entity_id: input_boolean.bedtime
+    from: 'off'
+    to: 'on'
+  action:
+  -  service: light.turn_off
+     entity_id: group.card_lightsoffice
+  -  service: media_player.turn_off
+     entity_id: media_player.office_tv
+
+- alias: "[System] - Reset Time To Bed"
+  id: '1011'
+  trigger:
+   platform: sun
+   event: sunrise
+   offset: '+00:00:00'
+  condition:  
+    condition: and
+    conditions: 
+      - condition: state
+        entity_id: input_boolean.bedtime
+        state: 'on'
+  action:
+  - service: input_boolean.turn_off 
+    entity_id: input_boolean.bedtime

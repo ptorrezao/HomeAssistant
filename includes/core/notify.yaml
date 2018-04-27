@@ -14,3 +14,9 @@
 - name: telegram_pedro
   platform: telegram
   chat_id: !secret telegram_chat_id_pedro
+
+- name: everyone
+  platform: group
+  services:
+    - service: telegram_pedro
+    - service: gmail_smtp
