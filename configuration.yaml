@@ -12,25 +12,26 @@ config:
 logbook:
 sun: 
 
+group: !include_dir_merge_named includes/core/group
+scene: !include_dir_merge_named includes/scenes
+script: !include_dir_merge_named includes/scripts
+
 zone: !include includes/core/zones.yaml
 history: !include includes/core/history.yaml
-group: !include_dir_merge_named includes/core/group
 recorder: !include includes/core/recorder.yaml
 frontend: !include includes/core/frontend.yaml
 updater: !include includes/core/updater.yaml
 http: !include includes/core/http.yaml
 logger: !include includes/core/logger.yaml
 tts: !include includes/core/tts.yaml
-scene: !include_dir_merge_named includes/scenes
-automation: !include_dir_merge_list includes/automations
-script: !include_dir_merge_named includes/scripts 
 notify: !include includes/core/notify.yaml
+
+automation: !include_dir_merge_list includes/automations
 
 ffmpeg: !include includes/components/ffmpeg.yaml
 google_assistant: !include includes/components/google_assistant.yaml
 telegram_bot: !include includes/components/telegram_bot.yaml
 mqtt: !include includes/components/mqtt.yaml
-
 
 panel_custom: !include includes/panel_custom.yaml
 
