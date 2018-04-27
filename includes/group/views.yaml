@@ -6,11 +6,12 @@ view_livingRoom:
   - group.card_family
   - group.card_mediaPlayersLivingRoom
   - group.card_lightslivingroom
+  - group.card_guestWifi
   
-view_bedRoom:
-  name: Quarto
-  view: yes
-  icon: mdi:hotel
+#view_bedRoom:
+#  name: Quarto
+#  view: yes
+#  icon: mdi:hotel
   
 view_nursery:
   name: Quarto
@@ -29,10 +30,10 @@ view_office:
     - group.card_ITSensor
     - group.card_itdevices
 
-view_cozinha:
-    name: Cozinha
-    view: yes
-    icon: mdi:fridge
+#view_cozinha:
+#    name: Cozinha
+#    view: yes
+#    icon: mdi:fridge
     
 view_configuration:
   name: Configurations
@@ -47,3 +48,11 @@ view_configuration:
    - group.card_family
    - group.card_itdevices
    - group.card_smarthomedevices
+   
+view_servicos:
+  name: Configurations
+  icon: mdi:marker-check
+  view: yes
+  entities:
+   - group.card_contagens
+   - group.card_modes

@@ -94,3 +94,14 @@ svg, svg * {
   fill: #3a3a3a94 !important;
 }
 
+.room {
+	fill:#282828;
+	stroke:#535353;
+	stroke-width:0.52700001;
+}
+
+.room-walls {
+	fill:#3a3a3a;
+	stroke:#535353;
+	stroke-width:0.52700001
+}

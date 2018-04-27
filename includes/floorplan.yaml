@@ -11,19 +11,10 @@ stylesheet: /local/custom_ui/floorplan/floorplan.css
 groups:
   - name: Lights
     entities:
-       - light.office_ceiling_light
-    states:
-      - state: 'on'
-        class: 'light-on'
-      - state: 'off'
-        class: 'light-off'
-    action:
-      service: toggle
-  - name: Devices Sensor
-    entities:
        - light.office_lego_light
        - light.office_desk_light
        - light.living_room_cabinet
+       - light.office_ceiling_light
     states:
      - state: 'on'
        class: 'device-on'

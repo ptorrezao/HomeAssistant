@@ -1,0 +1,9 @@
+card_contagens:
+ name: Contagens
+ view: no
+ entities:
+   - input_number.edp_vazio
+   - input_number.edp_ponta
+   - input_number.edp_cheias
+   - input_number.ar_contagem
+   - input_number.galp_contagem

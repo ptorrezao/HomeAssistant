@@ -1,4 +1,0 @@
-- name: PlayingAtOfficeTv
-  entities:
-    light.office_ceiling_light: off
-    light.office_desk_light: off

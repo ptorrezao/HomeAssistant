@@ -1,0 +1,21 @@
+- alias: "[Lights] - Sunset lights - Turn On"
+  id: '6001'
+  trigger:
+    - platform: time
+      at: '20:00:00'
+  condition:
+    condition: state
+    entity_id: group.all_devices
+    state: home
+  action:
+    service: light.turn_on
+    entity_id: light.living_room_cabinet
+##
+- alias: "[Lights] - Sunset lights - Turn Off"
+  id: '6002'
+  trigger:
+    - platform: time
+      at: '03:00:00'
+  action:
+    service: light.turn_off
+    entity_id: light.living_room_cabinet

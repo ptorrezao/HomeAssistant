@@ -5,60 +5,39 @@ homeassistant:
   elevation: 4.2
   unit_system: metric
   time_zone: Europe/Lisbon
-  customize: !include customize.yaml
-
-config:
-
-ffmpeg:
- ffmpeg_bin: /usr/bin/ffmpeg
+  customize: !include_dir_merge_named includes/customize
+  whitelist_external_dirs:
+     - !secret publictempfolder
 
 map:
-zone: !include zones.yaml
-
-history:
+config:
 logbook:
-recorder:
-  purge_keep_days: 30
-  db_url: !secret db_connectionString
+sun: 
 
-frontend:
- javascript_version: latest
- themes: !include_dir_merge_named themes/
- extra_html_url:
-   - /local/custom_ui/state-card-mini-media-player.html
-   - /local/custom_ui/state-card-guestwifi.html
-   - /local/custom_ui/state-card-floorplan.html
- extra_html_url_es5:
-   - /local/custom_ui/state-card-mini-media-player_es5.html
-   - /local/custom_ui/state-card-guestwifi.html
-   - /local/custom_ui/state-card-floorplan.html
-   
-updater:
- include_used_components: true
- 
-http:
- api_password: !secret http_password
- ssl_certificate: !secret http_ssl_certificate
- ssl_key: !secret http_ssl_key
- base_url: !secret http_url
-
-logger:
-  default: warning
-
-google_assistant: !include google_assistant.yaml
-panel_custom: !include panel_custom.yaml
-
-tts:
-  - platform: google
-    language: 'pt'
-    
-scene: !include scenes.yaml
-mqtt: !include includes/mqtt.yaml
 group: !include_dir_merge_named includes/group
-automation: !include automations.yaml
-script: !include scripts.yaml
-sun:
-notify: !include includes/notify.yaml
+scene: !include_dir_merge_named includes/scenes
+script: !include_dir_merge_named includes/scripts
+shell_command: !include_dir_merge_named includes/shell_command
+
+zone: !include includes/core/zones.yaml
+history: !include includes/core/history.yaml
+recorder: !include includes/core/recorder.yaml
+frontend: !include includes/core/frontend.yaml
+updater: !include includes/core/updater.yaml
+http: !include includes/core/http.yaml
+logger: !include includes/core/logger.yaml
+tts: !include includes/core/tts.yaml
+notify: !include includes/core/notify.yaml
+
+automation: !include_dir_merge_list includes/automations
+
+ffmpeg: !include includes/components/ffmpeg.yaml
+google_assistant: !include includes/components/google_assistant.yaml
+telegram_bot: !include includes/components/telegram_bot.yaml
+mqtt: !include includes/components/mqtt.yaml
+
+panel_custom: !include includes/panel_custom.yaml
+
 sensor: !include includes/sensor.yaml
 light: !include includes/light.yaml
 camera: !include includes/camera.yaml
@@ -67,3 +46,4 @@ media_player: !include includes/media_player.yaml
 input_text: !include includes/input_text.yaml
 binary_sensor: !include includes/binary_sensor.yaml
 input_boolean: !include includes/input_boolean.yaml
+input_number: !include includes/input_number.yaml
