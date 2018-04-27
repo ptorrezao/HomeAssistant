@@ -21,9 +21,9 @@ updater: !include includes/core/updater.yaml
 http: !include includes/core/http.yaml
 logger: !include includes/core/logger.yaml
 tts: !include includes/core/tts.yaml
-scene: !include includes/core/scenes.yaml
+scene: !include_dir_merge_named includes/scenes
 automation: !include_dir_merge_list includes/automations
-script: !include includes/core/scripts.yaml
+script: !include_dir_merge_named includes/scripts 
 notify: !include includes/core/notify.yaml
 
 ffmpeg: !include includes/components/ffmpeg.yaml

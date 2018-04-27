@@ -55,3 +55,4 @@ view_servicos:
   view: yes
   entities:
    - group.card_contagens
+   - group.card_modes
