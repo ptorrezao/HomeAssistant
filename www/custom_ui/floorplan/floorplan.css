@@ -105,3 +105,12 @@ svg, svg * {
 	stroke:#535353;
 	stroke-width:0.52700001
 }
+
+.layer-hidden
+{
+	display:none;
+}
+.layer-visibility
+{
+	display:initial;
+}

@@ -35,8 +35,32 @@ groups:
        - binary_sensor.hisense_h39n2110c
        - binary_sensor.broadlink
        - binary_sensor.playstation
+       - binary_sensor.ares
+       - binary_sensor.aphrodite
     states:
       - state: 'on'
         class: 'device-on'
       - state: 'off'
         class: 'device-off'
+  - name: Contadores
+    entities:
+      - input_number.edp_vazio
+      - input_number.edp_ponta
+      - input_number.edp_cheias
+      - input_number.ar_contagem
+      - input_number.galp_contagem
+    text_template: '${entity.state ? Math.ceil(entity.state): "undefined"}'
+  - name: show_hide_contadores
+    elements:
+      - btnContadores
+      - btnContadoresBack
+    action:
+      domain: class
+      service: toggle
+      data:
+        elements:
+          - Meters
+        classes:
+          - layer-visible
+          - layer-hidden
+        default_class: layer-hidden
