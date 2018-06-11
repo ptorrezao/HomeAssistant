@@ -47,3 +47,4 @@ input_text: !include includes/input_text.yaml
 binary_sensor: !include includes/binary_sensor.yaml
 input_boolean: !include includes/input_boolean.yaml
 input_number: !include includes/input_number.yaml
+climate: !include includes/climate.yaml

@@ -29,6 +29,7 @@ view_office:
     - group.card_mediaPlayersOffice
     - group.card_ITSensor
     - group.card_itdevices
+    - climate.ac_escritorio
 
 #view_cozinha:
 #    name: Cozinha
