@@ -1,6 +1,6 @@
 - platform: broadlink
   name: Office TV
-  host: broadlink
+  host: 192.168.88.200
   mac: '34:ea:34:42:a6:b2'
   ircodes_ini: 'includes/media_player_ircodes/hisense_officeTv.ini'
   ping_host: chromecast-officetv
@@ -9,7 +9,7 @@
 - platform: cast
   host: chromecast-maintv
 - platform: cast
-  host: chromecast-officetv
+  host: 192.168.88.155
 # - platform: ps4
   # host: 192.168.88.100
   # filename: .ps4-wake.credentials.json

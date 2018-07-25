@@ -13,3 +13,15 @@
 - platform: dnsip
   hostname: ptorrezao.duckdns.org
   resolver: 8.8.8.8
+- platform: mqtt
+  state_topic: "office_sensor/temperature"
+  name: "Temperatura"
+  qos: 0
+  unit_of_measurement: "°C"
+  #value_template: '{{ payload }}'
+- platform: mqtt
+  state_topic: "office_sensor/humidity"
+  name: "Humidade"
+  qos: 0
+  unit_of_measurement: "%"
+  #value_template: '{{ payload }}'
