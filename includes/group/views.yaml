@@ -30,6 +30,8 @@ view_office:
     - group.card_ITSensor
     - group.card_itdevices
     - climate.ac_escritorio
+    - sensor.temperatura_office
+    - sensor.humidade_office
 
 #view_cozinha:
 #    name: Cozinha

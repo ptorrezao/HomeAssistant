@@ -22,9 +22,7 @@ from homeassistant.core import callback
 from configparser import ConfigParser
 from base64 import b64encode, b64decode
 
-REQUIREMENTS = [
-    'https://github.com/balloob/python-broadlink/archive/'
-    '3580ff2eaccd267846f14246d6ede6e30671f7c6.zip#broadlink==0.5.1']
+REQUIREMENTS = ['broadlink==0.9.0']
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -62,7 +60,7 @@ def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
     
     import broadlink
     
-    broadlink_device = broadlink.rm((ip_addr, 80), mac_addr)
+    broadlink_device = broadlink.rm((ip_addr, 80), mac_addr, None)
     broadlink_device.timeout = config.get(CONF_TIMEOUT)
 
     try:
@@ -157,24 +155,24 @@ class BroadlinkIRMediaPlayer(MediaPlayerDevice):
             return True
         except ValueError:
             return False 
-            
-            
-
+                        
 
     def send_ir(self, section, value):
-        command = self._commands_ini.get(section, value)
+        ircode = self._commands_ini.get(section, value)
+        commands = ircode.split("|")
         
-        for retry in range(DEFAULT_RETRY):
-            try:
-                payload = b64decode(command)
-                self._broadlink_device.send_data(payload)
-                break
-            except (socket.timeout, ValueError):
+        for command in commands:
+            for retry in range(DEFAULT_RETRY):
                 try:
-                    self._broadlink_device.auth()
-                except socket.timeout:
-                    if retry == DEFAULT_RETRY-1:
-                        _LOGGER.error("Failed to send packet to Broadlink RM Device")
+                    payload = b64decode(command)
+                    self._broadlink_device.send_data(payload)
+                    break
+                except (socket.timeout, ValueError):
+                    try:
+                        self._broadlink_device.auth()
+                    except socket.timeout:
+                        if retry == DEFAULT_RETRY-1:
+                            _LOGGER.error("Failed to send packet to Broadlink RM Device")
         
     @property
     def name(self):
