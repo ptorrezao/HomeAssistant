@@ -1,0 +1,21 @@
+- platform: broadlink
+  name: AC Escritório
+  host: 192.168.88.200
+  mac: '34:EA:34:42:A6:B2'
+  ircodes_ini: 'includes/broadlink_climate_codes/mitsubishi_electric.ini'
+  min_temp: 16
+  max_temp: 30
+  target_temp: 20
+  temp_sensor: sensor.temperatura_office
+  default_operation: idle
+  default_fan_mode: mid
+  customize:
+    operations:
+      - idle
+      - cool
+      - heat
+    fan_modes:
+      - low
+      - mid
+      - high
+      - auto

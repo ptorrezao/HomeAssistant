@@ -38,6 +38,7 @@ mqtt: !include includes/components/mqtt.yaml
 
 panel_custom: !include includes/panel_custom.yaml
 
+switch: !include includes/switch.yaml
 sensor: !include includes/sensor.yaml
 light: !include includes/light.yaml
 camera: !include includes/camera.yaml
@@ -47,3 +48,7 @@ input_text: !include includes/input_text.yaml
 binary_sensor: !include includes/binary_sensor.yaml
 input_boolean: !include includes/input_boolean.yaml
 input_number: !include includes/input_number.yaml
+climate: !include includes/climate.yaml
+
+weather:
+  - platform: ipma 

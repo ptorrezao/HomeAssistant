@@ -4,34 +4,34 @@
     platform: event
     event_type: telegram_command
     event_data:
-     command: '/menu'
+     command: '/start'
   action:
     - service: telegram_bot.send_message
       data_template:
         title: '*Home Assistant - Casa Pedro & Ana*'
         target: '{{ trigger.event.data.user_id }}'
-        message: 'Olá, o que desejas?'
+        message: 'Olá, o que desejas? (para relatórios envia o comando /reports)'
         disable_notification: true
         inline_keyboard:
           - "External IP:/externalip, Quarto Madalena:/quartomadalena"
           - "Desligar Sistemas:/shutdown, Esquece..!:/nevermind"
-- alias: 'Show Menu'
+- alias: 'Menu'
   hide_entity: true
   trigger:
     platform: event
-    event_type: telegram_text
+    event_type: telegram_command
+    event_data:
+     command: '/reports'
   action:
     - service: telegram_bot.send_message
       data_template:
-        title: '*Home Assistant - Casa Pedro & Ana*'
+        title: '*Relatórios*'
         target: '{{ trigger.event.data.user_id }}'
-        message: 'Não foi possivel processar o teu pedido 
-        
-        ({{ trigger.event.data.text }})'
+        message: 'De que relatório precisas?'
         disable_notification: true
         inline_keyboard:
-          - "External IP:/externalip, Quarto Madalena:/quartomadalena"
-          - "Desligar Sistemas:/shutdown, Esquece..!:/nevermind"
+          - "Luzes:/lightsreport,Presenças:/presencereport"
+          - "Equipamentos:/devicesreport"
 - alias: 'Show External IP'
   hide_entity: true
   trigger:
@@ -117,3 +117,67 @@
         title: '*Home Assistant - Casa Pedro & Ana*'
         message: >
           Ok...
+- alias: 'Light Report'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_callback
+    event_data:
+      data: '/lightsreport'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        message_id: '{{ trigger.event.data.message.message_id }}'
+        chat_id: '{{ trigger.event.data.chat_id }}'
+        title: '*Luzes*'
+        
+        message: >
+          *Escritório*: {{states.light.office_ceiling_light.attributes.friendly_name}} ({{states.light.office_ceiling_light.state}}) / {{states.light.office_lego_light.attributes.friendly_name}} ({{states.light.office_lego_light.state}}) / {{states.light.office_desk_light.attributes.friendly_name}} ({{states.light.office_desk_light.state}})
+          
+          *Sala*: {{states.light.living_room_cabinet.attributes.friendly_name}} ({{states.light.living_room_cabinet.state}})
+- alias: 'Presence Report'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_callback
+    event_data:
+      data: '/presencereport'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        message_id: '{{ trigger.event.data.message.message_id }}'
+        chat_id: '{{ trigger.event.data.chat_id }}'
+        title: '*Presenças*'
+        
+        message: >
+          {{states.device_tracker.cppedro.attributes.friendly_name}}({{states.device_tracker.cppedro.state}}) / {{states.device_tracker.cpana.attributes.friendly_name}}({{states.device_tracker.cpana.state}})
+- alias: 'Device Report'
+  hide_entity: true
+  trigger:
+    platform: event
+    event_type: telegram_callback
+    event_data:
+      data: '/devicesreport'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        message_id: '{{ trigger.event.data.message.message_id }}'
+        chat_id: '{{ trigger.event.data.chat_id }}'
+        title: '*Equipamentos*'
+        
+        message: >
+          *Geral*:
+          {{states.binary_sensor.tlsg108e.attributes.friendly_name}}({{states.binary_sensor.tlsg108e.state}}) 
+          {{states.binary_sensor.aphrodite.attributes.friendly_name}}({{states.binary_sensor.aphrodite.state}}) / {{states.binary_sensor.ares.attributes.friendly_name}}({{states.binary_sensor.ares.state}}) 
+          
+          *Sala*:
+          {{states.binary_sensor.chromecast_main_tv.attributes.friendly_name}}({{states.binary_sensor.chromecast_main_tv.state}}) / {{states.binary_sensor.lg_tv_5600.attributes.friendly_name}}({{states.binary_sensor.lg_tv_5600.state}})
+          
+          *Escritório*:
+          {{states.binary_sensor.chromecast_office_tv.attributes.friendly_name}}({{states.binary_sensor.chromecast_office_tv.state}}) / {{states.binary_sensor.dtoffice.attributes.friendly_name}}({{states.binary_sensor.dtoffice.state}}) /
+          {{states.binary_sensor.epson_bx305fw.attributes.friendly_name}}({{states.binary_sensor.epson_bx305fw.state}}) / {{states.binary_sensor.google_home_mini.attributes.friendly_name}}({{states.binary_sensor.google_home_mini.state}}) /
+          {{states.binary_sensor.hisense_h39n2110c.attributes.friendly_name}}({{states.binary_sensor.hisense_h39n2110c.state}}) /  
+          {{states.binary_sensor.openwrt.attributes.friendly_name}}({{states.binary_sensor.openwrt.state}}) / {{states.binary_sensor.playstation.attributes.friendly_name}}({{states.binary_sensor.playstation.state}})
+          
+          *Quarto Madalena*:
+          {{states.binary_sensor.ip_cam_01.attributes.friendly_name}}({{states.binary_sensor.ip_cam_01.state}})

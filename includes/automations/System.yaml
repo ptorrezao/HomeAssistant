@@ -46,3 +46,16 @@
   action:
   - service: input_boolean.turn_off 
     entity_id: input_boolean.bedtime
+
+- alias: "Tentativa de Ataque Home Assistant"
+  trigger:
+    - platform: state
+      entity_id: persistent_notification.httplogin
+  condition:
+    - condition: template
+      value_template: "{{ trigger.to_state.state != 'None' }}"
+  action:
+    - service: notify.telegram_pedro
+      data_template:
+        title: "Tentativa de Ataque Home Assistant"
+        message: "{{ states.persistent_notification.httplogin.attributes.message }}"
