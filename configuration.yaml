@@ -36,7 +36,7 @@ google_assistant: !include includes/components/google_assistant.yaml
 telegram_bot: !include includes/components/telegram_bot.yaml
 mqtt: !include includes/components/mqtt.yaml
 
-panel_custom: !include includes/panel_custom.yaml
+# panel_custom: !include includes/panel_custom.yaml
 
 switch: !include includes/switch.yaml
 sensor: !include includes/sensor.yaml
