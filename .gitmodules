@@ -1,6 +1,0 @@
-[submodule "3rdParty/home-assistant-mini-media-player"]
-	path = 3rdParty/home-assistant-mini-media-player
-	url = https://github.com/c727/home-assistant-mini-media-player/
-[submodule "3rdParty/homeassistant-custom-components"]
-	path = 3rdParty/homeassistant-custom-components
-	url = https://github.com/vpnmaster/homeassistant-custom-components

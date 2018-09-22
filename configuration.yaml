@@ -15,7 +15,7 @@ logbook:
 sun: 
 
 group: !include_dir_merge_named includes/group
-scene: !include_dir_merge_named includes/scenes
+#scene: !include_dir_merge_named includes/scenes
 script: !include_dir_merge_named includes/scripts
 shell_command: !include_dir_merge_named includes/shell_command
 
@@ -51,3 +51,15 @@ climate: !include includes/climate.yaml
 
 weather:
   - platform: ipma 
+  
+
+scene:
+  - name: WorkNigthShift
+    entities:
+     light.office_ceiling_light: off
+     light.office_desk_light: on
+     script.play_radiocomercial: on
+     light.office_lego_light:
+       state: on
+       xy_color: [0.33, 0.66]
+       brightness: 200
