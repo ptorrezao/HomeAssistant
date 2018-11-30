@@ -15,7 +15,6 @@ logbook:
 sun: 
 
 group: !include_dir_merge_named includes/group
-scene: !include_dir_merge_named includes/scenes
 script: !include_dir_merge_named includes/scripts
 shell_command: !include_dir_merge_named includes/shell_command
 
@@ -35,9 +34,6 @@ ffmpeg: !include includes/components/ffmpeg.yaml
 google_assistant: !include includes/components/google_assistant.yaml
 telegram_bot: !include includes/components/telegram_bot.yaml
 mqtt: !include includes/components/mqtt.yaml
-
-panel_custom: !include includes/panel_custom.yaml
-
 switch: !include includes/switch.yaml
 sensor: !include includes/sensor.yaml
 light: !include includes/light.yaml
@@ -46,8 +42,15 @@ device_tracker: !include includes/device_tracker.yaml
 media_player: !include includes/media_player.yaml
 binary_sensor: !include includes/binary_sensor.yaml
 input_boolean: !include includes/input_boolean.yaml
-input_number: !include includes/input_number.yaml
 climate: !include includes/climate.yaml
+weather: !include includes/weather.yaml
+scene: !include includes/scenes/scenes.yaml
 
-weather:
-  - platform: ipma 
+digital_ocean:
+  access_token: !secret digital_ocean
+
+panel_iframe:
+ nodered:
+   title: 'Node-Red'
+   icon: 'mdi:basket-unfill'
+   url: https://ptorrezao.duckdns.org:1880

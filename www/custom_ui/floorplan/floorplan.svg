@@ -1,1163 +1,1177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1"
-	 id="FloorPlan" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" sodipodi:docname="floorplan.svg" inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+	 id="FloorPlan" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" inkscape:version="0.92.2 (5c3e80d, 2017-08-06)" sodipodi:docname="floorplan.svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="1137.9 -412 3382.3 1616.1" style="enable-background:new 1137.9 -412 3382.3 1616.1;" xml:space="preserve">
+	 viewBox="1385 -412.1 3382.3 1616.1" style="enable-background:new 1385 -412.1 3382.3 1616.1;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#282828;stroke:#535353;stroke-width:0.527;}
 	.st1{fill:#3A3A3A;stroke:#535353;stroke-width:0.527;}
-	.st2{fill:#4285F4;}
-	.st3{fill:#34A853;}
-	.st4{fill:#EA4335;}
-	.st5{fill:#FBBC05;}
-	.st6{fill:#232575;}
-	.st7{fill:#D9150B;}
-	.st8{fill:#FF4429;}
-	.st9{fill:#BDCFDF;}
-	.st10{fill:#6A8092;}
-	.st11{fill:#7383BF;}
-	.st12{fill:#434C6D;}
-	.st13{fill:#EDEBDA;}
-	.st14{fill:#A4E869;}
-	.st15{fill:#CEC9AE;}
-	.st16{fill:#EFCE4A;}
-	.st17{fill:#F7E6A1;}
-	.st18{fill:#556080;}
-	.st19{fill:#B2B5C8;}
-	.st20{fill:#868BA5;}
-	.st21{fill:#ECBA16;}
-	.st22{fill:#7D88A8;}
-	.st23{fill:#697494;}
-	.st24{fill:#A5B0D0;}
-	.st25{fill:#D4E1F4;}
-	.st26{fill:#414C6C;}
-	.st27{fill:#E6EEFF;}
-	.st28{fill:#DAE2F2;}
-	.st29{fill:#B8BFCC;}
-	.st30{fill:#98A1AF;}
-	.st31{fill:#4BB9EC;}
-	.st32{fill:#0088FF;}
-	.st33{fill:#61B872;}
-	.st34{fill:#FBCE9D;}
-	.st35{fill:#EBBA16;}
-	.st36{fill:#424A60;}
-	.st37{fill:#D75A4A;}
-	.st38{fill:#303C42;}
-	.st39{fill:#BBDEFB;}
-	.st40{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
-	.st41{opacity:0.1;enable-background:new    ;}
-	.st42{opacity:0.6;fill:#FFFFFF;enable-background:new    ;}
-	.st43{fill:none;}
-	.st44{fill:#2C2F38;}
-	.st45{fill:#464F5D;}
-	.st46{fill:#2C3E50;}
-	.st47{fill:#CC4B4C;}
-	.st48{fill:#4FBA6F;}
-	.st49{fill:#B0D3F0;}
-	.st50{fill:#FFFFFF;}
-	.st51{fill:#FACA4F;}
-	.st52{fill:#E65039;}
-	.st53{fill:#358CEC;}
-	.st54{fill:#FFFFF8;}
-	.st55{fill:#8697CB;}
-	.st56{fill:#ECF0F1;}
-	.st57{fill:#E64C3C;}
-	.st58{fill:#D1D4D1;}
-	.st59{fill:#D0E8F9;}
-	.st60{fill:#C9D5DD;}
-	.st61{fill:#35495C;}
-	.st62{fill:#F7B84E;}
-	.st63{fill:#DE333F;}
-	.st64{fill:#3CB54A;}
-	.st65{fill:#123247;}
-	.st66{fill:#B2C4D0;}
-	.st67{fill:#404C5E;}
-	.st68{fill:#38454F;stroke:#283238;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-	.st69{fill:#283238;}
-	.st70{fill:#546A79;}
-	.st71{fill:#21C6F7;}
-	.st72{fill:#38454F;}
-	.st73{fill:#D32F2F;}
-	.st74{fill:#324A5E;}
-	.st75{fill:#E6E9EE;}
-	.st76{fill:#FF7058;}
-	.st77{fill:#FFD05B;}
-	.st78{fill:#ACB3BA;}
-	.st79{fill:#2B3B4E;}
-	.st80{opacity:0.69;fill:#131313;enable-background:new    ;}
-	.st81{fill:#4B3F4E;}
-	.st82{fill:#6F6571;}
-	.st83{fill:#5D5360;}
-	.st84{fill:#EDEBED;}
-	.st85{fill:#C9C6CA;}
-	.st86{fill:#E6646E;}
-	.st87{fill:#DBD9DC;}
-	.st88{fill:#EDEBED;enable-background:new    ;}
-	.st89{font-family:'ArialMT';}
-	.st90{font-size:54.5826px;}
-	.st91{fill:#62A5A2;}
-	.st92{fill:#F7F1E6;}
-	.st93{fill:#F3705A;}
-	.st94{fill:#FFD15C;}
-	.st95{fill:#B22626;}
+	.st2{display:none;}
+	.st3{display:inline;fill:#4285F4;}
+	.st4{display:inline;fill:#34A853;}
+	.st5{display:inline;fill:#EA4335;}
+	.st6{display:inline;fill:#FBBC05;}
+	.st7{display:inline;}
+	.st8{fill:#232575;}
+	.st9{display:inline;fill:#D9150B;}
+	.st10{display:inline;fill:#FF4429;}
+	.st11{fill:#BDCFDF;}
+	.st12{display:inline;fill:#232575;}
+	.st13{display:inline;fill:#6A8092;}
+	.st14{fill:#7383BF;}
+	.st15{fill:#434C6D;}
+	.st16{fill:#EDEBDA;}
+	.st17{fill:#A4E869;}
+	.st18{fill:#CEC9AE;}
+	.st19{display:inline;fill:#EFCE4A;}
+	.st20{fill:#EFCE4A;}
+	.st21{display:inline;fill:#F7E6A1;}
+	.st22{display:inline;fill:#556080;}
+	.st23{fill:#B2B5C8;}
+	.st24{fill:#868BA5;}
+	.st25{fill:#ECBA16;}
+	.st26{fill:#7D88A8;}
+	.st27{fill:#697494;}
+	.st28{fill:#A5B0D0;}
+	.st29{fill:#D4E1F4;}
+	.st30{fill:#556080;}
+	.st31{fill:#414C6C;}
+	.st32{display:inline;fill:#E6EEFF;}
+	.st33{display:inline;fill:#DAE2F2;}
+	.st34{display:inline;fill:#B8BFCC;}
+	.st35{display:inline;fill:#98A1AF;}
+	.st36{fill:#4BB9EC;}
+	.st37{fill:#0088FF;}
+	.st38{display:inline;fill:#61B872;}
+	.st39{display:inline;fill:#FBCE9D;}
+	.st40{display:inline;fill:#EBBA16;}
+	.st41{display:inline;fill:#424A60;}
+	.st42{display:inline;fill:#D75A4A;}
+	.st43{display:inline;fill:#303C42;}
+	.st44{display:inline;fill:#BBDEFB;}
+	.st45{display:inline;opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+	.st46{display:inline;opacity:0.1;enable-background:new    ;}
+	.st47{display:inline;opacity:0.6;fill:#FFFFFF;enable-background:new    ;}
+	.st48{display:inline;fill:none;}
+	.st49{display:inline;fill:#2C2F38;}
+	.st50{fill:#464F5D;}
+	.st51{fill:#2C3E50;}
+	.st52{display:inline;fill:#CC4B4C;}
+	.st53{display:inline;fill:#4FBA6F;}
+	.st54{display:inline;fill:#464F5D;}
+	.st55{display:inline;fill:#B0D3F0;}
+	.st56{fill:#FFFFFF;}
+	.st57{fill:#FACA4F;}
+	.st58{fill:#E65039;}
+	.st59{fill:#358CEC;}
+	.st60{display:inline;fill:#FACA4F;}
+	.st61{fill:#FFFFF8;}
+	.st62{display:inline;fill:#358CEC;}
+	.st63{display:inline;fill:#8697CB;}
+	.st64{display:inline;fill:#ECF0F1;}
+	.st65{display:inline;fill:#E64C3C;}
+	.st66{display:inline;fill:#D1D4D1;}
+	.st67{display:inline;fill:#D0E8F9;}
+	.st68{display:inline;fill:#C9D5DD;}
+	.st69{fill:#35495C;}
+	.st70{display:inline;fill:#F7B84E;}
+	.st71{display:inline;fill:#DE333F;}
+	.st72{display:inline;fill:#3CB54A;}
+	.st73{fill:#123247;}
+	.st74{display:inline;fill:#B2C4D0;}
+	.st75{display:inline;fill:#404C5E;}
+	.st76{display:inline;fill:#38454F;stroke:#283238;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st77{display:inline;fill:#283238;}
+	.st78{display:inline;fill:#546A79;}
+	.st79{display:inline;fill:#21C6F7;}
+	.st80{display:inline;fill:#38454F;}
+	.st81{display:inline;fill:#D32F2F;}
+	.st82{display:inline;fill:#324A5E;}
+	.st83{display:inline;fill:#E6E9EE;}
+	.st84{display:inline;fill:#FF7058;}
+	.st85{display:inline;fill:#FFD05B;}
+	.st86{fill:#ACB3BA;}
+	.st87{fill:#2B3B4E;}
+	.st88{display:inline;opacity:0.69;fill:#131313;enable-background:new    ;}
+	.st89{fill:#4B3F4E;}
+	.st90{fill:#6F6571;}
+	.st91{fill:#5D5360;}
+	.st92{fill:#EDEBED;}
+	.st93{fill:#C9C6CA;}
+	.st94{fill:#E6646E;}
+	.st95{fill:#DBD9DC;}
+	.st96{fill:#EDEBED;enable-background:new    ;}
+	.st97{font-family:'ArialMT';}
+	.st98{font-size:54.5826px;}
+	.st99{fill:#62A5A2;}
+	.st100{fill:#F7F1E6;}
+	.st101{fill:#F3705A;}
+	.st102{fill:#FFD15C;}
+	.st103{fill:#D32F2F;}
+	.st104{fill:#B22626;}
 </style>
 <g id="FloorPlan_1_">
 	<g id="Home" transform="matrix(7.946114,0,0,7.946114,1122.9193,-4188.8492)">
-		<path id="input_boolean.presence_hall" inkscape:connector-curvature="0" class="st0" d="M154.4,629.4h31.2v-44h57.3v-2.1h2.3
-			v-31.4h-112v55.2h21.1L154.4,629.4z"/>
-		<path id="sala" inkscape:connector-curvature="0" class="st0" d="M242.9,582.9v-29.8h110.8v113h-95v-35.7h-15.8V582.9L242.9,582.9
-			z"/>
-		<path id="input_boolean.presence_storage" inkscape:connector-curvature="0" class="st0" d="M161.4,553.5V523h42v30.5H161.4z"/>
-		<path id="input_boolean.presence_wc" inkscape:connector-curvature="0" class="st0" d="M185.1,629.2v-45.6h57.7v45.6H185.1z"/>
-		<path id="input_boolean.presence_bedroom" inkscape:connector-curvature="0" class="st0" d="M203.7,552.9v-66.8h126.4v66.8H203.7z
+		<path id="input_boolean.presence_hall" inkscape:connector-curvature="0" class="st0" d="M187.8,621.6H219v-44h57.3v-2.1h2.3
+			v-31.4h-112v55.2h21.1L187.8,621.6z"/>
+		<path id="sala" inkscape:connector-curvature="0" class="st0" d="M276.3,575.1v-29.8h110.8v113h-95v-35.7h-15.8L276.3,575.1
+			L276.3,575.1z"/>
+		<path id="input_boolean.presence_storage" inkscape:connector-curvature="0" class="st0" d="M194.8,545.7v-30.5h42v30.5H194.8z"/>
+		<path id="input_boolean.presence_wc" inkscape:connector-curvature="0" class="st0" d="M218.5,621.4v-45.6h57.7v45.6H218.5z"/>
+		<path id="input_boolean.presence_bedroom" inkscape:connector-curvature="0" class="st0" d="M237.1,545.1v-66.8h126.4v66.8H237.1z
 			"/>
-		<path id="input_boolean.presence_bedroomwc" inkscape:connector-curvature="0" class="st0" d="M162.5,523.3v-37.7h41.4v37.7H162.5
+		<path id="input_boolean.presence_bedroomwc" inkscape:connector-curvature="0" class="st0" d="M195.9,515.5v-37.7h41.4v37.7H195.9
 			z"/>
-		<path id="Office" inkscape:label="a" inkscape:connector-curvature="0" class="st0" d="M21.4,609v-62.4h112.3V609H21.4z"/>
-		<path id="input_boolean.presence_nursery" inkscape:connector-curvature="0" class="st0" d="M45.9,545.7v-58.9h115.9v66.5h-27.7
-			v-7.4L45.9,545.7z"/>
-		<path id="input_boolean.presence_kitchen" inkscape:connector-curvature="0" class="st0" d="M21.9,666.2v-58h110.3v-3.3H155v61.9
-			L21.9,666.2z"/>
-		<path id="Walls" inkscape:connector-curvature="0" class="st1" d="M19,483.1h338.2v5.6H332v16.5h-5.2v-16.6H205.1v3.5h-2.5v-3.5
-			h-39.8v33h39.8v-12.8h2.5v1.8h12.4v2.3h-12.4v38.7h14.8v3.6H183v-3.6h19.5v-26.5h-39.8v26.5h4.2v3.6h-9.4v-3.6h2.5v-63.1H49V502
-			h-5.2v-13.5c-7.7,0-15.4,0-23.1,0c-0.6,0-1.1,0-1.7,0C19,486.7,19,484.9,19,483.1z M43.8,528.9H49v16.3h85.9v6.7h6.3v3.6h-6.3v2.9
-			h-3.1v-10H24.3v13.7h-5.2v-19.4h24.7 M19,590.4h5.2v17.2h107.4v-31.7h3.2v27.2h2.6v3.6h-2.6v4H24.4v11h-5.2L19,590.4z M19,649.5
-			h5.2v14.2h96.3v-18.8h32.3v-38.5h-1.5v-3.6h4.8v24h6.6v5.3h-4.4v37.1H19V649.5z M181.2,627.1v5.3h73.9v37.1h128.2v-5.6h-26.1
-			v-24.8h-4.8v24.8h-91.7v-36.8h-16.1v-48.7h-3.4v2.9h-18v3.7h18v42h-55v-41.9h20.3v-3.7h-23.4v45.7H181.2L181.2,627.1z
-			 M352.4,606.6v-51.3H244.6v2.6h-3.4v-2.6h-4.7v-3.6h90.2v-19.6h5.2v17.3h25.2v57.2 M379.7,663.9v-92.2h-22.4v-2.4h24v94.5
-			L379.7,663.9z M356.4,549.4v-60.7l-1.2-0.1v60.8 M21.1,542.7h-0.3v-54.2h0.3V542.7z"/>
+		<path id="Office" inkscape:label="a" inkscape:connector-curvature="0" class="st0" d="M54.8,601.2v-62.4h112.3v62.4H54.8z"/>
+		<path id="input_boolean.presence_nursery" inkscape:connector-curvature="0" class="st0" d="M79.3,537.9V479h115.9v66.5h-27.7
+			v-7.4L79.3,537.9z"/>
+		<path id="input_boolean.presence_kitchen" inkscape:connector-curvature="0" class="st0" d="M55.3,658.4v-58h110.3v-3.3h22.8V659
+			L55.3,658.4z"/>
+		<path id="Walls" inkscape:connector-curvature="0" class="st1" d="M52.4,475.3h338.2v5.6h-25.2v16.5h-5.2v-16.6H238.5v3.5H236
+			v-3.5h-39.8v33H236V501h2.5v1.8h12.4v2.3h-12.4v38.7h14.8v3.6h-36.9v-3.6h19.5v-26.5h-39.8v26.5h4.2v3.6h-9.4v-3.6h2.5v-63.1h-111
+			v13.5h-5.2v-13.5c-7.7,0-15.4,0-23.1,0c-0.6,0-1.1,0-1.7,0C52.4,478.9,52.4,477.1,52.4,475.3z M77.2,521.1h5.2v16.3h85.9v6.7h6.3
+			v3.6h-6.3v2.9h-3.1v-10H57.7v13.7h-5.2v-19.4h24.7 M52.4,582.6h5.2v17.2H165v-31.7h3.2v27.2h2.6v3.6h-2.6v4H57.8v11h-5.2
+			L52.4,582.6z M52.4,641.7h5.2v14.2h96.3v-18.8h32.3v-38.5h-1.5V595h4.8v24h6.6v5.3h-4.4v37.1H52.4V641.7z M214.6,619.3v5.3h73.9
+			v37.1h128.2v-5.6h-26.1v-24.8h-4.8v24.8h-91.7v-36.8H278v-48.7h-3.4v2.9h-18v3.7h18v42h-55v-41.9h20.3v-3.7h-23.4v45.7H214.6
+			L214.6,619.3z M385.8,598.8v-51.3H278v2.6h-3.4v-2.6h-4.7v-3.6h90.2v-19.6h5.2v17.3h25.2v57.2 M413.1,656.1v-92.2h-22.4v-2.4h24
+			V656L413.1,656.1z M389.8,541.6v-60.7l-1.2-0.1v60.8 M54.5,534.9h-0.3v-54.2h0.3V534.9z"/>
 	</g>
-	<g id="binary_sensor.google_home_mini" transform="matrix(0.12837608,0,0,0.12837608,1937.4083,-3352.5823)">
-		<circle id="circle1975" class="st2" cx="-1300.4" cy="30810.2" r="106.5"/>
-		<path id="path1977" inkscape:connector-curvature="0" class="st3" d="M-1057.3,30820.5c0,11.9-9.5,21.4-21.5,21.4
-			s-21.5-9.5-21.5-21.4s9.5-21.4,21.5-21.4C-1067.6,30799-1057.3,30808.6-1057.3,30820.5z"/>
-		<path id="path1979" inkscape:connector-curvature="0" class="st4" d="M-1097,30873.7c0,23.8-19.9,43.7-43.7,43.7
-			c-23.8,0-43.7-19.9-43.7-43.7s19.9-43.7,43.7-43.7C-1116.1,30830-1097,30849.9-1097,30873.7z"/>
-		<path id="path1981" inkscape:connector-curvature="0" class="st5" d="M-1088.3,30985.8c0,28.6-23,52.4-52.4,52.4
-			c-28.6,0-52.4-23-52.4-52.4c0-28.6,23-52.4,52.4-52.4C-1111.3,30933.3-1088.3,30957.2-1088.3,30985.8z"/>
+	<g id="binary_sensor.google_home_mini" transform="matrix(0.12837608,0,0,0.12837608,1937.4083,-3352.5823)" class="st2">
+		<circle id="circle1975" class="st3" cx="768.5" cy="30327.1" r="106.5"/>
+		<path id="path1977" inkscape:connector-curvature="0" class="st4" d="M1011.6,30337.4c0,11.9-9.5,21.4-21.5,21.4
+			c-12,0-21.5-9.5-21.5-21.4s9.5-21.4,21.5-21.4C1001.3,30315.9,1011.6,30325.5,1011.6,30337.4z"/>
+		<path id="path1979" inkscape:connector-curvature="0" class="st5" d="M971.9,30390.6c0,23.8-19.9,43.7-43.7,43.7
+			c-23.8,0-43.7-19.9-43.7-43.7s19.9-43.7,43.7-43.7C952.8,30346.9,971.9,30366.8,971.9,30390.6z"/>
+		<path id="path1981" inkscape:connector-curvature="0" class="st6" d="M980.6,30502.7c0,28.6-23,52.4-52.4,52.4
+			c-28.6,0-52.4-23-52.4-52.4c0-28.6,23-52.4,52.4-52.4C957.6,30450.2,980.6,30474.1,980.6,30502.7z"/>
 	</g>
-	<g id="binary_sensor.playstation" transform="matrix(0.30345145,0,0,0.30186724,1932.6226,-3527.504)">
-		<g id="g2019">
-			<path id="path2015" inkscape:connector-curvature="0" class="st6" d="M218.2,13630.6h-17.5c-4.8,0-8.7,4-8.7,8.7s4,8.7,8.7,8.7
-				h17.5c4.8,0,8.7-4,8.7-8.7S223,13630.6,218.2,13630.6z"/>
-			<path id="path2017" inkscape:connector-curvature="0" class="st6" d="M69.7,13630.6H52.2c-4.8,0-8.7,4-8.7,8.7s4,8.7,8.7,8.7
-				h17.5c4.8,0,8.7-4,8.7-8.7S74.4,13630.6,69.7,13630.6z"/>
+	<g id="binary_sensor.playstation" transform="matrix(0.30345145,0,0,0.30186724,1932.6226,-3527.504)" class="st2">
+		<g id="g2019" class="st7">
+			<path id="path2015" inkscape:connector-curvature="0" class="st8" d="M1093.5,13425.2H1076c-4.8,0-8.7,4-8.7,8.7
+				c0,4.7,4,8.7,8.7,8.7h17.5c4.8,0,8.7-4,8.7-8.7C1102.2,13429.2,1098.3,13425.2,1093.5,13425.2z"/>
+			<path id="path2017" inkscape:connector-curvature="0" class="st8" d="M945,13425.2h-17.5c-4.8,0-8.7,4-8.7,8.7
+				c0,4.7,4,8.7,8.7,8.7H945c4.8,0,8.7-4,8.7-8.7C953.7,13429.2,949.7,13425.2,945,13425.2z"/>
 		</g>
-		<path id="path2021" inkscape:connector-curvature="0" class="st7" d="M268.3,13758.5l-19.9-90.6c-2.4-11.1-8.7-20.7-18.3-26.2
-			c-9.5-6.4-20.7-7.9-31.8-5.6l-20.7,4.8H94.3l-20.7-4.8c-11.1-2.4-22.2-0.8-31.8,5.6s-15.9,15.9-18.3,26.2l-19.9,90.6
+		<path id="path2021" inkscape:connector-curvature="0" class="st9" d="M1143.6,13553.1l-19.9-90.6c-2.4-11.1-8.7-20.7-18.3-26.2
+			c-9.5-6.4-20.7-7.9-31.8-5.6l-20.7,4.8h-83.3l-20.7-4.8c-11.1-2.4-22.2-0.8-31.8,5.6c-9.6,6.4-15.9,15.9-18.3,26.2l-19.9,90.6
 			c-1.6,5.6,0,11.1,3.2,16.7c3.2,4.8,7.9,7.9,13.5,9.5c11.9,2.4,23.8,0.8,34.2-6.4c10.3-6.4,17.5-16.7,19.9-27.8l2.4-9.5
 			c5.6,4.8,11.9,7.2,19.9,7.2c12.7,0,23.8-8.7,27.8-19.9h26.2c4,11.1,15.1,19.9,27.8,19.9c7.2,0,14.3-3.2,19.9-7.2l2.4,9.5
 			c2.4,11.9,9.5,21.5,19.9,27.8c7.2,4.8,15.9,7.2,23.8,7.2c3.2,0,6.4-0.8,9.5-0.8c5.6-1.6,10.3-4.8,13.5-9.5
-			C269.1,13769.6,269.9,13764.1,268.3,13758.5L268.3,13758.5z"/>
-		<path id="path2023" inkscape:connector-curvature="0" class="st8" d="M135.6,13640.9H93.5l-20.7-4.8c-11.1-2.4-22.2-0.8-31.8,5.6
-			s-15.9,15.9-18.3,26.2l-19.9,90.6c-1.6,5.6,0,11.1,3.2,16.7c3.2,4.8,7.9,7.9,13.5,9.5c11.9,2.4,23.8,0.8,34.2-6.4
-			c10.3-6.4,17.5-16.7,19.9-27.8l2.4-9.5c5.6,4.8,11.9,7.2,19.9,7.2c12.7,0,23.8-8.7,27.8-19.9h12.7L135.6,13640.9z"/>
-		<g id="g2033">
-			<circle id="circle2025" class="st9" cx="215.9" cy="13673.5" r="0"/>
-			<circle id="circle2027" class="st9" cx="215.9" cy="13699.7" r="0"/>
-			<circle id="circle2029" class="st9" cx="229.4" cy="13687" r="0"/>
-			<circle id="circle2031" class="st9" cx="202.4" cy="13687" r="0"/>
+			C1144.4,13564.2,1145.2,13558.7,1143.6,13553.1L1143.6,13553.1z"/>
+		<path id="path2023" inkscape:connector-curvature="0" class="st10" d="M1010.9,13435.5h-42.1l-20.7-4.8
+			c-11.1-2.4-22.2-0.8-31.8,5.6c-9.6,6.4-15.9,15.9-18.3,26.2l-19.9,90.6c-1.6,5.6,0,11.1,3.2,16.7c3.2,4.8,7.9,7.9,13.5,9.5
+			c11.9,2.4,23.8,0.8,34.2-6.4c10.3-6.4,17.5-16.7,19.9-27.8l2.4-9.5c5.6,4.8,11.9,7.2,19.9,7.2c12.7,0,23.8-8.7,27.8-19.9h12.7
+			L1010.9,13435.5z"/>
+		<g id="g2033" class="st7">
+			<circle id="circle2025" class="st11" cx="1091.2" cy="13468.1" r="0"/>
+			<circle id="circle2027" class="st11" cx="1091.2" cy="13494.3" r="0"/>
+			<circle id="circle2029" class="st11" cx="1104.7" cy="13481.6" r="0"/>
+			<circle id="circle2031" class="st11" cx="1077.7" cy="13481.6" r="0"/>
 		</g>
-		<path id="path2035" inkscape:connector-curvature="0" class="st6" d="M162.6,13688.6h-54c-3.2,0-4.8-2.4-4.8-4.8v-24.6
-			c0-3.2,2.4-4.8,4.8-4.8h54c3.2,0,4.8,2.4,4.8,4.8v24.6C167.4,13686.2,165.8,13688.6,162.6,13688.6z"/>
-		<circle id="circle2037" class="st10" cx="94.3" cy="13718.8" r="0"/>
-		<g id="g2043">
-			<circle id="circle2039" class="st6" cx="176.9" cy="13718" r="0"/>
-			<path id="path2041" inkscape:connector-curvature="0" class="st6" d="M74.4,13675.9H68c-0.8,0-1.6-0.8-1.6-1.6v-6.4
-				c0-0.8-0.8-1.6-1.6-1.6h-9.5c-0.8,0-1.6,0.8-1.6,1.6v6.4c0,0.8-0.8,1.6-1.6,1.6h-6.4c-0.8,0-1.6,0.8-1.6,1.6v9.5
+		<path id="path2035" inkscape:connector-curvature="0" class="st12" d="M1037.9,13483.2h-54c-3.2,0-4.8-2.4-4.8-4.8v-24.6
+			c0-3.2,2.4-4.8,4.8-4.8h54c3.2,0,4.8,2.4,4.8,4.8v24.6C1042.7,13480.8,1041.1,13483.2,1037.9,13483.2z"/>
+		<circle id="circle2037" class="st13" cx="969.6" cy="13513.4" r="0"/>
+		<g id="g2043" class="st7">
+			<circle id="circle2039" class="st8" cx="1052.2" cy="13512.6" r="0"/>
+			<path id="path2041" inkscape:connector-curvature="0" class="st8" d="M949.7,13470.5h-6.4c-0.8,0-1.6-0.8-1.6-1.6v-6.4
+				c0-0.8-0.8-1.6-1.6-1.6h-9.5c-0.8,0-1.6,0.8-1.6,1.6v6.4c0,0.8-0.8,1.6-1.6,1.6H921c-0.8,0-1.6,0.8-1.6,1.6v9.5
 				c0,0.8,0.8,1.6,1.6,1.6h6.4c0.8,0,1.6,0.8,1.6,1.6v6.4c0,0.8,0.8,1.6,1.6,1.6h9.5c0.8,0,1.6-0.8,1.6-1.6v-6.4
-				c0-0.8,0.8-1.6,1.6-1.6h6.4c0.8,0,1.6-0.8,1.6-1.6v-9.5C76,13676.7,75.2,13675.9,74.4,13675.9z"/>
+				c0-0.8,0.8-1.6,1.6-1.6h6.4c0.8,0,1.6-0.8,1.6-1.6v-9.5C951.3,13471.3,950.5,13470.5,949.7,13470.5z"/>
 		</g>
-		<g id="g2045">
+		<g id="g2045" class="st7">
 		</g>
-		<g id="g2047">
+		<g id="g2047" class="st7">
 		</g>
-		<g id="g2049">
+		<g id="g2049" class="st7">
 		</g>
-		<g id="g2051">
+		<g id="g2051" class="st7">
 		</g>
-		<g id="g2053">
+		<g id="g2053" class="st7">
 		</g>
-		<g id="g2055">
+		<g id="g2055" class="st7">
 		</g>
-		<g id="g2057">
+		<g id="g2057" class="st7">
 		</g>
-		<g id="g2059">
+		<g id="g2059" class="st7">
 		</g>
-		<g id="g2061">
+		<g id="g2061" class="st7">
 		</g>
-		<g id="g2063">
+		<g id="g2063" class="st7">
 		</g>
-		<g id="g2065">
+		<g id="g2065" class="st7">
 		</g>
-		<g id="g2067">
+		<g id="g2067" class="st7">
 		</g>
-		<g id="g2069">
+		<g id="g2069" class="st7">
 		</g>
-		<g id="g2071">
+		<g id="g2071" class="st7">
 		</g>
-		<g id="g2073">
+		<g id="g2073" class="st7">
 		</g>
 	</g>
-	<g id="binary_sensor.epson_bx305fw" transform="matrix(0.21896678,0,0,0.21896678,1931.8353,-4018.1941)">
-		<g id="g2147">
-			<path id="path2123" inkscape:connector-curvature="0" class="st11" d="M-2420.3,20940.5h-325.8c-6.4,0-11.9,5.6-11.9,11.9v205
+	<g id="binary_sensor.epson_bx305fw" transform="matrix(0.21896678,0,0,0.21896678,1931.8353,-4018.1941)" class="st2">
+		<g id="g2147" class="st7">
+			<path id="path2123" inkscape:connector-curvature="0" class="st14" d="M-1207.3,20657.2h-325.8c-6.4,0-11.9,5.6-11.9,11.9v205
 				c0,6.4,5.6,11.9,11.9,11.9h48.5l11.9-60.4h205l11.9,60.4h48.5c6.4,0,11.9-5.6,11.9-11.9v-205
-				C-2408.4,20946.1-2413.9,20940.5-2420.3,20940.5"/>
+				C-1195.4,20662.8-1200.9,20657.2-1207.3,20657.2"/>
 			<g id="g2129">
-				<path id="path2125" inkscape:connector-curvature="0" class="st12" d="M-2758.8,21085.1v72.3c0,6.4,5.6,11.9,11.9,11.9h48.5
-					l11.9-60.4h205l11.9,60.4h48.5c6.4,0,11.9-5.6,11.9-11.9v-72.3H-2758.8z"/>
-				<path id="path2127" inkscape:connector-curvature="0" class="st12" d="M-2493.4,21031.1h-181.2c-13.5,0-23.8-11.1-23.8-23.8
-					v-66.8h229.6v66.8C-2468.8,21020-2479.9,21031.1-2493.4,21031.1"/>
+				<path id="path2125" inkscape:connector-curvature="0" class="st15" d="M-1545.8,20801.8v72.3c0,6.4,5.6,11.9,11.9,11.9h48.5
+					l11.9-60.4h205l11.9,60.4h48.5c6.4,0,11.9-5.6,11.9-11.9v-72.3H-1545.8z"/>
+				<path id="path2127" inkscape:connector-curvature="0" class="st15" d="M-1280.4,20747.8h-181.2c-13.5,0-23.8-11.1-23.8-23.8
+					v-66.8h229.6v66.8C-1255.8,20736.7-1266.9,20747.8-1280.4,20747.8"/>
 			</g>
 			<g id="g2135">
-				<path id="path2131" inkscape:connector-curvature="0" class="st13" d="M-2464,21229.7h-238.4c-4,0-6.4-3.2-6.4-7.2l23-113.6h205
-					l23,113.6C-2457.6,21226.6-2460,21229.7-2464,21229.7"/>
-				<path id="path2133" inkscape:connector-curvature="0" class="st13" d="M-2487,20940.5h-193.1v-54c0-3.2,2.4-6.4,6.4-6.4h181.2
-					c3.2,0,6.4,2.4,6.4,6.4L-2487,20940.5L-2487,20940.5z"/>
+				<path id="path2131" inkscape:connector-curvature="0" class="st16" d="M-1251,20946.4h-238.4c-4,0-6.4-3.2-6.4-7.2l23-113.6h205
+					l23,113.6C-1244.6,20943.3-1247,20946.4-1251,20946.4"/>
+				<path id="path2133" inkscape:connector-curvature="0" class="st16" d="M-1274,20657.2h-193.1v-54c0-3.2,2.4-6.4,6.4-6.4h181.2
+					c3.2,0,6.4,2.4,6.4,6.4L-1274,20657.2L-1274,20657.2z"/>
 			</g>
-			<polygon id="polygon2137" class="st14" points="-2565.7,21006.5 -2493.4,21006.5 -2493.4,20970.7 -2565.7,20970.7 			"/>
+			<polygon id="polygon2137" class="st17" points="-1352.7,20723.2 -1280.4,20723.2 -1280.4,20687.4 -1352.7,20687.4 			"/>
 			<g id="g2145">
-				<path id="path2139" inkscape:connector-curvature="0" class="st15" d="M-2535.5,21145.5h-96.9c-3.2,0-6.4-2.4-6.4-6.4
-					c0-3.2,2.4-6.4,6.4-6.4h96.1c3.2,0,6.4,2.4,6.4,6.4C-2529.2,21143.1-2532.3,21145.5-2535.5,21145.5"/>
-				<path id="path2141" inkscape:connector-curvature="0" class="st15" d="M-2517.2,21175.7h-132.7c-3.2,0-6.4-2.4-6.4-6.4
-					c0-3.2,2.4-6.4,6.4-6.4h132.7c3.2,0,6.4,2.4,6.4,6.4C-2510.9,21173.3-2514.1,21175.7-2517.2,21175.7"/>
-				<path id="path2143" inkscape:connector-curvature="0" class="st15" d="M-2499,21205.9h-169.3c-3.2,0-6.4-2.4-6.4-6.4
-					c0-3.2,2.4-6.4,6.4-6.4h169.3c3.2,0,6.4,2.4,6.4,6.4C-2493.4,21203.5-2495.8,21205.9-2499,21205.9"/>
+				<path id="path2139" inkscape:connector-curvature="0" class="st18" d="M-1322.5,20862.2h-96.9c-3.2,0-6.4-2.4-6.4-6.4
+					c0-3.2,2.4-6.4,6.4-6.4h96.1c3.2,0,6.4,2.4,6.4,6.4C-1316.2,20859.8-1319.3,20862.2-1322.5,20862.2"/>
+				<path id="path2141" inkscape:connector-curvature="0" class="st18" d="M-1304.2,20892.4h-132.7c-3.2,0-6.4-2.4-6.4-6.4
+					c0-3.2,2.4-6.4,6.4-6.4h132.7c3.2,0,6.4,2.4,6.4,6.4C-1297.9,20890-1301.1,20892.4-1304.2,20892.4"/>
+				<path id="path2143" inkscape:connector-curvature="0" class="st18" d="M-1286,20922.6h-169.3c-3.2,0-6.4-2.4-6.4-6.4
+					c0-3.2,2.4-6.4,6.4-6.4h169.3c3.2,0,6.4,2.4,6.4,6.4C-1280.4,20920.2-1282.8,20922.6-1286,20922.6"/>
 			</g>
 		</g>
-		<g id="g2149">
+		<g id="g2149" class="st7">
 		</g>
-		<g id="g2151">
+		<g id="g2151" class="st7">
 		</g>
-		<g id="g2153">
+		<g id="g2153" class="st7">
 		</g>
-		<g id="g2155">
+		<g id="g2155" class="st7">
 		</g>
-		<g id="g2157">
+		<g id="g2157" class="st7">
 		</g>
-		<g id="g2159">
+		<g id="g2159" class="st7">
 		</g>
-		<g id="g2161">
+		<g id="g2161" class="st7">
 		</g>
-		<g id="g2163">
+		<g id="g2163" class="st7">
 		</g>
-		<g id="g2165">
+		<g id="g2165" class="st7">
 		</g>
-		<g id="g2167">
+		<g id="g2167" class="st7">
 		</g>
-		<g id="g2169">
+		<g id="g2169" class="st7">
 		</g>
-		<g id="g2171">
+		<g id="g2171" class="st7">
 		</g>
-		<g id="g2173">
+		<g id="g2173" class="st7">
 		</g>
-		<g id="g2175">
+		<g id="g2175" class="st7">
 		</g>
-		<g id="g2177">
+		<g id="g2177" class="st7">
 		</g>
 	</g>
 	
-		<g id="light.office_ceiling_light" transform="matrix(1.6350835,0,0,1.6350835,927.40544,-1033.4398)" inkscape:label="light.office_ceiling_light">
-		<path id="path1318-4" inkscape:connector-curvature="0" class="st16" d="M493.5,851.8c-7.9,0-14.3,6.4-14.3,14.3
-			c0,6.4,4,11.9,9.5,13.5v8.7h1.6v2.4h5.6v-2.4h1.6v-8.7c5.6-1.6,9.5-7.2,9.5-13.5C507.8,858.2,501.4,851.8,493.5,851.8z"/>
-		<g id="g1334-8">
-			<path id="path1320-8" inkscape:connector-curvature="0" class="st16" d="M493.5,843.8C492.7,843.8,492.7,844.6,493.5,843.8
-				l-0.8,4.8c0,0.8,0.8,0.8,0.8,0.8l0.8-0.8L493.5,843.8L493.5,843.8z"/>
-			<path id="path1322-6" inkscape:connector-curvature="0" class="st16" d="M514.9,865.3h-4c-0.8,0-0.8,0.8-0.8,0.8l0.8,0.8h4
-				C515.7,866.9,515.7,866.1,514.9,865.3L514.9,865.3z"/>
-			<path id="path1324-2" inkscape:connector-curvature="0" class="st16" d="M475.2,865.3h-4c-0.8,0-0.8,0.8-0.8,0.8l0.8,0.8h4
-				C476,866.9,476,866.1,475.2,865.3C476,866.1,476,865.3,475.2,865.3z"/>
-			<path id="path1326-6" inkscape:connector-curvature="0" class="st16" d="M507.8,850.2l-2.4,2.4c-0.8,0.8-0.8,0.8,0,1.6h0.8h0.8
-				l2.4-2.4c0.8-0.8,0.8-0.8,0-1.6C508.6,850.2,507.8,850.2,507.8,850.2L507.8,850.2z"/>
-			<path id="path1328-1" inkscape:connector-curvature="0" class="st16" d="M480,878l-2.4,2.4c-0.8,0.8-0.8,0.8,0,1.6h0.8h0.8
-				l2.4-2.4c0.8-0.8,0.8-0.8,0-1.6C480.8,878,480,878,480,878L480,878z"/>
-			<path id="path1330-6" inkscape:connector-curvature="0" class="st16" d="M506.2,878c-0.8-0.8-0.8-0.8-1.6,0
-				c-0.8,0.8-0.8,0.8,0,1.6l2.4,2.4h0.8h0.8c0.8-0.8,0.8-0.8,0-1.6L506.2,878z"/>
-			<path id="path1332-7" inkscape:connector-curvature="0" class="st16" d="M478.4,850.2c-0.8-0.8-0.8-0.8-1.6,0
-				c-0.8,0.8-0.8,0.8,0,1.6l2.4,2.4h0.8h0.8c0.8-0.8,0.8-0.8,0-1.6L478.4,850.2z"/>
+		<g id="light.office_ceiling_light" transform="matrix(1.6350835,0,0,1.6350835,927.40544,-1033.4398)" inkscape:label="light.office_ceiling_light" class="st2">
+		<path id="path1318-4" inkscape:connector-curvature="0" class="st19" d="M655.9,813.9c-7.9,0-14.3,6.4-14.3,14.3
+			c0,6.4,4,11.9,9.5,13.5v8.7h1.6v2.4h5.6v-2.4h1.6v-8.7c5.6-1.6,9.5-7.2,9.5-13.5C670.2,820.3,663.8,813.9,655.9,813.9z"/>
+		<g id="g1334-8" class="st7">
+			<path id="path1320-8" inkscape:connector-curvature="0" class="st20" d="M655.9,805.9C655.1,805.9,655.1,806.7,655.9,805.9
+				l-0.8,4.8c0,0.8,0.8,0.8,0.8,0.8l0.8-0.8L655.9,805.9L655.9,805.9z"/>
+			<path id="path1322-6" inkscape:connector-curvature="0" class="st20" d="M677.3,827.4h-4c-0.8,0-0.8,0.8-0.8,0.8l0.8,0.8h4
+				C678.1,829,678.1,828.2,677.3,827.4L677.3,827.4z"/>
+			<path id="path1324-2" inkscape:connector-curvature="0" class="st20" d="M637.6,827.4h-4c-0.8,0-0.8,0.8-0.8,0.8l0.8,0.8h4
+				C638.4,829,638.4,828.2,637.6,827.4C638.4,828.2,638.4,827.4,637.6,827.4z"/>
+			<path id="path1326-6" inkscape:connector-curvature="0" class="st20" d="M670.2,812.3l-2.4,2.4c-0.8,0.8-0.8,0.8,0,1.6h0.8h0.8
+				l2.4-2.4c0.8-0.8,0.8-0.8,0-1.6C671,812.3,670.2,812.3,670.2,812.3L670.2,812.3z"/>
+			<path id="path1328-1" inkscape:connector-curvature="0" class="st20" d="M642.4,840.1l-2.4,2.4c-0.8,0.8-0.8,0.8,0,1.6h0.8h0.8
+				l2.4-2.4c0.8-0.8,0.8-0.8,0-1.6C643.2,840.1,642.4,840.1,642.4,840.1L642.4,840.1z"/>
+			<path id="path1330-6" inkscape:connector-curvature="0" class="st20" d="M668.6,840.1c-0.8-0.8-0.8-0.8-1.6,0s-0.8,0.8,0,1.6
+				l2.4,2.4h0.8h0.8c0.8-0.8,0.8-0.8,0-1.6L668.6,840.1z"/>
+			<path id="path1332-7" inkscape:connector-curvature="0" class="st20" d="M640.8,812.3c-0.8-0.8-0.8-0.8-1.6,0s-0.8,0.8,0,1.6
+				l2.4,2.4h0.8h0.8c0.8-0.8,0.8-0.8,0-1.6L640.8,812.3z"/>
 		</g>
-		<path id="path1336-4" inkscape:connector-curvature="0" class="st17" d="M483.2,866.9C482.4,866.9,482.4,866.1,483.2,866.9
-			c-0.8-6.4,4-11.1,9.5-11.1c0.8,0,0.8,0.8,0.8,0.8l-0.8,0.8c-4.8,0-8.7,4-8.7,8.7C484.7,866.9,484,866.9,483.2,866.9z"/>
-		<polygon id="polygon1338-3" class="st18" points="497.5,888.3 497.5,882 488.7,882 488.7,888.3 490.3,888.3 490.3,890.7 
-			495.9,890.7 495.9,888.3 		"/>
-		<g id="g1340-3">
+		<path id="path1336-4" inkscape:connector-curvature="0" class="st21" d="M645.6,829C644.8,829,644.8,828.2,645.6,829
+			c-0.8-6.4,4-11.1,9.5-11.1c0.8,0,0.8,0.8,0.8,0.8l-0.8,0.8c-4.8,0-8.7,4-8.7,8.7C647.1,829,646.4,829,645.6,829z"/>
+		<polygon id="polygon1338-3" class="st22" points="659.9,850.4 659.9,844.1 651.1,844.1 651.1,850.4 652.7,850.4 652.7,852.8 
+			658.3,852.8 658.3,850.4 		"/>
+		<g id="g1340-3" class="st7">
 		</g>
-		<g id="g1342-6">
+		<g id="g1342-6" class="st7">
 		</g>
-		<g id="g1344-0">
+		<g id="g1344-0" class="st7">
 		</g>
-		<g id="g1346-5">
+		<g id="g1346-5" class="st7">
 		</g>
-		<g id="g1348-6">
+		<g id="g1348-6" class="st7">
 		</g>
-		<g id="g1350-6">
+		<g id="g1350-6" class="st7">
 		</g>
-		<g id="g1352-1">
+		<g id="g1352-1" class="st7">
 		</g>
-		<g id="g1354-7">
+		<g id="g1354-7" class="st7">
 		</g>
-		<g id="g1356-4">
+		<g id="g1356-4" class="st7">
 		</g>
-		<g id="g1358-1">
+		<g id="g1358-1" class="st7">
 		</g>
-		<g id="g1360-7">
+		<g id="g1360-7" class="st7">
 		</g>
-		<g id="g1362-2">
+		<g id="g1362-2" class="st7">
 		</g>
-		<g id="g1364-7">
+		<g id="g1364-7" class="st7">
 		</g>
-		<g id="g1366-9">
+		<g id="g1366-9" class="st7">
 		</g>
-		<g id="g1368-2">
+		<g id="g1368-2" class="st7">
 		</g>
 	</g>
-	<g id="light.office_desk_light" transform="matrix(0.21064576,0,0,0.21064576,2499.9667,-4028.4421)">
-		<g id="g4456">
-			<path id="path4436" inkscape:connector-curvature="0" class="st19" d="M-5525.5,20299.3c-7.2,0-12.7-5.6-12.7-12.7
-				s5.6-12.7,12.7-12.7h168.5c7.2,0,12.7,5.6,12.7,12.7s-5.6,12.7-12.7,12.7H-5525.5"/>
+	<g id="light.office_desk_light" transform="matrix(0.21064576,0,0,0.21064576,2499.9667,-4028.4421)" class="st2">
+		<g id="g4456" class="st7">
+			<path id="path4436" inkscape:connector-curvature="0" class="st23" d="M-4264.6,20004.9c-7.2,0-12.7-5.6-12.7-12.7
+				s5.6-12.7,12.7-12.7h168.5c7.2,0,12.7,5.6,12.7,12.7s-5.6,12.7-12.7,12.7H-4264.6"/>
 			<g id="g4442">
-				<path id="path4438" inkscape:connector-curvature="0" class="st20" d="M-5467.5,20247.6c0,14.3,11.9,26.2,26.2,26.2
-					c14.3,0,26.2-11.9,26.2-26.2s-11.9-26.2-26.2-26.2S-5467.5,20233.3-5467.5,20247.6"/>
-				<path id="path4440" inkscape:connector-curvature="0" class="st20" d="M-5590.7,20124.4c0,14.3,11.9,26.2,26.2,26.2
-					c14.3,0,26.2-11.9,26.2-26.2c0-14.3-11.9-26.2-26.2-26.2C-5578.7,20099-5590.7,20110.1-5590.7,20124.4"/>
+				<path id="path4438" inkscape:connector-curvature="0" class="st24" d="M-4206.6,19953.2c0,14.3,11.9,26.2,26.2,26.2
+					c14.3,0,26.2-11.9,26.2-26.2s-11.9-26.2-26.2-26.2S-4206.6,19938.9-4206.6,19953.2"/>
+				<path id="path4440" inkscape:connector-curvature="0" class="st24" d="M-4329.8,19830c0,14.3,11.9,26.2,26.2,26.2
+					c14.3,0,26.2-11.9,26.2-26.2c0-14.3-11.9-26.2-26.2-26.2C-4317.8,19804.6-4329.8,19815.7-4329.8,19830"/>
 			</g>
-			<path id="path4444" inkscape:connector-curvature="0" class="st19" d="M-5298.2,20007.6c-25.4-25.4-66.8-25.4-91.4,0l0,0
-				c-25.4,25.4-25.4,66.8,0,91.4l9.5,9.5l91.4-91.4L-5298.2,20007.6"/>
-			<path id="path4446" inkscape:connector-curvature="0" class="st21" d="M-5361,20087.9c14.3,7.2,32.6,4.8,44.5-7.9
-				c11.9-11.9,14.3-30.2,7.9-44.5L-5361,20087.9z"/>
+			<path id="path4444" inkscape:connector-curvature="0" class="st23" d="M-4037.3,19713.2c-25.4-25.4-66.8-25.4-91.4,0l0,0
+				c-25.4,25.4-25.4,66.8,0,91.4l9.5,9.5l91.4-91.4L-4037.3,19713.2"/>
+			<path id="path4446" inkscape:connector-curvature="0" class="st25" d="M-4100.1,19793.5c14.3,7.2,32.6,4.8,44.5-7.9
+				c11.9-11.9,14.3-30.2,7.9-44.5L-4100.1,19793.5z"/>
 			<g id="g4452">
-				<path id="path4448" inkscape:connector-curvature="0" class="st19" d="M-5558.1,20099c9.5,2.4,16.7,9.5,19.1,18.3l109.7-104.1
-					l-9.5-9.5c-3.2-3.2-5.6-7.2-7.2-11.1L-5558.1,20099"/>
-				<path id="path4450" inkscape:connector-curvature="0" class="st19" d="M-5539,20130.8c-2.4,8.7-9.5,15.9-18.3,18.3l91.4,92.2
+				<path id="path4448" inkscape:connector-curvature="0" class="st23" d="M-4297.2,19804.6c9.5,2.4,16.7,9.5,19.1,18.3l109.7-104.1
+					l-9.5-9.5c-3.2-3.2-5.6-7.2-7.2-11.1L-4297.2,19804.6"/>
+				<path id="path4450" inkscape:connector-curvature="0" class="st23" d="M-4278.1,19836.4c-2.4,8.7-9.5,15.9-18.3,18.3l91.4,92.2
 					c0.8-2.4,1.6-4.8,2.4-7.2c0.8-1.6,1.6-3.2,3.2-4.8l0,0c1.6-1.6,2.4-2.4,4-3.2l0,0c1.6-0.8,3.2-1.6,4-2.4c0,0,0,0,0.8,0
-					c1.6-0.8,3.2-1.6,4.8-1.6l0,0L-5539,20130.8"/>
+					c1.6-0.8,3.2-1.6,4.8-1.6l0,0L-4278.1,19836.4"/>
 			</g>
-			<path id="path4454" inkscape:connector-curvature="0" class="st20" d="M-5438.1,19959.2c-12.7,12.7-12.7,33.4,0,46.1l31.8,31.8
-				c3.2-10.3,8.7-20.7,16.7-28.6l0,0c7.9-7.9,18.3-13.5,28.6-16.7l-31.8-31.8C-5404.7,19946.5-5425.4,19946.5-5438.1,19959.2"/>
+			<path id="path4454" inkscape:connector-curvature="0" class="st24" d="M-4177.2,19664.8c-12.7,12.7-12.7,33.4,0,46.1l31.8,31.8
+				c3.2-10.3,8.7-20.7,16.7-28.6l0,0c7.9-7.9,18.3-13.5,28.6-16.7l-31.8-31.8C-4143.8,19652.1-4164.5,19652.1-4177.2,19664.8"/>
 		</g>
-		<g id="g4458">
+		<g id="g4458" class="st7">
 		</g>
-		<g id="g4460">
+		<g id="g4460" class="st7">
 		</g>
-		<g id="g4462">
+		<g id="g4462" class="st7">
 		</g>
-		<g id="g4464">
+		<g id="g4464" class="st7">
 		</g>
-		<g id="g4466">
+		<g id="g4466" class="st7">
 		</g>
-		<g id="g4468">
+		<g id="g4468" class="st7">
 		</g>
-		<g id="g4470">
+		<g id="g4470" class="st7">
 		</g>
-		<g id="g4472">
+		<g id="g4472" class="st7">
 		</g>
-		<g id="g4474">
+		<g id="g4474" class="st7">
 		</g>
-		<g id="g4476">
+		<g id="g4476" class="st7">
 		</g>
-		<g id="g4478">
+		<g id="g4478" class="st7">
 		</g>
-		<g id="g4480">
+		<g id="g4480" class="st7">
 		</g>
-		<g id="g4482">
+		<g id="g4482" class="st7">
 		</g>
-		<g id="g4484">
+		<g id="g4484" class="st7">
 		</g>
-		<g id="g4486">
+		<g id="g4486" class="st7">
 		</g>
 	</g>
-	<g id="binary_sensor.chromecast_office_tv" transform="matrix(0.1960616,0,0,0.1960616,1926.6512,-3109.7525)">
-		<g id="g1058-7">
-			<path id="path1024-9" inkscape:connector-curvature="0" class="st22" d="M161.3,18634.8l-30.2,30.2l-7.9,7.9l-19.1-19.1
-				c-0.8-0.8-1.6-1.6-1.6-2.4s0-2.4,1.6-2.4l32.6-32.6c1.6-1.6,4-1.6,5.6,0l4.8,4.8L161.3,18634.8z"/>
-			<path id="path1026-0" inkscape:connector-curvature="0" class="st23" d="M298,18820.8c-3.2,2.4-7.2,4.8-10.3,7.2
-				c-23.8,12.7-51.6,10.3-73.1-5.6s-31.8-42.9-26.2-68.3c0.8-2.4,0-5.6-2.4-7.2l-66-66c-1.6-1.6-1.6-4,0-5.6l42.9-42.9
+	<g id="binary_sensor.chromecast_office_tv" transform="matrix(0.1960616,0,0,0.1960616,1926.6512,-3109.7525)" class="st2">
+		<g id="g1058-7" class="st7">
+			<path id="path1024-9" inkscape:connector-curvature="0" class="st26" d="M1516,18318.4l-30.2,30.2l-7.9,7.9l-19.1-19.1
+				c-0.8-0.8-1.6-1.6-1.6-2.4s0-2.4,1.6-2.4l32.6-32.6c1.6-1.6,4-1.6,5.6,0l4.8,4.8L1516,18318.4z"/>
+			<path id="path1026-0" inkscape:connector-curvature="0" class="st27" d="M1652.7,18504.4c-3.2,2.4-7.2,4.8-10.3,7.2
+				c-23.8,12.7-51.6,10.3-73.1-5.6c-21.5-15.9-31.8-42.9-26.2-68.3c0.8-2.4,0-5.6-2.4-7.2l-66-66c-1.6-1.6-1.6-4,0-5.6l42.9-42.9
 				c0,0,0.8,0,0.8-0.8c1.6-0.8,3.2-0.8,4.8,0.8l66,66c1.6,1.6,4,2.4,6.4,1.6c31-6.4,62.8,9.5,76.3,38.1
-				C330.6,18766.7,322.6,18800.9,298,18820.8L298,18820.8z"/>
-			<path id="path1028-5" inkscape:connector-curvature="0" class="st24" d="M161.3,18634.8l-30.2,30.2l-11.1-11.1
-				c-0.8-0.8-1.6-1.6-1.6-2.4s0.8-2.4,1.6-2.4l27-27.8L161.3,18634.8z"/>
+				C1685.3,18450.3,1677.3,18484.5,1652.7,18504.4L1652.7,18504.4z"/>
+			<path id="path1028-5" inkscape:connector-curvature="0" class="st28" d="M1516,18318.4l-30.2,30.2l-11.1-11.1
+				c-0.8-0.8-1.6-1.6-1.6-2.4s0.8-2.4,1.6-2.4l27-27.8L1516,18318.4z"/>
 			<g id="g1036-0">
-				<circle id="circle1030-6" class="st25" cx="255.1" cy="18766.7" r="27"/>
-				<path id="path1032-0" inkscape:connector-curvature="0" class="st18" d="M298,18820.8c-3.2,2.4-7.2,4.8-10.3,7.2
+				<circle id="circle1030-6" class="st29" cx="1609.8" cy="18450.3" r="27"/>
+				<path id="path1032-0" inkscape:connector-curvature="0" class="st30" d="M1652.7,18504.4c-3.2,2.4-7.2,4.8-10.3,7.2
 					c-23,7.2-48.5,1.6-66.8-14.3c-18.3-16.7-26.2-40.5-21.5-64.4c0-1.6,0-3.2-0.8-4l-70.7-70.7c-1.6-1.6-1.6-4,0-5.6l36.5-36.5
-					c1.6-0.8,3.2-0.8,4.8,0.8l66,66c1.6,1.6,4,2.4,6.4,1.6c31-6.4,62.8,9.5,76.3,38.1C330.6,18766.7,322.6,18800.9,298,18820.8
-					L298,18820.8z"/>
-				<path id="path1034-7" inkscape:connector-curvature="0" class="st25" d="M298,18809.6l5.6,5.6"/>
+					c1.6-0.8,3.2-0.8,4.8,0.8l66,66c1.6,1.6,4,2.4,6.4,1.6c31-6.4,62.8,9.5,76.3,38.1C1685.3,18450.3,1677.3,18484.5,1652.7,18504.4
+					L1652.7,18504.4z"/>
+				<path id="path1034-7" inkscape:connector-curvature="0" class="st29" d="M1652.7,18493.2l5.6,5.6"/>
 			</g>
 			<g id="g1042-3">
-				<path id="path1038-2" inkscape:connector-curvature="0" class="st26" d="M123.2,18676.1c-0.8,0-2.4-0.8-2.4-1.6l-19.1-19.1
+				<path id="path1038-2" inkscape:connector-curvature="0" class="st31" d="M1477.9,18359.7c-0.8,0-2.4-0.8-2.4-1.6l-19.1-19.1
 					c-3.2-3.2-3.2-7.9,0-11.1l32.6-32.6l0,0c3.2-3.2,7.9-3.2,11.1,0l19.1,19.1c0.8,0.8,1.6,1.6,1.6,2.4s-0.8,2.4-1.6,2.4l-38.1,38.1
-					C124.8,18676.1,124,18676.1,123.2,18676.1z M139.1,18618.1L139.1,18618.1l-32.6,32.6l15.9,15.9l32.6-32.6L139.1,18618.1z"/>
-				<path id="path1040-4" inkscape:connector-curvature="0" class="st26" d="M255.1,18839c-21.5,0-42.1-9.5-56.4-27
-					c-14.3-17.5-19.1-38.9-15.1-60.4c0-1.6,0-2.4-0.8-3.2c-1.6-1.6-1.6-4,0-5.6s4-1.6,5.6,0c2.4,3.2,4,6.4,3.2,10.3
-					c-5.6,27,6.4,54,29.4,68.3s53.2,12.7,73.9-4.8c23.8-19.1,31-50.9,18.3-77.9s-42.1-42.1-71.5-35.8c-4,0.8-7.2,0-10.3-3.2l-66-66
-					l-42.9,42.9c1.6,1.6,1.6,4,0,5.6c-1.6,1.6-4,1.6-5.6,0c-3.2-3.2-3.2-7.9,0-11.1l42.9-42.9c3.2-3.2,7.9-3.2,11.1,0l66,66
-					c0.8,0.8,2.4,1.6,3.2,0.8c27-5.6,54.8,4.8,71.5,26.2c16.7,22.3,19.9,51.7,7.9,76.3C308.3,18823.1,282.9,18839,255.1,18839
-					L255.1,18839z"/>
+					C1479.5,18359.7,1478.7,18359.7,1477.9,18359.7z M1493.8,18301.7L1493.8,18301.7l-32.6,32.6l15.9,15.9l32.6-32.6L1493.8,18301.7
+					z"/>
+				<path id="path1040-4" inkscape:connector-curvature="0" class="st31" d="M1609.8,18522.6c-21.5,0-42.1-9.5-56.4-27
+					s-19.1-38.9-15.1-60.4c0-1.6,0-2.4-0.8-3.2c-1.6-1.6-1.6-4,0-5.6c1.6-1.6,4-1.6,5.6,0c2.4,3.2,4,6.4,3.2,10.3
+					c-5.6,27,6.4,54,29.4,68.3c23,14.3,53.2,12.7,73.9-4.8c23.8-19.1,31-50.9,18.3-77.9s-42.1-42.1-71.5-35.8c-4,0.8-7.2,0-10.3-3.2
+					l-66-66l-42.9,42.9c1.6,1.6,1.6,4,0,5.6c-1.6,1.6-4,1.6-5.6,0c-3.2-3.2-3.2-7.9,0-11.1l42.9-42.9c3.2-3.2,7.9-3.2,11.1,0l66,66
+					c0.8,0.8,2.4,1.6,3.2,0.8c27-5.6,54.8,4.8,71.5,26.2c16.7,22.3,19.9,51.7,7.9,76.3C1663,18506.7,1637.6,18522.6,1609.8,18522.6
+					L1609.8,18522.6z"/>
 			</g>
-			<path id="path1044-0" inkscape:connector-curvature="0" class="st24" d="M274.1,18785.8c-10.3,10.3-27,10.3-37.3,0
-				c-10.3-10.3-10.3-27,0-37.3c10.3-10.3,27-10.3,37.3,0c4.8,4.8,7.9,11.9,7.9,19.1C282.1,18773.9,278.9,18780.2,274.1,18785.8
-				L274.1,18785.8z"/>
-			<path id="path1046-7" inkscape:connector-curvature="0" class="st22" d="M263,18785.8c-4,4-7.9,6.4-13.5,7.2
-				c-11.9-2.4-20.7-13.5-20.7-26.2s8.7-23,20.7-26.2c4.8,0.8,9.5,4,13.5,7.2C273.3,18758,273.3,18775.4,263,18785.8L263,18785.8z"/>
+			<path id="path1044-0" inkscape:connector-curvature="0" class="st28" d="M1628.8,18469.4c-10.3,10.3-27,10.3-37.3,0
+				c-10.3-10.3-10.3-27,0-37.3c10.3-10.3,27-10.3,37.3,0c4.8,4.8,7.9,11.9,7.9,19.1C1636.8,18457.5,1633.6,18463.8,1628.8,18469.4
+				L1628.8,18469.4z"/>
+			<path id="path1046-7" inkscape:connector-curvature="0" class="st26" d="M1617.7,18469.4c-4,4-7.9,6.4-13.5,7.2
+				c-11.9-2.4-20.7-13.5-20.7-26.2s8.7-23,20.7-26.2c4.8,0.8,9.5,4,13.5,7.2C1628,18441.6,1628,18459,1617.7,18469.4L1617.7,18469.4
+				z"/>
 			<g id="g1056-5">
-				<path id="path1048-8" inkscape:connector-curvature="0" class="st26" d="M255.1,18796.9c-14.3,0-27-10.3-30.2-24.6
-					c-3.2-14.3,4.8-28.6,18.3-34.2c13.5-5.6,28.6-0.8,37.3,11.1c7.9,11.9,6.4,27.8-4,38.1C271,18793.7,263,18796.9,255.1,18796.9z
-					 M255.1,18743.7c-11.1,0-20.7,7.9-22.2,18.3c-2.4,10.3,4,21.4,13.5,25.4c10.3,4,21.5,0.8,27.8-8.7c6.4-8.7,4.8-21.4-3.2-28.6
-					C267,18746.1,261.4,18743.7,255.1,18743.7L255.1,18743.7z"/>
-				<path id="path1050-8" inkscape:connector-curvature="0" class="st26" d="M255.1,18816c-23.8,0-43.7-16.7-48.5-39.7
-					c-0.8-3.2-2.4-6.4-4.8-8.7l-63.6-62.8c-1.6-1.6-1.6-4,0-5.6c1.6-1.6,4-1.6,5.6,0l63.6,62.8c3.2,4,5.6,7.9,6.4,12.7
-					c1.6,8.7,6.4,16.7,12.7,23c15.9,14.3,40.5,14.3,56.4,0c11.9-10.3,15.9-27,11.9-42.1c-4-15.1-16.7-27-31.8-30.2
-					c-4.8-0.8-9.5-3.2-13.5-7.2l-84.2-84.2l-42.9,42.9c1.6,1.6,1.6,4,0,5.6c-1.6,1.6-4,1.6-5.6,0c-3.2-3.2-3.2-7.9,0-11.1l42.9-42.9
-					c3.2-3.2,7.9-3.2,11.1,0l84.2,84.2c2.4,2.4,6.4,4,9.5,4.8c24.6,5.6,42.1,28.6,38.9,53.2C301.9,18796.9,280.5,18816,255.1,18816z
-					"/>
-				<path id="path1052-8" inkscape:connector-curvature="0" class="st26" d="M303.5,18819.2c-0.8,0-2.4-0.8-2.4-1.6l-5.6-5.6
-					c-1.6-1.6-1.6-4,0-5.6s4-1.6,5.6,0l5.6,5.6c0.8,0.8,1.6,3.2,0.8,4C306.7,18818.4,305.1,18819.2,303.5,18819.2L303.5,18819.2z"/>
-				<path id="path1054-8" inkscape:connector-curvature="0" class="st26" d="M129.5,18694.4c-0.8,0-0.8,0-1.6,0c0,0-0.8-0.8-1.6-0.8
+				<path id="path1048-8" inkscape:connector-curvature="0" class="st31" d="M1609.8,18480.5c-14.3,0-27-10.3-30.2-24.6
+					c-3.2-14.3,4.8-28.6,18.3-34.2c13.5-5.6,28.6-0.8,37.3,11.1c7.9,11.9,6.4,27.8-4,38.1
+					C1625.7,18477.3,1617.7,18480.5,1609.8,18480.5z M1609.8,18427.3c-11.1,0-20.7,7.9-22.2,18.3c-2.4,10.3,4,21.4,13.5,25.4
+					c10.3,4,21.5,0.8,27.8-8.7c6.4-8.7,4.8-21.4-3.2-28.6C1621.7,18429.7,1616.1,18427.3,1609.8,18427.3L1609.8,18427.3z"/>
+				<path id="path1050-8" inkscape:connector-curvature="0" class="st31" d="M1609.8,18499.6c-23.8,0-43.7-16.7-48.5-39.7
+					c-0.8-3.2-2.4-6.4-4.8-8.7l-63.6-62.8c-1.6-1.6-1.6-4,0-5.6s4-1.6,5.6,0l63.6,62.8c3.2,4,5.6,7.9,6.4,12.7
+					c1.6,8.7,6.4,16.7,12.7,23c15.9,14.3,40.5,14.3,56.4,0c11.9-10.3,15.9-27,11.9-42.1s-16.7-27-31.8-30.2
+					c-4.8-0.8-9.5-3.2-13.5-7.2l-84.2-84.2l-42.9,42.9c1.6,1.6,1.6,4,0,5.6s-4,1.6-5.6,0c-3.2-3.2-3.2-7.9,0-11.1l42.9-42.9
+					c3.2-3.2,7.9-3.2,11.1,0l84.2,84.2c2.4,2.4,6.4,4,9.5,4.8c24.6,5.6,42.1,28.6,38.9,53.2
+					C1656.6,18480.5,1635.2,18499.6,1609.8,18499.6z"/>
+				<path id="path1052-8" inkscape:connector-curvature="0" class="st31" d="M1658.2,18502.8c-0.8,0-2.4-0.8-2.4-1.6l-5.6-5.6
+					c-1.6-1.6-1.6-4,0-5.6s4-1.6,5.6,0l5.6,5.6c0.8,0.8,1.6,3.2,0.8,4C1661.4,18502,1659.8,18502.8,1658.2,18502.8L1658.2,18502.8z"
+					/>
+				<path id="path1054-8" inkscape:connector-curvature="0" class="st31" d="M1484.2,18378c-0.8,0-0.8,0-1.6,0c0,0-0.8-0.8-1.6-0.8
 					c-0.8-0.8-1.6-3.2-0.8-4c0-0.8,0.8-0.8,0.8-1.6l0.8-0.8c0,0,0,0,0.8-0.8h0.8c0.8,0,0.8,0,1.6,0c0,0,0,0,0.8,0c0,0,0,0,0.8,0.8
-					c0,0,0.8,0,0.8,0.8c0.8,0.8,0.8,0.8,0.8,1.6c0.8,1.6,0,3.2-0.8,4c0,0-0.8,0.8-1.6,0.8
-					C131.1,18694.4,130.3,18694.4,129.5,18694.4L129.5,18694.4z"/>
+					c0,0,0.8,0,0.8,0.8c0.8,0.8,0.8,0.8,0.8,1.6c0.8,1.6,0,3.2-0.8,4c0,0-0.8,0.8-1.6,0.8C1485.8,18378,1485,18378,1484.2,18378
+					L1484.2,18378z"/>
 			</g>
 		</g>
-		<g id="g1060-6">
+		<g id="g1060-6" class="st7">
 		</g>
-		<g id="g1062-7">
+		<g id="g1062-7" class="st7">
 		</g>
-		<g id="g1064-7">
+		<g id="g1064-7" class="st7">
 		</g>
-		<g id="g1066-4">
+		<g id="g1066-4" class="st7">
 		</g>
-		<g id="g1068-3">
+		<g id="g1068-3" class="st7">
 		</g>
-		<g id="g1070-9">
+		<g id="g1070-9" class="st7">
 		</g>
-		<g id="g1072-6">
+		<g id="g1072-6" class="st7">
 		</g>
-		<g id="g1074-6">
+		<g id="g1074-6" class="st7">
 		</g>
-		<g id="g1076-8">
+		<g id="g1076-8" class="st7">
 		</g>
-		<g id="g1078-8">
+		<g id="g1078-8" class="st7">
 		</g>
-		<g id="g1080-0">
+		<g id="g1080-0" class="st7">
 		</g>
-		<g id="g1082-0">
+		<g id="g1082-0" class="st7">
 		</g>
-		<g id="g1084-9">
+		<g id="g1084-9" class="st7">
 		</g>
-		<g id="g1086-5">
+		<g id="g1086-5" class="st7">
 		</g>
-		<g id="g1088-1">
+		<g id="g1088-1" class="st7">
 		</g>
 	</g>
-	<g id="binary_sensor.broadlink" transform="matrix(0.17854543,0,0,0.17854543,2022.4902,-3110.4027)">
-		<path id="path3939" inkscape:connector-curvature="0" class="st27" d="M214.3,20771.9v108.1c0,37.3-30.2,67.5-67.5,67.5H97.5
-			c-37.3,0-67.5-30.2-67.5-67.5v-108.1c0-23,19.1-42.1,42.1-42.1h100.1C196,20729.7,214.3,20748.1,214.3,20771.9z"/>
-		<path id="path3941" inkscape:connector-curvature="0" class="st28" d="M214.3,20771.9v108.1c0,37.3-30.2,67.5-67.5,67.5h-23.9
-			v-217.7H173C196,20729.7,214.3,20748.1,214.3,20771.9z"/>
-		<path id="path3943" inkscape:connector-curvature="0" class="st29" d="M214.3,20771.9v14.3H29.9v-14.3c0-23,19.1-42.1,42.1-42.1
-			h100.1C196,20729.7,214.3,20748.1,214.3,20771.9L214.3,20771.9z"/>
-		<path id="path3945" inkscape:connector-curvature="0" class="st30" d="M214.3,20771.9v14.3h-91.4v-56.4H173
-			C196,20729.7,214.3,20748.1,214.3,20771.9z"/>
-		<path id="path3947" inkscape:connector-curvature="0" class="st29" d="M118.1,20822.8c0,14.3-11.9,26.2-25.4,26.2l0,0
-			c-14.3,0-26.2-11.9-26.2-26.2c0-14.3,11.9-26.2,26.2-26.2l0,0C106.2,20796.6,118.1,20808.5,118.1,20822.8z"/>
-		<path id="path3949" inkscape:connector-curvature="0" class="st30" d="M178.5,20822.8c0,14.3-11.9,26.2-26.2,26.2
-			s-26.2-11.9-26.2-26.2c0-14.3,11.9-26.2,26.2-26.2S178.5,20808.5,178.5,20822.8z"/>
-		<path id="path3951" inkscape:connector-curvature="0" class="st29" d="M118.1,20882.4c0,14.3-11.9,26.2-26.2,26.2
-			s-26.2-11.9-26.2-26.2s11.9-26.2,26.2-26.2C107,20856.1,118.1,20868.1,118.1,20882.4z"/>
-		<path id="path3953" inkscape:connector-curvature="0" class="st30" d="M178.5,20882.4c0,14.3-11.9,26.2-26.2,26.2l0,0
-			c-14.3,0-25.4-11.9-25.4-26.2s11.9-26.2,25.4-26.2l0,0C166.6,20856.1,178.5,20868.1,178.5,20882.4z"/>
-		<g id="g3961">
-			<path id="path3955" inkscape:connector-curvature="0" class="st31" d="M188.1,20707.5c-2.4,4.8-8.7,7.2-13.5,4.8
+	<g id="binary_sensor.broadlink" transform="matrix(0.17854543,0,0,0.17854543,2022.4902,-3110.4027)" class="st2">
+		<path id="path3939" inkscape:connector-curvature="0" class="st32" d="M1701.9,20424.6v108.1c0,37.3-30.2,67.5-67.5,67.5h-49.3
+			c-37.3,0-67.5-30.2-67.5-67.5v-108.1c0-23,19.1-42.1,42.1-42.1h100.1C1683.6,20382.4,1701.9,20400.8,1701.9,20424.6z"/>
+		<path id="path3941" inkscape:connector-curvature="0" class="st33" d="M1701.9,20424.6v108.1c0,37.3-30.2,67.5-67.5,67.5h-23.9
+			v-217.7h50.1C1683.6,20382.4,1701.9,20400.8,1701.9,20424.6z"/>
+		<path id="path3943" inkscape:connector-curvature="0" class="st34" d="M1701.9,20424.6v14.3h-184.4v-14.3
+			c0-23,19.1-42.1,42.1-42.1h100.1C1683.6,20382.4,1701.9,20400.8,1701.9,20424.6L1701.9,20424.6z"/>
+		<path id="path3945" inkscape:connector-curvature="0" class="st35" d="M1701.9,20424.6v14.3h-91.4v-56.4h50.1
+			C1683.6,20382.4,1701.9,20400.8,1701.9,20424.6z"/>
+		<path id="path3947" inkscape:connector-curvature="0" class="st34" d="M1605.7,20475.5c0,14.3-11.9,26.2-25.4,26.2l0,0
+			c-14.3,0-26.2-11.9-26.2-26.2c0-14.3,11.9-26.2,26.2-26.2l0,0C1593.8,20449.3,1605.7,20461.2,1605.7,20475.5z"/>
+		<path id="path3949" inkscape:connector-curvature="0" class="st35" d="M1666.1,20475.5c0,14.3-11.9,26.2-26.2,26.2
+			s-26.2-11.9-26.2-26.2c0-14.3,11.9-26.2,26.2-26.2S1666.1,20461.2,1666.1,20475.5z"/>
+		<path id="path3951" inkscape:connector-curvature="0" class="st34" d="M1605.7,20535.1c0,14.3-11.9,26.2-26.2,26.2
+			s-26.2-11.9-26.2-26.2s11.9-26.2,26.2-26.2C1594.6,20508.8,1605.7,20520.8,1605.7,20535.1z"/>
+		<path id="path3953" inkscape:connector-curvature="0" class="st35" d="M1666.1,20535.1c0,14.3-11.9,26.2-26.2,26.2l0,0
+			c-14.3,0-25.4-11.9-25.4-26.2s11.9-26.2,25.4-26.2l0,0C1654.2,20508.8,1666.1,20520.8,1666.1,20535.1z"/>
+		<g id="g3961" class="st7">
+			<path id="path3955" inkscape:connector-curvature="0" class="st36" d="M1675.7,20360.2c-2.4,4.8-8.7,7.2-13.5,4.8
 				c-15.9-7.9-34.2-11.9-51.6-11.9l0,0c-18.3,0-35.8,4-51.6,11.9l-0.8,0.8c-1.6,0.8-3.2,0.8-4.8,0.8c-4,0-7.2-2.4-9.5-5.6
 				c-2.4-4.8,0-11.1,4.8-13.5l0.8-0.8c19.1-8.7,39.7-13.5,60.4-13.5l0,0c20.7,0,42.1,4.8,60.4,13.5
-				C188.9,20696.3,190.4,20702.7,188.1,20707.5L188.1,20707.5z"/>
-			<path id="path3957" inkscape:connector-curvature="0" class="st31" d="M223.8,20673.3c-1.6,4-5.6,6.4-9.5,6.4c-1.6,0-2.4,0-4-0.8
-				l-9.5-4c-24.6-10.3-50.9-15.1-77.9-15.1s-53.2,5.6-77.9,15.1l-8.7,4c-5.6,2.4-11.1-0.8-13.5-5.6c-2.4-5.6,0.8-11.1,5.6-13.5
-				l8.7-4c27-11.1,56.4-16.7,85.8-16.7s58.8,5.6,85.8,16.7l9.5,4C223,20661.3,225.4,20667.7,223.8,20673.3L223.8,20673.3z"/>
-			<path id="path3959" inkscape:connector-curvature="0" class="st31" d="M255.6,20638.2c-1.6,4-5.6,6.4-9.5,6.4c-1.6,0-2.4,0-4-0.8
-				l-12.7-4.8c-34.2-14.3-69.9-20.7-106.5-21.4l0,0c-36.5,0-73.1,7.2-107.3,21.4l-12.7,4.8c-5.6,2.4-11.1-0.8-13.5-5.6
-				c-2.4-5.6,0.8-11.1,5.6-13.5l12.7-4.8c36.5-15.1,75.5-22.3,114.4-22.3h0.8c39.7,0,77.9,7.9,114.4,22.3l12.7,4.8
-				C254.8,20627.1,257.2,20633.5,255.6,20638.2L255.6,20638.2z"/>
+				C1676.5,20349,1678,20355.4,1675.7,20360.2L1675.7,20360.2z"/>
+			<path id="path3957" inkscape:connector-curvature="0" class="st36" d="M1711.4,20326c-1.6,4-5.6,6.4-9.5,6.4c-1.6,0-2.4,0-4-0.8
+				l-9.5-4c-24.6-10.3-50.9-15.1-77.9-15.1c-27,0-53.2,5.6-77.9,15.1l-8.7,4c-5.6,2.4-11.1-0.8-13.5-5.6c-2.4-5.6,0.8-11.1,5.6-13.5
+				l8.7-4c27-11.1,56.4-16.7,85.8-16.7c29.4,0,58.8,5.6,85.8,16.7l9.5,4C1710.6,20314,1713,20320.4,1711.4,20326L1711.4,20326z"/>
+			<path id="path3959" inkscape:connector-curvature="0" class="st36" d="M1743.2,20290.9c-1.6,4-5.6,6.4-9.5,6.4
+				c-1.6,0-2.4,0-4-0.8l-12.7-4.8c-34.2-14.3-69.9-20.7-106.5-21.4l0,0c-36.5,0-73.1,7.2-107.3,21.4l-12.7,4.8
+				c-5.6,2.4-11.1-0.8-13.5-5.6c-2.4-5.6,0.8-11.1,5.6-13.5l12.7-4.8c36.5-15.1,75.5-22.3,114.4-22.3h0.8
+				c39.7,0,77.9,7.9,114.4,22.3l12.7,4.8C1742.4,20279.8,1744.8,20286.2,1743.2,20290.9L1743.2,20290.9z"/>
 		</g>
-		<g id="g3969">
-			<path id="path3963" inkscape:connector-curvature="0" class="st32" d="M174.6,20712.2c-15.9-7.9-34.2-11.9-51.6-11.9v-20.7
-				c20.7,0,42.1,4.8,60.4,14.3c4.8,2.4,7.2,8.7,4.8,13.5C185.7,20712.2,179.3,20714.6,174.6,20712.2L174.6,20712.2z"/>
-			<path id="path3965" inkscape:connector-curvature="0" class="st32" d="M223.8,20673.3c-1.6,4-5.6,6.4-9.5,6.4c-1.6,0-2.4,0-4-0.8
-				l-9.5-4c-24.6-10.3-50.9-15.1-77.9-15.1v-20.7c29.4,0,58.8,5.6,85.8,16.7l9.5,4C223,20661.3,225.4,20667.7,223.8,20673.3
-				L223.8,20673.3z"/>
-			<path id="path3967" inkscape:connector-curvature="0" class="st32" d="M255.6,20638.2c-1.6,4-5.6,6.4-9.5,6.4c-1.6,0-2.4,0-4-0.8
-				l-12.7-4.8c-34.2-14.3-69.9-20.7-106.5-21.4v-20.7c39.7,0,77.9,7.9,114.4,22.3l12.7,4.8
-				C254.8,20627.1,257.2,20633.5,255.6,20638.2z"/>
+		<g id="g3969" class="st7">
+			<path id="path3963" inkscape:connector-curvature="0" class="st37" d="M1662.2,20364.9c-15.9-7.9-34.2-11.9-51.6-11.9v-20.7
+				c20.7,0,42.1,4.8,60.4,14.3c4.8,2.4,7.2,8.7,4.8,13.5C1673.3,20364.9,1666.9,20367.3,1662.2,20364.9L1662.2,20364.9z"/>
+			<path id="path3965" inkscape:connector-curvature="0" class="st37" d="M1711.4,20326c-1.6,4-5.6,6.4-9.5,6.4c-1.6,0-2.4,0-4-0.8
+				l-9.5-4c-24.6-10.3-50.9-15.1-77.9-15.1v-20.7c29.4,0,58.8,5.6,85.8,16.7l9.5,4C1710.6,20314,1713,20320.4,1711.4,20326
+				L1711.4,20326z"/>
+			<path id="path3967" inkscape:connector-curvature="0" class="st37" d="M1743.2,20290.9c-1.6,4-5.6,6.4-9.5,6.4
+				c-1.6,0-2.4,0-4-0.8l-12.7-4.8c-34.2-14.3-69.9-20.7-106.5-21.4v-20.7c39.7,0,77.9,7.9,114.4,22.3l12.7,4.8
+				C1742.4,20279.8,1744.8,20286.2,1743.2,20290.9z"/>
 		</g>
-		<g id="g3971">
+		<g id="g3971" class="st7">
 		</g>
-		<g id="g3973">
+		<g id="g3973" class="st7">
 		</g>
-		<g id="g3975">
+		<g id="g3975" class="st7">
 		</g>
-		<g id="g3977">
+		<g id="g3977" class="st7">
 		</g>
-		<g id="g3979">
+		<g id="g3979" class="st7">
 		</g>
-		<g id="g3981">
+		<g id="g3981" class="st7">
 		</g>
-		<g id="g3983">
+		<g id="g3983" class="st7">
 		</g>
-		<g id="g3985">
+		<g id="g3985" class="st7">
 		</g>
-		<g id="g3987">
+		<g id="g3987" class="st7">
 		</g>
-		<g id="g3989">
+		<g id="g3989" class="st7">
 		</g>
-		<g id="g3991">
+		<g id="g3991" class="st7">
 		</g>
-		<g id="g3993">
+		<g id="g3993" class="st7">
 		</g>
-		<g id="g3995">
+		<g id="g3995" class="st7">
 		</g>
-		<g id="g3997">
+		<g id="g3997" class="st7">
 		</g>
-		<g id="g3999">
-		</g>
-	</g>
-	<g id="binary_sensor.hisense_h39n2110c" transform="matrix(3.0133037,0,0,3.0133037,1923.7587,-3278.213)">
-		<rect id="rect2600-4" x="-38.3" y="1267" class="st18" width="39.7" height="26.2"/>
-		<rect id="rect2602-0" x="-5" y="1270.2" class="st33" width="3.2" height="3.2"/>
-		<path id="path2604-1" inkscape:connector-curvature="0" class="st34" d="M-11.3,1286.9L-11.3,1286.9
-			C-11.3,1286.1-11.3,1286.1-11.3,1286.9l-3.2-2.4c-0.8,0-1.6,0-1.6-0.8v-1.6l0.8-0.8c0.8-0.8,0.8-1.6,1.6-2.4
-			c0.8,0,1.6-0.8,1.6-0.8v-1.6c0,0,0,0,0-0.8c-0.8-0.8-0.8-0.8-0.8-1.6v-0.8c0,0,0-4-4.8-4s-4.8,4-4.8,4v0.8c0,0.8,0,0.8-0.8,1.6
-			c0,0,0,0,0,0.8v1.6c0,0.8,0.8,0.8,0.8,0.8c0.8,1.6,2.4,3.2,2.4,3.2v1.6c0,0.8-1.6,0.8-1.6,1.6l-3.2,1.6c0,0-0.8,0-0.8,0.8
-			c0,0,0,0,0.8,0L-11.3,1286.9L-11.3,1286.9z"/>
-		<rect id="rect2606-1" x="-35.1" y="1286.1" class="st35" width="3.2" height="3.2"/>
-		<polygon id="polygon2608-3" class="st36" points="-20,1296.4 -23.2,1296.4 -23.2,1298.8 -13.7,1298.8 -13.7,1296.4 -16.9,1296.4 
-			-16.9,1293.3 -20,1293.3 		"/>
-		<rect id="rect2610-2" x="-28.8" y="1286.1" class="st37" width="27" height="3.2"/>
-		<g id="g2612-1">
-		</g>
-		<g id="g2614-1">
-		</g>
-		<g id="g2616-6">
-		</g>
-		<g id="g2618-0">
-		</g>
-		<g id="g2620-0">
-		</g>
-		<g id="g2622-6">
-		</g>
-		<g id="g2624-9">
-		</g>
-		<g id="g2626-6">
-		</g>
-		<g id="g2628-8">
-		</g>
-		<g id="g2630-1">
-		</g>
-		<g id="g2632-8">
-		</g>
-		<g id="g2634-1">
-		</g>
-		<g id="g2636-0">
-		</g>
-		<g id="g2638-2">
-		</g>
-		<g id="g2640-3">
+		<g id="g3999" class="st7">
 		</g>
 	</g>
-	<g id="light.office_lego_light" transform="matrix(0.16994728,0,0,0.16994728,2013.3073,-3359.0206)">
-		<path id="path636" inkscape:connector-curvature="0" class="st38" d="M-1330.9,23061.5v-65.2c0-35.8-29.4-65.2-65.2-65.2
-			s-65.2,29.4-65.2,65.2v65.2c-11.9,0-21.5,9.5-21.5,21.4s9.5,21.4,21.5,21.4h21.5v81.9c0,3.2,2.4,5.6,5.6,5.6s5.6-2.4,5.6-5.6
-			v-81.9h65.2v59.6c0,3.2,2.4,5.6,5.6,5.6s5.6-2.4,5.6-5.6v-59.6h21.5c11.9,0,21.5-9.5,21.5-21.4
-			C-1309.4,23071-1318.9,23061.5-1330.9,23061.5L-1330.9,23061.5z"/>
-		<path id="path638" inkscape:connector-curvature="0" class="st39" d="M-1330.9,23094.1h-130.3c-6.4,0-11.1-4.8-11.1-11.1
+	<g id="binary_sensor.hisense_h39n2110c" transform="matrix(3.0133037,0,0,3.0133037,1923.7587,-3278.213)" class="st2">
+		<rect id="rect2600-4" x="49.8" y="1246.4" class="st22" width="39.7" height="26.2"/>
+		<rect id="rect2602-0" x="83.1" y="1249.6" class="st38" width="3.2" height="3.2"/>
+		<path id="path2604-1" inkscape:connector-curvature="0" class="st39" d="M76.8,1266.3L76.8,1266.3
+			C76.8,1265.5,76.8,1265.5,76.8,1266.3l-3.2-2.4c-0.8,0-1.6,0-1.6-0.8v-1.6l0.8-0.8c0.8-0.8,0.8-1.6,1.6-2.4c0.8,0,1.6-0.8,1.6-0.8
+			v-1.6c0,0,0,0,0-0.8c-0.8-0.8-0.8-0.8-0.8-1.6v-0.8c0,0,0-4-4.8-4s-4.8,4-4.8,4v0.8c0,0.8,0,0.8-0.8,1.6c0,0,0,0,0,0.8v1.6
+			c0,0.8,0.8,0.8,0.8,0.8c0.8,1.6,2.4,3.2,2.4,3.2v1.6c0,0.8-1.6,0.8-1.6,1.6l-3.2,1.6c0,0-0.8,0-0.8,0.8c0,0,0,0,0.8,0L76.8,1266.3
+			L76.8,1266.3z"/>
+		<rect id="rect2606-1" x="53" y="1265.5" class="st40" width="3.2" height="3.2"/>
+		<polygon id="polygon2608-3" class="st41" points="68.1,1275.8 64.9,1275.8 64.9,1278.2 74.4,1278.2 74.4,1275.8 71.2,1275.8 
+			71.2,1272.7 68.1,1272.7 		"/>
+		<rect id="rect2610-2" x="59.3" y="1265.5" class="st42" width="27" height="3.2"/>
+		<g id="g2612-1" class="st7">
+		</g>
+		<g id="g2614-1" class="st7">
+		</g>
+		<g id="g2616-6" class="st7">
+		</g>
+		<g id="g2618-0" class="st7">
+		</g>
+		<g id="g2620-0" class="st7">
+		</g>
+		<g id="g2622-6" class="st7">
+		</g>
+		<g id="g2624-9" class="st7">
+		</g>
+		<g id="g2626-6" class="st7">
+		</g>
+		<g id="g2628-8" class="st7">
+		</g>
+		<g id="g2630-1" class="st7">
+		</g>
+		<g id="g2632-8" class="st7">
+		</g>
+		<g id="g2634-1" class="st7">
+		</g>
+		<g id="g2636-0" class="st7">
+		</g>
+		<g id="g2638-2" class="st7">
+		</g>
+		<g id="g2640-3" class="st7">
+		</g>
+	</g>
+	<g id="light.office_lego_light" transform="matrix(0.16994728,0,0,0.16994728,2013.3073,-3359.0206)" class="st2">
+		<path id="path636" inkscape:connector-curvature="0" class="st43" d="M231.9,22696.6v-65.2c0-35.8-29.4-65.2-65.2-65.2
+			s-65.2,29.4-65.2,65.2v65.2c-11.9,0-21.5,9.5-21.5,21.4s9.5,21.4,21.5,21.4H123v81.9c0,3.2,2.4,5.6,5.6,5.6c3.2,0,5.6-2.4,5.6-5.6
+			v-81.9h65.2v59.6c0,3.2,2.4,5.6,5.6,5.6c3.2,0,5.6-2.4,5.6-5.6v-59.6h21.5c11.9,0,21.5-9.5,21.5-21.4
+			C253.4,22706.1,243.9,22696.6,231.9,22696.6L231.9,22696.6z"/>
+		<path id="path638" inkscape:connector-curvature="0" class="st44" d="M231.9,22729.2H101.6c-6.4,0-11.1-4.8-11.1-11.1
 			s4.8-11.1,11.1-11.1h5.6c3.2,0,5.6-2.4,5.6-5.6v-70.7c0-30.2,24.6-54.8,54.8-54.8c30.2,0,54.8,24.6,54.8,54.8v70.7
-			c0,3.2,2.4,5.6,5.6,5.6h5.6c6.4,0,11.1,4.8,11.1,11.1C-1320.5,23089.3-1325.3,23094.1-1330.9,23094.1L-1330.9,23094.1z"/>
-		<path id="path640" inkscape:connector-curvature="0" class="st40" d="M-1450.8,22995.5v70.7c0,3.2-2.4,5.6-5.6,5.6h-5.6
+			c0,3.2,2.4,5.6,5.6,5.6h5.6c6.4,0,11.1,4.8,11.1,11.1C242.3,22724.4,237.5,22729.2,231.9,22729.2L231.9,22729.2z"/>
+		<path id="path640" inkscape:connector-curvature="0" class="st45" d="M112,22630.6v70.7c0,3.2-2.4,5.6-5.6,5.6h-5.6
 			c-6.4,0-11.1,4.8-11.1,11.1s4.8,11.1,11.1,11.1h19.1c-4,0-7.9-4.8-7.9-11.1s3.2-11.1,7.9-11.1h4c2.4,0,4-2.4,4-5.6v-70.7
-			c0-30.2,17.5-54.8,38.9-54.8C-1426.2,22941.5-1450.8,22966.1-1450.8,22995.5L-1450.8,22995.5z"/>
-		<path id="path642" inkscape:connector-curvature="0" class="st41" d="M-1330.9,23071.8h-5.6c-3.2,0-5.6-2.4-5.6-5.6v-70.7
+			c0-30.2,17.5-54.8,38.9-54.8C136.6,22576.6,112,22601.2,112,22630.6L112,22630.6z"/>
+		<path id="path642" inkscape:connector-curvature="0" class="st46" d="M231.9,22706.9h-5.6c-3.2,0-5.6-2.4-5.6-5.6v-70.7
 			c0-30.2-24.6-54.8-54.8-54.8c21.5,0,38.9,24.6,38.9,54.8v70.7c0,3.2,1.6,5.6,4,5.6h4c4,0,7.9,4.8,7.9,11.1s-3.2,11.1-7.9,11.1
-			h19.1c6.4,0,11.1-4.8,11.1-11.1C-1320.5,23077.4-1325.3,23071.8-1330.9,23071.8L-1330.9,23071.8z"/>
-		<path id="path644" inkscape:connector-curvature="0" class="st42" d="M-1358.7,23061.5h-76.3c-3.2,0-5.6,2.4-5.6,5.6
-			s2.4,5.6,5.6,5.6h76.3c3.2,0,5.6-2.4,5.6-5.6S-1355.5,23061.5-1358.7,23061.5z"/>
-		<path id="path651" inkscape:connector-curvature="0" class="st43" d="M-1330.9,23061.5v-65.2c0-35.8-29.4-65.2-65.2-65.2
-			s-65.2,29.4-65.2,65.2v65.2c-11.9,0-21.5,9.5-21.5,21.4s9.5,21.4,21.5,21.4h21.5v81.9c0,3.2,2.4,5.6,5.6,5.6s5.6-2.4,5.6-5.6
-			v-81.9h65.2v59.6c0,3.2,2.4,5.6,5.6,5.6s5.6-2.4,5.6-5.6v-59.6h21.5c11.9,0,21.5-9.5,21.5-21.4
-			C-1309.4,23071-1318.9,23061.5-1330.9,23061.5L-1330.9,23061.5z"/>
-		<g id="g653">
+			h19.1c6.4,0,11.1-4.8,11.1-11.1C242.3,22712.5,237.5,22706.9,231.9,22706.9L231.9,22706.9z"/>
+		<path id="path644" inkscape:connector-curvature="0" class="st47" d="M204.1,22696.6h-76.3c-3.2,0-5.6,2.4-5.6,5.6
+			s2.4,5.6,5.6,5.6h76.3c3.2,0,5.6-2.4,5.6-5.6S207.3,22696.6,204.1,22696.6z"/>
+		<path id="path651" inkscape:connector-curvature="0" class="st48" d="M231.9,22696.6v-65.2c0-35.8-29.4-65.2-65.2-65.2
+			s-65.2,29.4-65.2,65.2v65.2c-11.9,0-21.5,9.5-21.5,21.4s9.5,21.4,21.5,21.4H123v81.9c0,3.2,2.4,5.6,5.6,5.6c3.2,0,5.6-2.4,5.6-5.6
+			v-81.9h65.2v59.6c0,3.2,2.4,5.6,5.6,5.6c3.2,0,5.6-2.4,5.6-5.6v-59.6h21.5c11.9,0,21.5-9.5,21.5-21.4
+			C253.4,22706.1,243.9,22696.6,231.9,22696.6L231.9,22696.6z"/>
+		<g id="g653" class="st7">
 		</g>
-		<g id="g655">
+		<g id="g655" class="st7">
 		</g>
-		<g id="g657">
+		<g id="g657" class="st7">
 		</g>
-		<g id="g659">
+		<g id="g659" class="st7">
 		</g>
-		<g id="g661">
+		<g id="g661" class="st7">
 		</g>
-		<g id="g663">
+		<g id="g663" class="st7">
 		</g>
-		<g id="g665">
+		<g id="g665" class="st7">
 		</g>
-		<g id="g667">
+		<g id="g667" class="st7">
 		</g>
-		<g id="g669">
+		<g id="g669" class="st7">
 		</g>
-		<g id="g671">
+		<g id="g671" class="st7">
 		</g>
-		<g id="g673">
+		<g id="g673" class="st7">
 		</g>
-		<g id="g675">
+		<g id="g675" class="st7">
 		</g>
-		<g id="g677">
+		<g id="g677" class="st7">
 		</g>
-		<g id="g679">
+		<g id="g679" class="st7">
 		</g>
-		<g id="g681">
+		<g id="g681" class="st7">
 		</g>
 	</g>
-	<g id="binary_sensor.dtoffice" transform="matrix(0.30711666,0,0,0.30711666,2439.4316,-3914.4893)">
-		<path id="path2216" inkscape:connector-curvature="0" class="st44" d="M-3170.3,13525.4v66.8c0,6.4,5.6,11.9,11.9,11.9h96.1
-			c6.4,0,11.9-5.6,11.9-11.9v-271.8c0-6.4-5.6-11.9-11.9-11.9h-96.1c-6.4,0-11.9,5.6-11.9,11.9V13525.4z"/>
-		<g id="g2222">
-			<path id="path2218" inkscape:connector-curvature="0" class="st45" d="M-3140.1,13332.3h66.7c3.2,0,6.4,2.4,6.4,6.4v18.3
-				c0,3.2-2.4,6.4-6.4,6.4h-66.7c-3.2,0-6.4-2.4-6.4-6.4v-18.3C-3146.4,13334.7-3143.2,13332.3-3140.1,13332.3z"/>
-			<path id="path2220" inkscape:connector-curvature="0" class="st45" d="M-3140.1,13386.3h66.7c3.2,0,6.4,2.4,6.4,6.4v18.3
-				c0,3.2-2.4,6.4-6.4,6.4h-66.7c-3.2,0-6.4-2.4-6.4-6.4v-18.3C-3146.4,13389.5-3143.2,13386.3-3140.1,13386.3z"/>
+	<g id="binary_sensor.dtoffice" transform="matrix(0.30711666,0,0,0.30711666,2439.4316,-3914.4893)" class="st2">
+		<path id="path2216" inkscape:connector-curvature="0" class="st49" d="M-2305.5,13323.4v66.8c0,6.4,5.6,11.9,11.9,11.9h96.1
+			c6.4,0,11.9-5.6,11.9-11.9v-271.8c0-6.4-5.6-11.9-11.9-11.9h-96.1c-6.4,0-11.9,5.6-11.9,11.9V13323.4z"/>
+		<g id="g2222" class="st7">
+			<path id="path2218" inkscape:connector-curvature="0" class="st50" d="M-2275.3,13130.3h66.7c3.2,0,6.4,2.4,6.4,6.4v18.3
+				c0,3.2-2.4,6.4-6.4,6.4h-66.7c-3.2,0-6.4-2.4-6.4-6.4v-18.3C-2281.6,13132.7-2278.4,13130.3-2275.3,13130.3z"/>
+			<path id="path2220" inkscape:connector-curvature="0" class="st50" d="M-2275.3,13184.3h66.7c3.2,0,6.4,2.4,6.4,6.4v18.3
+				c0,3.2-2.4,6.4-6.4,6.4h-66.7c-3.2,0-6.4-2.4-6.4-6.4v-18.3C-2281.6,13187.5-2278.4,13184.3-2275.3,13184.3z"/>
 		</g>
-		<g id="g2232">
-			<path id="path2224" inkscape:connector-curvature="0" class="st46" d="M-3074.1,13446.7h-60.4c-3.2,0-6.4-2.4-6.4-6.4
-				s2.4-6.4,6.4-6.4h60.4c3.2,0,6.4,2.4,6.4,6.4C-3067.8,13444.3-3070.1,13446.7-3074.1,13446.7z"/>
-			<path id="path2226" inkscape:connector-curvature="0" class="st46" d="M-3074.1,13470.6h-60.4c-3.2,0-6.4-2.4-6.4-6.4
-				c0-3.2,2.4-6.4,6.4-6.4h60.4c3.2,0,6.4,2.4,6.4,6.4C-3067.8,13468.2-3070.1,13470.6-3074.1,13470.6z"/>
-			<path id="path2228" inkscape:connector-curvature="0" class="st46" d="M-3074.1,13495.2h-60.4c-3.2,0-6.4-2.4-6.4-6.4
-				c0-3.2,2.4-6.4,6.4-6.4h60.4c3.2,0,6.4,2.4,6.4,6.4C-3067.8,13492-3070.1,13495.2-3074.1,13495.2z"/>
-			<path id="path2230" inkscape:connector-curvature="0" class="st46" d="M-3074.1,13519h-60.4c-3.2,0-6.4-2.4-6.4-6.4
-				c0-3.2,2.4-6.4,6.4-6.4h60.4c3.2,0,6.4,2.4,6.4,6.4C-3067.8,13516.7-3070.1,13519-3074.1,13519z"/>
+		<g id="g2232" class="st7">
+			<path id="path2224" inkscape:connector-curvature="0" class="st51" d="M-2209.3,13244.7h-60.4c-3.2,0-6.4-2.4-6.4-6.4
+				s2.4-6.4,6.4-6.4h60.4c3.2,0,6.4,2.4,6.4,6.4C-2203,13242.3-2205.3,13244.7-2209.3,13244.7z"/>
+			<path id="path2226" inkscape:connector-curvature="0" class="st51" d="M-2209.3,13268.6h-60.4c-3.2,0-6.4-2.4-6.4-6.4
+				c0-3.2,2.4-6.4,6.4-6.4h60.4c3.2,0,6.4,2.4,6.4,6.4C-2203,13266.2-2205.3,13268.6-2209.3,13268.6z"/>
+			<path id="path2228" inkscape:connector-curvature="0" class="st51" d="M-2209.3,13293.2h-60.4c-3.2,0-6.4-2.4-6.4-6.4
+				c0-3.2,2.4-6.4,6.4-6.4h60.4c3.2,0,6.4,2.4,6.4,6.4C-2203,13290-2205.3,13293.2-2209.3,13293.2z"/>
+			<path id="path2230" inkscape:connector-curvature="0" class="st51" d="M-2209.3,13317h-60.4c-3.2,0-6.4-2.4-6.4-6.4
+				c0-3.2,2.4-6.4,6.4-6.4h60.4c3.2,0,6.4,2.4,6.4,6.4C-2203,13314.7-2205.3,13317-2209.3,13317z"/>
 		</g>
-		<circle id="circle2234" class="st47" cx="-3097.9" cy="13561.2" r="18.3"/>
-		<path id="path2236" inkscape:connector-curvature="0" class="st48" d="M-3140.1,13573.9c-3.2,0-6.4-2.4-6.4-6.4l0,0v-6.4
-			c0-3.2,2.4-6.4,6.4-6.4c3.2,0,6.4,2.4,6.4,6.4v6.4C-3133.7,13570.7-3136.9,13573.9-3140.1,13573.9z"/>
-		<path id="path2238" inkscape:connector-curvature="0" class="st45" d="M-3387.2,13362.5h241.6c6.4,0,11.9,5.6,11.9,11.9v139.1
-			c0,6.4-5.6,11.9-11.9,11.9h-241.6c-6.4,0-11.9-5.6-11.9-11.9v-139.1C-3399.9,13368.1-3394.3,13362.5-3387.2,13362.5z"/>
-		<path id="path2240" inkscape:connector-curvature="0" class="st49" d="M-3133.7,13368.1v126.3c0,3.2-2.4,6.4-6.4,6.4h-253.5
-			c-3.2,0-6.4-2.4-6.4-6.4v-126.3c0-3.2,2.4-6.4,6.4-6.4h253.5C-3136.9,13362.5-3133.7,13364.9-3133.7,13368.1z"/>
-		<path id="path2242" inkscape:connector-curvature="0" class="st45" d="M-3230.6,13561.2h15.1c4,0,7.9,2.4,10.3,6.4l9.5,18.3
+		<circle id="circle2234" class="st52" cx="-2233.1" cy="13359.2" r="18.3"/>
+		<path id="path2236" inkscape:connector-curvature="0" class="st53" d="M-2275.3,13371.9c-3.2,0-6.4-2.4-6.4-6.4l0,0v-6.4
+			c0-3.2,2.4-6.4,6.4-6.4c3.2,0,6.4,2.4,6.4,6.4v6.4C-2268.9,13368.7-2272.1,13371.9-2275.3,13371.9z"/>
+		<path id="path2238" inkscape:connector-curvature="0" class="st54" d="M-2522.4,13160.5h241.6c6.4,0,11.9,5.6,11.9,11.9v139.1
+			c0,6.4-5.6,11.9-11.9,11.9h-241.6c-6.4,0-11.9-5.6-11.9-11.9v-139.1C-2535.1,13166.1-2529.5,13160.5-2522.4,13160.5z"/>
+		<path id="path2240" inkscape:connector-curvature="0" class="st55" d="M-2268.9,13166.1v126.3c0,3.2-2.4,6.4-6.4,6.4h-253.5
+			c-3.2,0-6.4-2.4-6.4-6.4v-126.3c0-3.2,2.4-6.4,6.4-6.4h253.5C-2272.1,13160.5-2268.9,13162.9-2268.9,13166.1z"/>
+		<path id="path2242" inkscape:connector-curvature="0" class="st54" d="M-2365.8,13359.2h15.1c4,0,7.9,2.4,10.3,6.4l9.5,18.3
 			c3.2,5.6,1.6,13.5-4.8,16.7c-1.6,0.8-4,1.6-5.6,1.6h-121.6c-6.4,0-11.9-5.6-11.9-12.7c0-2.4,0.8-4,1.6-5.6l9.5-18.3
 			c2.4-4,5.6-6.4,10.3-6.4h15.1"/>
-		<path id="path2244" inkscape:connector-curvature="0" class="st44" d="M-3303,13525.4h72.3l0,0v48.5c0,3.2-2.4,6.4-6.4,6.4h-60.4
-			c-3.2,0-6.4-2.4-6.4-6.4L-3303,13525.4L-3303,13525.4z"/>
-		<g id="g2250">
-			<path id="path2246" inkscape:connector-curvature="0" class="st50" d="M-3375.3,13404.6c-3.2,0-6.4-2.4-6.4-6.4
+		<path id="path2244" inkscape:connector-curvature="0" class="st49" d="M-2438.2,13323.4h72.3l0,0v48.5c0,3.2-2.4,6.4-6.4,6.4
+			h-60.4c-3.2,0-6.4-2.4-6.4-6.4L-2438.2,13323.4L-2438.2,13323.4z"/>
+		<g id="g2250" class="st7">
+			<path id="path2246" inkscape:connector-curvature="0" class="st56" d="M-2510.5,13202.6c-3.2,0-6.4-2.4-6.4-6.4
 				c0-1.6,0.8-3.2,1.6-4l11.9-11.9c2.4-2.4,6.4-2.4,8.7,0c2.4,2.4,2.4,6.4,0,8.7l-11.9,11.9
-				C-3372.1,13403.8-3373.7,13404.6-3375.3,13404.6L-3375.3,13404.6z"/>
-			<path id="path2248" inkscape:connector-curvature="0" class="st50" d="M-3363.3,13428.5c-3.2,0-6.4-2.4-6.4-6.4
+				C-2507.3,13201.8-2508.9,13202.6-2510.5,13202.6L-2510.5,13202.6z"/>
+			<path id="path2248" inkscape:connector-curvature="0" class="st56" d="M-2498.5,13226.5c-3.2,0-6.4-2.4-6.4-6.4
 				c0-1.6,0.8-3.2,1.6-4l36.6-36.5c2.4-2.4,6.4-2.4,8.7,0c2.4,2.4,2.4,6.4,0,8.7l-36.6,36.5
-				C-3360.2,13427.7-3361.8,13428.5-3363.3,13428.5L-3363.3,13428.5z"/>
+				C-2495.4,13225.7-2497,13226.5-2498.5,13226.5L-2498.5,13226.5z"/>
 		</g>
-		<g id="g2252">
+		<g id="g2252" class="st7">
 		</g>
-		<g id="g2254">
+		<g id="g2254" class="st7">
 		</g>
-		<g id="g2256">
+		<g id="g2256" class="st7">
 		</g>
-		<g id="g2258">
+		<g id="g2258" class="st7">
 		</g>
-		<g id="g2260">
+		<g id="g2260" class="st7">
 		</g>
-		<g id="g2262">
+		<g id="g2262" class="st7">
 		</g>
-		<g id="g2264">
+		<g id="g2264" class="st7">
 		</g>
-		<g id="g2266">
+		<g id="g2266" class="st7">
 		</g>
-		<g id="g2268">
+		<g id="g2268" class="st7">
 		</g>
-		<g id="g2270">
+		<g id="g2270" class="st7">
 		</g>
-		<g id="g2272">
+		<g id="g2272" class="st7">
 		</g>
-		<g id="g2274">
+		<g id="g2274" class="st7">
 		</g>
-		<g id="g2276">
+		<g id="g2276" class="st7">
 		</g>
-		<g id="g2278">
+		<g id="g2278" class="st7">
 		</g>
-		<g id="g2280">
+		<g id="g2280" class="st7">
 		</g>
 	</g>
-	<g id="binary_sensor.openwrt" transform="matrix(0.20430866,0,0,0.20430866,2504.3593,-3751.1089)">
-		<g id="g2468">
-			<path id="path2462" inkscape:connector-curvature="0" class="st51" d="M-4593.5,19508.7h-22.2v-125.6c0-6.4,4.8-11.1,11.1-11.1
-				l0,0c6.4,0,11.1,4.8,11.1,11.1V19508.7L-4593.5,19508.7z"/>
-			<path id="path2464" inkscape:connector-curvature="0" class="st51" d="M-4719.1,19508.7v-81.9c0-6.4,4.8-11.1,11.1-11.1l0,0
+	<g id="binary_sensor.openwrt" transform="matrix(0.20430866,0,0,0.20430866,2504.3593,-3751.1089)" class="st2">
+		<g id="g2468" class="st7">
+			<path id="path2462" inkscape:connector-curvature="0" class="st57" d="M-3293.5,19205.1h-22.2v-125.6c0-6.4,4.8-11.1,11.1-11.1
+				l0,0c6.4,0,11.1,4.8,11.1,11.1V19205.1L-3293.5,19205.1z"/>
+			<path id="path2464" inkscape:connector-curvature="0" class="st57" d="M-3419.1,19205.1v-81.9c0-6.4,4.8-11.1,11.1-11.1l0,0
 				c6.4,0,11.1,4.8,11.1,11.1v81.9"/>
-			<path id="path2466" inkscape:connector-curvature="0" class="st51" d="M-4812,19508.7h-22.2v-125.6c0-6.4,4.8-11.1,11.1-11.1l0,0
-				c6.4,0,11.1,4.8,11.1,11.1V19508.7L-4812,19508.7z"/>
+			<path id="path2466" inkscape:connector-curvature="0" class="st57" d="M-3512,19205.1h-22.2v-125.6c0-6.4,4.8-11.1,11.1-11.1l0,0
+				c6.4,0,11.1,4.8,11.1,11.1V19205.1L-3512,19205.1z"/>
 		</g>
-		<g id="g2472">
-			<path id="path2470" inkscape:connector-curvature="0" class="st52" d="M-4549.8,19579.5h-317.1l30.2-69.9c1.6-4,5.6-6.4,10.3-6.4
-				h236.8c4.8,0,8.7,2.4,10.3,6.4L-4549.8,19579.5z"/>
+		<g id="g2472" class="st7">
+			<path id="path2470" inkscape:connector-curvature="0" class="st58" d="M-3249.8,19275.9h-317.1l30.2-69.9c1.6-4,5.6-6.4,10.3-6.4
+				h236.8c4.8,0,8.7,2.4,10.3,6.4L-3249.8,19275.9z"/>
 		</g>
-		<g id="g2478">
-			<path id="path2474" inkscape:connector-curvature="0" class="st53" d="M-4615,19579.5h-185.9l13.5-27c1.6-4,5.6-6.4,9.5-6.4
-				h139.8c4,0,7.9,2.4,9.5,6.4L-4615,19579.5z"/>
-			<rect id="rect2476" x="-4795.3" y="19519.9" class="st53" width="11.1" height="11.1"/>
+		<g id="g2478" class="st7">
+			<path id="path2474" inkscape:connector-curvature="0" class="st59" d="M-3315,19275.9h-185.9l13.5-27c1.6-4,5.6-6.4,9.5-6.4
+				h139.8c4,0,7.9,2.4,9.5,6.4L-3315,19275.9z"/>
+			<rect id="rect2476" x="-3495.3" y="19216.3" class="st59" width="11.1" height="11.1"/>
 		</g>
-		<rect id="rect2480" x="-4762.8" y="19519.9" class="st51" width="11.1" height="11.1"/>
-		<g id="g2486">
-			<rect id="rect2482" x="-4730.2" y="19519.9" class="st54" width="11.1" height="11.1"/>
-			<rect id="rect2484" x="-4697.6" y="19519.9" class="st54" width="11.1" height="11.1"/>
+		<rect id="rect2480" x="-3462.8" y="19216.3" class="st60" width="11.1" height="11.1"/>
+		<g id="g2486" class="st7">
+			<rect id="rect2482" x="-3430.2" y="19216.3" class="st61" width="11.1" height="11.1"/>
+			<rect id="rect2484" x="-3397.6" y="19216.3" class="st61" width="11.1" height="11.1"/>
 		</g>
-		<rect id="rect2488" x="-4664.2" y="19519.9" class="st51" width="11.1" height="11.1"/>
-		<rect id="rect2490" x="-4631.7" y="19519.9" class="st53" width="11.1" height="11.1"/>
-		<g id="g2493">
-			<path id="SVGCleanerId_0" inkscape:connector-curvature="0" class="st52" d="M-4812,19393.5h-22.2v-11.1
-				c0-6.4,4.8-11.1,11.1-11.1l0,0c6.4,0,11.1,4.8,11.1,11.1V19393.5L-4812,19393.5z"/>
+		<rect id="rect2488" x="-3364.2" y="19216.3" class="st60" width="11.1" height="11.1"/>
+		<rect id="rect2490" x="-3331.7" y="19216.3" class="st62" width="11.1" height="11.1"/>
+		<g id="g2493" class="st7">
+			<path id="SVGCleanerId_0" inkscape:connector-curvature="0" class="st58" d="M-3512,19089.9h-22.2v-11.1
+				c0-6.4,4.8-11.1,11.1-11.1l0,0c6.4,0,11.1,4.8,11.1,11.1V19089.9L-3512,19089.9z"/>
 		</g>
-		<g id="g2496">
-			<path id="SVGCleanerId_0_1_" inkscape:connector-curvature="0" class="st52" d="M-4812,19393.5h-22.2v-11.1
-				c0-6.4,4.8-11.1,11.1-11.1l0,0c6.4,0,11.1,4.8,11.1,11.1V19393.5L-4812,19393.5z"/>
+		<g id="g2496" class="st7">
+			<path id="SVGCleanerId_0_1_" inkscape:connector-curvature="0" class="st58" d="M-3512,19089.9h-22.2v-11.1
+				c0-6.4,4.8-11.1,11.1-11.1l0,0c6.4,0,11.1,4.8,11.1,11.1V19089.9L-3512,19089.9z"/>
 		</g>
-		<g id="g2499">
-			<path id="SVGCleanerId_0_2_" inkscape:connector-curvature="0" class="st52" d="M-4812,19393.5h-22.2v-11.1
-				c0-6.4,4.8-11.1,11.1-11.1l0,0c6.4,0,11.1,4.8,11.1,11.1V19393.5L-4812,19393.5z"/>
+		<g id="g2499" class="st7">
+			<path id="SVGCleanerId_0_2_" inkscape:connector-curvature="0" class="st58" d="M-3512,19089.9h-22.2v-11.1
+				c0-6.4,4.8-11.1,11.1-11.1l0,0c6.4,0,11.1,4.8,11.1,11.1V19089.9L-3512,19089.9z"/>
 		</g>
-		<g id="g2505">
-			<path id="path2501" inkscape:connector-curvature="0" class="st52" d="M-4593.5,19393.5h-22.2v-11.1c0-6.4,4.8-11.1,11.1-11.1
-				l0,0c6.4,0,11.1,4.8,11.1,11.1V19393.5L-4593.5,19393.5z"/>
-			<path id="path2503" inkscape:connector-curvature="0" class="st52" d="M-4697.6,19437.2h-22.2v-11.1c0-6.4,4.8-11.1,11.1-11.1
-				l0,0c6.4,0,11.1,4.8,11.1,11.1V19437.2L-4697.6,19437.2z"/>
+		<g id="g2505" class="st7">
+			<path id="path2501" inkscape:connector-curvature="0" class="st58" d="M-3293.5,19089.9h-22.2v-11.1c0-6.4,4.8-11.1,11.1-11.1
+				l0,0c6.4,0,11.1,4.8,11.1,11.1V19089.9L-3293.5,19089.9z"/>
+			<path id="path2503" inkscape:connector-curvature="0" class="st58" d="M-3397.6,19133.6h-22.2v-11.1c0-6.4,4.8-11.1,11.1-11.1
+				l0,0c6.4,0,11.1,4.8,11.1,11.1V19133.6L-3397.6,19133.6z"/>
 		</g>
-		<circle id="circle2507" class="st51" cx="-4707.9" cy="19372.1" r="11.1"/>
-		<g id="g2515">
-			<path id="path2509" inkscape:connector-curvature="0" class="st52" d="M-4781,19312.5l-9.5-4.8c15.9-31,47.7-50.9,82.6-50.9
-				c35,0,66.8,19.9,82.6,50.9l-9.5,4.8c-14.3-27.8-42.1-44.5-73.1-44.5S-4767.5,19285.4-4781,19312.5L-4781,19312.5z"/>
-			<path id="path2511" inkscape:connector-curvature="0" class="st52" d="M-4661.1,19337.1c-5.6-21.4-25.4-36.5-47.7-36.5
-				s-41.3,15.1-47.7,36.5l-10.3-3.2c7.2-26.2,31-44.5,58-44.5s50.9,18.3,58,44.5L-4661.1,19337.1z"/>
-			<path id="path2513" inkscape:connector-curvature="0" class="st52" d="M-4686.5,19349c-2.4-10.3-11.9-16.7-22.2-16.7
-				c-10.3,0-19.1,7.2-22.2,16.7l-10.3-3.2c4-14.3,17.5-24.6,32.6-24.6s28.6,10.3,32.6,24.6L-4686.5,19349z"/>
+		<circle id="circle2507" class="st60" cx="-3407.9" cy="19068.5" r="11.1"/>
+		<g id="g2515" class="st7">
+			<path id="path2509" inkscape:connector-curvature="0" class="st58" d="M-3481,19008.9l-9.5-4.8c15.9-31,47.7-50.9,82.6-50.9
+				c35,0,66.8,19.9,82.6,50.9l-9.5,4.8c-14.3-27.8-42.1-44.5-73.1-44.5C-3438.9,18964.4-3467.5,18981.8-3481,19008.9L-3481,19008.9z
+				"/>
+			<path id="path2511" inkscape:connector-curvature="0" class="st58" d="M-3361.1,19033.5c-5.6-21.4-25.4-36.5-47.7-36.5
+				c-22.3,0-41.3,15.1-47.7,36.5l-10.3-3.2c7.2-26.2,31-44.5,58-44.5c27,0,50.9,18.3,58,44.5L-3361.1,19033.5z"/>
+			<path id="path2513" inkscape:connector-curvature="0" class="st58" d="M-3386.5,19045.4c-2.4-10.3-11.9-16.7-22.2-16.7
+				c-10.3,0-19.1,7.2-22.2,16.7l-10.3-3.2c4-14.3,17.5-24.6,32.6-24.6s28.6,10.3,32.6,24.6L-3386.5,19045.4z"/>
 		</g>
-		<g id="g2517">
+		<g id="g2517" class="st7">
 		</g>
-		<g id="g2519">
+		<g id="g2519" class="st7">
 		</g>
-		<g id="g2521">
+		<g id="g2521" class="st7">
 		</g>
-		<g id="g2523">
+		<g id="g2523" class="st7">
 		</g>
-		<g id="g2525">
+		<g id="g2525" class="st7">
 		</g>
-		<g id="g2527">
+		<g id="g2527" class="st7">
 		</g>
-		<g id="g2529">
+		<g id="g2529" class="st7">
 		</g>
-		<g id="g2531">
+		<g id="g2531" class="st7">
 		</g>
-		<g id="g2533">
+		<g id="g2533" class="st7">
 		</g>
-		<g id="g2535">
+		<g id="g2535" class="st7">
 		</g>
-		<g id="g2537">
+		<g id="g2537" class="st7">
 		</g>
-		<g id="g2539">
+		<g id="g2539" class="st7">
 		</g>
-		<g id="g2541">
+		<g id="g2541" class="st7">
 		</g>
-		<g id="g2543">
+		<g id="g2543" class="st7">
 		</g>
-		<g id="g2545">
-		</g>
-	</g>
-	<g id="binary_x5F_sensor.ip_x5F_cam_x5F_01" transform="matrix(-1.4321666,0,0,1.4321666,2720.7758,-3592.3449)">
-		<path id="path734" inkscape:connector-curvature="0" class="st55" d="M680.4,2594.8L680.4,2594.8L680.4,2594.8l11.1-7.2l-1.6-3.2
-			l-11.9,7.9C679.6,2592.5,680.4,2593.3,680.4,2594.8z"/>
-		<path id="path736" inkscape:connector-curvature="0" class="st55" d="M682.8,2597.2L682.8,2597.2
-			C682,2597.2,682,2597.2,682.8,2597.2c-0.8,0.8-0.8,0.8-0.8,0.8l0,0h-0.8l0,0h-0.8l0,0h-0.8l2.4,10.3h4L682.8,2597.2z"/>
-		<circle id="circle738" class="st18" cx="680.4" cy="2593.3" r="4.8"/>
-		<path id="path740" inkscape:connector-curvature="0" class="st18" d="M693.1,2588.5c-2.4,0-3.2-1.6-3.2-4s1.6-4,3.2-4V2588.5z"/>
-		<path id="path742" inkscape:connector-curvature="0" class="st56" d="M693.1,2592.5v-15.1c0-1.6,0.8-2.4,2.4-2.4h18.3
-			c1.6,0,2.4,0.8,2.4,2.4v15.1c0,1.6-0.8,2.4-2.4,2.4h-18.3C693.9,2594.8,693.1,2594,693.1,2592.5z"/>
-		<circle id="circle744" class="st55" cx="705.9" cy="2585.3" r="7.9"/>
-		<path id="path746" inkscape:connector-curvature="0" class="st18" d="M701.1,2585.3c0-2.4,2.4-4.8,4.8-4.8c2.4,0,4.8,2.4,4.8,4.8
-			s-2.4,4.8-4.8,4.8C703.5,2590.1,701.1,2587.7,701.1,2585.3z"/>
-		<circle id="circle748" class="st57" cx="713.8" cy="2592.5" r="0.8"/>
-		<path id="path750" inkscape:connector-curvature="0" class="st58" d="M693.1,2592.5V2579h1.6c0.8,0,2.4,0.8,2.4,2.4v9.5
-			c0,0.8-0.8,2.4-2.4,2.4h-1.6V2592.5z"/>
-		<path id="path752" inkscape:connector-curvature="0" class="st59" d="M705.1,2582.9C705.1,2582.1,705.9,2582.1,705.1,2582.9
-			c2.4-0.8,4,0.8,4,2.4c0,0.8,0,0.8-0.8,0.8s-0.8,0-0.8-0.8C708.2,2584.5,707.4,2583.7,705.1,2582.9
-			C705.9,2583.7,705.1,2582.9,705.1,2582.9z"/>
-		<g id="g754">
-		</g>
-		<g id="g756">
-		</g>
-		<g id="g758">
-		</g>
-		<g id="g760">
-		</g>
-		<g id="g762">
-		</g>
-		<g id="g764">
-		</g>
-		<g id="g766">
-		</g>
-		<g id="g768">
-		</g>
-		<g id="g770">
-		</g>
-		<g id="g772">
-		</g>
-		<g id="g774">
-		</g>
-		<g id="g776">
-		</g>
-		<g id="g778">
-		</g>
-		<g id="g780">
-		</g>
-		<g id="g782">
+		<g id="g2545" class="st7">
 		</g>
 	</g>
-	<g id="binary_sensor.tlsg108e" transform="matrix(0,-0.15469876,0.15469876,0,1972.8329,-516.61151)">
-		<path id="path1186" inkscape:connector-curvature="0" class="st60" d="M-7109.1,3719.3h-426.7c-7.9,0-14.3,6.4-14.3,14.3v142.2
-			c0,7.9,6.4,14.3,14.3,14.3h426.7c7.9,0,14.3-6.4,14.3-14.3v-142.2C-7094.8,3725.7-7101.1,3719.3-7109.1,3719.3z"/>
-		<g id="g1194" transform="translate(1118.6772,-836.83285)">
-			<path id="path1188" inkscape:connector-curvature="0" class="st61" d="M-8327.3,4719.6h35.8c4,0,7.2,3.2,7.2,7.2v7.2
-				c0,4-3.2,7.2-7.2,7.2h-35.8c-4,0-7.2-3.2-7.2-7.2v-7.2C-8334.4,4722.8-8331.2,4719.6-8327.3,4719.6z"/>
-			<path id="path1190" inkscape:connector-curvature="0" class="st61" d="M-8590.3,4719.6h35.8c4,0,7.2,3.2,7.2,7.2v7.2
-				c0,4-3.2,7.2-7.2,7.2h-35.8c-4,0-7.2-3.2-7.2-7.2v-7.2C-8597.4,4722.8-8594.2,4719.6-8590.3,4719.6z"/>
-			<path id="path1192" inkscape:connector-curvature="0" class="st61" d="M-8632.4,4598.8h383.8c4,0,7.2,3.2,7.2,7.2v70.7
-				c0,4-3.2,7.2-7.2,7.2h-383.8c-4,0-7.2-3.2-7.2-7.2V4606C-8639.5,4602-8636.4,4598.8-8632.4,4598.8z"/>
+	<g id="binary_x5F_sensor.ip_x5F_cam_x5F_01" transform="matrix(-1.4321666,0,0,1.4321666,2720.7758,-3592.3449)" class="st2">
+		<path id="path734" inkscape:connector-curvature="0" class="st63" d="M494.9,2551.5L494.9,2551.5L494.9,2551.5l11.1-7.2l-1.6-3.2
+			l-11.9,7.9C494.1,2549.2,494.9,2550,494.9,2551.5z"/>
+		<path id="path736" inkscape:connector-curvature="0" class="st63" d="M497.3,2553.9L497.3,2553.9
+			C496.5,2553.9,496.5,2553.9,497.3,2553.9c-0.8,0.8-0.8,0.8-0.8,0.8l0,0h-0.8l0,0h-0.8l0,0h-0.8l2.4,10.3h4L497.3,2553.9z"/>
+		<circle id="circle738" class="st22" cx="494.9" cy="2550" r="4.8"/>
+		<path id="path740" inkscape:connector-curvature="0" class="st22" d="M507.6,2545.2c-2.4,0-3.2-1.6-3.2-4s1.6-4,3.2-4V2545.2z"/>
+		<path id="path742" inkscape:connector-curvature="0" class="st64" d="M507.6,2549.2v-15.1c0-1.6,0.8-2.4,2.4-2.4h18.3
+			c1.6,0,2.4,0.8,2.4,2.4v15.1c0,1.6-0.8,2.4-2.4,2.4H510C508.4,2551.5,507.6,2550.7,507.6,2549.2z"/>
+		<circle id="circle744" class="st63" cx="520.4" cy="2542" r="7.9"/>
+		<path id="path746" inkscape:connector-curvature="0" class="st22" d="M515.6,2542c0-2.4,2.4-4.8,4.8-4.8c2.4,0,4.8,2.4,4.8,4.8
+			s-2.4,4.8-4.8,4.8S515.6,2544.4,515.6,2542z"/>
+		<circle id="circle748" class="st65" cx="528.3" cy="2549.2" r="0.8"/>
+		<path id="path750" inkscape:connector-curvature="0" class="st66" d="M507.6,2549.2v-13.5h1.6c0.8,0,2.4,0.8,2.4,2.4v9.5
+			c0,0.8-0.8,2.4-2.4,2.4h-1.6V2549.2z"/>
+		<path id="path752" inkscape:connector-curvature="0" class="st67" d="M519.6,2539.6C519.6,2538.8,520.4,2538.8,519.6,2539.6
+			c2.4-0.8,4,0.8,4,2.4c0,0.8,0,0.8-0.8,0.8s-0.8,0-0.8-0.8C522.7,2541.2,521.9,2540.4,519.6,2539.6
+			C520.4,2540.4,519.6,2539.6,519.6,2539.6z"/>
+		<g id="g754" class="st7">
 		</g>
-		<circle id="circle1196" class="st62" cx="-7485.7" cy="3804.4" r="14.3"/>
-		<circle id="circle1198" class="st63" cx="-7442.8" cy="3804.4" r="14.3"/>
-		<circle id="circle1200" class="st64" cx="-7400.7" cy="3804.4" r="14.3"/>
-		<g id="g1206" transform="translate(1118.6772,-836.83285)">
-			<circle id="circle1202" class="st65" cx="-8320.1" cy="4640.9" r="14.3"/>
-			<circle id="circle1204" class="st65" cx="-8277.2" cy="4640.9" r="14.3"/>
+		<g id="g756" class="st7">
 		</g>
-		<path id="path1208" inkscape:connector-curvature="0" class="st66" d="M-7109.1,3747.9v127.9h-412.4c-7.9,0-14.3,6.4-14.3,14.3
-			h426.7c7.9,0,14.3-6.4,14.3-14.3v-142.2C-7102.7,3733.6-7109.1,3739.2-7109.1,3747.9z"/>
-		<g id="g1214" transform="translate(1118.6772,-836.83285)">
+		<g id="g758" class="st7">
+		</g>
+		<g id="g760" class="st7">
+		</g>
+		<g id="g762" class="st7">
+		</g>
+		<g id="g764" class="st7">
+		</g>
+		<g id="g766" class="st7">
+		</g>
+		<g id="g768" class="st7">
+		</g>
+		<g id="g770" class="st7">
+		</g>
+		<g id="g772" class="st7">
+		</g>
+		<g id="g774" class="st7">
+		</g>
+		<g id="g776" class="st7">
+		</g>
+		<g id="g778" class="st7">
+		</g>
+		<g id="g780" class="st7">
+		</g>
+		<g id="g782" class="st7">
+		</g>
+	</g>
+	<g id="binary_sensor.tlsg108e" transform="matrix(0,-0.15469876,0.15469876,0,1972.8329,-516.61151)" class="st2">
+		<path id="path1186" inkscape:connector-curvature="0" class="st68" d="M-6708.2,5436.2h-426.7c-7.9,0-14.3,6.4-14.3,14.3v142.2
+			c0,7.9,6.4,14.3,14.3,14.3h426.7c7.9,0,14.3-6.4,14.3-14.3v-142.2C-6693.9,5442.6-6700.2,5436.2-6708.2,5436.2z"/>
+		<g id="g1194" transform="translate(1118.6772,-836.83285)" class="st7">
+			<path id="path1188" inkscape:connector-curvature="0" class="st69" d="M-7926.4,6436.5h35.8c4,0,7.2,3.2,7.2,7.2v7.2
+				c0,4-3.2,7.2-7.2,7.2h-35.8c-4,0-7.2-3.2-7.2-7.2v-7.2C-7933.5,6439.7-7930.3,6436.5-7926.4,6436.5z"/>
+			<path id="path1190" inkscape:connector-curvature="0" class="st69" d="M-8189.4,6436.5h35.8c4,0,7.2,3.2,7.2,7.2v7.2
+				c0,4-3.2,7.2-7.2,7.2h-35.8c-4,0-7.2-3.2-7.2-7.2v-7.2C-8196.5,6439.7-8193.3,6436.5-8189.4,6436.5z"/>
+			<path id="path1192" inkscape:connector-curvature="0" class="st69" d="M-8231.5,6315.7h383.8c4,0,7.2,3.2,7.2,7.2v70.7
+				c0,4-3.2,7.2-7.2,7.2h-383.8c-4,0-7.2-3.2-7.2-7.2v-70.7C-8238.6,6318.9-8235.5,6315.7-8231.5,6315.7z"/>
+		</g>
+		<circle id="circle1196" class="st70" cx="-7084.8" cy="5521.3" r="14.3"/>
+		<circle id="circle1198" class="st71" cx="-7041.9" cy="5521.3" r="14.3"/>
+		<circle id="circle1200" class="st72" cx="-6999.8" cy="5521.3" r="14.3"/>
+		<g id="g1206" transform="translate(1118.6772,-836.83285)" class="st7">
+			<circle id="circle1202" class="st73" cx="-7919.2" cy="6357.8" r="14.3"/>
+			<circle id="circle1204" class="st73" cx="-7876.3" cy="6357.8" r="14.3"/>
+		</g>
+		<path id="path1208" inkscape:connector-curvature="0" class="st74" d="M-6708.2,5464.8v127.9h-412.4c-7.9,0-14.3,6.4-14.3,14.3
+			h426.7c7.9,0,14.3-6.4,14.3-14.3v-142.2C-6701.8,5450.5-6708.2,5456.1-6708.2,5464.8z"/>
+		<g id="g1214" transform="translate(1118.6772,-836.83285)" class="st7">
 			
-				<rect id="rect1210" x="-8312.8" y="4703.5" transform="matrix(-2.535182e-006 -1 1 -2.535182e-006 -13037.7627 -3580.6284)" class="st65" width="7.2" height="50.1"/>
+				<rect id="rect1210" x="-7911.9" y="6420.4" transform="matrix(-2.535182e-006 -1 1 -2.535182e-006 -14353.7832 -1462.8258)" class="st73" width="7.2" height="50.1"/>
 			
-				<rect id="rect1212" x="-8575.7" y="4704.1" transform="matrix(-2.535182e-006 -1 1 -2.535182e-006 -13301.2295 -3842.9573)" class="st65" width="7.2" height="50.1"/>
+				<rect id="rect1212" x="-8174.8" y="6421" transform="matrix(-2.535182e-006 -1 1 -2.535182e-006 -14617.2227 -1725.1206)" class="st73" width="7.2" height="50.1"/>
 		</g>
-		<g id="g1238">
+		<g id="g1238" class="st7">
 		</g>
-		<g id="g1240">
+		<g id="g1240" class="st7">
 		</g>
-		<g id="g1242">
+		<g id="g1242" class="st7">
 		</g>
-		<g id="g1244">
+		<g id="g1244" class="st7">
 		</g>
-		<g id="g1246">
+		<g id="g1246" class="st7">
 		</g>
-		<g id="g1248">
+		<g id="g1248" class="st7">
 		</g>
-		<g id="g1250">
+		<g id="g1250" class="st7">
 		</g>
-		<g id="g1252">
+		<g id="g1252" class="st7">
 		</g>
-		<g id="g1254">
+		<g id="g1254" class="st7">
 		</g>
-		<g id="g1256">
+		<g id="g1256" class="st7">
 		</g>
-		<g id="g1258">
+		<g id="g1258" class="st7">
 		</g>
-		<g id="g1260">
+		<g id="g1260" class="st7">
 		</g>
-		<g id="g1262">
+		<g id="g1262" class="st7">
 		</g>
-		<g id="g1264">
+		<g id="g1264" class="st7">
 		</g>
-		<g id="g1266">
-		</g>
-	</g>
-	<g id="binary_sensor.lg_tv_5600" transform="matrix(3.3607175,0,0,3.3607175,1291.4052,-870.00481)">
-		<rect id="rect2600" x="659" y="549.4" class="st18" width="39.7" height="26.2"/>
-		<rect id="rect2602" x="692.4" y="552.6" class="st33" width="3.2" height="3.2"/>
-		<path id="path2604" inkscape:connector-curvature="0" class="st34" d="M686,569.3L686,569.3C686,569.3,686,568.5,686,569.3
-			l-3.2-2.4c-0.8,0-1.6,0-1.6-0.8v-1.6l0.8-0.8c0.8-0.8,0.8-1.6,1.6-2.4c0.8,0,1.6-0.8,1.6-0.8V559c0,0,0,0,0-0.8
-			c-0.8-0.8-0.8-0.8-0.8-1.6v-0.8c0,0,0-4-4.8-4s-4.8,4-4.8,4v0.8c0,0.8,0,0.8-0.8,1.6c0,0,0,0,0,0.8v1.6c0,0.8,0.8,0.8,0.8,0.8
-			c0.8,1.6,2.4,3.2,2.4,3.2v1.6c0,0.8-1.6,0.8-1.6,1.6l-3.2,1.6c0,0-0.8,0-0.8,0.8c0,0,0,0,0.8,0L686,569.3L686,569.3z"/>
-		<rect id="rect2606" x="662.2" y="569.3" class="st35" width="3.2" height="3.2"/>
-		<polygon id="polygon2608" class="st36" points="677.3,575.7 677.3,578.8 674.1,578.8 674.1,581.2 683.6,581.2 683.6,578.8 
-			679.6,578.8 679.6,575.7 		"/>
-		<rect id="rect2610" x="668.5" y="569.3" class="st37" width="27" height="3.2"/>
-		<g id="g2612">
-		</g>
-		<g id="g2614">
-		</g>
-		<g id="g2616">
-		</g>
-		<g id="g2618">
-		</g>
-		<g id="g2620">
-		</g>
-		<g id="g2622">
-		</g>
-		<g id="g2624">
-		</g>
-		<g id="g2626">
-		</g>
-		<g id="g2628">
-		</g>
-		<g id="g2630">
-		</g>
-		<g id="g2632">
-		</g>
-		<g id="g2634">
-		</g>
-		<g id="g2636">
-		</g>
-		<g id="g2638">
-		</g>
-		<g id="g2640">
+		<g id="g1266" class="st7">
 		</g>
 	</g>
-	<g id="binary_sensor.chromecast_main_tv" transform="matrix(0.2435425,0,0,0.2435425,1321.3627,-994.95051)">
-		<g id="g1058">
-			<path id="path1024" inkscape:connector-curvature="0" class="st22" d="M8684.2,8214.4l-45.3,45.3l-11.9,11.9l-28.6-28.6
-				c-0.8-0.8-1.6-2.4-1.6-4s0.8-3.2,1.6-4l48.5-48.5c2.4-2.4,5.6-2.4,7.9,0l7.2,7.2L8684.2,8214.4z"/>
-			<path id="path1026" inkscape:connector-curvature="0" class="st23" d="M8890.8,8494.9c-4.8,4-10.3,7.9-15.9,10.3
+	<g id="binary_sensor.lg_tv_5600" transform="matrix(3.3607175,0,0,3.3607175,1291.4052,-870.00481)" class="st2">
+		<rect id="rect2600" x="738" y="530.9" class="st22" width="39.7" height="26.2"/>
+		<rect id="rect2602" x="771.4" y="534.1" class="st38" width="3.2" height="3.2"/>
+		<path id="path2604" inkscape:connector-curvature="0" class="st39" d="M765,550.8L765,550.8C765,550.8,765,550,765,550.8l-3.2-2.4
+			c-0.8,0-1.6,0-1.6-0.8V546l0.8-0.8c0.8-0.8,0.8-1.6,1.6-2.4c0.8,0,1.6-0.8,1.6-0.8v-1.5c0,0,0,0,0-0.8c-0.8-0.8-0.8-0.8-0.8-1.6
+			v-0.8c0,0,0-4-4.8-4s-4.8,4-4.8,4v0.8c0,0.8,0,0.8-0.8,1.6c0,0,0,0,0,0.8v1.6c0,0.8,0.8,0.8,0.8,0.8c0.8,1.6,2.4,3.2,2.4,3.2v1.6
+			c0,0.8-1.6,0.8-1.6,1.6l-3.2,1.6c0,0-0.8,0-0.8,0.8c0,0,0,0,0.8,0L765,550.8L765,550.8z"/>
+		<rect id="rect2606" x="741.2" y="550.8" class="st40" width="3.2" height="3.2"/>
+		<polygon id="polygon2608" class="st41" points="756.3,557.2 756.3,560.3 753.1,560.3 753.1,562.7 762.6,562.7 762.6,560.3 
+			758.6,560.3 758.6,557.2 		"/>
+		<rect id="rect2610" x="747.5" y="550.8" class="st42" width="27" height="3.2"/>
+		<g id="g2612" class="st7">
+		</g>
+		<g id="g2614" class="st7">
+		</g>
+		<g id="g2616" class="st7">
+		</g>
+		<g id="g2618" class="st7">
+		</g>
+		<g id="g2620" class="st7">
+		</g>
+		<g id="g2622" class="st7">
+		</g>
+		<g id="g2624" class="st7">
+		</g>
+		<g id="g2626" class="st7">
+		</g>
+		<g id="g2628" class="st7">
+		</g>
+		<g id="g2630" class="st7">
+		</g>
+		<g id="g2632" class="st7">
+		</g>
+		<g id="g2634" class="st7">
+		</g>
+		<g id="g2636" class="st7">
+		</g>
+		<g id="g2638" class="st7">
+		</g>
+		<g id="g2640" class="st7">
+		</g>
+	</g>
+	<g id="binary_sensor.chromecast_main_tv" transform="matrix(0.2435425,0,0,0.2435425,1321.3627,-994.95051)" class="st2">
+		<g id="g1058" class="st7">
+			<path id="path1024" inkscape:connector-curvature="0" class="st26" d="M9774.8,7959.7l-45.3,45.3l-11.9,11.9l-28.6-28.6
+				c-0.8-0.8-1.6-2.4-1.6-4s0.8-3.2,1.6-4l48.5-48.5c2.4-2.4,5.6-2.4,7.9,0l7.2,7.2L9774.8,7959.7z"/>
+			<path id="path1026" inkscape:connector-curvature="0" class="st27" d="M9981.4,8240.2c-4.8,4-10.3,7.9-15.9,10.3
 				c-35.8,19.1-78.7,15.1-110.5-8.7s-47.7-64.4-38.9-103.3c0.8-4,0-7.9-3.2-10.3l-99.3-99.3c-2.4-2.4-2.4-5.6,0-7.9l65.2-65.2
 				c0.8-0.8,0.8-0.8,1.6-0.8c2.4-1.6,5.6-0.8,7.2,0.8l99.3,99.3c2.4,2.4,6.4,4,10.3,3.2c46.9-9.5,94.6,14.3,114.4,57.2
-				C8940.1,8413.8,8928.2,8465.5,8890.8,8494.9L8890.8,8494.9z"/>
-			<path id="path1028" inkscape:connector-curvature="0" class="st24" d="M8684.2,8214.4l-45.3,45.3l-16.7-16.7
-				c-0.8-0.8-1.6-2.4-1.6-4s0.8-3.2,1.6-4l41.3-41.3L8684.2,8214.4z"/>
+				C10030.7,8159.1,10018.8,8210.8,9981.4,8240.2L9981.4,8240.2z"/>
+			<path id="path1028" inkscape:connector-curvature="0" class="st28" d="M9774.8,7959.7l-45.3,45.3l-16.7-16.7
+				c-0.8-0.8-1.6-2.4-1.6-4s0.8-3.2,1.6-4l41.3-41.3L9774.8,7959.7z"/>
 			<g id="g1036">
-				<circle id="circle1030" class="st25" cx="8826.5" cy="8413.8" r="40.5"/>
-				<path id="path1032" inkscape:connector-curvature="0" class="st18" d="M8890.8,8494.9c-4.8,4-10.3,7.9-15.9,10.3
+				<circle id="circle1030" class="st29" cx="9917.1" cy="8159.1" r="40.5"/>
+				<path id="path1032" inkscape:connector-curvature="0" class="st30" d="M9981.4,8240.2c-4.8,4-10.3,7.9-15.9,10.3
 					c-35,11.1-73.1,3.2-100.1-21.5c-27-24.6-39.7-62-31.8-97.7c0.8-2.4,0-4.8-0.8-6.4l-107.3-107.3c-2.4-2.4-2.4-5.6,0-7.9
 					l54.8-54.8c2.4-1.6,5.6-0.8,7.2,0.8l99.3,99.3c2.4,2.4,6.4,4,10.3,3.2c46.9-9.5,94.6,14.3,114.4,57.2
-					C8940.1,8413.8,8928.2,8465.5,8890.8,8494.9z"/>
-				<path id="path1034" inkscape:connector-curvature="0" class="st25" d="M8891.6,8479l7.9,7.9"/>
+					C10030.7,8159.1,10018.8,8210.8,9981.4,8240.2z"/>
+				<path id="path1034" inkscape:connector-curvature="0" class="st29" d="M9982.2,8224.3l7.9,7.9"/>
 			</g>
 			<g id="g1042">
-				<path id="path1038" inkscape:connector-curvature="0" class="st26" d="M8627,8277.2c-1.6,0-3.2-0.8-4-1.6l-28.6-28.6
+				<path id="path1038" inkscape:connector-curvature="0" class="st31" d="M9717.6,8022.5c-1.6,0-3.2-0.8-4-1.6l-28.6-28.6
 					c-4.8-4.8-4.8-11.9,0-16.7l48.5-48.5l0,0c4.8-4.8,11.9-4.8,16.7,0l28.6,28.6c0.8,0.8,1.6,2.4,1.6,4s-0.8,3.2-1.6,4l-57.2,57.2
-					C8630.2,8276.4,8628.6,8277.2,8627,8277.2L8627,8277.2z M8651.6,8190.6L8651.6,8190.6l-48.5,48.5l24.6,24.6l48.5-48.5
-					L8651.6,8190.6z"/>
-				<path id="path1040" inkscape:connector-curvature="0" class="st26" d="M8826.5,8523.5c-32.6,0-63.6-15.1-84.2-40.5
+					C9720.8,8021.7,9719.2,8022.5,9717.6,8022.5L9717.6,8022.5z M9742.2,7935.9L9742.2,7935.9l-48.5,48.5l24.6,24.6l48.5-48.5
+					L9742.2,7935.9z"/>
+				<path id="path1040" inkscape:connector-curvature="0" class="st31" d="M9917.1,8268.8c-32.6,0-63.6-15.1-84.2-40.5
 					c-20.7-25.4-28.6-58.8-22.2-90.6c0.8-1.6,0-4-1.6-5.6c-2.4-2.4-2.4-5.6,0-7.9c2.4-2.4,5.6-2.4,7.9,0c4,4,5.6,10.3,4.8,15.9
 					c-7.9,40.5,9.5,81.1,44.5,102.5s79.5,19.1,112-7.2c35.8-27.8,46.9-77.1,27.8-117.6c-19.1-41.3-64.4-63.6-108.1-54
 					c-5.6,1.6-11.1-0.8-15.1-4.8l-99.3-99.3l-65.2,65.2c2.4,2.4,2.4,5.6,0,7.9c-2.4,2.4-5.6,2.4-7.9,0c-4.8-4.8-4.8-11.9,0-16.7
 					l65.2-65.2c4.8-4.8,11.9-4.8,16.7,0l99.3,99.3c1.6,1.6,3.2,1.6,4.8,1.6c40.5-8.7,82.6,7.2,108.1,39.7
-					c25.4,32.6,30.2,77.9,11.9,115.2C8905.9,8499.7,8867.8,8523.5,8826.5,8523.5L8826.5,8523.5z"/>
+					c25.4,32.6,30.2,77.9,11.9,115.2C9996.5,8245,9958.4,8268.8,9917.1,8268.8L9917.1,8268.8z"/>
 			</g>
-			<path id="path1044" inkscape:connector-curvature="0" class="st24" d="M8854.3,8442.5c-15.9,15.9-41.3,15.9-57.2,0
-				s-15.9-41.3,0-57.2c15.9-15.9,41.3-15.9,57.2,0c7.9,7.9,11.9,17.5,11.9,28.6S8862.2,8434.5,8854.3,8442.5z"/>
-			<path id="path1046" inkscape:connector-curvature="0" class="st22" d="M8837.6,8442.5c-5.6,5.6-12.7,9.5-19.9,11.1
-				c-18.3-4-31.8-20.7-31.8-38.9s13.5-35,31.8-38.9c7.9,1.6,14.3,5.6,19.9,11.1C8853.5,8401.1,8853.5,8426.6,8837.6,8442.5
-				L8837.6,8442.5z"/>
+			<path id="path1044" inkscape:connector-curvature="0" class="st28" d="M9944.9,8187.8c-15.9,15.9-41.3,15.9-57.2,0
+				c-15.9-15.9-15.9-41.3,0-57.2s41.3-15.9,57.2,0c7.9,7.9,11.9,17.5,11.9,28.6S9952.8,8179.8,9944.9,8187.8z"/>
+			<path id="path1046" inkscape:connector-curvature="0" class="st26" d="M9928.2,8187.8c-5.6,5.6-12.7,9.5-19.9,11.1
+				c-18.3-4-31.8-20.7-31.8-38.9s13.5-35,31.8-38.9c7.9,1.6,14.3,5.6,19.9,11.1C9944.1,8146.4,9944.1,8171.9,9928.2,8187.8
+				L9928.2,8187.8z"/>
 			<g id="g1056">
-				<path id="path1048" inkscape:connector-curvature="0" class="st26" d="M8826.5,8459.9c-22.2,0-40.5-15.9-45.3-37.3
-					s7.2-42.9,27.8-51.6s43.7-1.6,55.6,16.7c11.9,18.3,9.5,42.9-5.6,58C8850.3,8455.2,8838.4,8459.9,8826.5,8459.9L8826.5,8459.9z
-					 M8826.5,8379.7c-16.7,0-31,11.9-34.2,27.8c-3.2,15.9,5.6,32.6,20.7,38.9c15.1,6.4,32.6,0.8,42.1-12.7s7.2-31.8-4.8-43.7
-					C8843.9,8382.9,8835.2,8379.7,8826.5,8379.7L8826.5,8379.7z"/>
-				<path id="path1050" inkscape:connector-curvature="0" class="st26" d="M8826.5,8488.5c-35.8,0-66-24.6-73.1-59.6
+				<path id="path1048" inkscape:connector-curvature="0" class="st31" d="M9917.1,8205.2c-22.2,0-40.5-15.9-45.3-37.3
+					s7.2-42.9,27.8-51.6s43.7-1.6,55.6,16.7c11.9,18.3,9.5,42.9-5.6,58C9940.9,8200.5,9929,8205.2,9917.1,8205.2L9917.1,8205.2z
+					 M9917.1,8125c-16.7,0-31,11.9-34.2,27.8c-3.2,15.9,5.6,32.6,20.7,38.9c15.1,6.4,32.6,0.8,42.1-12.7c9.5-13.5,7.2-31.8-4.8-43.7
+					C9934.5,8128.2,9925.8,8125,9917.1,8125L9917.1,8125z"/>
+				<path id="path1050" inkscape:connector-curvature="0" class="st31" d="M9917.1,8233.8c-35.8,0-66-24.6-73.1-59.6
 					c-0.8-5.6-3.2-9.5-7.2-13.5l-96.1-94.6c-2.4-2.4-2.4-5.6,0-7.9c2.4-2.4,5.6-2.4,7.9,0l96.1,94.6c5.6,5.6,8.7,11.9,10.3,19.9
 					c2.4,13.5,9.5,25.4,19.1,34.2c24.6,22.2,61.2,22.2,85.8,0c17.5-15.9,24.6-40.5,18.3-63.6c-6.4-23-24.6-40.5-48.5-45.3
 					c-7.9-1.6-14.3-4.8-19.9-10.3l-127.1-127.1l-65.2,65.2c2.4,2.4,2.4,5.6,0,7.9c-2.4,2.4-5.6,2.4-7.9,0c-4.8-4.8-4.8-11.9,0-16.7
 					l65.2-65.2c4.8-4.8,11.9-4.8,16.7,0l127.1,127.1c4,4,8.7,6.4,14.3,7.2c37.3,7.9,62.8,42.9,59.6,81.1
-					C8896.4,8459.9,8864.6,8488.5,8826.5,8488.5L8826.5,8488.5z"/>
-				<path id="path1052" inkscape:connector-curvature="0" class="st26" d="M8899.6,8492.5c-1.6,0-3.2-0.8-4-1.6l-7.9-7.9
-					c-2.4-2.4-2.4-5.6,0-7.9c2.4-2.4,5.6-2.4,7.9,0l7.9,7.9c1.6,1.6,2.4,4,1.6,6.4C8903.5,8491.7,8901.9,8492.5,8899.6,8492.5z"/>
-				<path id="path1054" inkscape:connector-curvature="0" class="st26" d="M8637.3,8305c-0.8,0-1.6,0-2.4-0.8
+					C9987,8205.2,9955.2,8233.8,9917.1,8233.8L9917.1,8233.8z"/>
+				<path id="path1052" inkscape:connector-curvature="0" class="st31" d="M9990.2,8237.8c-1.6,0-3.2-0.8-4-1.6l-7.9-7.9
+					c-2.4-2.4-2.4-5.6,0-7.9c2.4-2.4,5.6-2.4,7.9,0l7.9,7.9c1.6,1.6,2.4,4,1.6,6.4C9994.1,8237,9992.5,8237.8,9990.2,8237.8z"/>
+				<path id="path1054" inkscape:connector-curvature="0" class="st31" d="M9727.9,8050.3c-0.8,0-1.6,0-2.4-0.8
 					c-0.8,0-1.6-0.8-1.6-1.6c-1.6-1.6-2.4-4-1.6-6.4c0-0.8,0.8-1.6,1.6-1.6l0.8-0.8c0.8,0,0.8-0.8,0.8-0.8c0.8,0,0.8,0,0.8-0.8
 					c0.8,0,1.6,0,2.4,0c0.8,0,0.8,0,0.8,0.8c0.8,0,0.8,0,0.8,0.8l0.8,0.8c0.8,0.8,0.8,1.6,1.6,1.6c0.8,2.4,0.8,4.8-1.6,6.4
-					c-0.8,0.8-1.6,0.8-1.6,1.6C8638.1,8305,8638.1,8305,8637.3,8305L8637.3,8305z"/>
+					c-0.8,0.8-1.6,0.8-1.6,1.6C9728.7,8050.3,9728.7,8050.3,9727.9,8050.3L9727.9,8050.3z"/>
 			</g>
 		</g>
-		<g id="g1060">
+		<g id="g1060" class="st7">
 		</g>
-		<g id="g1062">
+		<g id="g1062" class="st7">
 		</g>
-		<g id="g1064">
+		<g id="g1064" class="st7">
 		</g>
-		<g id="g1066">
+		<g id="g1066" class="st7">
 		</g>
-		<g id="g1068">
+		<g id="g1068" class="st7">
 		</g>
-		<g id="g1070">
+		<g id="g1070" class="st7">
 		</g>
-		<g id="g1072">
+		<g id="g1072" class="st7">
 		</g>
-		<g id="g1074">
+		<g id="g1074" class="st7">
 		</g>
-		<g id="g1076">
+		<g id="g1076" class="st7">
 		</g>
-		<g id="g1078">
+		<g id="g1078" class="st7">
 		</g>
-		<g id="g1080">
+		<g id="g1080" class="st7">
 		</g>
-		<g id="g1082">
+		<g id="g1082" class="st7">
 		</g>
-		<g id="g1084">
+		<g id="g1084" class="st7">
 		</g>
-		<g id="g1086">
+		<g id="g1086" class="st7">
 		</g>
-		<g id="g1088">
-		</g>
-	</g>
-	<g id="light.living_room_cabinet" transform="matrix(1.6350835,0,0,1.6350835,3346.7968,-294.00489)">
-		<path id="path1318" inkscape:connector-curvature="0" class="st16" d="M328.7,801.9c-7.9,0-14.3,6.4-14.3,14.3
-			c0,6.4,4,11.9,9.5,13.5v8.7h1.6v2.4h5.6v-2.4h1.6v-8.7c5.6-1.6,9.5-7.2,9.5-13.5C343,808.2,336.6,801.9,328.7,801.9z"/>
-		<g id="g1334">
-			<path id="path1320" inkscape:connector-curvature="0" class="st16" d="M328.7,793.9C327.9,793.9,327.9,794.7,328.7,793.9
-				l-0.8,4.8c0,0.8,0.8,0.8,0.8,0.8c0.8,0,0.8-0.8,0.8-0.8L328.7,793.9C329.5,793.9,328.7,793.9,328.7,793.9z"/>
-			<path id="path1322" inkscape:connector-curvature="0" class="st16" d="M350.1,814.6h-4c-0.8,0-0.8,0.8-0.8,0.8l0.8,0.8h4
-				C350.9,816.2,350.9,815.4,350.1,814.6L350.1,814.6z"/>
-			<path id="path1324" inkscape:connector-curvature="0" class="st16" d="M311.2,814.6h-4c-0.8,0-0.8,0.8-0.8,0.8l0.8,0.8h4
-				C312,816.2,312,815.4,311.2,814.6L311.2,814.6z"/>
-			<path id="path1326" inkscape:connector-curvature="0" class="st16" d="M343,800.3l-2.4,2.4c-0.8,0.8-0.8,0.8,0,1.6h0.8h0.8
-				l2.4-2.4c0.8-0.8,0.8-0.8,0-1.6S343,799.5,343,800.3L343,800.3z"/>
-			<path id="path1328" inkscape:connector-curvature="0" class="st16" d="M315.2,828.1l-2.4,2.4c-0.8,0.8-0.8,0.8,0,1.6h0.8h0.8
-				l2.4-2.4c0.8-0.8,0.8-0.8,0-1.6C316,827.3,316,827.3,315.2,828.1L315.2,828.1z"/>
-			<path id="path1330" inkscape:connector-curvature="0" class="st16" d="M341.4,828.1c-0.8-0.8-0.8-0.8-1.6,0
-				c-0.8,0.8-0.8,0.8,0,1.6l2.4,2.4h0.8h0.8c0.8-0.8,0.8-0.8,0-1.6L341.4,828.1z"/>
-			<path id="path1332" inkscape:connector-curvature="0" class="st16" d="M314.4,800.3c-0.8-0.8-0.8-0.8-1.6,0
-				c-0.8,0.8-0.8,0.8,0,1.6l2.4,2.4h0.8h0.8c0.8-0.8,0.8-0.8,0-1.6L314.4,800.3z"/>
-		</g>
-		<path id="path1336" inkscape:connector-curvature="0" class="st17" d="M319.2,817C318.4,817,318.4,816.2,319.2,817
-			c-0.8-6.4,4-11.1,9.5-11.1c0.8,0,0.8,0.8,0.8,0.8l-0.8,0.8c-4.8,0-8.7,4-8.7,8.7C320,816.2,319.2,817,319.2,817z"/>
-		<polygon id="polygon1338" class="st18" points="323.9,832.1 323.9,838.4 326.3,838.4 326.3,840.8 331.1,840.8 331.1,838.4 
-			332.7,838.4 332.7,832.1 		"/>
-		<g id="g1340">
-		</g>
-		<g id="g1342">
-		</g>
-		<g id="g1344">
-		</g>
-		<g id="g1346">
-		</g>
-		<g id="g1348">
-		</g>
-		<g id="g1350">
-		</g>
-		<g id="g1352">
-		</g>
-		<g id="g1354">
-		</g>
-		<g id="g1356">
-		</g>
-		<g id="g1358">
-		</g>
-		<g id="g1360">
-		</g>
-		<g id="g1362">
-		</g>
-		<g id="g1364">
-		</g>
-		<g id="g1366">
-		</g>
-		<g id="g1368">
+		<g id="g1088" class="st7">
 		</g>
 	</g>
-	<g id="binary_sensor.ares">
-		<rect x="2983.4" y="1057.8" class="st67" width="158.2" height="70.9"/>
-		<rect x="3013.4" y="1068.7" class="st68" width="16.4" height="49.1"/>
-		<rect x="3029.8" y="1068.7" class="st68" width="16.4" height="49.1"/>
-		<rect x="3046.2" y="1068.7" class="st68" width="16.4" height="49.1"/>
-		<rect x="3062.6" y="1068.7" class="st68" width="16.4" height="49.1"/>
-		<rect x="3078.9" y="1068.7" class="st68" width="16.4" height="49.1"/>
-		<circle class="st69" cx="3114.4" cy="1076.9" r="8.2"/>
-		<path class="st70" d="M2994.4,1123.3c-1.5,0-2.7-1.2-2.7-2.7V1066c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v54.6
-			C2997.1,1122.1,2995.9,1123.3,2994.4,1123.3z"/>
-		<path class="st70" d="M3133.5,1123.3c-1.5,0-2.7-1.2-2.7-2.7V1066c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v54.6
-			C3136.2,1122.1,3135,1123.3,3133.5,1123.3z"/>
-		<path class="st70" d="M3119.8,1101.5h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
-			C3122.6,1100.2,3121.4,1101.5,3119.8,1101.5z"/>
-		<path class="st70" d="M3119.8,1109.6h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
-			S3121.4,1109.6,3119.8,1109.6z"/>
-		<path class="st70" d="M3119.8,1117.8h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
-			S3121.4,1117.8,3119.8,1117.8z"/>
-		<circle class="st71" cx="3114.4" cy="1076.9" r="5.5"/>
+	<g id="light.living_room_cabinet" transform="matrix(1.6350835,0,0,1.6350835,3346.7968,-294.00489)" class="st2">
+		<path id="path1318" inkscape:connector-curvature="0" class="st19" d="M491.1,764c-7.9,0-14.3,6.4-14.3,14.3
+			c0,6.4,4,11.9,9.5,13.5v8.7h1.6v2.4h5.6v-2.4h1.6v-8.7c5.6-1.6,9.5-7.2,9.5-13.5C505.4,770.3,499,764,491.1,764z"/>
+		<g id="g1334" class="st7">
+			<path id="path1320" inkscape:connector-curvature="0" class="st20" d="M491.1,756C490.3,756,490.3,756.8,491.1,756l-0.8,4.8
+				c0,0.8,0.8,0.8,0.8,0.8c0.8,0,0.8-0.8,0.8-0.8L491.1,756C491.9,756,491.1,756,491.1,756z"/>
+			<path id="path1322" inkscape:connector-curvature="0" class="st20" d="M512.5,776.7h-4c-0.8,0-0.8,0.8-0.8,0.8l0.8,0.8h4
+				C513.3,778.3,513.3,777.5,512.5,776.7L512.5,776.7z"/>
+			<path id="path1324" inkscape:connector-curvature="0" class="st20" d="M473.6,776.7h-4c-0.8,0-0.8,0.8-0.8,0.8l0.8,0.8h4
+				C474.4,778.3,474.4,777.5,473.6,776.7L473.6,776.7z"/>
+			<path id="path1326" inkscape:connector-curvature="0" class="st20" d="M505.4,762.4l-2.4,2.4c-0.8,0.8-0.8,0.8,0,1.6h0.8h0.8
+				l2.4-2.4c0.8-0.8,0.8-0.8,0-1.6S505.4,761.6,505.4,762.4L505.4,762.4z"/>
+			<path id="path1328" inkscape:connector-curvature="0" class="st20" d="M477.6,790.2l-2.4,2.4c-0.8,0.8-0.8,0.8,0,1.6h0.8h0.8
+				l2.4-2.4c0.8-0.8,0.8-0.8,0-1.6S478.4,789.4,477.6,790.2L477.6,790.2z"/>
+			<path id="path1330" inkscape:connector-curvature="0" class="st20" d="M503.8,790.2c-0.8-0.8-0.8-0.8-1.6,0
+				c-0.8,0.8-0.8,0.8,0,1.6l2.4,2.4h0.8h0.8c0.8-0.8,0.8-0.8,0-1.6L503.8,790.2z"/>
+			<path id="path1332" inkscape:connector-curvature="0" class="st20" d="M476.8,762.4c-0.8-0.8-0.8-0.8-1.6,0
+				c-0.8,0.8-0.8,0.8,0,1.6l2.4,2.4h0.8h0.8c0.8-0.8,0.8-0.8,0-1.6L476.8,762.4z"/>
+		</g>
+		<path id="path1336" inkscape:connector-curvature="0" class="st21" d="M481.6,779.1C480.8,779.1,480.8,778.3,481.6,779.1
+			c-0.8-6.4,4-11.1,9.5-11.1c0.8,0,0.8,0.8,0.8,0.8l-0.8,0.8c-4.8,0-8.7,4-8.7,8.7L481.6,779.1z"/>
+		<polygon id="polygon1338" class="st22" points="486.3,794.2 486.3,800.5 488.7,800.5 488.7,802.9 493.5,802.9 493.5,800.5 
+			495.1,800.5 495.1,794.2 		"/>
+		<g id="g1340" class="st7">
+		</g>
+		<g id="g1342" class="st7">
+		</g>
+		<g id="g1344" class="st7">
+		</g>
+		<g id="g1346" class="st7">
+		</g>
+		<g id="g1348" class="st7">
+		</g>
+		<g id="g1350" class="st7">
+		</g>
+		<g id="g1352" class="st7">
+		</g>
+		<g id="g1354" class="st7">
+		</g>
+		<g id="g1356" class="st7">
+		</g>
+		<g id="g1358" class="st7">
+		</g>
+		<g id="g1360" class="st7">
+		</g>
+		<g id="g1362" class="st7">
+		</g>
+		<g id="g1364" class="st7">
+		</g>
+		<g id="g1366" class="st7">
+		</g>
+		<g id="g1368" class="st7">
+		</g>
 	</g>
-	<g id="binary_sensor.aphrodite">
-		<rect x="2983.4" y="986.9" class="st72" width="158.2" height="70.9"/>
-		<rect x="3013.4" y="997.8" class="st68" width="16.4" height="49.1"/>
-		<rect x="3029.8" y="997.8" class="st68" width="16.4" height="49.1"/>
-		<rect x="3046.2" y="997.8" class="st68" width="16.4" height="49.1"/>
-		<rect x="3062.6" y="997.8" class="st68" width="16.4" height="49.1"/>
-		<rect x="3078.9" y="997.8" class="st68" width="16.4" height="49.1"/>
-		<circle class="st69" cx="3114.4" cy="1006" r="8.2"/>
-		<path class="st70" d="M2994.4,1052.3c-1.5,0-2.7-1.2-2.7-2.7V995c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v54.6
-			C2997.1,1051.1,2995.9,1052.3,2994.4,1052.3z"/>
-		<path class="st70" d="M3133.5,1052.3c-1.5,0-2.7-1.2-2.7-2.7V995c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v54.6
-			C3136.2,1051.1,3135,1052.3,3133.5,1052.3z"/>
-		<path class="st70" d="M3119.8,1030.5h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
-			S3121.4,1030.5,3119.8,1030.5z"/>
-		<path class="st70" d="M3119.8,1038.7h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
-			S3121.4,1038.7,3119.8,1038.7z"/>
-		<path class="st70" d="M3119.8,1046.9h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
-			S3121.4,1046.9,3119.8,1046.9z"/>
-		<circle class="st71" cx="3114.4" cy="1006" r="5.5"/>
+	<g id="binary_sensor.ares" class="st2">
+		<rect x="3249" y="995.8" class="st75" width="158.2" height="70.9"/>
+		<rect x="3279" y="1006.7" class="st76" width="16.4" height="49.1"/>
+		<rect x="3295.4" y="1006.7" class="st76" width="16.4" height="49.1"/>
+		<rect x="3311.8" y="1006.7" class="st76" width="16.4" height="49.1"/>
+		<rect x="3328.2" y="1006.7" class="st76" width="16.4" height="49.1"/>
+		<rect x="3344.5" y="1006.7" class="st76" width="16.4" height="49.1"/>
+		<circle class="st77" cx="3380" cy="1014.9" r="8.2"/>
+		<path class="st78" d="M3260,1061.3c-1.5,0-2.7-1.2-2.7-2.7V1004c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v54.6
+			C3262.7,1060.1,3261.5,1061.3,3260,1061.3z"/>
+		<path class="st78" d="M3399.1,1061.3c-1.5,0-2.7-1.2-2.7-2.7V1004c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v54.6
+			C3401.8,1060.1,3400.6,1061.3,3399.1,1061.3z"/>
+		<path class="st78" d="M3385.4,1039.5h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
+			C3388.2,1038.2,3387,1039.5,3385.4,1039.5z"/>
+		<path class="st78" d="M3385.4,1047.6h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
+			S3387,1047.6,3385.4,1047.6z"/>
+		<path class="st78" d="M3385.4,1055.8h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
+			S3387,1055.8,3385.4,1055.8z"/>
+		<circle class="st79" cx="3380" cy="1014.9" r="5.5"/>
 	</g>
-</g>
-<g id="btnContadores">
-	<circle id="circle683" class="st73" cx="4300.5" cy="-306.4" r="42.2"/>
-	<path id="path685" class="st74" d="M4300.5-274.4c-17.7,0-32-14.4-32-32s14.4-32,32-32c17.7,0,32,14.4,32,32
-		S4318.1-274.4,4300.5-274.4z"/>
-	<path id="path687" class="st75" d="M4325.8-305c0-0.5,0.1-1,0.1-1.5c0-14-11.3-25.5-25.5-25.5c-14,0-25.5,11.3-25.5,25.5
-		c0,0.5,0,1,0.1,1.5H4325.8z"/>
-	<path id="path689" class="st76" d="M4292.2-321c-0.1-0.2-0.3-0.3-0.5-0.1c-0.2,0.1-0.3,0.3-0.2,0.5l7,16.8c0.1,0.1,0.1,0.2,0.1,0.3
-		c0.5,0.9,1.7,1.1,2.5,0.6c0.9-0.5,1.1-1.7,0.6-2.5L4292.2-321z"/>
-	<circle id="circle691" class="st77" cx="4300.5" cy="-305" r="4.6"/>
-	<g id="g707">
-		<path id="path693" class="st78" d="M4300.5-326L4300.5-326c-0.5,0-0.9-0.4-0.9-0.9v-1.8c0-0.5,0.4-0.9,0.9-0.9l0,0
-			c0.5,0,0.9,0.4,0.9,0.9v1.8C4301.3-326.5,4300.9-326,4300.5-326z"/>
-		<path id="path695" class="st78" d="M4314.3-320.3L4314.3-320.3c-0.3-0.3-0.3-0.9,0-1.2l1.3-1.3c0.3-0.3,0.9-0.3,1.2,0l0,0
-			c0.3,0.3,0.3,0.9,0,1.2l-1.3,1.3C4315.1-320,4314.6-320,4314.3-320.3z"/>
-		<path id="path697" class="st78" d="M4284.1-322.7L4284.1-322.7c0.3-0.3,0.9-0.3,1.2,0l1.3,1.3c0.3,0.3,0.3,0.9,0,1.2l0,0
-			c-0.3,0.3-0.9,0.3-1.2,0l-1.3-1.3C4283.8-321.9,4283.8-322.4,4284.1-322.7z"/>
-		<path id="path699" class="st78" d="M4292.9-324.6L4292.9-324.6c-0.4,0.2-0.9,0-1.1-0.5l-0.7-1.7c-0.2-0.4,0-0.9,0.5-1.1l0,0
-			c0.4-0.2,0.9,0,1.1,0.5l0.7,1.7C4293.6-325.2,4293.4-324.7,4292.9-324.6z"/>
-		<path id="path701" class="st78" d="M4318.6-314L4318.6-314c-0.2-0.4,0-0.9,0.5-1.1l1.7-0.7c0.4-0.2,0.9,0,1.1,0.5l0,0
-			c0.2,0.4,0,0.9-0.5,1.1l-1.7,0.7C4319.2-313.3,4318.7-313.5,4318.6-314z"/>
-		<path id="path703" class="st78" d="M4308-324.6L4308-324.6c-0.4-0.2-0.6-0.7-0.5-1.1l0.7-1.7c0.2-0.4,0.7-0.6,1.1-0.5l0,0
-			c0.4,0.2,0.6,0.7,0.5,1.1l-0.7,1.7C4308.9-324.6,4308.4-324.4,4308-324.6z"/>
-		<path id="path705" class="st78" d="M4279.1-315.2L4279.1-315.2c0.2-0.4,0.7-0.6,1.1-0.5l1.7,0.7c0.4,0.2,0.6,0.7,0.5,1.1l0,0
-			c-0.2,0.4-0.7,0.6-1.1,0.5l-1.7-0.7C4279.2-314.4,4279-314.8,4279.1-315.2z"/>
-	</g>
-	<g id="g717">
-		<circle id="circle709" class="st79" cx="4300.5" cy="-335" r="1.7"/>
-		<circle id="circle711" class="st79" cx="4300.5" cy="-277.9" r="1.7"/>
-		<circle id="circle713" class="st79" cx="4329" cy="-306.4" r="1.7"/>
-		<circle id="circle715" class="st79" cx="4271.9" cy="-306.4" r="1.7"/>
+	<g id="binary_sensor.aphrodite" class="st2">
+		<rect x="3249" y="924.9" class="st80" width="158.2" height="70.9"/>
+		<rect x="3279" y="935.8" class="st76" width="16.4" height="49.1"/>
+		<rect x="3295.4" y="935.8" class="st76" width="16.4" height="49.1"/>
+		<rect x="3311.8" y="935.8" class="st76" width="16.4" height="49.1"/>
+		<rect x="3328.2" y="935.8" class="st76" width="16.4" height="49.1"/>
+		<rect x="3344.5" y="935.8" class="st76" width="16.4" height="49.1"/>
+		<circle class="st77" cx="3380" cy="944" r="8.2"/>
+		<path class="st78" d="M3260,990.3c-1.5,0-2.7-1.2-2.7-2.7V933c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v54.6
+			C3262.7,989.1,3261.5,990.3,3260,990.3z"/>
+		<path class="st78" d="M3399.1,990.3c-1.5,0-2.7-1.2-2.7-2.7V933c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v54.6
+			C3401.8,989.1,3400.6,990.3,3399.1,990.3z"/>
+		<path class="st78" d="M3385.4,968.5h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
+			S3387,968.5,3385.4,968.5z"/>
+		<path class="st78" d="M3385.4,976.7h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
+			S3387,976.7,3385.4,976.7z"/>
+		<path class="st78" d="M3385.4,984.9h-10.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h10.9c1.5,0,2.7,1.2,2.7,2.7
+			S3387,984.9,3385.4,984.9z"/>
+		<circle class="st79" cx="3380" cy="944" r="5.5"/>
 	</g>
 </g>
-<g id="Meters">
-	<path id="Background" class="st80" d="M4522.8,1211.3H1135.3c-6.9,0-12.4-4.7-12.4-10.5V-408.7c0-5.8,5.6-10.5,12.4-10.5h3387.5
-		c6.9,0,12.4,4.7,12.4,10.5v1609.4C4535.3,1206.6,4529.7,1211.3,4522.8,1211.3z"/>
-	<g id="Electric-Meter" transform="matrix(0.78486599,0,0,0.78486599,1933.6757,501.48709)">
+<g id="btnContadores" class="st2">
+	<circle id="circle683" class="st81" cx="5685.5" cy="-718.5" r="42.2"/>
+	<path id="path685" class="st82" d="M5685.5-686.5c-17.7,0-32-14.4-32-32c0-17.6,14.4-32,32-32c17.7,0,32,14.4,32,32
+		C5717.5-700.9,5703.1-686.5,5685.5-686.5z"/>
+	<path id="path687" class="st83" d="M5710.8-717.1c0-0.5,0.1-1,0.1-1.5c0-14-11.3-25.5-25.5-25.5c-14,0-25.5,11.3-25.5,25.5
+		c0,0.5,0,1,0.1,1.5H5710.8z"/>
+	<path id="path689" class="st84" d="M5677.2-733.1c-0.1-0.2-0.3-0.3-0.5-0.1c-0.2,0.1-0.3,0.3-0.2,0.5l7,16.8
+		c0.1,0.1,0.1,0.2,0.1,0.3c0.5,0.9,1.7,1.1,2.5,0.6c0.9-0.5,1.1-1.7,0.6-2.5L5677.2-733.1z"/>
+	<circle id="circle691" class="st85" cx="5685.5" cy="-717.1" r="4.6"/>
+	<g id="g707" class="st7">
+		<path id="path693" class="st86" d="M5685.5-738.1L5685.5-738.1c-0.5,0-0.9-0.4-0.9-0.9v-1.8c0-0.5,0.4-0.9,0.9-0.9l0,0
+			c0.5,0,0.9,0.4,0.9,0.9v1.8C5686.3-738.6,5685.9-738.1,5685.5-738.1z"/>
+		<path id="path695" class="st86" d="M5699.3-732.4L5699.3-732.4c-0.3-0.3-0.3-0.9,0-1.2l1.3-1.3c0.3-0.3,0.9-0.3,1.2,0l0,0
+			c0.3,0.3,0.3,0.9,0,1.2l-1.3,1.3C5700.1-732.1,5699.6-732.1,5699.3-732.4z"/>
+		<path id="path697" class="st86" d="M5669.1-734.8L5669.1-734.8c0.3-0.3,0.9-0.3,1.2,0l1.3,1.3c0.3,0.3,0.3,0.9,0,1.2l0,0
+			c-0.3,0.3-0.9,0.3-1.2,0l-1.3-1.3C5668.8-734,5668.8-734.5,5669.1-734.8z"/>
+		<path id="path699" class="st86" d="M5677.9-736.7L5677.9-736.7c-0.4,0.2-0.9,0-1.1-0.5l-0.7-1.7c-0.2-0.4,0-0.9,0.5-1.1l0,0
+			c0.4-0.2,0.9,0,1.1,0.5l0.7,1.7C5678.6-737.3,5678.4-736.8,5677.9-736.7z"/>
+		<path id="path701" class="st86" d="M5703.6-726.1L5703.6-726.1c-0.2-0.4,0-0.9,0.5-1.1l1.7-0.7c0.4-0.2,0.9,0,1.1,0.5l0,0
+			c0.2,0.4,0,0.9-0.5,1.1l-1.7,0.7C5704.2-725.4,5703.7-725.6,5703.6-726.1z"/>
+		<path id="path703" class="st86" d="M5693-736.7L5693-736.7c-0.4-0.2-0.6-0.7-0.5-1.1l0.7-1.7c0.2-0.4,0.7-0.6,1.1-0.5l0,0
+			c0.4,0.2,0.6,0.7,0.5,1.1l-0.7,1.7C5693.9-736.7,5693.4-736.5,5693-736.7z"/>
+		<path id="path705" class="st86" d="M5664.1-727.3L5664.1-727.3c0.2-0.4,0.7-0.6,1.1-0.5l1.7,0.7c0.4,0.2,0.6,0.7,0.5,1.1l0,0
+			c-0.2,0.4-0.7,0.6-1.1,0.5l-1.7-0.7C5664.2-726.5,5664-726.9,5664.1-727.3z"/>
+	</g>
+	<g id="g717" class="st7">
+		<circle id="circle709" class="st87" cx="5685.5" cy="-747.1" r="1.7"/>
+		<circle id="circle711" class="st87" cx="5685.5" cy="-690" r="1.7"/>
+		<circle id="circle713" class="st87" cx="5714" cy="-718.5" r="1.7"/>
+		<circle id="circle715" class="st87" cx="5656.9" cy="-718.5" r="1.7"/>
+	</g>
+</g>
+<g id="Meters" class="st2">
+	<path id="Background" class="st88" d="M5907.8,799.2H2520.3c-6.9,0-12.4-4.7-12.4-10.5V-820.8c0-5.8,5.6-10.5,12.4-10.5h3387.5
+		c6.9,0,12.4,4.7,12.4,10.5V788.6C5920.3,794.5,5914.7,799.2,5907.8,799.2z"/>
+	<g id="Electric-Meter" transform="matrix(0.78486599,0,0,0.78486599,1933.6757,501.48709)" class="st7">
 		<g id="g5700">
-			<path id="path5696" inkscape:connector-curvature="0" class="st81" d="M847.8-556.3c-12.5,0-22.7,10.1-22.7,22.7
-				c0,12.5,10.1,22.7,22.7,22.7c12.5,0,22.7,10.1,22.7,22.7v-90.6C870.4-566.4,860.3-556.3,847.8-556.3L847.8-556.3z"/>
-			<path id="path5698" inkscape:connector-curvature="0" class="st81" d="M1414.1-556.3c-12.5,0-22.7-10.1-22.7-22.7v90.6
-				c0-12.5,10.1-22.7,22.7-22.7c12.5,0,22.7-10.1,22.7-22.7C1436.8-546.1,1426.6-556.3,1414.1-556.3L1414.1-556.3z"/>
+			<path id="path5696" inkscape:connector-curvature="0" class="st89" d="M2612.4-1081.4c-12.5,0-22.7,10.1-22.7,22.7
+				c0,12.5,10.1,22.7,22.7,22.7c12.5,0,22.7,10.1,22.7,22.7v-90.6C2635-1091.5,2624.9-1081.4,2612.4-1081.4L2612.4-1081.4z"/>
+			<path id="path5698" inkscape:connector-curvature="0" class="st89" d="M3178.7-1081.4c-12.5,0-22.7-10.1-22.7-22.7v90.6
+				c0-12.5,10.1-22.7,22.7-22.7c12.5,0,22.7-10.1,22.7-22.7C3201.4-1071.2,3191.2-1081.4,3178.7-1081.4L3178.7-1081.4z"/>
 		</g>
-		<path id="path5702" inkscape:connector-curvature="0" class="st82" d="M1346.1-273.1H915.7c-25,0-45.3-20.3-45.3-45.3v-430.4
-			c0-25,20.3-45.3,45.3-45.3h430.4c25,0,45.3,20.3,45.3,45.3v430.4C1391.4-293.4,1371.2-273.1,1346.1-273.1z"/>
-		<path id="path5704" inkscape:connector-curvature="0" class="st83" d="M1357.5-363.7v-362.4c0-18.8-15.2-34-34-34H961.1
+		<path id="path5702" inkscape:connector-curvature="0" class="st90" d="M3110.7-798.2h-430.4c-25,0-45.3-20.3-45.3-45.3v-430.4
+			c0-25,20.3-45.3,45.3-45.3h430.4c25,0,45.3,20.3,45.3,45.3v430.4C3156-818.5,3135.8-798.2,3110.7-798.2z"/>
+		<path id="path5704" inkscape:connector-curvature="0" class="st91" d="M3122.1-888.8v-362.4c0-18.8-15.2-34-34-34h-362.4
 			c-6.3,0-11.3-5.1-11.3-11.3v-22.7h-34c-25,0-45.3,20.3-45.3,45.3v430.4c0,25,20.3,45.3,45.3,45.3h430.4c25,0,45.3-20.3,45.3-45.3
-			v-34h-22.7C1362.5-352.4,1357.5-357.5,1357.5-363.7L1357.5-363.7z"/>
-		<path id="path5706" inkscape:connector-curvature="0" class="st84" d="M1323.5-329.7H938.4c-6.3,0-11.3-5.1-11.3-11.3v-385.1
-			c0-6.3,5.1-11.3,11.3-11.3h385.1c6.3,0,11.3,5.1,11.3,11.3V-341C1334.8-334.8,1329.7-329.7,1323.5-329.7z"/>
-		<path id="path5712" inkscape:connector-curvature="0" class="st81" d="M1006.3-619h249.2c6.3,0,11.3,5.1,11.3,11.3v45.3
-			c0,6.3-5.1,11.3-11.3,11.3h-249.2c-6.3,0-11.3-5.1-11.3-11.3v-45.3C994.9-614,1000-619,1006.3-619L1006.3-619z"/>
+			v-34h-22.7C3127.1-877.5,3122.1-882.6,3122.1-888.8L3122.1-888.8z"/>
+		<path id="path5706" inkscape:connector-curvature="0" class="st92" d="M3088.1-854.8H2703c-6.3,0-11.3-5.1-11.3-11.3v-385.1
+			c0-6.3,5.1-11.3,11.3-11.3h385.1c6.3,0,11.3,5.1,11.3,11.3v385.1C3099.4-859.9,3094.3-854.8,3088.1-854.8z"/>
+		<path id="path5712" inkscape:connector-curvature="0" class="st89" d="M2770.9-1144.1h249.2c6.3,0,11.3,5.1,11.3,11.3v45.3
+			c0,6.3-5.1,11.3-11.3,11.3h-249.2c-6.3,0-11.3-5.1-11.3-11.3v-45.3C2759.5-1139.1,2764.6-1144.1,2770.9-1144.1L2770.9-1144.1z"/>
 		<g id="g5718" transform="translate(0,37.071656)">
-			<circle id="circle5714" class="st85" cx="1017.7" cy="-451.9" r="22.7"/>
+			<circle id="circle5714" class="st93" cx="2782.3" cy="-977" r="22.7"/>
 		</g>
-		<circle id="circle5720" class="st86" cx="1130.9" cy="-414.8" r="22.7"/>
-		<path id="path5734" inkscape:connector-curvature="0" class="st86" d="M1006.3-619h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3v-45.3
-			C994.9-614,1000-619,1006.3-619L1006.3-619z"/>
+		<circle id="circle5720" class="st94" cx="2895.5" cy="-939.9" r="22.7"/>
+		<path id="path5734" inkscape:connector-curvature="0" class="st94" d="M2770.9-1144.1h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3
+			v-45.3C2759.5-1139.1,2764.6-1144.1,2770.9-1144.1L2770.9-1144.1z"/>
 		<g id="g5740">
-			<path id="path5736" inkscape:connector-curvature="0" class="st87" d="M1085.6-352.4c-75.1,0-135.9-60.9-135.9-135.9v-249.2
-				h-11.3c-6.3,0-11.3,5.1-11.3,11.3v385.1c0,6.3,5.1,11.3,11.3,11.3h385.1c6.3,0,11.3-5.1,11.3-11.3v-11.3H1085.6L1085.6-352.4z"/>
+			<path id="path5736" inkscape:connector-curvature="0" class="st95" d="M2850.2-877.5c-75.1,0-135.9-60.9-135.9-135.9v-249.2H2703
+				c-6.3,0-11.3,5.1-11.3,11.3v385.1c0,6.3,5.1,11.3,11.3,11.3h385.1c6.3,0,11.3-5.1,11.3-11.3v-11.3H2850.2L2850.2-877.5z"/>
 		</g>
 		<g id="g5772">
 		</g>
@@ -1190,22 +1204,22 @@
 		<g id="g5800">
 		</g>
 		
-			<text id="input_number.edp_ponta" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 1037.3668 -560.8918)" class="st88 st89 st90">500</text>
-		<path id="path5712-0" inkscape:connector-curvature="0" class="st81" d="M1006.3-545.4h249.2c6.3,0,11.3,5.1,11.3,11.3v45.3
-			c0,6.3-5.1,11.3-11.3,11.3h-249.2c-6.3,0-11.3-5.1-11.3-11.3v-45.3C994.9-540.3,1000-545.4,1006.3-545.4L1006.3-545.4z"/>
-		<path id="path5734-7" inkscape:connector-curvature="0" class="st86" d="M1006.3-545.4h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3
-			V-534C994.9-540.3,1000-545.4,1006.3-545.4z"/>
-		<path id="path5712-9" inkscape:connector-curvature="0" class="st81" d="M1006.3-692.6h249.2c6.3,0,11.3,5.1,11.3,11.3v45.3
-			c0,6.3-5.1,11.3-11.3,11.3h-249.2c-6.3,0-11.3-5.1-11.3-11.3v-45.3C994.9-687.6,1000-692.6,1006.3-692.6L1006.3-692.6z"/>
+			<text id="input_number.edp_ponta" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 2801.9993 -1085.9496)" class="st96 st97 st98">500</text>
+		<path id="path5712-0" inkscape:connector-curvature="0" class="st89" d="M2770.9-1070.5h249.2c6.3,0,11.3,5.1,11.3,11.3v45.3
+			c0,6.3-5.1,11.3-11.3,11.3h-249.2c-6.3,0-11.3-5.1-11.3-11.3v-45.3C2759.5-1065.4,2764.6-1070.5,2770.9-1070.5L2770.9-1070.5z"/>
+		<path id="path5734-7" inkscape:connector-curvature="0" class="st94" d="M2770.9-1070.5h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3
+			v-45.3C2759.5-1065.4,2764.6-1070.5,2770.9-1070.5z"/>
+		<path id="path5712-9" inkscape:connector-curvature="0" class="st89" d="M2770.9-1217.7h249.2c6.3,0,11.3,5.1,11.3,11.3v45.3
+			c0,6.3-5.1,11.3-11.3,11.3h-249.2c-6.3,0-11.3-5.1-11.3-11.3v-45.3C2759.5-1212.7,2764.6-1217.7,2770.9-1217.7L2770.9-1217.7z"/>
 		
-			<text id="input_number.edp_vazio" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 1037.3668 -634.4998)" class="st88 st89 st90">500</text>
-		<path id="path5734-1" inkscape:connector-curvature="0" class="st86" d="M1006.3-692.6h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3
-			v-45.3C994.9-687.6,1000-692.6,1006.3-692.6L1006.3-692.6z"/>
+			<text id="input_number.edp_vazio" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 2801.9993 -1159.5576)" class="st96 st97 st98">500</text>
+		<path id="path5734-1" inkscape:connector-curvature="0" class="st94" d="M2770.9-1217.7h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3
+			v-45.3C2759.5-1212.7,2764.6-1217.7,2770.9-1217.7L2770.9-1217.7z"/>
 		
-			<text id="input_number.edp_cheias" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 1037.3668 -487.2853)" class="st88 st89 st90">500</text>
+			<text id="input_number.edp_cheias" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 2801.9993 -1012.343)" class="st96 st97 st98">500</text>
 		<g id="g6443" transform="matrix(0.17840178,0,0,0.17840178,320.65096,231.61629)">
-			<path id="path6388" inkscape:connector-curvature="0" class="st21" d="M5582.7-3726.8h-165.9l153.8-242.1h-193.7l-181.6,363.2
-				h142.9l-142.9,339L5582.7-3726.8z"/>
+			<path id="path6388" inkscape:connector-curvature="0" class="st25" d="M15474-6669.9h-165.9l153.8-242.1h-193.7l-181.6,363.2
+				h142.9l-142.9,339L15474-6669.9z"/>
 			<g id="g6390">
 			</g>
 			<g id="g6392">
@@ -1238,24 +1252,24 @@
 			</g>
 		</g>
 	</g>
-	<g id="Water-Meter" transform="matrix(0.78486599,0,0,0.78486599,2307.7406,510.89289)">
+	<g id="Water-Meter" transform="matrix(0.78486599,0,0,0.78486599,2307.7406,510.89289)" class="st7">
 		<g id="g5700-2">
-			<path id="path5696-8" inkscape:connector-curvature="0" class="st81" d="M1024.9-568.3c-12.5,0-22.7,10.1-22.7,22.7
-				c0,12.5,10.1,22.7,22.7,22.7s22.7,10.1,22.7,22.7v-90.6C1047.5-578.4,1037.4-568.3,1024.9-568.3L1024.9-568.3z"/>
-			<path id="path5698-4" inkscape:connector-curvature="0" class="st81" d="M1591.2-568.3c-12.5,0-22.7-10.1-22.7-22.7v90.6
-				c0-12.5,10.1-22.7,22.7-22.7c12.5,0,22.7-10.1,22.7-22.7C1613.8-558.1,1603.7-568.3,1591.2-568.3L1591.2-568.3z"/>
+			<path id="path5696-8" inkscape:connector-curvature="0" class="st89" d="M2789.5-1093.4c-12.5,0-22.7,10.1-22.7,22.7
+				c0,12.5,10.1,22.7,22.7,22.7c12.6,0,22.7,10.1,22.7,22.7v-90.6C2812.1-1103.5,2802-1093.4,2789.5-1093.4L2789.5-1093.4z"/>
+			<path id="path5698-4" inkscape:connector-curvature="0" class="st89" d="M3355.8-1093.4c-12.5,0-22.7-10.1-22.7-22.7v90.6
+				c0-12.5,10.1-22.7,22.7-22.7c12.5,0,22.7-10.1,22.7-22.7C3378.4-1083.2,3368.3-1093.4,3355.8-1093.4L3355.8-1093.4z"/>
 		</g>
-		<path id="path5702-4" inkscape:connector-curvature="0" class="st82" d="M1523.2-285.1h-430.4c-25,0-45.3-20.3-45.3-45.3v-430.4
-			c0-25,20.3-45.3,45.3-45.3h430.4c25,0,45.3,20.3,45.3,45.3v430.4C1568.5-305.4,1548.2-285.1,1523.2-285.1z"/>
-		<path id="path5704-6" inkscape:connector-curvature="0" class="st83" d="M1534.5-375.7v-362.4c0-18.8-15.2-34-34-34h-362.4
+		<path id="path5702-4" inkscape:connector-curvature="0" class="st90" d="M3287.8-810.2h-430.4c-25,0-45.3-20.3-45.3-45.3v-430.4
+			c0-25,20.3-45.3,45.3-45.3h430.4c25,0,45.3,20.3,45.3,45.3v430.4C3333.1-830.5,3312.8-810.2,3287.8-810.2z"/>
+		<path id="path5704-6" inkscape:connector-curvature="0" class="st91" d="M3299.1-900.8v-362.4c0-18.8-15.2-34-34-34h-362.4
 			c-6.3,0-11.3-5.1-11.3-11.3v-22.7h-34c-25,0-45.3,20.3-45.3,45.3v430.4c0,25,20.3,45.3,45.3,45.3h430.4c25,0,45.3-20.3,45.3-45.3
-			v-34h-22.7C1539.6-364.4,1534.5-369.5,1534.5-375.7L1534.5-375.7z"/>
-		<path id="path5706-0" inkscape:connector-curvature="0" class="st84" d="M1500.6-341.7h-385.1c-6.3,0-11.3-5.1-11.3-11.3v-385.1
-			c0-6.3,5.1-11.3,11.3-11.3h385.1c6.3,0,11.3,5.1,11.3,11.3V-353C1511.9-346.8,1506.8-341.7,1500.6-341.7z"/>
-		<path id="path5712-4" inkscape:connector-curvature="0" class="st81" d="M1183.4-624.9h249.2c6.3,0,11.3,5.1,11.3,11.3v45.3
-			c0,6.3-5.1,11.3-11.3,11.3h-249.2c-6.3,0-11.3-5.1-11.3-11.3v-45.3C1172.1-619.8,1177.1-624.9,1183.4-624.9L1183.4-624.9z"/>
+			v-34h-22.7C3304.2-889.5,3299.1-894.6,3299.1-900.8L3299.1-900.8z"/>
+		<path id="path5706-0" inkscape:connector-curvature="0" class="st92" d="M3265.2-866.8h-385.1c-6.3,0-11.3-5.1-11.3-11.3v-385.1
+			c0-6.3,5.1-11.3,11.3-11.3h385.1c6.3,0,11.3,5.1,11.3,11.3v385.1C3276.5-871.9,3271.4-866.8,3265.2-866.8z"/>
+		<path id="path5712-4" inkscape:connector-curvature="0" class="st89" d="M2948-1150h249.2c6.3,0,11.3,5.1,11.3,11.3v45.3
+			c0,6.3-5.1,11.3-11.3,11.3H2948c-6.3,0-11.3-5.1-11.3-11.3v-45.3C2936.7-1144.9,2941.7-1150,2948-1150L2948-1150z"/>
 		<g id="g5718-0">
-			<circle id="circle5714-4" class="st85" cx="1194.8" cy="-477.6" r="22.7"/>
+			<circle id="circle5714-4" class="st93" cx="2959.4" cy="-1002.7" r="22.7"/>
 			<g id="g6521" transform="matrix(0.21042834,0,0,0.21042834,317.93427,221.43153)">
 				<g id="g6458">
 					<g id="Guides_For_Artboard_35_-8">
@@ -1264,22 +1278,24 @@
 					</g>
 					<g id="Layer_2_34_-3">
 						<g id="g6455">
-							<path id="path6447" inkscape:connector-curvature="0" class="st91" d="M5328.4-3430.4c-9.5-8.3-32.1-21.5-35.8,12.8
-								c-13.3,88.9-108.8,151.1-108.8,238.7c0,73.9,59.9,133.8,133.8,133.8s133.8-59.9,133.8-133.8
-								C5451.5-3245.9,5424.5-3346.9,5328.4-3430.4z M5265.3-3107.8c-2.1,2.8-5.2,4.2-8.5,4.2c-2.2,0-4.4-0.7-6.2-2.1
-								c-1.2-0.9-28.9-21.8-34.9-61.4s20.8-76.6,22-78.2c3.4-4.7,10-5.7,14.7-2.3s5.7,10,2.3,14.7c-0.3,0.5-22.8,31.8-18.1,62.6
-								c4.6,30.7,26.4,47.4,26.6,47.6C5267.8-3119.1,5268.8-3112.5,5265.3-3107.8z"/>
-							<path id="path6449" inkscape:connector-curvature="0" class="st92" d="M5263.2-3122.6c-0.2-0.2-22-16.9-26.6-47.6
+							<path id="path6447" inkscape:connector-curvature="0" class="st99" d="M13714.3-5925.6c-9.5-8.3-32.1-21.5-35.8,12.8
+								c-13.3,88.9-108.8,151.1-108.8,238.7c0,73.9,59.9,133.8,133.8,133.8c73.9,0,133.8-59.9,133.8-133.8
+								C13837.4-5741.1,13810.4-5842.1,13714.3-5925.6z M13651.2-5603c-2.1,2.8-5.2,4.2-8.5,4.2c-2.2,0-4.4-0.7-6.2-2.1
+								c-1.2-0.9-28.9-21.8-34.9-61.4c-6-39.6,20.8-76.6,22-78.2c3.4-4.7,10-5.7,14.7-2.3s5.7,10,2.3,14.7
+								c-0.3,0.5-22.8,31.8-18.1,62.6c4.6,30.7,26.4,47.4,26.6,47.6C13653.7-5614.3,13654.7-5607.7,13651.2-5603z"/>
+							<path id="path6449" inkscape:connector-curvature="0" class="st100" d="M13649.1-5617.8c-0.2-0.2-22-16.9-26.6-47.6
 								c-4.6-30.8,17.8-62.1,18.1-62.6c3.4-4.7,2.4-11.3-2.3-14.7c-4.7-3.4-11.3-2.4-14.7,2.3c-1.1,1.6-27.9,38.6-22,78.2
-								c6,39.6,33.7,60.5,34.9,61.4c1.9,1.4,4.1,2.1,6.2,2.1c3.2,0,6.4-1.5,8.5-4.2C5268.8-3112.5,5267.8-3119.1,5263.2-3122.6z"/>
-							<path id="path6451" inkscape:connector-curvature="0" class="st91" d="M5513.5-3108.3c-5.4-4.7-18.3-12.3-20.4,7.3
-								c-7.6,50.7-62.1,86.2-62.1,136.2c0,42.2,34.2,76.4,76.4,76.4c42.2,0,76.4-34.2,76.4-76.4
-								C5583.7-3003,5568.3-3060.7,5513.5-3108.3z M5477.4-2924.3c-1.2,1.6-3,2.4-4.8,2.4c-1.2,0-2.5-0.4-3.6-1.2
-								c-0.7-0.5-16.5-12.4-19.9-35s11.9-43.7,12.5-44.6c2-2.7,5.7-3.3,8.4-1.3s3.3,5.7,1.3,8.4c-0.2,0.3-13,18.2-10.3,35.7
-								c2.6,17.5,15.1,27.1,15.2,27.2C5478.9-2930.7,5479.4-2926.9,5477.4-2924.3z"/>
-							<path id="path6453" inkscape:connector-curvature="0" class="st92" d="M5476.2-2932.7c-0.1-0.1-12.5-9.7-15.2-27.2
-								c-2.7-17.6,10.1-35.4,10.3-35.7c2-2.7,1.4-6.4-1.3-8.4c-2.7-2-6.4-1.4-8.4,1.3c-0.7,0.9-15.9,22-12.5,44.6s19.2,34.5,19.9,35
-								c1.1,0.8,2.3,1.2,3.6,1.2c1.8,0,3.6-0.8,4.8-2.4C5479.4-2926.9,5478.9-2930.7,5476.2-2932.7z"/>
+								c6,39.6,33.7,60.5,34.9,61.4c1.9,1.4,4.1,2.1,6.2,2.1c3.2,0,6.4-1.5,8.5-4.2C13654.7-5607.7,13653.7-5614.3,13649.1-5617.8z"
+								/>
+							<path id="path6451" inkscape:connector-curvature="0" class="st99" d="M13899.4-5603.5c-5.4-4.7-18.3-12.3-20.4,7.3
+								c-7.6,50.7-62.1,86.2-62.1,136.2c0,42.2,34.2,76.4,76.4,76.4s76.4-34.2,76.4-76.4
+								C13969.6-5498.2,13954.2-5555.9,13899.4-5603.5z M13863.3-5419.5c-1.2,1.6-3,2.4-4.8,2.4c-1.2,0-2.5-0.4-3.6-1.2
+								c-0.7-0.5-16.5-12.4-19.9-35c-3.4-22.6,11.9-43.7,12.5-44.6c2-2.7,5.7-3.3,8.4-1.3c2.7,2,3.3,5.7,1.3,8.4
+								c-0.2,0.3-13,18.2-10.3,35.7c2.6,17.5,15.1,27.1,15.2,27.2C13864.8-5425.9,13865.3-5422.1,13863.3-5419.5z"/>
+							<path id="path6453" inkscape:connector-curvature="0" class="st100" d="M13862.1-5427.9c-0.1-0.1-12.5-9.7-15.2-27.2
+								c-2.7-17.6,10.1-35.4,10.3-35.7c2-2.7,1.4-6.4-1.3-8.4s-6.4-1.4-8.4,1.3c-0.7,0.9-15.9,22-12.5,44.6
+								c3.4,22.6,19.2,34.5,19.9,35c1.1,0.8,2.3,1.2,3.6,1.2c1.8,0,3.6-0.8,4.8-2.4C13865.3-5422.1,13864.8-5425.9,13862.1-5427.9z"
+								/>
 						</g>
 					</g>
 				</g>
@@ -1315,12 +1331,12 @@
 				</g>
 			</g>
 		</g>
-		<circle id="circle5720-6" class="st86" cx="1308" cy="-477.6" r="22.7"/>
-		<path id="path5734-0" inkscape:connector-curvature="0" class="st86" d="M1183.4-624.9h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3
-			v-45.3C1172.1-619.8,1177.1-624.9,1183.4-624.9L1183.4-624.9z"/>
+		<circle id="circle5720-6" class="st94" cx="3072.6" cy="-1002.7" r="22.7"/>
+		<path id="path5734-0" inkscape:connector-curvature="0" class="st94" d="M2948-1150h22.7v68H2948c-6.3,0-11.3-5.1-11.3-11.3v-45.3
+			C2936.7-1144.9,2941.7-1150,2948-1150L2948-1150z"/>
 		<g id="g5740-9">
-			<path id="path5736-2" inkscape:connector-curvature="0" class="st87" d="M1262.7-364.4c-75.1,0-135.9-60.9-135.9-135.9v-249.2
-				h-11.3c-6.3,0-11.3,5.1-11.3,11.3v385.1c0,6.3,5.1,11.3,11.3,11.3h385.1c6.3,0,11.3-5.1,11.3-11.3v-11.3H1262.7L1262.7-364.4z"/>
+			<path id="path5736-2" inkscape:connector-curvature="0" class="st95" d="M3027.3-889.5c-75.1,0-135.9-60.9-135.9-135.9v-249.2
+				h-11.3c-6.3,0-11.3,5.1-11.3,11.3v385.1c0,6.3,5.1,11.3,11.3,11.3h385.1c6.3,0,11.3-5.1,11.3-11.3v-11.3H3027.3L3027.3-889.5z"/>
 		</g>
 		<g id="g5772-3">
 		</g>
@@ -1353,33 +1369,33 @@
 		<g id="g5800-0">
 		</g>
 		
-			<text id="input_number.ar_contagem" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 1217.3344 -566.8458)" class="st88 st89 st90">500</text>
+			<text id="input_number.ar_contagem" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 2981.9668 -1091.9036)" class="st96 st97 st98">500</text>
 	</g>
-	<g id="input_x5F_number.edp_x5F_vazio_1_" transform="matrix(0.78486599,0,0,0.78486599,1560.003,495.94749)">
+	<g id="input_x5F_number.edp_x5F_vazio_1_" transform="matrix(0.78486599,0,0,0.78486599,1560.003,495.94749)" class="st7">
 		<g id="g5700-2-4">
-			<path id="path5696-8-6" inkscape:connector-curvature="0" class="st81" d="M670.9-549.2c-12.5,0-22.7,10.1-22.7,22.7
-				c0,12.5,10.1,22.7,22.7,22.7c12.5,0,22.7,10.1,22.7,22.7v-90.6C693.5-559.4,683.4-549.2,670.9-549.2L670.9-549.2z"/>
-			<path id="path5698-4-3" inkscape:connector-curvature="0" class="st81" d="M1237.2-549.2c-12.5,0-22.7-10.1-22.7-22.7v90.6
-				c0-12.5,10.1-22.7,22.7-22.7c12.5,0,22.7-10.1,22.7-22.7C1259.9-539.1,1249.7-549.2,1237.2-549.2L1237.2-549.2z"/>
+			<path id="path5696-8-6" inkscape:connector-curvature="0" class="st89" d="M2435.5-1074.3c-12.5,0-22.7,10.1-22.7,22.7
+				c0,12.5,10.1,22.7,22.7,22.7c12.5,0,22.7,10.1,22.7,22.7v-90.6C2458.1-1084.5,2448-1074.3,2435.5-1074.3L2435.5-1074.3z"/>
+			<path id="path5698-4-3" inkscape:connector-curvature="0" class="st89" d="M3001.8-1074.3c-12.5,0-22.7-10.1-22.7-22.7v90.6
+				c0-12.5,10.1-22.7,22.7-22.7c12.5,0,22.7-10.1,22.7-22.7C3024.5-1064.2,3014.3-1074.3,3001.8-1074.3L3001.8-1074.3z"/>
 		</g>
-		<path id="path5702-4-2" inkscape:connector-curvature="0" class="st82" d="M1169.2-266.1H738.8c-25,0-45.3-20.3-45.3-45.3v-430.4
-			c0-25,20.3-45.3,45.3-45.3h430.4c25,0,45.3,20.3,45.3,45.3v430.4C1214.5-286.3,1194.3-266.1,1169.2-266.1z"/>
-		<path id="path5704-6-8" inkscape:connector-curvature="0" class="st83" d="M1180.6-356.7v-362.4c0-18.8-15.2-34-34-34H784.1
+		<path id="path5702-4-2" inkscape:connector-curvature="0" class="st90" d="M2933.8-791.2h-430.4c-25,0-45.3-20.3-45.3-45.3v-430.4
+			c0-25,20.3-45.3,45.3-45.3h430.4c25,0,45.3,20.3,45.3,45.3v430.4C2979.1-811.4,2958.9-791.2,2933.8-791.2z"/>
+		<path id="path5704-6-8" inkscape:connector-curvature="0" class="st91" d="M2945.2-881.8v-362.4c0-18.8-15.2-34-34-34h-362.5
 			c-6.3,0-11.3-5.1-11.3-11.3v-22.7h-34c-25,0-45.3,20.3-45.3,45.3v430.4c0,25,20.3,45.3,45.3,45.3h430.4c25,0,45.3-20.3,45.3-45.3
-			v-34h-22.7C1185.6-345.3,1180.6-350.4,1180.6-356.7L1180.6-356.7z"/>
-		<path id="path5706-0-2" inkscape:connector-curvature="0" class="st84" d="M1146.6-322.7H761.5c-6.3,0-11.3-5.1-11.3-11.3v-385.1
-			c0-6.3,5.1-11.3,11.3-11.3h385.1c6.3,0,11.3,5.1,11.3,11.3V-334C1157.9-327.8,1152.8-322.7,1146.6-322.7z"/>
-		<path id="path5712-4-9" inkscape:connector-curvature="0" class="st81" d="M829.6-605.9h249.1c6.3,0,11.3,5.1,11.3,11.3v45.3
-			c0,6.3-5.1,11.3-11.3,11.3H829.5c-6.3,0-11.3-5.1-11.3-11.3v-45.3C818.2-600.8,823.3-605.9,829.6-605.9L829.6-605.9z"/>
+			v-34h-22.7C2950.2-870.4,2945.2-875.5,2945.2-881.8L2945.2-881.8z"/>
+		<path id="path5706-0-2" inkscape:connector-curvature="0" class="st92" d="M2911.2-847.8h-385.1c-6.3,0-11.3-5.1-11.3-11.3v-385.1
+			c0-6.3,5.1-11.3,11.3-11.3h385.1c6.3,0,11.3,5.1,11.3,11.3v385.1C2922.5-852.9,2917.4-847.8,2911.2-847.8z"/>
+		<path id="path5712-4-9" inkscape:connector-curvature="0" class="st89" d="M2594.2-1131h249.1c6.3,0,11.3,5.1,11.3,11.3v45.3
+			c0,6.3-5.1,11.3-11.3,11.3h-249.2c-6.3,0-11.3-5.1-11.3-11.3v-45.3C2582.8-1125.9,2587.9-1131,2594.2-1131L2594.2-1131z"/>
 		<g id="g5718-0-5">
-			<circle id="circle5714-4-5" class="st85" cx="840.8" cy="-458.6" r="22.7"/>
+			<circle id="circle5714-4-5" class="st93" cx="2605.4" cy="-983.7" r="22.7"/>
 		</g>
-		<circle id="circle5720-6-0" class="st86" cx="954" cy="-458.6" r="22.7"/>
-		<path id="path5734-0-3" inkscape:connector-curvature="0" class="st86" d="M829.6-605.9h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3
-			v-45.3C818.2-600.8,823.3-605.9,829.6-605.9L829.6-605.9z"/>
+		<circle id="circle5720-6-0" class="st94" cx="2718.6" cy="-983.7" r="22.7"/>
+		<path id="path5734-0-3" inkscape:connector-curvature="0" class="st94" d="M2594.2-1131h22.7v68h-22.7c-6.3,0-11.3-5.1-11.3-11.3
+			v-45.3C2582.8-1125.9,2587.9-1131,2594.2-1131L2594.2-1131z"/>
 		<g id="g5740-9-0">
-			<path id="path5736-2-4" inkscape:connector-curvature="0" class="st87" d="M908.7-345.3c-75.1,0-135.9-60.9-135.9-135.9v-249.2
-				h-11.3c-6.3,0-11.3,5.1-11.3,11.3V-334c0,6.3,5.1,11.3,11.3,11.3h385.1c6.3,0,11.3-5.1,11.3-11.3v-11.3H908.7L908.7-345.3z"/>
+			<path id="path5736-2-4" inkscape:connector-curvature="0" class="st95" d="M2673.3-870.4c-75.1,0-135.9-60.9-135.9-135.9v-249.2
+				h-11.3c-6.3,0-11.3,5.1-11.3,11.3v385.1c0,6.3,5.1,11.3,11.3,11.3h385.1c6.3,0,11.3-5.1,11.3-11.3v-11.3H2673.3L2673.3-870.4z"/>
 		</g>
 		<g id="g5772-3-4">
 		</g>
@@ -1412,18 +1428,18 @@
 		<g id="g5800-0-1">
 		</g>
 		
-			<text id="input_number.galp_contagem" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 876.4808 -547.8044)" class="st88 st89 st90">71</text>
+			<text id="input_number.galp_contagem" inkscape:label="" transform="matrix(1.2741 0 0 1.2741 2641.1133 -1072.8622)" class="st96 st97 st98">71</text>
 		<g id="g6668" transform="matrix(0.17529827,0,0,0.17529827,312.95957,225.23066)">
-			<path id="path6610" inkscape:connector-curvature="0" class="st93" d="M4294.5-3374.7c-32.2-36.6-64.4-74.6-84.9-120
+			<path id="path6610" inkscape:connector-curvature="0" class="st101" d="M14361-6369.9c-32.2-36.6-64.4-74.6-84.9-120
 				c-20.5-48.3-26.3-103.9-16.1-156.5c10.2-52.7,33.6-102.4,67.3-144.8c-2.9,36.6,10.2,74.6,35.1,102.4
 				c-14.6-70.2,8.8-146.3,55.6-201.9c46.8-55.6,111.2-92.2,178.5-117c-33.6,35.1-38,90.7-24.9,137.5c13.2,46.8,41,87.8,65.8,130.2
 				c24.9,42.4,48.3,86.3,49.7,134.6c13.2-24.9,27.8-49.7,36.6-77.5c8.8-27.8,13.2-57.1,5.9-84.9c26.3,32.2,41,64.4,48.3,105.3
 				c7.3,41,5.9,83.4,1.5,124.4c-5.9,45.4-17.6,92.2-42.4,130.2c-29.3,45.4-76.1,77.5-127.3,95.1
-				C4452.5-3301.6,4363.2-3314.8,4294.5-3374.7z"/>
-			<path id="path6612" inkscape:connector-curvature="0" class="st94" d="M4405.7-3320.6c120,46.8,238.5-95.1,172.6-204.8
+				C14519-6296.8,14429.7-6310,14361-6369.9z"/>
+			<path id="path6612" inkscape:connector-curvature="0" class="st102" d="M14472.2-6315.8c120,46.8,238.5-95.1,172.6-204.8
 				c0-1.5-1.5-1.5-1.5-2.9c5.9,60-8.8,103.9-36.6,128.7c14.6-35.1,4.4-76.1-13.2-111.2c-17.6-33.6-42.4-64.4-61.4-96.6
 				c-19-33.6-33.6-71.7-24.9-109.7c-35.1,26.3-60,65.8-70.2,108.3c-10.2,42.4-4.4,89.2,14.6,128.7c-21.9-16.1-38-42.4-39.5-70.2
-				c-23.4,27.8-38,64.4-36.6,100.9C4309.1-3392.3,4354.5-3341.1,4405.7-3320.6z"/>
+				c-23.4,27.8-38,64.4-36.6,100.9C14375.6-6387.5,14421-6336.3,14472.2-6315.8z"/>
 			<g id="g6614">
 			</g>
 			<g id="g6616">
@@ -1456,12 +1472,12 @@
 			</g>
 		</g>
 	</g>
-	<g id="btnContadoresBack">
+	<g id="btnContadoresBack" class="st7">
 		<g id="g883">
-			<circle id="circle877" class="st73" cx="2838.9" cy="373.2" r="67"/>
-			<path id="path879" class="st95" d="M2902,395.8l-21.2-22.6l-24.7-9.5l-18.7-21.5l-40.3,31.1l58.9,64.8
-				C2877.4,432.4,2894.6,416.5,2902,395.8z"/>
-			<polygon id="polygon881" class="st50" points="2797,373.2 2837.3,342.2 2837.3,356.5 2880.8,373.2 2837.3,390 2837.3,404.3 			
+			<circle id="circle877" class="st103" cx="4223.9" cy="-38.9" r="67"/>
+			<path id="path879" class="st104" d="M4287-16.3l-21.2-22.6l-24.7-9.5l-18.7-21.5l-40.3,31.1L4241,26
+				C4262.4,20.3,4279.6,4.4,4287-16.3z"/>
+			<polygon id="polygon881" class="st56" points="4182,-38.9 4222.3,-69.9 4222.3,-55.6 4265.8,-38.9 4222.3,-22.1 4222.3,-7.8 			
 				"/>
 		</g>
 	</g>

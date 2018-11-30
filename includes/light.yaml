@@ -53,3 +53,10 @@
   payload_available: "Online"
   payload_not_available: "Offline"
   retain: true
+##Yeelight
+- platform: yeelight
+  devices:
+   192.168.88.164:
+     name: Nursery Ceiling Light
+   192.168.88.165:
+     name: Office RGB

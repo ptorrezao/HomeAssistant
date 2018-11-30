@@ -1,12 +1,15 @@
 view_livingRoom:
+#default_view:
  name: Sala de Estar
  view: yes
  icon: mdi:sofa
  entities:
   - group.card_family
+  - group.card_guestWifi
   - group.card_mediaPlayersLivingRoom
   - group.card_lightslivingroom
-  - group.card_guestWifi
+  - weather.santarem
+
   
 #view_bedRoom:
 #  name: Quarto
@@ -19,19 +22,21 @@ view_nursery:
   icon: mdi:baby-buggy
   entities:
    - camera.baby_room
+   - group.card_lightsnursery
 
 view_office:
   name: Escritório
   view: yes
   icon: mdi:network
   entities:
+    - media_player.office_tv
+    - media_player.escritorioghome
     - group.card_lightsOffice
     - group.card_mediaPlayersOffice
     - group.card_ITSensor
     - group.card_itdevices
-    - climate.ac_escritorio
-    - sensor.temperatura_office
-    - sensor.humidade_office
+    - group.card_climate
+    - group.card_scenes_office
 
 #view_cozinha:
 #    name: Cozinha
@@ -48,7 +53,8 @@ view_configuration:
    - group.all_switches
    - group.all_lights
    - group.all_scripts
-   - group.card_family
+   - group.all_scenes
+   - group.all_input_boolean
    - group.card_itdevices
    - group.card_smarthomedevices
    

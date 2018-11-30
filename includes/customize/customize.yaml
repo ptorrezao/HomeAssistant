@@ -30,12 +30,13 @@
    # player: media_player.main_tv
 media_player.escritorioghome:
   hidden: false   
-media_player.office_tv:
-  hidden: false
+media_player.broadlink_office_tv:
+  hidden: true
 media_player.office_tv_2:
-  hidden: false 
+  hidden: true 
 media_player.main_tv:
   hidden: false 
+
 ##
 #Modes
 ##
@@ -95,16 +96,58 @@ binary_sensor.lg_tv_5600:
   entity_picture: /local/LG42LS5600.jpg
 binary_sensor.hisense_h39n2110c:
   entity_picture: /local/hisense_h39n2110c.jpg
-##
-# Input Numeric
-##
-input_number.edp_vazio:
- entity_picture: /local/edp.png
-input_number.edp_ponta:
- entity_picture: /local/edp.png
-input_number.edp_cheias:
- entity_picture: /local/edp.png
-input_number.ar_contagem:
- entity_picture: /local/aguasdoribatejo01.png
-input_number.galp_contagem:
- entity_picture: /local/galp.png
+binary_sensor.dockersptz01:
+  entity_picture: /local/digitalOcean.png
+  friendly_name: Docker PTZ 01
+scene.worknigthshift:
+  friendly_name: Work (Night Shift)
+  icon: mdi:briefcase
+scene.romantinc:
+  icon: mdi:heart
+scene.gameon:
+  icon: mdi:gamepad-variant
+  friendly_name: Game Mode
+
+
+switch.christmas_lights:
+  icon: mdi:pine-tree
+  
+light.office_lego_light:
+   icon: mdi:led-on
+light.nursery_ceiling_light:
+   icon: mdi:ceiling-light
+light.office_ceiling_light:
+   icon: mdi:ceiling-light
+light.office_desk_light:
+   icon: mdi:desk-lamp
+light.office_rgb:
+   icon: mdi:floor-lamp
+light.living_room_cabinet:
+   icon: mdi:floor-lamp
+   
+switch.remote_switch:
+   icon: mdi:power-plug
+group.all_automations:
+  friendly_name: Automations
+  hidden: false 
+group.all_devices:
+  friendly_name: Devices
+  hidden: false 
+group.all_switches:
+  friendly_name: Switches
+  hidden: false
+group.all_lights:
+  friendly_name: Lights
+  hidden: false   
+group.all_scripts:
+  friendly_name: Scripts
+  hidden: false   
+group.all_input_boolean:
+  hidden: false  
+  
+input_boolean.home_occupied:
+  friendly_name: Home Occupied
+  icon: mdi:home-map-marker
+input_boolean.houseguest:
+  friendly_name: Convidados
+  icon: mdi:account-group

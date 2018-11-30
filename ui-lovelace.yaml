@@ -1,0 +1,79 @@
+title: Casa
+views:
+    # View tab title.
+  - title: Home
+    icon: mdi:castle
+   
+    # Optional unique id for direct access /lovelace/${id}
+    id: Home
+    cards:
+        # The filter card will filter entities for their state
+      - type: entity-filter
+        entities:
+          - device_tracker.cppedro
+          - device_tracker.cpana
+        state_filter:
+          - 'home'
+        card:
+          type: glance
+          title: "Quem está em casa:"
+          show_state: false
+          show_name: false
+          column_width: 15%
+      - type: iframe
+        url: https://embed.windy.com/embed2.html?lat=38.931&lon=-8.807&zoom=10&level=surface&overlay=temp&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=38.979&detailLon=-8.807&metricWind=default&metricTemp=default&radarRange=-1
+      - type: picture-elements
+        image: /local/lovelace/floorplan/floorplan.png
+        elements:
+          - type: image
+            entity: light.bed_light
+            tap_action: toggle
+            image: /images/light_bulb_off.png
+            state_image:
+              'on': /images/light_bulb_on.png
+            state_filter:
+              'on': brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)
+              'off': brightness(80%) saturate(0.8)
+             
+      - type: vertical-stack
+        cards:
+         - type: horizontal-stack
+           cards:
+           - type: picture-glance
+             image: https://www.home-assistant.io/images/default-social.png
+             title: Escritório
+             entities:
+               - entity: group.card_lightsoffice
+                 icon: mdi:lightbulb-on
+               - climate.ac_escritorio
+               - entity: media_player.office_tv
+                 icon: mdi:television-box
+           - type: picture-glance
+             image: https://www.home-assistant.io/images/default-social.png
+             title: Quarto Madalena
+             entities:
+               - light.office_ceiling_light
+         - type: horizontal-stack
+           cards:
+           - type: picture-glance
+             image: https://www.home-assistant.io/images/default-social.png
+             title: Cozinha
+             entities:
+               - light.office_ceiling_light
+           - type: picture-glance
+             image: https://www.home-assistant.io/images/default-social.png
+             title: Sala
+             entities:
+               - light.office_ceiling_light
+         - type: horizontal-stack
+           cards: 
+           - type: picture-glance
+             image: https://www.home-assistant.io/images/default-social.png
+             title: Quarto
+             entities:
+               - light.office_ceiling_light
+           - type: picture-glance
+             image: https://www.home-assistant.io/images/default-social.png
+             title: Sotão
+             entities:
+               - light.office_ceiling_light
