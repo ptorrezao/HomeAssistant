@@ -1,5 +1,5 @@
 view_livingRoom:
-#default_view:
+default_view:
  name: Sala de Estar
  view: yes
  icon: mdi:sofa
