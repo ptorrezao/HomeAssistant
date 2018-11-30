@@ -4,3 +4,10 @@ card_modes:
  entities:
    - input_boolean.onvacations
    - input_boolean.bedtime
+card_climate:
+ name: Climate
+ view: no
+ entities:
+   - climate.ac_escritorio
+   - sensor.temperatura_office
+   - sensor.humidade_office

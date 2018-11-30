@@ -5,9 +5,17 @@ card_lightsOffice:
       - light.office_ceiling_light
       - light.office_lego_light
       - light.office_desk_light
+      - light.office_rgb
       
 card_lightslivingroom:
     name: Lights
     view: no
     entities:
       - light.living_room_cabinet
+      - switch.christmas_lights
+
+card_lightsnursery:
+    name: Lights
+    view: no
+    entities:
+      -  light.nursery_ceiling_light

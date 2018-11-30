@@ -54,7 +54,8 @@
   count: 2
   scan_interval: 30
 - platform: ping
-  host: LG-Tv-5600
+  #host: LG-Tv-5600
+  host: chromecast-maintv
   name: LG TV 5600
   count: 2
   scan_interval: 30
@@ -73,3 +74,6 @@
   name: Playstation
   count: 2
   scan_interval: 30
+- platform: digital_ocean
+  droplets:
+    - 'docker-s-ptz-01'

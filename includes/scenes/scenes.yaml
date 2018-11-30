@@ -1,0 +1,38 @@
+- name: WorkNigthShift
+  entities:
+   light.office_ceiling_light: off
+   light.office_desk_light: on
+   script.play_radiocomercial: on
+   light.office_lego_light: off
+   light.office_rgb: off
+
+- name: GameOn
+  entities:
+   light.office_ceiling_light: off
+   light.office_desk_light: off
+   media_player.escritorioghome: 
+     volume_mute: true
+   script.turnonTv: on
+   light.office_lego_light:
+     state: on
+     xy_color: [0.14,0.135]
+     brightness: 200
+   light.office_rgb:
+     state: on
+     xy_color: [0.14, 0.135]
+
+- name: Romantic
+  entities:
+   light.office_ceiling_light: off
+   light.office_desk_light: off
+   media_player.escritorioghome: 
+     volume_mute: true
+   light.office_lego_light:
+     state: on
+     xy_color: [0.701,0.299]
+     brightness: 255
+   light.office_rgb:
+     state: on
+     xy_color: [0.634,0.305]
+     brightness: 255
+   script.turnOffTv: on

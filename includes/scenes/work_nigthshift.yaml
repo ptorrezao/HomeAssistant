@@ -1,8 +1,0 @@
-- name: Work Nigth Shift
-  entities:
-    light.office_ceiling_light: off
-    light.office_desk_light: off
-    light.office_lego_light:
-      state: on
-      xy_color: [0.33, 0.66]
-      brightness: 200

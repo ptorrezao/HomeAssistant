@@ -6,6 +6,7 @@ play_radiocomercial:
         entity_id: media_player.escritorioghome
         media_content_id: http://mcrscast.mcr.iol.pt/comercial.mp3
         media_content_type: 'audio/mp4'
+        volume_mute: false
 play_radiorfm:
  alias: '[Office] - Play Radio RFM'
  sequence:
@@ -14,3 +15,4 @@ play_radiorfm:
         entity_id: media_player.escritorioghome
         media_content_id: http://19553.live.streamtheworld.com:3690/RFM_SC
         media_content_type: 'audio/mp4'
+        volume_mute: false

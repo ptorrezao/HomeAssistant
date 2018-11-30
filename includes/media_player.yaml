@@ -1,15 +1,31 @@
 - platform: broadlink
-  name: Office TV
+  name: broadlink_Office_TV
   host: 192.168.88.200
   mac: '34:ea:34:42:a6:b2'
   ircodes_ini: 'includes/media_player_ircodes/hisense_officeTv.ini'
   ping_host: chromecast-officetv
+  hidden: true
 - platform: cast
   host: 192.168.88.150
 - platform: cast
   host: chromecast-maintv
 - platform: cast
   host: 192.168.88.155
-# - platform: ps4
-  # host: 192.168.88.100
-  # filename: .ps4-wake.credentials.json
+  hidden: true
+- platform: universal
+  name: Office TV
+  children:
+    - media_player.office_tv_2
+  commands:
+    turn_on:
+      service: script.turn_on
+      entity_id: script.turnontv
+    turn_off:
+      service: script.turn_on
+      entity_id: script.turnofftv
+  state_template: >
+    {% if is_state('media_player.office_tv_2', 'off') or is_state('media_player.broadlink_office_tv', 'off')%}
+    {{ states('media_player.broadlink_office_tv') }}
+    {% else %}
+    {{ states('media_player.office_tv_2') }}
+    {% endif %}

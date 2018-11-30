@@ -2,8 +2,9 @@ card_family:
  name: Família
  view: no
  entities:
-   - device_tracker.cppedro
-   - device_tracker.cpana
+   - device_tracker.pedro_aquaris
+   - device_tracker.ana_bq
+   - input_boolean.houseguest
    - device_tracker.cpdavid
    - device_tracker.daniela
    - device_tracker.maeAna
@@ -18,6 +19,8 @@ card_itdevices:
    - binary_sensor.dtoffice
    - binary_sensor.aphrodite
    - binary_sensor.ares
+   - binary_sensor.dockersptz01
+   - switch.dockersptz01
 card_smarthomedevices:
  name: Smart Home Devices
  view: no
