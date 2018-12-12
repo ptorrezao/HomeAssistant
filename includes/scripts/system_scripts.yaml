@@ -13,25 +13,23 @@ generate_image:
  alias: '[System] - Generate Image'
  sequence:
    -  service: shell_command.generate_babyroomcameraimage
-   
 turnofftv:
  alias: '[System] - Turn Off TV'
  sequence:
-  - delay: '00:00:03'
+  - delay: '00:00:01'
   - condition: state
     entity_id: binary_sensor.hisense_h39n2110c
     state: 'on'
   - service: media_player.turn_off
     entity_id: media_player.broadlink_office_tv
-  - delay: '00:00:30'
+  - delay: '00:00:20'
 turnontv:
  alias: '[System] - Turn On TV'
  sequence:
-  - delay: '00:00:03'
+  - delay: '00:00:01'
   - condition: state
     entity_id: binary_sensor.hisense_h39n2110c
     state: 'off'
   - service: media_player.turn_on
     entity_id: media_player.broadlink_office_tv
   - delay: '00:00:20'
-  

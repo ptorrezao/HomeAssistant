@@ -14,13 +14,13 @@
   hostname: ptorrezao.duckdns.org
   resolver: 8.8.8.8
 - platform: mqtt
-  state_topic: "office_sensor/temperature"
+  state_topic: "office/office_sensor/temperature"
   name: "Temperatura Office"
   qos: 0
   unit_of_measurement: "°C"
   #value_template: '{{ payload }}'
 - platform: mqtt
-  state_topic: "office_sensor/humidity"
+  state_topic: "office/office_sensor/humidity"
   name: "Humidade Office"
   qos: 0
   unit_of_measurement: "%"

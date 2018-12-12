@@ -1,5 +1,1 @@
-- platform: ubus
-  host: 192.168.88.1
-  username: !secret ubus_user
-  password: !secret ubus_pwd
 - platform: owntracks

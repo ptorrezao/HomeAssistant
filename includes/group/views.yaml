@@ -1,4 +1,4 @@
-view_livingRoom:
+#view_livingRoom:
 default_view:
  name: Sala de Estar
  view: yes

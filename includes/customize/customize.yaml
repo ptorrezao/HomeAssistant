@@ -96,7 +96,7 @@ binary_sensor.lg_tv_5600:
   entity_picture: /local/LG42LS5600.jpg
 binary_sensor.hisense_h39n2110c:
   entity_picture: /local/hisense_h39n2110c.jpg
-binary_sensor.dockersptz01:
+switch.dockersptz01:
   entity_picture: /local/digitalOcean.png
   friendly_name: Docker PTZ 01
 scene.worknigthshift:
@@ -148,6 +148,8 @@ group.all_input_boolean:
 input_boolean.home_occupied:
   friendly_name: Home Occupied
   icon: mdi:home-map-marker
+  hidden: true
 input_boolean.houseguest:
   friendly_name: Convidados
   icon: mdi:account-group
+
