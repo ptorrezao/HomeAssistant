@@ -1,7 +1,0 @@
-card_scenes_office:
- name: Scenes
- view: no
- entities:
-   - scene.worknigthshift
-   - scene.gameon
-   - scene.romantic

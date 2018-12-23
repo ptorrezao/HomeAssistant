@@ -1,5 +1,0 @@
-card_guestWifi:
-    name: Guest Wifi
-    view: no
-    entities:
-      - binary_sensor.guestWifi

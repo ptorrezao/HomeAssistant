@@ -1,6 +1,0 @@
-project_id: api-project-55014269573
-api_key: !secret google_assistant_api_key
-exposed_domains:
-  - switch
-  - light
-  - script

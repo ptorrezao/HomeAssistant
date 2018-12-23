@@ -1,56 +1,70 @@
 homeassistant:
-  name: Casa
-  latitude: !secret home_lat
-  longitude: !secret home_long
-  elevation: 4.2
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 0
+  longitude: 0
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
   unit_system: metric
-  time_zone: Europe/Lisbon
-  customize: !include_dir_merge_named includes/customize
-  whitelist_external_dirs:
-     - !secret publictempfolder
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: UTC
+  # Customization file
+  customize: !include customize.yaml
 
-map:
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
 config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
 logbook:
-sun: 
 
-group: !include_dir_merge_named includes/group
-script: !include_dir_merge_named includes/scripts
-shell_command: !include_dir_merge_named includes/shell_command
+# Enables a map showing the location of tracked devices
+map:
 
-zone: !include includes/core/zones.yaml
-history: !include includes/core/history.yaml
-recorder: !include includes/core/recorder.yaml
-frontend: !include includes/core/frontend.yaml
-updater: !include includes/core/updater.yaml
-http: !include includes/core/http.yaml
-logger: !include includes/core/logger.yaml
-tts: !include includes/core/tts.yaml
-notify: !include includes/core/notify.yaml
+# Track the sun
+sun:
 
-automation: !include_dir_merge_list includes/automations
+# Sensors
+sensor:
+  # Weather prediction
+  - platform: yr
 
-ffmpeg: !include includes/components/ffmpeg.yaml
-google_assistant: !include includes/components/google_assistant.yaml
-telegram_bot: !include includes/components/telegram_bot.yaml
-mqtt: !include includes/components/mqtt.yaml
-switch: !include includes/switch.yaml
-sensor: !include includes/sensor.yaml
-light: !include includes/light.yaml
-camera: !include includes/camera.yaml
-device_tracker: !include includes/device_tracker.yaml
-media_player: !include includes/media_player.yaml
-binary_sensor: !include includes/binary_sensor.yaml
-input_boolean: !include includes/input_boolean.yaml
-climate: !include includes/climate.yaml
-weather: !include includes/weather.yaml
-scene: !include includes/scenes/scenes.yaml
+# Text to speech
+tts:
+  - platform: google
 
-digital_ocean:
-  access_token: !secret digital_ocean
+# Cloud
+cloud:
 
-panel_iframe:
- nodered:
-   title: 'Node-Red'
-   icon: 'mdi:basket-unfill'
-   url: https://ptorrezao.duckdns.org:1880
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
