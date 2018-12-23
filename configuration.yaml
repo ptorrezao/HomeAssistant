@@ -25,3 +25,5 @@ tts:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+
+panel_iframe: !include iframe.yaml
