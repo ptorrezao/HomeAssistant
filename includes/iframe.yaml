@@ -1,0 +1,4 @@
+nodered:
+ title: 'Grafana'
+ icon: 'mdi:chart-line'
+ url: http://192.168.88.25:3000/d/HPXq9Aymz/home
