@@ -7,16 +7,14 @@ homeassistant:
   time_zone: Europe/Lisbon
   customize: !include customize.yaml
 
-introduction:
-frontend:
+map:
 config:
-updater:
+logbook:
+sun: 
+frontend:
 discovery:
 history:
-logbook:
-map:
-sun:
-group: !include groups.yaml
+group: !include_dir_merge_named includes/group
 automation: !include automations.yaml
 script: !include scripts.yaml
 panel_iframe: !include includes/iframe.yaml
