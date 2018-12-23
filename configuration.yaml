@@ -16,12 +16,9 @@ history:
 logbook:
 map:
 sun:
-tts:
-  - platform: google
-
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
-
 panel_iframe: !include includes/iframe.yaml
 zone: !include includes/zones.yaml
+tts: !include includes/tts.yaml
