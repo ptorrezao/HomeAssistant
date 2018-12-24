@@ -1,0 +1,24 @@
+- platform: speedtest
+  minute:
+    - 0
+    - 30
+  monitored_conditions:
+    - download
+    - upload
+    
+- platform: dnsip
+  hostname: ptorrezao.duckdns.org
+  resolver: 8.8.8.8
+- platform: mqtt
+  state_topic: "office/office_sensor/temperature"
+  name: "Temperatura Office"
+  qos: 0
+  unit_of_measurement: "°C"
+- platform: mqtt
+  state_topic: "office/office_sensor/humidity"
+  name: "Humidade Office"
+  qos: 0
+  unit_of_measurement: "%"
+- platform: cert_expiry
+  host: ptorrezao.duckdns.org
+  name: "SSL ptorrezao.duckdns.org"

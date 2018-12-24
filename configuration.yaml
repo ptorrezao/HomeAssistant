@@ -11,12 +11,20 @@ map:
 config:
 logbook:
 sun: 
-frontend:
 discovery:
 history:
+
+#Core stuff
+http: !include includes/http.yaml
 group: !include_dir_merge_named includes/group
+frontend: !include includes/frontend.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
-panel_iframe: !include includes/iframe.yaml
 zone: !include includes/zones.yaml
 tts: !include includes/tts.yaml
+influxdb: !include includes/influxdb.yaml
+ 
+
+panel_iframe: !include includes/iframe.yaml
+mqtt: !include includes/mqtt.yaml
+sensor: !include includes/sensor.yaml
