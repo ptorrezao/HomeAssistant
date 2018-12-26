@@ -1,7 +1,7 @@
 - name: Home
   latitude: !secret home_lat
   longitude: !secret home_long
-  radius: 100
+  radius: 150
   icon: mdi:home-assistant
 - name: Work Ana
   latitude: !secret work_ana_lat

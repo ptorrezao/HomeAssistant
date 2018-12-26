@@ -7,6 +7,9 @@ homeassistant:
   time_zone: Europe/Lisbon
   customize: !include customize.yaml
 
+lovelace: 
+  mode: yaml
+
 map:
 config:
 logbook:
@@ -16,15 +19,19 @@ history:
 
 #Core stuff
 http: !include includes/http.yaml
-group: !include_dir_merge_named includes/group
 frontend: !include includes/frontend.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 zone: !include includes/zones.yaml
 tts: !include includes/tts.yaml
 influxdb: !include includes/influxdb.yaml
- 
-
 panel_iframe: !include includes/iframe.yaml
 mqtt: !include includes/mqtt.yaml
 sensor: !include includes/sensor.yaml
+weather: !include includes/weather.yaml
+binary_sensor: !include includes/binary_sensor.yaml
+device_tracker: !include includes/device_tracker.yaml
+input_boolean: !include includes/input_boolean.yaml
+light: !include includes/light.yaml
+group: !include includes/group.yaml
+switch: !include includes/switch.yaml
