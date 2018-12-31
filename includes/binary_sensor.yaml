@@ -46,11 +46,6 @@
   host: 192.168.88.25
   name: Arm-Cluster-Node01
   count: 2  
-- platform: ping
-  #host: Aphrodite
-  host: 192.168.88.25
-  name: Arm-Cluster-Node01
-  count: 2  
 - platform: command_line
   command: 'nmap -p 9295 192.168.88.100 | grep "9295/tcp open" | wc -l'
   name: 'Playstation'

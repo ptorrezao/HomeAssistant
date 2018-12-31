@@ -184,6 +184,11 @@ views:
       entities:
         - entity: binary_sensor.lg_tv_5600
           icon: mdi:television-classic
+        - entity: media_player.main_tv
+          type: custom:mini-media-player
+          artwork: cover
+          group: true
+          hide_volume: true
     badges: []
     icon: 'mdi:sofa'
     theme: Backend-selected
@@ -205,7 +210,8 @@ views:
         - light.nursery_light
     - type: picture-glance
       title: Camera
-      entities: []
+      entities:
+        - camera.baby_room
       camera_image: camera.baby_room
     badges: []
     icon: 'mdi:baby-buggy'
@@ -297,6 +303,14 @@ views:
           - entity: binary_sensor.chromecastofficetv
             name: Chromecast Office TV
             icon: mdi:television-classic
+          - entity: media_player.office_tv_2
+            type: custom:mini-media-player
+            artwork: cover
+            group: true
+            hide_volume: true
+          - entity: binary_sensor.hisense_h39n2110c
+            name: Office TV
+            icon: mdi:television-classic
           - type: divider
           - entity: binary_sensor.googlehome
             name: Google Home
@@ -311,7 +325,7 @@ views:
       artwork: cover
       show_tts: google
       power_color: true
-    - entity: media_player.office_tv_2
+    - entity: media_player.officetv
       type: custom:mini-media-player
       artwork: cover
       hide_volume: true
@@ -352,7 +366,13 @@ views:
         - group.all_scripts
         - input_boolean.home_occupied
         - binary_sensor.ipcam01
-        - media_player.office_tv
+        - media_player.officetv
+    - type: entities
+      title: Office Scripts 
+      show_header_toggle: false
+      entities:
+        - script.turnofftv
+        - script.turnontv
     badges: 
       - binary_sensor.internet_check
       - binary_sensor.workday_sensor

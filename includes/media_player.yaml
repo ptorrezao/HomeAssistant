@@ -14,7 +14,7 @@
   host: 192.168.88.155
   hidden: true
 - platform: universal
-  name: Office TV
+  name: Office-TV
   children:
     - media_player.office_tv_2
   commands:
