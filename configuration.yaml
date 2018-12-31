@@ -35,3 +35,8 @@ input_boolean: !include includes/input_boolean.yaml
 light: !include includes/light.yaml
 group: !include includes/group.yaml
 switch: !include includes/switch.yaml
+digital_ocean: !include includes/digital_ocean.yaml
+media_player: !include includes/media_player.yaml
+ffmpeg: !include includes/ffmpeg.yaml
+camera: !include includes/camera.yaml
+script: !include_dir_merge_named includes/scripts
