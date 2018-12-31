@@ -11,10 +11,22 @@
   retain: true
   
 - platform: mqtt
-  name: "Remote Switch"
+  name: "Remote Switch 1"
   state_topic: "office/remoteSwitch/stat/POWER"
   command_topic: "office/remoteSwitch/cmnd/POWER"
   availability_topic: "office/remoteSwitch/tele/LWT"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
+
+- platform: mqtt
+  name: "Remote Switch 2"
+  state_topic: "office/remoteSwitch2/stat/POWER"
+  command_topic: "office/remoteSwitch2/cmnd/POWER"
+  availability_topic: "office/remoteSwitch2/tele/LWT"
   qos: 1
   payload_on: "ON"
   payload_off: "OFF"

@@ -4,6 +4,7 @@ office_ligths:
     - light.office_ceiling_light
     - light.office_desk_light
     - light.office_rgb
+    - light.office_lego_light
 
 office:
   name: Office
@@ -14,7 +15,7 @@ livingroom_ligths:
   name: Living Room Lights
   entities:
     - light.living_room_cabinet
-
+    - switch.christmas_lights
 livingroom:
   name: Living
   entities:

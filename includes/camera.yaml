@@ -1,0 +1,3 @@
+- platform: ffmpeg
+  name: Baby Room
+  input: !secret babyRoomCameraURL

@@ -1,8 +1,10 @@
 resources:
   - url: /local/plan-coordinates.js?v=1
     type: js
+  - url: /local/mini-media-player-bundle.js?v=0.9.8
+    type: module
 
-title: Casa
+title: Casa 
 views:
   - title: Hall
     path: default_view
@@ -176,6 +178,12 @@ views:
       entities:
         - light.living_room_cabinet
         - switch.christmas_lights
+    - type: entities
+      title: Media Center
+      show_header_toggle: false
+      entities:
+        - entity: binary_sensor.lg_tv_5600
+          icon: mdi:television-classic
     badges: []
     icon: 'mdi:sofa'
     theme: Backend-selected
@@ -195,34 +203,42 @@ views:
       show_header_toggle: false
       entities:
         - light.nursery_light
+    - type: picture-glance
+      title: Camera
+      entities: []
+      camera_image: camera.baby_room
     badges: []
     icon: 'mdi:baby-buggy'
   - title: Escritório
     cards:
-    - type: glance
-      columns: 3
-      title: IT Stuff
-      entities:
+    - type: conditional
+      conditions:
+        - entity: binary_sensor.internet_check
+          state: "on"
+      card:
+        type: entities
+        title: Web Stuff
+        show_header_toggle: false
+        entities:
+        - entity: sensor.ptorrezaoduckdnsorg
+          name: IP
+          secondary_info: last-changed
         - entity: sensor.speedtest_upload
           name: Upload Speed
         - entity: sensor.speedtest_download
           name: Download Speed
-        - entity: sensor.ptorrezaoduckdnsorg
-          name: IP
         - entity: sensor.ssl_ptorrezaoduckdnsorg
           name: Certificado SSL
-        - entity: binary_sensor.internet_check
-          name: Internet Check
     - type: horizontal-stack
       cards:
         - type: sensor
           entity: sensor.temperatura_office
           name: Temperatura
-          graph: line
+          graph: none
         - type: sensor
           entity: sensor.humidade_office
           name: Humidade
-          graph: line
+          graph: none
     - type: entities
       title: Lights
       show_header_toggle: false
@@ -230,8 +246,75 @@ views:
         - light.office_ceiling_light
         - light.office_desk_light
         - light.office_rgb
-        - switch.remote_switch
-    badges: []
+        - light.office_lego_light
+    - type: entities
+      title: Smart Plugs
+      show_header_toggle: false
+      entities:
+        - switch.remote_switch_1
+        - switch.remote_switch_2
+    - type: vertical-stack
+      cards:
+      - type: entities
+        title: IT Devices (Networking/Infrastructure)
+        show_header_toggle: false
+        entities:
+          - entity: binary_sensor.openwrt
+            name: OpenWrt (Router)
+            icon: mdi:router-wireless
+          - entity: binary_sensor.tlsg108e
+            name: TL-SG108E (Smart Switch)
+            icon: mdi:switch
+          - entity: binary_sensor.re200
+            icon: mdi:access-point
+            name: RE200 (Range Extender)
+          - type: divider
+          - entity: binary_sensor.epsond11b70
+            name: Printer
+            icon: mdi:printer
+          - type: divider
+          - entity: binary_sensor.aphrodite
+            name: Aphrodite
+            icon: mdi:server-security
+          - entity: binary_sensor.ares
+            icon: mdi:server-security
+            name: Ares
+          - entity: binary_sensor.dtoffice
+            name: DT-Office
+            icon: mdi:desktop-classic
+          - type: divider
+          - entity: binary_sensor.armclusternode01
+            name: ArmCluster-Node01
+            icon: mdi:hexagon-slice-1
+          
+      - type: entities
+        title: IT Devices (Smart Home/Entertainment)
+        show_header_toggle: false
+        entities:
+          - entity: binary_sensor.playstation
+            name: Playstation
+            icon: mdi:gamepad-variant
+          - entity: binary_sensor.chromecastofficetv
+            name: Chromecast Office TV
+            icon: mdi:television-classic
+          - type: divider
+          - entity: binary_sensor.googlehome
+            name: Google Home
+            icon: mdi:google-home
+          - entity: binary_sensor.broadlink
+            name: BroadLink
+            icon: mdi:remote
+    - entity: media_player.escritorioghome
+      type: custom:mini-media-player
+      name: Google Home 
+      hide_controls: true
+      artwork: cover
+      show_tts: google
+      power_color: true
+    - entity: media_player.office_tv_2
+      type: custom:mini-media-player
+      artwork: cover
+      hide_volume: true
     icon: 'mdi:network'
   - title: Cozinha 
     icon: 'mdi:knife'
@@ -265,7 +348,16 @@ views:
       entities:
         - group.all_devices
         - group.all_lights
-    badges: []
+        - group.all_switches
+        - group.all_scripts
+        - input_boolean.home_occupied
+        - binary_sensor.ipcam01
+        - media_player.office_tv
+    badges: 
+      - binary_sensor.internet_check
+      - binary_sensor.workday_sensor
+      - binary_sensor.chromecastmaintv
+      - sun.sun
     icon: 'mdi:wrench'
   - title: Relatórios
     cards: []
