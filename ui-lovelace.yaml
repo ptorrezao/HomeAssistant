@@ -1,7 +1,7 @@
 resources:
   - url: /local/plan-coordinates.js?v=1
     type: js
-  - url: /local/mini-media-player-bundle.js?v=0.9.8
+  - url: /local/mini-media-player-bundle.js
     type: module
 
 title: Casa 
@@ -311,6 +311,15 @@ views:
           - entity: binary_sensor.hisense_h39n2110c
             name: Office TV
             icon: mdi:television-classic
+          - entity: media_player.broadlink_office_tv
+            name: Office TV
+            type: custom:mini-media-player
+            icon: mdi:television-classic
+            artwork: cover
+            show_source: true
+            hide_volume: true
+            hide_controls: true
+            group: true
           - type: divider
           - entity: binary_sensor.googlehome
             name: Google Home
@@ -324,11 +333,15 @@ views:
       hide_controls: true
       artwork: cover
       show_tts: google
+      icon: mdi:google-home
       power_color: true
     - entity: media_player.officetv
       type: custom:mini-media-player
+      icon: mdi:television-classic
       artwork: cover
+      show_source: true
       hide_volume: true
+      hide_controls: true
     icon: 'mdi:network'
   - title: Cozinha 
     icon: 'mdi:knife'

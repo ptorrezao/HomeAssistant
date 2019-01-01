@@ -24,9 +24,22 @@
     turn_off:
       service: script.turn_on
       entity_id: script.turnofftv
+    select_source:
+      service: media_player.select_source
+      data_template:
+        entity_id: media_player.broadlink_office_tv
+        source: '{{ source }}'
+    volume_mute:
+      service: media_player.volume_mute
+      data:
+        entity_id: switch.broadlink_office_tv
   state_template: >
     {% if is_state('media_player.office_tv_2', 'off') or is_state('media_player.broadlink_office_tv', 'off')%}
     {{ states('media_player.broadlink_office_tv') }}
     {% else %}
     {{ states('media_player.office_tv_2') }}
     {% endif %}
+  attributes:
+    source_list: media_player.broadlink_office_tv|source_list
+    source: media_player.broadlink_office_tv|source
+
