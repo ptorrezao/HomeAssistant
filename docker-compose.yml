@@ -1,0 +1,111 @@
+
+version: '3.1'
+
+services:
+#HomeAssistant
+  homeassistant:
+    image:  homeassistant/home-assistant
+    restart: always
+    networks:
+      - traefik_proxy
+    ports:
+      - "${HA_PORT}:8123"
+    volumes:
+      - ha_config:/config
+    labels:
+       - "traefik.backend=homeassistant"
+       - "traefik.frontend.rule=Host:ha.ptorrezao.duckdns.org"
+       - "traefik.port=8123"
+       - "traefik.docker.network=traefik_proxy"
+       - "traefik.enable=true"
+#DB
+  influxdb:
+    image: influxdb:latest
+    ports:
+     - "8083:8083"
+     - "8086:8086"
+     - "8090:8090"
+    environment:
+     - INFLUXDB_DATA_ENGINE=tsm1
+     - INFLUXDB_REPORTING_DISABLED=false
+    volumes:
+     - ha_influxdb:/var/lib/influxdb
+
+  grafana:
+    image: grafana/grafana
+    ports:
+     - "${GRAFANA_PORT}:3000"
+    deploy:
+      replicas: 0
+    environment:
+     - GF_INSTALL_PLUGINS=grafana-clock-panel,briangann-gauge-panel,natel-plotly-panel,grafana-simple-json-datasource
+    links:
+     - influxdb
+     - influxdb:database
+    volumes:
+     - ha_grafana:/var/lib/grafana
+
+#MQTT
+  mqtt:
+    image: eclipse-mosquitto:latest
+    restart: always
+    ports:
+      - "${MQTT_PORT}:1883"
+      - "${MQTTWS_PORT}:9001"
+    volumes:
+      - mqtt_data:/mosquitto
+
+#Node Red
+  nodered:
+    image: nodered/node-red-docker
+    ports:
+      - "${NODERED_PORT}:1880"
+    deploy:
+      replicas: 0
+    volumes:
+      - node_red:/data
+
+#tasmoadmin      
+  tasmoadmin:
+    image: raymondmm/tasmoadmin
+    restart: always
+    deploy:
+      replicas: 0
+    ports:
+       - "${TASMOAADMIN_PORT}:80"
+    volumes:
+      - tasmoadmin:/data
+
+#Samba Shares      
+  samba:
+    image: dperson/samba
+    restart: always
+    deploy:
+      replicas: 0
+    ports:
+      - "137:137/udp"
+      - "138:138/udp"
+      - "139:139/tcp"
+      - "445:445/tcp"
+    volumes:
+      - ha_config:/config
+      - ha_influxdb:/influxdb
+      - node_red:/node_red
+      - ssl_certificate:/ssl
+      - tasmoadmin:/tasmoadmin
+      - mqtt_data:/mqtt_data
+    command: '-u "${SAMBA_USER};${SAMBA_PWD}" -s "MQTT;/mqtt_data;yes;no;no;${SAMBA_USER}" -s "TasmoAdmin;/tasmoadmin;yes;no;no;${SAMBA_USER}" -s "HomeAssistant;/config;yes;no;no;${SAMBA_USER}" -s "InfluxDB;/influxdb;yes;no;no;${SAMBA_USER}" -s "Certificates;/ssl;yes;no;no;${SAMBA_USER}" -s "NodeRed;/node_red;yes;no;no;${SAMBA_USER}" -p'
+    
+volumes:
+  ha_config:
+  ha_influxdb:
+  ha_grafana:
+  node_red:
+  ssl_certificate:
+  tasmoadmin:
+  mqtt_data:
+
+networks:
+  traefik_proxy:
+    external:
+      name: traefik_proxy
