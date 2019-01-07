@@ -1,0 +1,10 @@
+  exclude:
+    domains:
+      - automation
+      - weblink
+      - updater
+      - script
+    entities:
+      - switch.remote_switch_2
+      - persistant_notification.invalide_config
+      - media_player.broadlink_office_tv

@@ -27,149 +27,164 @@ views:
         type: glance
         show_state: false
         title: Em casa  
+    
+    ###
+    - type: conditional
+      conditions:
+        - entity: input_boolean.home_occupied
+          state: "on"
+      card:
+        type: vertical-stack
+        cards:
+        - type: horizontal-stack
+          cards:
+          - title: Escritório
+            type: picture-glance
+            aspect_ratio: 16x9
+            entities:
+              - group.office_ligths
+            state_image:
+              "On": /local/office_photo_on.jpg
+              "Off": /local/office_photo_off.jpg
+            entity: group.office
+            image: /local/office_photo_on.jpg
+            hold_action: 
+              action: navigate
+              navigation_path: /lovelace/4/
+            tap_action: 
+              action: toggle
+          - title: Sala de Estar
+            type: picture-glance
+            aspect_ratio: 16x9
+            entities:
+              - group.livingroom_ligths
+            state_image:
+              "On": /local/livingroom_photo_on.jpg
+              "Off": /local/livingroom_photo_off.jpg
+            entity: group.livingroom
+            image: /local/livingroom_photo_on.jpg
+            hold_action: 
+              action: navigate
+              navigation_path: /lovelace/1/
+            tap_action: 
+              action: toggle
+        - type: horizontal-stack
+          cards:
+          - title: Quarto Madalena
+            type: picture-glance
+            aspect_ratio: 16x9
+            entities:
+              - group.nursery_ligths
+            state_image:
+              "On": /local/nursery_photo_on.jpg
+              "Off": /local/nursery_photo_off.jpg
+              "unknown": /local/nursery_photo_off.jpg
+            entity: group.nursery
+            image: /local/nursery_photo_off.jpg
+            hold_action: 
+              action: navigate
+              navigation_path: /lovelace/3/
+            tap_action: 
+              action: toggle
+          - title: Quarto Pedro & Ana
+            type: picture-glance
+            aspect_ratio: 16x9
+            entities:
+              - group.bedroom_ligths
+            state_image:
+              "On": /local/bedroom_photo_on.jpg
+              "Off": /local/bedroom_photo_off.jpg
+              "unknown": /local/bedroom_photo_off.jpg
+            entity: group.bedroom
+            image: /local/bedroom_photo_on.jpg
+            hold_action: 
+              action: navigate
+              navigation_path: /lovelace/2/
+            tap_action: 
+              action: toggle
+        - type: horizontal-stack
+          cards:
+          - title: Cozinha
+            type: picture-glance
+            aspect_ratio: 16x9
+            entities:
+              - group.kitchen_lights
+            state_image:
+              "On": /local/kitchen_photo_on.jpg
+              "Off": /local/kitchen_photo_off.jpg
+              "unknown": /local/kitchen_photo_off.jpg
+            entity: group.kitchen
+            image: /local/kitchen_photo_on.jpg
+            hold_action: 
+              action: navigate
+              navigation_path: /lovelace/5/
+            tap_action: 
+              action: toggle     
+          - title: Garagem
+            type: picture-glance
+            aspect_ratio: 16x9
+            entities:
+              - group.garage_lights
+            state_image:
+              "On": /local/garage_photo_on.jpg
+              "Off": /local/garage_photo_off.jpg
+              "unknown": /local/garage_photo_off.jpg
+            entity: group.garage
+            image: /local/garage_photo_off.jpg
+            hold_action: 
+              action: navigate
+              navigation_path: /lovelace/6/
+            tap_action: 
+              action: toggle  
+          - title: Sotão
+            type: picture-glance
+            aspect_ratio: 16x9
+            entities:
+              - group.nursery_lights
+            state_image:
+              "On": /local/attic_photo_on.jpg
+              "Off": /local/attic_photo_off.jpg
+              "unknown": /local/attic_photo_off.jpg
+            entity: group.attic
+            image: /local/attic_photo_on.jpg
+            hold_action: 
+              action: navigate
+              navigation_path: /lovelace/7/
+            tap_action: 
+              action: toggle     
+    
+      
     - type: vertical-stack
       cards:
-      - type: horizontal-stack
-        cards:
-        - title: Escritório
-          type: picture-glance
-          aspect_ratio: 16x9
-          entities:
-            - group.office_ligths
-          state_image:
-            "On": /local/office_photo_on.jpg
-            "Off": /local/office_photo_off.jpg
-          entity: group.office
-          image: /local/office_photo_on.jpg
-          hold_action: 
-            action: navigate
-            navigation_path: /lovelace/4/
-          tap_action: 
-            action: toggle
-        - title: Sala de Estar
-          type: picture-glance
-          aspect_ratio: 16x9
-          entities:
-            - group.livingroom_ligths
-          state_image:
-            "On": /local/livingroom_photo_on.jpg
-            "Off": /local/livingroom_photo_off.jpg
-          entity: group.livingroom
-          image: /local/livingroom_photo_on.jpg
-          hold_action: 
-            action: navigate
-            navigation_path: /lovelace/1/
-          tap_action: 
-            action: toggle
-      - type: horizontal-stack
-        cards:
-        - title: Quarto Madalena
-          type: picture-glance
-          aspect_ratio: 16x9
-          entities:
-            - group.nursery_ligths
-          state_image:
-            "On": /local/nursery_photo_on.jpg
-            "Off": /local/nursery_photo_off.jpg
-            "unknown": /local/nursery_photo_off.jpg
-          entity: group.nursery
-          image: /local/nursery_photo_off.jpg
-          hold_action: 
-            action: navigate
-            navigation_path: /lovelace/3/
-          tap_action: 
-            action: toggle
-        - title: Quarto Pedro & Ana
-          type: picture-glance
-          aspect_ratio: 16x9
-          entities:
-            - group.bedroom_ligths
-          state_image:
-            "On": /local/bedroom_photo_on.jpg
-            "Off": /local/bedroom_photo_off.jpg
-            "unknown": /local/bedroom_photo_off.jpg
-          entity: group.bedroom
-          image: /local/bedroom_photo_on.jpg
-          hold_action: 
-            action: navigate
-            navigation_path: /lovelace/2/
-          tap_action: 
-            action: toggle
-      - type: horizontal-stack
-        cards:
-        - title: Cozinha
-          type: picture-glance
-          aspect_ratio: 16x9
-          entities:
-            - group.kitchen_lights
-          state_image:
-            "On": /local/kitchen_photo_on.jpg
-            "Off": /local/kitchen_photo_off.jpg
-            "unknown": /local/kitchen_photo_off.jpg
-          entity: group.kitchen
-          image: /local/kitchen_photo_on.jpg
-          hold_action: 
-            action: navigate
-            navigation_path: /lovelace/5/
-          tap_action: 
-            action: toggle     
-        - title: Garagem
-          type: picture-glance
-          aspect_ratio: 16x9
-          entities:
-            - group.garage_lights
-          state_image:
-            "On": /local/garage_photo_on.jpg
-            "Off": /local/garage_photo_off.jpg
-            "unknown": /local/garage_photo_off.jpg
-          entity: group.garage
-          image: /local/garage_photo_off.jpg
-          hold_action: 
-            action: navigate
-            navigation_path: /lovelace/6/
-          tap_action: 
-            action: toggle  
-        - title: Sotão
-          type: picture-glance
-          aspect_ratio: 16x9
-          entities:
-            - group.nursery_lights
-          state_image:
-            "On": /local/attic_photo_on.jpg
-            "Off": /local/attic_photo_off.jpg
-            "unknown": /local/attic_photo_off.jpg
-          entity: group.attic
-          image: /local/attic_photo_on.jpg
-          hold_action: 
-            action: navigate
-            navigation_path: /lovelace/7/
-          tap_action: 
-            action: toggle     
-    - type: markdown
-      title: WIFI
-      content: >
-        SSID/Network Name: **ZON-Pedro & Ana**
+      - type: entities
+        show_header_toggle: false
+        entities:
+          - entity: input_boolean.houseguest
+            name: Convidados
+      - type: markdown
+        title: WIFI
+        content: >
+          SSID/Network Name: **ZON-Pedro & Ana**
 
-        Password: **f9ffa4cf33ec**
+          Password: **f9ffa4cf33ec**
 
-        Network Type: **WPA**   
-    - type: map
-      aspect_ratio: 16x9
-      default_zoom: 15
-      entities:
-      - device_tracker.ana_bq
-      - zone.home
-      - device_tracker.pedro_aquaris
-    - type: horizontal-stack
+          Network Type: **WPA**   
+      - type: map
+        aspect_ratio: 16x9
+        default_zoom: 15
+        entities:
+        - device_tracker.ana_bq
+        - zone.home
+        - device_tracker.pedro_aquaris
+    - type: vertical-stack
       cards:
-        - type: vertical-stack
-          cards:
-          - type: weather-forecast
-            entity: weather.ipma
-            aspect_ratio: 62%
-          - type: iframe
-            url: !secret weatherUrl
-            aspect_ratio: 38%   
+      - type: weather-forecast
+        entity: weather.ipma
+        aspect_ratio: 62%
+      - type: iframe
+        url: !secret weatherUrl
+        aspect_ratio: 38%   
+
   - title: Sala de Estar
     cards: 
     - type: entities
@@ -258,7 +273,9 @@ views:
       show_header_toggle: false
       entities:
         - switch.remote_switch_1
-        - switch.remote_switch_2
+        - entity: switch.dtoffice
+          name: PC
+          icon: mdi:desktop-classic
     - type: vertical-stack
       cards:
       - type: entities
@@ -282,9 +299,6 @@ views:
           - entity: binary_sensor.aphrodite
             name: Aphrodite
             icon: mdi:server-security
-          - entity: binary_sensor.ares
-            icon: mdi:server-security
-            name: Ares
           - entity: binary_sensor.dtoffice
             name: DT-Office
             icon: mdi:desktop-classic

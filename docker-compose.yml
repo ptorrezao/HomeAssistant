@@ -9,12 +9,12 @@ services:
     networks:
       - traefik_proxy
     ports:
-      - "${HA_PORT}:8123"
+      - "8123:8123"
     volumes:
       - ha_config:/config
     labels:
        - "traefik.backend=homeassistant"
-       - "traefik.frontend.rule=Host:ha.ptorrezao.duckdns.org"
+       - "traefik.frontend.rule=Host:ptorrezao.duckdns.org"
        - "traefik.port=8123"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
@@ -34,9 +34,9 @@ services:
   grafana:
     image: grafana/grafana
     ports:
-     - "${GRAFANA_PORT}:3000"
+     - "3000:3000"
     deploy:
-      replicas: 0
+      replicas: 1
     environment:
      - GF_INSTALL_PLUGINS=grafana-clock-panel,briangann-gauge-panel,natel-plotly-panel,grafana-simple-json-datasource
     links:
@@ -50,38 +50,49 @@ services:
     image: eclipse-mosquitto:latest
     restart: always
     ports:
-      - "${MQTT_PORT}:1883"
-      - "${MQTTWS_PORT}:9001"
+      - "1883:1883"
+      - "9001:9001"
     volumes:
       - mqtt_data:/mosquitto
 
 #Node Red
   nodered:
     image: nodered/node-red-docker
-    ports:
-      - "${NODERED_PORT}:1880"
+    networks:
+      - traefik_proxy
     deploy:
-      replicas: 0
+      replicas: 1
     volumes:
       - node_red:/data
-
+    labels:
+       - "traefik.backend=NodeRed"
+       - "traefik.frontend.rule=Host:nodered.ptorrezao.duckdns.org"
+       - "traefik.port=1880"
+       - "traefik.docker.network=traefik_proxy"
+       - "traefik.enable=true"
 #tasmoadmin      
   tasmoadmin:
     image: raymondmm/tasmoadmin
     restart: always
     deploy:
-      replicas: 0
-    ports:
-       - "${TASMOAADMIN_PORT}:80"
+      replicas: 1
+    networks:
+      - traefik_proxy
     volumes:
       - tasmoadmin:/data
+    labels:
+       - "traefik.backend=tasmoadmin"
+       - "traefik.frontend.rule=Host:TasmoAdmin.ptorrezao.duckdns.org"
+       - "traefik.port=80"
+       - "traefik.docker.network=traefik_proxy"
+       - "traefik.enable=true"
 
 #Samba Shares      
   samba:
     image: dperson/samba
     restart: always
     deploy:
-      replicas: 0
+      replicas: 1
     ports:
       - "137:137/udp"
       - "138:138/udp"
