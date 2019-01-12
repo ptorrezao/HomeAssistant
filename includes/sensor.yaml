@@ -7,7 +7,8 @@
     - upload
     
 - platform: dnsip
-  hostname: ptorrezao.duckdns.org
+  name: dnsip
+  hostname: !secret dnsHostName
   resolver: 8.8.8.8
 - platform: mqtt
   state_topic: "office/office_sensor/temperature"
@@ -20,5 +21,10 @@
   qos: 0
   unit_of_measurement: "%"
 - platform: cert_expiry
-  host: ptorrezao.duckdns.org
-  name: "SSL ptorrezao.duckdns.org"
+  host: !secret dnsHostName
+  name: "SSL"
+- platform: seventeentrack
+  username: !secret seventeentrack_usr
+  password: !secret seventeentrack_pwd 
+- platform: travisci
+  api_key: !secret travis_api

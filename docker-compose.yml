@@ -8,13 +8,16 @@ services:
     restart: always
     networks:
       - traefik_proxy
-    ports:
-      - "8123:8123"
     volumes:
       - ha_config:/config
+    links:
+      - mqtt
+      - mqtt:mqtt
+      - influxdb
+      - influxdb:influxdb
     labels:
        - "traefik.backend=homeassistant"
-       - "traefik.frontend.rule=Host:ptorrezao.duckdns.org"
+       - "traefik.frontend.rule=Host:REDACTED"
        - "traefik.port=8123"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
@@ -25,6 +28,8 @@ services:
      - "8083:8083"
      - "8086:8086"
      - "8090:8090"
+    networks:
+      - traefik_proxy
     environment:
      - INFLUXDB_DATA_ENGINE=tsm1
      - INFLUXDB_REPORTING_DISABLED=false
@@ -33,8 +38,8 @@ services:
 
   grafana:
     image: grafana/grafana
-    ports:
-     - "3000:3000"
+    networks:
+      - traefik_proxy
     deploy:
       replicas: 1
     environment:
@@ -44,10 +49,17 @@ services:
      - influxdb:database
     volumes:
      - ha_grafana:/var/lib/grafana
-
+    labels:
+       - "traefik.backend=grafana"
+       - "traefik.frontend.rule=Host:REDACTED"
+       - "traefik.port=3000"
+       - "traefik.docker.network=traefik_proxy"
+       - "traefik.enable=true"
 #MQTT
   mqtt:
     image: eclipse-mosquitto:latest
+    networks:
+      - traefik_proxy
     restart: always
     ports:
       - "1883:1883"
@@ -57,7 +69,7 @@ services:
 
 #Node Red
   nodered:
-    image: nodered/node-red-docker
+    image: nodered/node-red-docker:v8
     networks:
       - traefik_proxy
     deploy:
@@ -66,7 +78,7 @@ services:
       - node_red:/data
     labels:
        - "traefik.backend=NodeRed"
-       - "traefik.frontend.rule=Host:nodered.ptorrezao.duckdns.org"
+       - "traefik.frontend.rule=Host:REDACTED"
        - "traefik.port=1880"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
@@ -82,11 +94,11 @@ services:
       - tasmoadmin:/data
     labels:
        - "traefik.backend=tasmoadmin"
-       - "traefik.frontend.rule=Host:TasmoAdmin.ptorrezao.duckdns.org"
+       - "traefik.frontend.rule=Host:REDACTED"
        - "traefik.port=80"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
-
+      
 #Samba Shares      
   samba:
     image: dperson/samba
@@ -101,11 +113,9 @@ services:
     volumes:
       - ha_config:/config
       - ha_influxdb:/influxdb
-      - node_red:/node_red
-      - ssl_certificate:/ssl
       - tasmoadmin:/tasmoadmin
       - mqtt_data:/mqtt_data
-    command: '-u "${SAMBA_USER};${SAMBA_PWD}" -s "MQTT;/mqtt_data;yes;no;no;${SAMBA_USER}" -s "TasmoAdmin;/tasmoadmin;yes;no;no;${SAMBA_USER}" -s "HomeAssistant;/config;yes;no;no;${SAMBA_USER}" -s "InfluxDB;/influxdb;yes;no;no;${SAMBA_USER}" -s "Certificates;/ssl;yes;no;no;${SAMBA_USER}" -s "NodeRed;/node_red;yes;no;no;${SAMBA_USER}" -p'
+    command: '-u "${SAMBA_USER};${SAMBA_PWD}" -s "MQTT;/mqtt_data;yes;no;no;${SAMBA_USER}" -s "TasmoAdmin;/tasmoadmin;yes;no;no;${SAMBA_USER}" -s "HomeAssistant;/config;yes;no;no;${SAMBA_USER}" -s "InfluxDB;/influxdb;yes;no;no;${SAMBA_USER}" -p'
     
 volumes:
   ha_config:

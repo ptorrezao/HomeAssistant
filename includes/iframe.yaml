@@ -1,12 +1,12 @@
 grafana:
  title: 'Grafana'
  icon: 'mdi:chart-line'
- url: https://grafana.ptorrezao.duckdns.org
+ url: !secret granfanaLink
 nodered:
  title: 'Node-Red'
  icon: 'mdi:chart-line'
- url: https://nodered.ptorrezao.duckdns.org/
+ url: !secret noderedLink
 tasmoadmin:
  title: 'Tasmo Admin'
  icon: 'mdi:chart-line'
- url: https://tasmoadmin.ptorrezao.duckdns.org/
+ url: !secret tasmoAdminLink

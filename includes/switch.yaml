@@ -22,6 +22,18 @@
   payload_not_available: "Offline"
   retain: true
 
+- platform: mqtt
+  name: "PC Mode"
+  state_topic: "office/office-pcmode/stat/POWER"
+  command_topic: "office/office-pcmode/cmnd/POWER"
+  availability_topic: "office/office-pcmode/tele/LWT"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
+
 - platform: command_line
   switches:
     pc:

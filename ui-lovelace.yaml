@@ -192,7 +192,7 @@ views:
       show_header_toggle: false
       entities:
         - light.living_room_cabinet
-        - switch.christmas_lights
+        #- switch.christmas_lights
     - type: entities
       title: Media Center
       show_header_toggle: false
@@ -241,14 +241,14 @@ views:
         title: Web Stuff
         show_header_toggle: false
         entities:
-        - entity: sensor.ptorrezaoduckdnsorg
-          name: IP
+        - entity: sensor.dnsip
+          name: External IP
           secondary_info: last-changed
         - entity: sensor.speedtest_upload
           name: Upload Speed
         - entity: sensor.speedtest_download
           name: Download Speed
-        - entity: sensor.ssl_ptorrezaoduckdnsorg
+        - entity: sensor.ssl
           name: Certificado SSL
     - type: horizontal-stack
       cards:
@@ -299,14 +299,14 @@ views:
           - entity: binary_sensor.aphrodite
             name: Aphrodite
             icon: mdi:server-security
-          - entity: binary_sensor.dtoffice
+          - entity: binary_sensor.dt_office
             name: DT-Office
             icon: mdi:desktop-classic
           - type: divider
-          - entity: binary_sensor.armclusternode01
+          - entity: binary_sensor.arm_cluster_node01
             name: ArmCluster-Node01
             icon: mdi:hexagon-slice-1
-          
+
       - type: entities
         title: IT Devices (Smart Home/Entertainment)
         show_header_toggle: false
@@ -314,7 +314,7 @@ views:
           - entity: binary_sensor.playstation
             name: Playstation
             icon: mdi:gamepad-variant
-          - entity: binary_sensor.chromecastofficetv
+          - entity: binary_sensor.chromecast_office_tv
             name: Chromecast Office TV
             icon: mdi:television-classic
           - entity: media_player.office_tv_2
@@ -335,28 +335,61 @@ views:
             hide_controls: true
             group: true
           - type: divider
-          - entity: binary_sensor.googlehome
+          - entity: binary_sensor.google_home
             name: Google Home
             icon: mdi:google-home
           - entity: binary_sensor.broadlink
             name: BroadLink
             icon: mdi:remote
+    - type: entities
+      title: Encomendas
+      show_header_toggle: false
+      entities:
+       #- entity: sensor.seventeentrack_packages_not_found    
+       #  name: Não Encontradas
+       - entity: sensor.seventeentrack_packages_in_transit    
+         name: Em Trânsito
+       - entity: sensor.seventeentrack_packages_delivered    
+         name: Entregues
+       #- entity: sensor.seventeentrack_packages_undelivered    
+       #  name: Não Entregues
+       #- entity: sensor.seventeentrack_packages_expired    
+       #  name: Expiradas
+       #- entity: sensor.seventeentrack_packages_returned    
+       #  name: Devolvidas
+       #- entity: sensor.seventeentrack_packages_ready_to_be_picked_up    
+       #  name: Prontas para Levantar
     - entity: media_player.escritorioghome
       type: custom:mini-media-player
       name: Google Home 
-      hide_controls: true
+      hide_controls: true6
       artwork: cover
       show_tts: google
       icon: mdi:google-home
       power_color: true
-    - entity: media_player.officetv
+    - entity: media_player.office_tv_2
       type: custom:mini-media-player
       icon: mdi:television-classic
       artwork: cover
       show_source: true
       hide_volume: true
       hide_controls: true
+    - type: entities
+      title: Dev Projects
+      show_header_toggle: false
+      entities:
+        - entity: sensor.ptorrezao_homeassistant_last_build_state
+          name: Home Assistant
+          icon: mdi:github-circle
+        - entity: sensor.ptorrezao_ptz_frw_last_build_state
+          name: PTZ Frw
+          icon: mdi:github-circle
+        - entity: sensor.ptorrezao_ptz_homemanagement_last_build_state
+          name: Home Management
+          icon: mdi:github-circle
+
     icon: 'mdi:network'
+  
   - title: Cozinha 
     icon: 'mdi:knife'
     cards:     
@@ -393,7 +426,7 @@ views:
         - group.all_scripts
         - input_boolean.home_occupied
         - binary_sensor.ipcam01
-        - media_player.officetv
+        - media_player.office_tv_2
     - type: entities
       title: Office Scripts 
       show_header_toggle: false
@@ -403,7 +436,6 @@ views:
     badges: 
       - binary_sensor.internet_check
       - binary_sensor.workday_sensor
-      - binary_sensor.chromecastmaintv
       - sun.sun
     icon: 'mdi:wrench'
   - title: Relatórios
@@ -487,3 +519,186 @@ views:
               top: 93.4%
               left: 41.2%
               width: 1.5vw
+          - type: image
+            entity: light.living_room_cabinet
+            image: /local/cabinet_light_off.png
+            state_image:
+              'on': /local/cabinet_light_on.png
+              'off': /local/cabinet_light_off.png
+            style:
+              top: 73.5%
+              left: 62.5%
+              width: 1.5vw
+            tap_action:
+              action: toggle
+          - type: image
+            entity: light.office_ceiling_light
+            image: /local/light_on.png
+            state_image:
+              'on': /local/light_on.png
+              'off': /local/light_off.png
+            style:
+              top: 51%
+              left: 20%
+              width: 1.5vw
+            tap_action:
+              action: toggle
+          - type: image
+            entity: light.office_desk_light
+            image: /local/desk_lamp_on.png
+            state_image:
+              'on': /local/desk_lamp_on.png
+              'off': /local/desk_lamp_off.png
+            style:
+              top: 38%
+              left: 8%
+              width: 1.5vw
+            tap_action:
+              action: toggle
+          - type: image
+            entity: light.office_lego_light
+            image: /local/led_lamp_on.png
+            state_image:
+              'on': /local/led_lamp_on.png
+              'off': /local/led_lamp_off.png
+            style:
+              top: 64%
+              left: 16.5%
+              width: 1.5vw
+            tap_action:
+              action: more-info
+          - type: image
+            entity: light.office_rgb
+            image: /local/led_lamp_on.png
+            state_image:
+              'on': /local/rgb_light_on.png
+              'off': /local/rgb_light_off.png
+            style:
+              top: 64%
+              left: 15%
+              width: 1.5vw
+            tap_action:
+              action: more-info
+          - type: image
+            entity: binary_sensor.lg_tv_5600
+            image: /local/tv_on.png
+            state_image:
+              'on': /local/tv_on.png
+              'off': /local/tv_off.png
+            style:
+              top: 85%
+              left: 66.5%
+              width: 2vw
+            tap_action:
+              action: more-info
+          - type: image
+            entity: binary_sensor.hisense_h39n2110c
+            image: /local/tv_on.png
+            state_image:
+              'on': /local/tv_on.png
+              'off': /local/tv_off.png
+            style:
+              top: 64%
+              left: 18.5%
+              width: 2vw
+            tap_action:
+              action: more-info
+          - type: image
+            entity: light.nursery_light
+            image: /local/led_lamp_on.png
+            state_image:
+              'on': /local/rgb_light_on.png
+              'off': /local/rgb_light_off.png
+            style:
+              top: 7.5%
+              left: 14%
+              width: 1.5vw
+            tap_action:
+              action: more-info
+          - type: image
+            entity: camera.baby_room
+            image: /local/camera_on.png
+            state_image:
+              'on': /local/camera_on.png
+              'off': /local/camera_off.png
+            style:
+              top: 32%
+              left: 18%
+              width: 1.5vw
+            tap_action:
+              action: more-info
+          - type: image
+            entity: media_player.escritorioghome
+            image: /local/google_home_on.png
+            state_image:
+              'on': /local/google_home_on.png
+              'off': /local/google_home_off.png
+            style:
+              top: 64%
+              left: 20.5%
+              width: 1.5vw
+            tap_action:
+              action: more-info
+          - type: image
+            entity: binary_sensor.playstation
+            image: /local/playstation_on.png
+            state_image:
+              'on': /local/playstation_on.png
+              'off': /local/playstation_off.png
+            style:
+              top: 64%
+              left: 22.2%
+              width: 1.8vw
+          - type: image
+            entity: binary_sensor.dt_office
+            image: /local/pc_on.png
+            state_image:
+              'on': /local/pc_on.png
+              'off': /local/pc_off.png
+            style:
+              top: 38%
+              left: 10%
+              width: 1.8vw
+          - type: image
+            entity: binary_sensor.re200
+            image: /local/range_extender_on.png
+            state_image:
+              'on': /local/range_extender_on.png
+              'off': /local/range_extender_off.png
+            style:
+              top: 93%
+              left: 80%
+              width: 1.8vw
+          - type: image
+            entity: binary_sensor.openwrt
+            image: /local/wifi_router_on.png
+            state_image:
+              'on': /local/wifi_router_on.png
+              'off': /local/wifi_router_off.png
+            style:
+              top: 64%
+              left: 24%
+              width: 1.8vw
+          - type: image
+            entity: binary_sensor.tlsg108e
+            image: /local/hub_on.png
+            state_image:
+              'on': /local/hub_on.png
+              'off': /local/hub_off.png
+            style:
+              top: 69%
+              left: 45%
+              width: 1.8vw
+          - type: image
+            entity: binary_sensor.epsond11b70
+            image: /local/printer_on.png
+            state_image:
+              'on': /local/printer_on.png
+              'off': /local/printer_off.png
+            style:
+              top: 64%
+              left: 8.2%
+              width: 1.8vw
+
+              
+              
