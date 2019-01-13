@@ -1,41 +1,132 @@
+
 version: '3.1'
 
 services:
+#HomeAssistant
   homeassistant:
-    image: homeassistant/home-assistant:latest
+    image:  homeassistant/home-assistant
     restart: always
-    ports:
-      - "8123:8123"
+    networks:
+      - traefik_proxy
     volumes:
       - ha_config:/config
-      - /etc/letsencrypt/:/ssl
+    links:
+      - mqtt
+      - mqtt:mqtt
+      - influxdb
+      - influxdb:influxdb
+    labels:
+       - "traefik.backend=homeassistant"
+       - "traefik.frontend.rule=Host:REDACTED"
+       - "traefik.port=8123"
+       - "traefik.docker.network=traefik_proxy"
+       - "traefik.enable=true"
+#DB
+  influxdb:
+    image: influxdb:latest
+    ports:
+     - "8083:8083"
+     - "8086:8086"
+     - "8090:8090"
+    networks:
+      - traefik_proxy
+    environment:
+     - INFLUXDB_DATA_ENGINE=tsm1
+     - INFLUXDB_REPORTING_DISABLED=false
+    volumes:
+     - ha_influxdb:/var/lib/influxdb
+
+  grafana:
+    image: grafana/grafana
+    networks:
+      - traefik_proxy
+    deploy:
+      replicas: 1
+    environment:
+     - GF_INSTALL_PLUGINS=grafana-clock-panel,briangann-gauge-panel,natel-plotly-panel,grafana-simple-json-datasource
+    links:
+     - influxdb
+     - influxdb:database
+    volumes:
+     - ha_grafana:/var/lib/grafana
+    labels:
+       - "traefik.backend=grafana"
+       - "traefik.frontend.rule=Host:REDACTED"
+       - "traefik.port=3000"
+       - "traefik.docker.network=traefik_proxy"
+       - "traefik.enable=true"
+#MQTT
   mqtt:
     image: eclipse-mosquitto:latest
+    networks:
+      - traefik_proxy
     restart: always
     ports:
       - "1883:1883"
       - "9001:9001"
-
-  adminer:
-    image: adminer
-    restart: always
-    deploy:
-      replicas: 0
-    ports:
-      - "8080:8080"
-
-  mysql:
-    image: mysql:5.6
-    restart: always
-    deploy:
-      placement:
-        constraints:
-          - node.role == manager
-    environment:
-      MYSQL_ROOT_PASSWORD: "${MYSQL_PWD}"
     volumes:
-      - mysql:/var/lib/mysql
+      - mqtt_data:/mosquitto
+
+#Node Red
+  nodered:
+    image: nodered/node-red-docker:v8
+    networks:
+      - traefik_proxy
+    deploy:
+      replicas: 1
+    volumes:
+      - node_red:/data
+    labels:
+       - "traefik.backend=NodeRed"
+       - "traefik.frontend.rule=Host:REDACTED"
+       - "traefik.port=1880"
+       - "traefik.docker.network=traefik_proxy"
+       - "traefik.enable=true"
+#tasmoadmin      
+  tasmoadmin:
+    image: raymondmm/tasmoadmin
+    restart: always
+    deploy:
+      replicas: 1
+    networks:
+      - traefik_proxy
+    volumes:
+      - tasmoadmin:/data
+    labels:
+       - "traefik.backend=tasmoadmin"
+       - "traefik.frontend.rule=Host:REDACTED"
+       - "traefik.port=80"
+       - "traefik.docker.network=traefik_proxy"
+       - "traefik.enable=true"
       
+#Samba Shares      
+  samba:
+    image: dperson/samba
+    restart: always
+    deploy:
+      replicas: 1
+    ports:
+      - "137:137/udp"
+      - "138:138/udp"
+      - "139:139/tcp"
+      - "445:445/tcp"
+    volumes:
+      - ha_config:/config
+      - ha_influxdb:/influxdb
+      - tasmoadmin:/tasmoadmin
+      - mqtt_data:/mqtt_data
+    command: '-u "${SAMBA_USER};${SAMBA_PWD}" -s "MQTT;/mqtt_data;yes;no;no;${SAMBA_USER}" -s "TasmoAdmin;/tasmoadmin;yes;no;no;${SAMBA_USER}" -s "HomeAssistant;/config;yes;no;no;${SAMBA_USER}" -s "InfluxDB;/influxdb;yes;no;no;${SAMBA_USER}" -p'
+    
 volumes:
   ha_config:
-  mysql:
+  ha_influxdb:
+  ha_grafana:
+  node_red:
+  ssl_certificate:
+  tasmoadmin:
+  mqtt_data:
+
+networks:
+  traefik_proxy:
+    external:
+      name: traefik_proxy

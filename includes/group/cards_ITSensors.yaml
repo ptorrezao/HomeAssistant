@@ -1,7 +1,0 @@
-card_ITSensor:
- name: IT Sensor
- view: no
- entities:
-   - sensor.ptorrezaoduckdnsorg
-   - sensor.speedtest_download
-   - sensor.speedtest_upload

@@ -1,27 +1,30 @@
 - platform: speedtest
   minute:
     - 0
-    - 10
-    - 20
     - 30
-    - 40
-    - 50
   monitored_conditions:
     - download
     - upload
     
 - platform: dnsip
-  hostname: ptorrezao.duckdns.org
+  name: dnsip
+  hostname: !secret dnsHostName
   resolver: 8.8.8.8
 - platform: mqtt
   state_topic: "office/office_sensor/temperature"
   name: "Temperatura Office"
   qos: 0
   unit_of_measurement: "°C"
-  #value_template: '{{ payload }}'
 - platform: mqtt
   state_topic: "office/office_sensor/humidity"
   name: "Humidade Office"
   qos: 0
   unit_of_measurement: "%"
-  #value_template: '{{ payload }}'
+- platform: cert_expiry
+  host: !secret dnsHostName
+  name: "SSL"
+- platform: seventeentrack
+  username: !secret seventeentrack_usr
+  password: !secret seventeentrack_pwd 
+- platform: travisci
+  api_key: !secret travis_api

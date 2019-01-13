@@ -1,7 +1,3 @@
-onvacations:
- initial: off
-bedtime:
- initial: off
 houseguest:
  initial: off
 home_occupied:

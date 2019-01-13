@@ -1,4 +1,0 @@
-broker: !secret mqttServer
-port: 1883
-username: !secret mqttUser
-password: !secret mqttPassword

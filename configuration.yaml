@@ -5,52 +5,38 @@ homeassistant:
   elevation: 4.2
   unit_system: metric
   time_zone: Europe/Lisbon
-  customize: !include_dir_merge_named includes/customize
-  whitelist_external_dirs:
-     - !secret publictempfolder
+  customize: !include customize.yaml
+
+lovelace: 
+  mode: yaml
 
 map:
 config:
 logbook:
 sun: 
+discovery:
+history: !include includes/history.yaml
 
-group: !include_dir_merge_named includes/group
-script: !include_dir_merge_named includes/scripts
-shell_command: !include_dir_merge_named includes/shell_command
-
-zone: !include includes/core/zones.yaml
-history: !include includes/core/history.yaml
-recorder: !include includes/core/recorder.yaml
-frontend: !include includes/core/frontend.yaml
-updater: !include includes/core/updater.yaml
-http: !include includes/core/http.yaml
-logger: !include includes/core/logger.yaml
-tts: !include includes/core/tts.yaml
-notify: !include includes/core/notify.yaml
-
-automation: !include_dir_merge_list includes/automations
-
-ffmpeg: !include includes/components/ffmpeg.yaml
-google_assistant: !include includes/components/google_assistant.yaml
-telegram_bot: !include includes/components/telegram_bot.yaml
-mqtt: !include includes/components/mqtt.yaml
-switch: !include includes/switch.yaml
+#Core stuff
+http: !include includes/http.yaml
+frontend: !include includes/frontend.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+zone: !include includes/zones.yaml
+tts: !include includes/tts.yaml
+influxdb: !include includes/influxdb.yaml
+panel_iframe: !include includes/iframe.yaml
+mqtt: !include includes/mqtt.yaml
 sensor: !include includes/sensor.yaml
-light: !include includes/light.yaml
-camera: !include includes/camera.yaml
-device_tracker: !include includes/device_tracker.yaml
-media_player: !include includes/media_player.yaml
-binary_sensor: !include includes/binary_sensor.yaml
-input_boolean: !include includes/input_boolean.yaml
-climate: !include includes/climate.yaml
 weather: !include includes/weather.yaml
-scene: !include includes/scenes/scenes.yaml
-
-digital_ocean:
-  access_token: !secret digital_ocean
-
-panel_iframe:
- nodered:
-   title: 'Node-Red'
-   icon: 'mdi:basket-unfill'
-   url: https://ptorrezao.duckdns.org:1880
+binary_sensor: !include includes/binary_sensor.yaml
+device_tracker: !include includes/device_tracker.yaml
+input_boolean: !include includes/input_boolean.yaml
+light: !include includes/light.yaml
+group: !include includes/group.yaml
+switch: !include includes/switch.yaml
+digital_ocean: !include includes/digital_ocean.yaml
+media_player: !include includes/media_player.yaml
+ffmpeg: !include includes/ffmpeg.yaml
+camera: !include includes/camera.yaml
+script: !include_dir_merge_named includes/scripts

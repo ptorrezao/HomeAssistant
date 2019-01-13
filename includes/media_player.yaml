@@ -2,18 +2,19 @@
   name: broadlink_Office_TV
   host: 192.168.88.200
   mac: '34:ea:34:42:a6:b2'
-  ircodes_ini: 'includes/media_player_ircodes/hisense_officeTv.ini'
-  ping_host: chromecast-officetv
+  ircodes_ini: 'includes/ircodes/hisense_officeTv.ini'
+  ping_host: 192.168.88.155
   hidden: true
 - platform: cast
   host: 192.168.88.150
 - platform: cast
-  host: chromecast-maintv
+  host: 192.168.88.156
+  #host: chromecast-maintv
 - platform: cast
   host: 192.168.88.155
   hidden: true
 - platform: universal
-  name: Office TV
+  name: Office-TV
   children:
     - media_player.office_tv_2
   commands:
@@ -23,9 +24,22 @@
     turn_off:
       service: script.turn_on
       entity_id: script.turnofftv
+    select_source:
+      service: media_player.select_source
+      data_template:
+        entity_id: media_player.broadlink_office_tv
+        source: '{{ source }}'
+    volume_mute:
+      service: media_player.volume_mute
+      data:
+        entity_id: switch.broadlink_office_tv
   state_template: >
     {% if is_state('media_player.office_tv_2', 'off') or is_state('media_player.broadlink_office_tv', 'off')%}
     {{ states('media_player.broadlink_office_tv') }}
     {% else %}
     {{ states('media_player.office_tv_2') }}
     {% endif %}
+  attributes:
+    source_list: media_player.broadlink_office_tv|source_list
+    source: media_player.broadlink_office_tv|source
+

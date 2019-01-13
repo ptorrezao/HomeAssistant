@@ -1,0 +1,64 @@
+office_ligths:
+  name: Office Lights
+  entities:
+    - light.office_ceiling_light
+    - light.office_desk_light
+    - light.office_rgb
+    - light.office_lego_light
+
+office:
+  name: Office
+  entities:
+    - group.office_ligths
+
+livingroom_ligths:
+  name: Living Room Lights
+  entities:
+    - light.living_room_cabinet
+    - switch.christmas_lights
+livingroom:
+  name: Living
+  entities:
+    - group.livingroom_ligths
+    
+nursery_ligths:
+  name: Living Room Lights
+  entities:
+    - light.nursery_ceiling_light
+
+nursery:
+  name: Nursery
+  entities:
+    - group.nursery_ligths
+
+bedroom_ligths:
+  name: Bed Room Lights
+
+bedroom:
+  name: Bed Room
+  entities:
+    - group.bedroom_ligths
+
+kitchen_ligths:
+  name: Kitchen Lights
+  
+kitchen:
+  name: Kitchen
+  entities:
+    - group.kitchen_ligths
+
+garage_ligths:
+  name: Garage Lights
+  
+Garage:
+  name: Garage
+  entities:
+    - group.garage_ligths
+
+attic_ligths:
+  name: Attic Lights
+  
+attic:
+  name: Attic
+  entities:
+    - group.attic_ligths

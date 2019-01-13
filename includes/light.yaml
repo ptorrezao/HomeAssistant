@@ -22,7 +22,7 @@
   payload_available: "Online"
   payload_not_available: "Offline"
   retain: true
- 
+  
 - platform: mqtt
   name: "Office Lego Light"
   state_topic: "office/ledlight/stat/POWER"
@@ -57,6 +57,6 @@
 - platform: yeelight
   devices:
    192.168.88.164:
-     name: Nursery Ceiling Light
+     name: Nursery Light
    192.168.88.165:
      name: Office RGB

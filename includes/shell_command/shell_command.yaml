@@ -1,2 +1,0 @@
-generate_babyroomcameraimage: !secret babyRoom_generate_babyroomcameraimage 
-#generate_babyroomcameraimage: 'ffmpeg -y -i rtsp://user:redacted@ipcam01/onvif2 -vframes 1 /config/www/tmp/baby_room.jpg -v 0 -updatefirst 1'

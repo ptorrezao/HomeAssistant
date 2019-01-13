@@ -1,81 +1,77 @@
 - platform: workday
   country: PT
   excludes : [ sat, sun, holiday ]
-- platform: mqtt
-  state_topic: dummy/guestWifi/sensor
-  name: guestWifi
 - platform: ping
-  host: OpenWrt
-  name: OpenWrt
+  host: 8.8.8.8
+  name: Internet Check
   count: 2
 - platform: ping
-  host: TL-SG108E
-  name: TL-SG108E
-  count: 2
-  scan_interval: 30
-- platform: ping
-  host: EPSOND11B70
-  name: EPSON BX305FW
-  count: 2
-  scan_interval: 30
-- platform: ping
-  host: Aphrodite
-  name: Aphrodite
-  count: 2
-  scan_interval: 30
-- platform: ping
-  host: Ares
-  name: Ares
-  count: 2
-  scan_interval: 30
-- platform: ping
-  host: Dt-Office
-  name: dtoffice
-  count: 2
-  scan_interval: 30
-- platform: ping
-  host: Google-Home
-  name: Google Home Mini
-  count: 2
-  scan_interval: 30
-- platform: ping
-  host: chromecast-maintv
-  name: Chromecast Main TV
-  count: 2
-  scan_interval: 30
-- platform: ping
-  host: chromecast-officetv
-  name: Hisense H39N2110C
-  count: 2
-  scan_interval: 30
-- platform: ping
-  host: chromecast-officetv
-  name: Chromecast Office TV
-  count: 2
-  scan_interval: 15
-- platform: ping
-  #host: LG-Tv-5600
-  host: chromecast-maintv
+  #host: chromecast-maintv
+  host: 192.168.88.156
   name: LG TV 5600
   count: 2
-  scan_interval: 30
 - platform: ping
-  host: ipcam01
-  name: IP Cam 01
-  count: 2
-  scan_interval: 30
+  #host: EPSOND11B70
+  host: 192.168.88.11
+  name: EPSOND11B70
 - platform: ping
-  host: broadlink
-  name: Broadlink
+  #host: OpenWrt
+  host: 192.168.88.1
+  name: OpenWrt
+- platform: ping
+  #host: OpenWrt
+  host: 192.168.88.2
+  name: TLSG108E
+- platform: ping
+  #host: OpenWrt
+  host: 192.168.88.3
+  name: RE200
+- platform: ping
+  #host: DT-Office
+  host: 192.168.88.30
+  name: DT-Office
   count: 2
-  scan_interval: 30
+- platform: ping
+  #host: Aphrodite
+  host: 192.168.88.20
+  name: Aphrodite
+  count: 2
+# - platform: ping
+#   #host: Aphrodite
+#   host: 192.168.88.21
+#   name: Ares
+#   count: 2  
+- platform: ping
+  #host: Aphrodite
+  host: 192.168.88.25
+  name: Arm-Cluster-Node01
+  count: 2  
 - platform: command_line
-  command: 'nmap -p 9295 PS4 | grep "9295/tcp open" | wc -l'
+  command: 'nmap -p 9295 192.168.88.100 | grep "9295/tcp open" | wc -l'
   name: 'Playstation'
   device_class: connectivity
   payload_on: 1
   payload_off: 0
-  scan_interval: 10
-# - platform: digital_ocean
-  # droplets:
-    # - 'docker-s-ptz-01'
+  scan_interval: 30
+- platform: ping
+  host: 192.168.88.155
+  name: Chromecast-Office-TV
+  count: 2
+  scan_interval: 15
+- platform: ping
+  host: 192.168.88.150
+  name: Google-Home
+  count: 2
+- platform: ping
+  host: 192.168.88.200
+  name: Broadlink
+  count: 2
+- platform: ping
+  host: 192.168.88.225
+  name: ipcam01
+  count: 2
+- platform: ping
+  host: 192.168.88.155
+  name: Hisense H39N2110C
+  count: 2
+  scan_interval: 30
