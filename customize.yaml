@@ -3,16 +3,18 @@ input_boolean.houseguest:
   entity_picture: /local/guest_on.png
 input_boolean.home_occupied:
   friendly_name: Casa Ocupada?
-
 group.office_ligths:
   friendly_name: Luzes Escritorio
-  icon: mdi:bulb
 group.livingroom_ligths:
   friendly_name: Luzes Sala de Estar
-  icon: mdi:bulb
 group.nursery_ligths:
   friendly_name: Luzes Quarto Madalena
-  icon: mdi:bulb
 group.bedroom_ligths:
   friendly_name: Luzes Quarto Pedro & Ana
-  icon: mdi:bulb
+
+sensor.seventeentrack_packages_returned:
+  hidden: true 
+sensor.seventeentrack_packages_undelivered:
+  hidden: true 
+sensor.seventeentrack_packages_not_found:
+  hidden: true 

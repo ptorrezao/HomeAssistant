@@ -208,12 +208,12 @@ views:
     icon: 'mdi:sofa'
     theme: Backend-selected
   - title: Quarto 
-    cards:     
-    - type: entities
-      title: Luzes
-      show_header_toggle: false
-      entities:
-        - group.bedroom_ligths
+    cards: []  
+    #- type: entities
+    #  title: Luzes
+    #  show_header_toggle: false
+    #  entities: []
+    #   - group.bedroom_ligths
     badges: []
     icon: 'mdi:hotel'
   - title: Quarto Madalena
@@ -392,27 +392,27 @@ views:
   
   - title: Cozinha 
     icon: 'mdi:knife'
-    cards:     
-    - type: entities
-      title: Luzes
-      show_header_toggle: false
-      entities:
-        - group.kitchen_ligths
+    cards: []    
+    #- type: entities
+    #  title: Luzes
+    #  show_header_toggle: false
+    #  entities:
+    #    - group.kitchen_ligths
   - title: Garage 
     icon: 'mdi:garage-open'
-    cards:     
-    - type: entities
-      title: Luzes
-      show_header_toggle: false
-      entities:
-        - group.garage_ligths
+    cards: []  
+    #- type: entities
+    #  title: Luzes
+    #  show_header_toggle: false
+    #  entities:
+    #    - group.garage_ligths
   - title: Sotão 
-    cards:     
-    - type: entities
-      title: Luzes
-      show_header_toggle: false
-      entities:
-        - group.attic_ligths
+    cards: []     
+    #- type: entities
+    #  title: Luzes
+    #  show_header_toggle: false
+    #  entities:
+    #    - group.attic_ligths
     icon: 'mdi:home-variant-outline'
   - title: Configurations
     cards: 
