@@ -14,10 +14,10 @@ views:
     - type: entity-filter
       show_empty: false
       entities:
-        - entity: device_tracker.pedro_aquaris
-          name: Pedro
         - entity: device_tracker.ana_bq
           name: Ana
+        - entity: group.pedro
+          name: Pedro
         - entity: input_boolean.houseguest
           name: Convidados
       state_filter:
@@ -27,8 +27,6 @@ views:
         type: glance
         show_state: false
         title: Em casa  
-    
-    ###
     - type: conditional
       conditions:
         - entity: input_boolean.home_occupied
@@ -152,38 +150,32 @@ views:
               navigation_path: /lovelace/7/
             tap_action: 
               action: toggle     
-    
-      
-    - type: vertical-stack
-      cards:
-      - type: entities
-        show_header_toggle: false
-        entities:
-          - entity: input_boolean.houseguest
-            name: Convidados
-      - type: markdown
-        title: WIFI
-        content: >
-          SSID/Network Name: **ZON-Pedro & Ana**
+    - type: entities
+      show_header_toggle: false
+      entities:
+        - entity: input_boolean.houseguest
+          name: Convidados
+    - type: markdown
+      title: WIFI
+      content: >
+        SSID/Network Name: **ZON-Pedro & Ana**
 
-          Password: **f9ffa4cf33ec**
+        Password: **f9ffa4cf33ec**
 
-          Network Type: **WPA**   
-      - type: map
-        aspect_ratio: 16x9
-        default_zoom: 15
-        entities:
-        - device_tracker.ana_bq
-        - zone.home
-        - device_tracker.pedro_aquaris
-    - type: vertical-stack
-      cards:
-      - type: weather-forecast
-        entity: weather.ipma
-        aspect_ratio: 62%
-      - type: iframe
-        url: !secret weatherUrl
-        aspect_ratio: 38%   
+        Network Type: **WPA**   
+    - type: map
+      aspect_ratio: 16x9
+      default_zoom: 15
+      entities:
+      - device_tracker.ana_bq
+      - zone.home
+      - device_tracker.pedro_aquaris
+    - type: weather-forecast
+      entity: weather.ipma
+      aspect_ratio: 62%
+    - type: iframe
+      url: !secret weatherUrl
+      aspect_ratio: 38%   
 
   - title: Sala de Estar
     cards: 
@@ -424,15 +416,15 @@ views:
         - group.all_lights
         - group.all_switches
         - group.all_scripts
-        - input_boolean.home_occupied
-        - binary_sensor.ipcam01
-        - media_player.office_tv_2
+        - entity: input_boolean.home_occupied
+          icon: 'mdi:home'
+          name: Casa Ocupada
     - type: entities
-      title: Office Scripts 
+      title: Cameras 
       show_header_toggle: false
       entities:
-        - script.turnofftv
-        - script.turnontv
+        - entity: binary_sensor.ipcam01
+          name: Quarto Madalena
     badges: 
       - binary_sensor.internet_check
       - binary_sensor.workday_sensor

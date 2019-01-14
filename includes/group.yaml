@@ -1,3 +1,10 @@
+pedro:
+  name: Pedro
+  view: false
+  entities:
+    - device_tracker.pedro_aquaris
+    - device_tracker.pedro_smartwatch
+
 office_ligths:
   name: Office Lights
   entities:
@@ -16,6 +23,7 @@ livingroom_ligths:
   entities:
     - light.living_room_cabinet
     - switch.christmas_lights
+
 livingroom:
   name: Living
   entities:

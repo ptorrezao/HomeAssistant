@@ -11,10 +11,31 @@ group.nursery_ligths:
   friendly_name: Luzes Quarto Madalena
 group.bedroom_ligths:
   friendly_name: Luzes Quarto Pedro & Ana
-
 sensor.seventeentrack_packages_returned:
   hidden: true 
 sensor.seventeentrack_packages_undelivered:
   hidden: true 
 sensor.seventeentrack_packages_not_found:
   hidden: true 
+group.all_lights:
+  icon: mdi:lightbulb
+  friendly_name: Luzes
+group.all_switches:
+  icon: mdi:toggle-switch
+  friendly_name: Interruptores
+group.all_scripts:
+  icon: mdi:script-text
+  friendly_name: Scripts
+group.all_devices:
+  friendly_name: Dispositivos
+  icon: mdi:cellphone-link
+script.turnofftv:
+  hidden: true
+script.turnontv:
+  hidden: true
+switch.pc:
+  hidden: true
+switch.pc_mode:
+  hidden: true
+group.pedro:
+  entity_picture: /local/pedro.png
