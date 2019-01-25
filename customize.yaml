@@ -39,3 +39,15 @@ switch.pc_mode:
   hidden: true
 group.pedro:
   entity_picture: /local/pedro.png
+switch.windowswol:
+  hidden: true
+switch.pc_mode:
+  hidden: true
+switch.pc:
+  hidden: true
+group.attic_lights:
+  hidden: true
+group.garage_lights:
+  hidden: true
+group.kitchen_lights:
+  hidden: true

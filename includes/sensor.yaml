@@ -26,5 +26,11 @@
 - platform: seventeentrack
   username: !secret seventeentrack_usr
   password: !secret seventeentrack_pwd 
-- platform: travisci
-  api_key: !secret travis_api
+#- platform: travisci
+#  api_key: !secret travis_api
+- platform: template
+  sensors:
+    office_tv_source:
+      friendly_name: "Office TV Source"
+      unit_of_measurement: 'source'
+      value_template: "{{states.media_player.office_tv}}"

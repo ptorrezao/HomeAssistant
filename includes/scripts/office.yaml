@@ -7,6 +7,8 @@ turnofftv:
     state: 'on'
   - service: media_player.turn_off
     entity_id: media_player.broadlink_office_tv
+  - service: media_player.media_stop
+    entity_id: media_player.kodi_office
   - delay: '00:00:20'
 turnontv:
  alias: '[System] - Turn On TV'

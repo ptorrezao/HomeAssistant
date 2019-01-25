@@ -295,9 +295,9 @@ views:
             name: DT-Office
             icon: mdi:desktop-classic
           - type: divider
-          - entity: binary_sensor.arm_cluster_node01
-            name: ArmCluster-Node01
-            icon: mdi:hexagon-slice-1
+          - entity: binary_sensor.openelec_office
+            name: OpenElec
+            icon: mdi:play-network
 
       - type: entities
         title: IT Devices (Smart Home/Entertainment)
@@ -333,6 +333,21 @@ views:
           - entity: binary_sensor.broadlink
             name: BroadLink
             icon: mdi:remote
+    - type: vertical-stack
+      cards: 
+      - entity: media_player.escritorioghome
+        type: custom:mini-media-player
+        name: Google Home 
+        hide_controls: true6
+        artwork: cover
+        show_tts: google
+        icon: mdi:google-home
+        power_color: true
+      - entity: media_player.office_tv_2
+        type: custom:mini-media-player
+        icon: mdi:television-classic
+        artwork: cover
+        show_source: true
     - type: entities
       title: Encomendas
       show_header_toggle: false
@@ -351,35 +366,6 @@ views:
        #  name: Devolvidas
        #- entity: sensor.seventeentrack_packages_ready_to_be_picked_up    
        #  name: Prontas para Levantar
-    - entity: media_player.escritorioghome
-      type: custom:mini-media-player
-      name: Google Home 
-      hide_controls: true6
-      artwork: cover
-      show_tts: google
-      icon: mdi:google-home
-      power_color: true
-    - entity: media_player.office_tv_2
-      type: custom:mini-media-player
-      icon: mdi:television-classic
-      artwork: cover
-      show_source: true
-      hide_volume: true
-      hide_controls: true
-    - type: entities
-      title: Dev Projects
-      show_header_toggle: false
-      entities:
-        - entity: sensor.ptorrezao_homeassistant_last_build_state
-          name: Home Assistant
-          icon: mdi:github-circle
-        - entity: sensor.ptorrezao_ptz_frw_last_build_state
-          name: PTZ Frw
-          icon: mdi:github-circle
-        - entity: sensor.ptorrezao_ptz_homemanagement_last_build_state
-          name: Home Management
-          icon: mdi:github-circle
-
     icon: 'mdi:network'
   
   - title: Cozinha 
