@@ -220,6 +220,10 @@ views:
       entities:
         - camera.baby_room
       camera_image: camera.baby_room
+    - type: sensor
+      entity: sensor.temperatura_quarto_madalena
+      name: Temperatura
+      graph: none
     badges: []
     icon: 'mdi:baby-buggy'
   - title: Escritório
@@ -268,71 +272,45 @@ views:
         - entity: switch.dtoffice
           name: PC
           icon: mdi:desktop-classic
-    - type: vertical-stack
-      cards:
-      - type: entities
-        title: IT Devices (Networking/Infrastructure)
-        show_header_toggle: false
-        entities:
-          - entity: binary_sensor.openwrt
-            name: OpenWrt (Router)
-            icon: mdi:router-wireless
-          - entity: binary_sensor.tlsg108e
-            name: TL-SG108E (Smart Switch)
-            icon: mdi:switch
-          - entity: binary_sensor.re200
-            icon: mdi:access-point
-            name: RE200 (Range Extender)
-          - type: divider
-          - entity: binary_sensor.epsond11b70
-            name: Printer
-            icon: mdi:printer
-          - type: divider
-          - entity: binary_sensor.aphrodite
-            name: Aphrodite
-            icon: mdi:server-security
-          - entity: binary_sensor.dt_office
-            name: DT-Office
-            icon: mdi:desktop-classic
-          - type: divider
-          - entity: binary_sensor.openelec_office
-            name: OpenElec
-            icon: mdi:play-network
 
-      - type: entities
-        title: IT Devices (Smart Home/Entertainment)
-        show_header_toggle: false
-        entities:
-          - entity: binary_sensor.playstation
-            name: Playstation
-            icon: mdi:gamepad-variant
-          - entity: binary_sensor.chromecast_office_tv
-            name: Chromecast Office TV
-            icon: mdi:television-classic
-          - entity: media_player.office_tv_2
-            type: custom:mini-media-player
-            artwork: cover
-            group: true
-            hide_volume: true
-          - entity: binary_sensor.hisense_h39n2110c
-            name: Office TV
-            icon: mdi:television-classic
-          - entity: media_player.broadlink_office_tv
-            name: Office TV
-            type: custom:mini-media-player
-            icon: mdi:television-classic
-            artwork: cover
-            show_source: true
-            hide_volume: true
-            hide_controls: true
-            group: true
-          - type: divider
-          - entity: binary_sensor.google_home
-            name: Google Home
-            icon: mdi:google-home
-          - entity: binary_sensor.broadlink
-            name: BroadLink
-            icon: mdi:remote
+    - type: entities
+      title: IT Devices (Networking/Infrastructure)
+      show_header_toggle: false
+      entities:
+        - entity: binary_sensor.openwrt
+          name: OpenWrt (Router)
+          icon: mdi:router-wireless
+        - entity: binary_sensor.tlsg108e
+          name: TL-SG108E (Smart Switch)
+          icon: mdi:switch
+        - entity: binary_sensor.re200
+          icon: mdi:access-point
+          name: RE200 (Range Extender)
+        - type: divider
+        - entity: binary_sensor.epsond11b70
+          name: Printer
+          icon: mdi:printer
+        - type: divider
+        - entity: binary_sensor.aphrodite
+          name: Aphrodite
+          icon: mdi:server-security
+        - entity: binary_sensor.dt_office
+          name: DT-Office
+          icon: mdi:desktop-classic
+        - type: divider
+        - entity: binary_sensor.openelec_office
+          name: OpenElec
+          icon: mdi:play-network
+        - entity: binary_sensor.playstation
+          name: Playstation
+          icon: mdi:gamepad-variant
+        - type: divider
+        - entity: binary_sensor.google_home
+          name: Google Home
+          icon: mdi:google-home
+        - entity: binary_sensor.broadlink
+          name: BroadLink
+          icon: mdi:remote
     - type: vertical-stack
       cards: 
       - entity: media_player.escritorioghome
@@ -402,15 +380,97 @@ views:
         - group.all_lights
         - group.all_switches
         - group.all_scripts
+        - group.all_automations
         - entity: input_boolean.home_occupied
           icon: 'mdi:home'
           name: Casa Ocupada
     - type: entities
-      title: Cameras 
+      title: Presenças
       show_header_toggle: false
       entities:
+        - entity: device_tracker.pedro_smartwatch
+          name: Smart Watch
+        - entity: device_tracker.pedro_aquaris
+          name: Telefone
+        - entity: device_tracker.ana_bq
+          name: Telefone
+    - type: glance
+      title: Quarto Madalena
+      show_header_toggle: false
+      show_name: true
+      show_state: false
+      entities:
         - entity: binary_sensor.ipcam01
-          name: Quarto Madalena
+          name: IP Cam
+          icon: mdi:cctv
+    - type: glance
+      title: Escritório
+      show_name: true
+      show_state: false
+      show_header_toggle: false
+      columns: 4
+      entities:
+        - entity: binary_sensor.chromecast_office_tv
+          name: ChromeCast
+          icon: mdi:cast
+        - entity: media_player.office_tv
+          name: ChromeCast
+          icon: mdi:cast
+        - entity: binary_sensor.hisense_h39n2110c
+          name: Tv
+          icon: mdi:television-classic
+        - entity: media_player.kodi_office
+          name: Kodi
+          icon: mdi:play-network
+        - entity: media_player.broadlink_office_tv
+          name: Broadlink
+          icon: mdi:google-circles-extended
+    - type: glance
+      title: Sala
+      show_name: true
+      show_state: false
+      show_header_toggle: false
+      entities:
+        - entity: binary_sensor.chromecast_livingroom_tv
+          name: ChromeCast 
+          icon: mdi:cast
+        - entity: binary_sensor.lg_tv_5600
+          name: Tv
+          icon: mdi:television-classic
+        - entity: switch.christmas_lights
+          icon: mdi:pine-tree
+          name: Luzes de Natal
+    - type: entities
+      title: Scripts/Automations
+      show_name: true
+      show_state: false
+      show_header_toggle: false
+      entities:
+        - entity: script.turnofftv
+          name: Turn off TV 
+        - entity: script.turnontv
+          name: Turn On TV 
+        - entity: automation.reset_garagepir_state
+          name: Reset to sensor
+    - type: glance
+      title: 17 Track
+      show_name: true
+      show_state: true
+      columns: 3
+      show_header_toggle: false
+      entities:
+        - entity: sensor.seventeentrack_packages_not_found
+          name: Não encontrado
+        - entity: sensor.seventeentrack_packages_ready_to_be_picked_up
+          name: A aguardar
+        - entity: sensor.seventeentrack_packages_in_transit
+          name: Em trânsito
+        - entity: sensor.seventeentrack_packages_returned
+          name: Devolvidos
+        - entity: sensor.seventeentrack_packages_undelivered
+          name: Não Entregues
+        - entity: sensor.seventeentrack_packages_expired
+          name: Expirado
     badges: 
       - binary_sensor.internet_check
       - binary_sensor.workday_sensor
@@ -418,7 +478,14 @@ views:
     icon: 'mdi:wrench'
   - title: Relatórios
     cards: []
-    badges: []
+    badges: 
+      - group.attic_ligths
+      - group.garage_ligths
+      - group.kitchen_ligths
+      - switch.windowswol
+      - switch.pc_mode
+      - switch.pc
+      - binary_sensor.sensor
     icon: 'mdi:marker-check'
   - title: Floorplan
     panel: true
@@ -431,6 +498,13 @@ views:
         - type: picture-elements
           image: /local/floorplan.png
           elements:
+          - type: state-label
+            entity: sensor.temperatura_quarto_madalena
+            style:
+              top: 6%
+              left: 38.5%
+              color: "#6b6a6a"
+              font-size: 0.8vw
           - type: state-label
             entity: sensor.temperatura_office
             style:
@@ -677,6 +751,4 @@ views:
               top: 64%
               left: 8.2%
               width: 1.8vw
-
-              
               

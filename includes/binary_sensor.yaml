@@ -11,6 +11,11 @@
   name: LG TV 5600
   count: 2
 - platform: ping
+  #host: chromecast-maintv
+  host: 192.168.88.156
+  name: Chromecast Livingroom Tv
+  count: 2
+- platform: ping
   #host: EPSOND11B70
   host: 192.168.88.11
   name: EPSOND11B70
@@ -75,3 +80,11 @@
   name: Hisense H39N2110C
   count: 2
   scan_interval: 30
+- platform: mqtt
+  name: "Sensor"
+  state_topic: "tele/RFBridge/RESULT"
+  value_template: '{{value_json.RfReceived.Data}}'
+  payload_on: "DBAFE9"
+  payload_off: "DBAFE9off"
+  qos: 1
+  retain: false

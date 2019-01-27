@@ -28,9 +28,9 @@
   password: !secret seventeentrack_pwd 
 #- platform: travisci
 #  api_key: !secret travis_api
-- platform: template
-  sensors:
-    office_tv_source:
-      friendly_name: "Office TV Source"
-      unit_of_measurement: 'source'
-      value_template: "{{states.media_player.office_tv}}"
+- platform: mqtt
+  state_topic: "nursery/nursery_sensor/tele/SENSOR"
+  value_template: "{{ value_json.BMP280.Temperature }}"
+  name: "Temperatura Quarto Madalena"
+  qos: 0
+  unit_of_measurement: "°C"

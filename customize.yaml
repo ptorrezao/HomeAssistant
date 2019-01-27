@@ -23,9 +23,12 @@ group.all_lights:
 group.all_switches:
   icon: mdi:toggle-switch
   friendly_name: Interruptores
-group.all_scripts:
+group.all_switches:
+  icon: mdi:toggle-switch
+  friendly_name: Interruptores
+group.all_automations:
   icon: mdi:script-text
-  friendly_name: Scripts
+  friendly_name: Automations
 group.all_devices:
   friendly_name: Dispositivos
   icon: mdi:cellphone-link
@@ -50,4 +53,10 @@ group.attic_lights:
 group.garage_lights:
   hidden: true
 group.kitchen_lights:
+  hidden: true
+switch.pc:
+  hidden: true
+switch.pc_mode:
+  hidden: true
+switch.windowswol:
   hidden: true
