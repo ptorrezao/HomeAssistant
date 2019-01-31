@@ -34,3 +34,15 @@
   name: "Temperatura Quarto Madalena"
   qos: 0
   unit_of_measurement: "°C"
+- platform: mqtt
+  state_topic: "garage/moto/fuelio"
+  value_template: "{{ value_json.Odomentro }}"
+  name: "Odometro Moto"
+  qos: 0
+  unit_of_measurement: "Km"
+- platform: mqtt
+  state_topic: "garage/moto/fuelio"
+  value_template: "{{ value_json.L100km }}"
+  name: "Consumo Moto"
+  qos: 0
+  unit_of_measurement: "L/100 km"

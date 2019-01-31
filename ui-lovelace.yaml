@@ -356,12 +356,18 @@ views:
     #    - group.kitchen_ligths
   - title: Garage 
     icon: 'mdi:garage-open'
-    cards: []  
-    #- type: entities
-    #  title: Luzes
-    #  show_header_toggle: false
-    #  entities:
-    #    - group.garage_ligths
+    cards:   
+    - type: glance
+      title: Mota
+      show_name: false
+      show_header_toggle: false
+      entities:
+       - entity: sensor.odometro_moto    
+         name: Odometro
+         icon: 'mdi:motorbike'
+       - entity: sensor.consumo_moto    
+         name: Consumo
+         icon: 'mdi:fuel'
   - title: Sotão 
     cards: []     
     #- type: entities
@@ -452,6 +458,20 @@ views:
           name: Turn On TV 
         - entity: automation.reset_garagepir_state
           name: Reset to sensor
+    - type: history-graph
+      title: 'Temperauras'
+      entities:
+        - entity: sensor.temperatura_office
+          name: Escritório
+        - entity: sensor.temperatura_quarto_madalena
+          name: Quarto Madalena
+    badges: 
+      - binary_sensor.internet_check
+      - binary_sensor.workday_sensor
+      - sun.sun
+    icon: 'mdi:wrench'
+  - title: Relatórios
+    cards: 
     - type: glance
       title: 17 Track
       show_name: true
@@ -471,13 +491,6 @@ views:
           name: Não Entregues
         - entity: sensor.seventeentrack_packages_expired
           name: Expirado
-    badges: 
-      - binary_sensor.internet_check
-      - binary_sensor.workday_sensor
-      - sun.sun
-    icon: 'mdi:wrench'
-  - title: Relatórios
-    cards: []
     badges: 
       - group.attic_ligths
       - group.garage_ligths

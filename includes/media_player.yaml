@@ -44,6 +44,18 @@
   children:
     - media_player.office_tv
     - media_player.kodi_office
+  state_template: >
+    {% if is_state('binary_sensor.chromecast_office_tv', 'off') %}
+        off
+    {% elif is_state('media_player.kodi_office', 'idle') %}
+        {% if is_state('media_player.office_tv', 'off') %}
+          on
+        {% else %}    
+          {{ states('media_player.office_tv') }}    
+        {% endif %}
+    {% elif is_state('media_player.office_tv', 'off') %}
+        {{ states('media_player.kodi_office') }}
+    {% endif %}
   commands:
     turn_on:
       service: script.turn_on

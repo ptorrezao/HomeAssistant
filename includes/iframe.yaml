@@ -14,10 +14,6 @@ portainer:
  title: 'Portainer'
  icon: 'mdi:docker'
  url: !secret portainerLink
-portainer:
- title: 'Portainer'
- icon: 'mdi:docker'
- url: !secret portainerLink
 17track:
  title: '17track'
  icon: 'mdi:package-variant-closed'
