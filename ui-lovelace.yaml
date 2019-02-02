@@ -73,12 +73,9 @@ views:
             aspect_ratio: 16x9
             entities:
               - group.nursery_ligths
-            state_image:
-              "On": /local/nursery_photo_on.jpg
-              "Off": /local/nursery_photo_off.jpg
-              "unknown": /local/nursery_photo_off.jpg
+              - camera.baby_room
+            camera_image: camera.baby_room
             entity: group.nursery
-            image: /local/nursery_photo_off.jpg
             hold_action: 
               action: navigate
               navigation_path: /lovelace/3/

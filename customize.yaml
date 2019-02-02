@@ -42,6 +42,8 @@ switch.pc_mode:
   hidden: true
 group.pedro:
   entity_picture: /local/pedro.png
+device_tracker.pedro_aquaris:
+  entity_picture: /local/pedro.png
 switch.windowswol:
   hidden: true
 group.attic_lights:
