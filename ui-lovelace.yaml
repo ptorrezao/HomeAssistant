@@ -230,7 +230,7 @@ views:
         - entity: binary_sensor.internet_check
           state: "on"
       card:
-        type: entities
+        type: glance
         title: Web Stuff
         show_header_toggle: false
         entities:
@@ -253,14 +253,19 @@ views:
           entity: sensor.humidade_office
           name: Humidade
           graph: none
-    - type: entities
+    - type: glance
       title: Lights
       show_header_toggle: false
+      show_state: false
       entities:
-        - light.office_ceiling_light
-        - light.office_desk_light
-        - light.office_rgb
-        - light.office_lego_light
+        - entity: light.office_ceiling_light
+          name: Tecto
+        - entity: light.office_desk_light
+          name: Secretária
+        - entity: light.office_rgb
+          name: RGB Lego
+        - entity: light.office_lego_light
+          name: RGB Candeiro
     - type: conditional
       conditions:
         - entity: binary_sensor.creality_ender_3_printing
@@ -302,7 +307,7 @@ views:
               min: 0
               max: 100
               severity: 
-                green: 80
+                green: 0
                 yellow: 50
                 red: 0
     - type: conditional
@@ -317,53 +322,50 @@ views:
           - binary_sensor.creality_ender_3_printing
           - sensor.creality_ender_3_actual_bed_temp
           - sensor.creality_ender_3_actual_tool0_temp
-    - type: entities
-      title: Smart Plugs
+    - type: entity-filter
       show_header_toggle: false
       entities:
         - switch.remote_switch_1
         - entity: switch.dtoffice
           name: PC
           icon: mdi:desktop-classic
-
-    - type: entities
-      title: IT Devices (Networking/Infrastructure)
+      state_filter:
+        - "on"
+        - "off"
+      card: 
+        type: glance
+        show_state: false
+        title: Smart Plugs
+    - type: entity-filter
       show_header_toggle: false
+      show_empty: false
       entities:
-        - entity: binary_sensor.openwrt
-          name: OpenWrt (Router)
-          icon: mdi:router-wireless
-        - entity: binary_sensor.tlsg108e
-          name: TL-SG108E (Smart Switch)
-          icon: mdi:switch
-        - entity: binary_sensor.re200
-          icon: mdi:access-point
-          name: RE200 (Range Extender)
-        - type: divider
-        - entity: binary_sensor.epsond11b70
-          name: Printer
-          icon: mdi:printer
-        - type: divider
-        - entity: binary_sensor.aphrodite
-          name: Aphrodite
-          icon: mdi:server-security
-        - entity: binary_sensor.dt_office
-          name: DT-Office
-          icon: mdi:desktop-classic
-        - type: divider
-        - entity: binary_sensor.openelec_office
-          name: OpenElec
-          icon: mdi:play-network
-        - entity: binary_sensor.playstation
-          name: Playstation
-          icon: mdi:gamepad-variant
-        - type: divider
-        - entity: binary_sensor.google_home
-          name: Google Home
-          icon: mdi:google-home
-        - entity: binary_sensor.broadlink
-          name: BroadLink
-          icon: mdi:remote
+        - entity: sensor.seventeentrack_packages_in_transit    
+          name: Em Trânsito
+        - entity: sensor.seventeentrack_packages_delivered    
+          name: Entregues
+        - entity: sensor.seventeentrack_packages_not_found    
+          name: Não Encontradas
+        - entity: sensor.seventeentrack_packages_undelivered    
+          name: Não Entregues
+        - entity: sensor.seventeentrack_packages_expired    
+          name: Expiradas
+        - entity: sensor.seventeentrack_packages_returned    
+          name: Devolvidas
+        - entity: sensor.seventeentrack_packages_ready_to_be_picked_up    
+          name: Prontas para Levantar
+      state_filter:
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+        - "6"
+        - "7"
+        - "8"
+      card: 
+        type: glance
+        title: Encomendas
     - type: vertical-stack
       cards: 
       - entity: media_player.escritorioghome
@@ -379,24 +381,42 @@ views:
         icon: mdi:television-classic
         artwork: cover
         show_source: true
-    - type: entities
-      title: Encomendas
+    - type: glance
+      title: IT Devices (Networking/Infrastructure)
       show_header_toggle: false
+      show_state: false
       entities:
-       #- entity: sensor.seventeentrack_packages_not_found    
-       #  name: Não Encontradas
-       - entity: sensor.seventeentrack_packages_in_transit    
-         name: Em Trânsito
-       - entity: sensor.seventeentrack_packages_delivered    
-         name: Entregues
-       #- entity: sensor.seventeentrack_packages_undelivered    
-       #  name: Não Entregues
-       #- entity: sensor.seventeentrack_packages_expired    
-       #  name: Expiradas
-       #- entity: sensor.seventeentrack_packages_returned    
-       #  name: Devolvidas
-       #- entity: sensor.seventeentrack_packages_ready_to_be_picked_up    
-       #  name: Prontas para Levantar
+        - entity: binary_sensor.openwrt
+          name: OpenWrt
+          icon: mdi:router-wireless
+        - entity: binary_sensor.tlsg108e
+          name: TL-SG108E
+          icon: mdi:switch
+        - entity: binary_sensor.re200
+          icon: mdi:access-point
+          name: Access Point
+        - entity: binary_sensor.epsond11b70
+          name: Printer
+          icon: mdi:printer
+        - entity: binary_sensor.aphrodite
+          name: Aphrodite
+          icon: mdi:server-security
+        - entity: binary_sensor.dt_office
+          name: DT-Office
+          icon: mdi:desktop-classic
+        - entity: binary_sensor.openelec_office
+          name: OpenElec
+          icon: mdi:play-network
+        - entity: binary_sensor.playstation
+          name: Playstation
+          icon: mdi:gamepad-variant
+        - entity: binary_sensor.google_home
+          name: Google Home
+          icon: mdi:google-home
+        - entity: binary_sensor.broadlink
+          name: BroadLink
+          icon: mdi:remote
+    
     icon: 'mdi:network'
   
   - title: Cozinha 
