@@ -41,3 +41,4 @@ media_player: !include includes/media_player.yaml
 ffmpeg: !include includes/ffmpeg.yaml
 camera: !include includes/camera.yaml
 script: !include_dir_merge_named includes/scripts
+octoprint: !include includes/octoprint.yaml

@@ -261,6 +261,62 @@ views:
         - light.office_desk_light
         - light.office_rgb
         - light.office_lego_light
+    - type: conditional
+      conditions:
+        - entity: binary_sensor.creality_ender_3_printing
+          state: "on"
+      card:
+         type: vertical-stack
+         cards:
+          - type: entities
+            title: Impressora 3D
+            show_header_toggle: false
+            entities:
+              - entity: sensor.creality_ender_3_current_state
+                name: Estado
+              - entity: sensor.creality_ender_3_job_percentage
+                name: Percentagem
+          - type: horizontal-stack
+            cards:
+            - type: gauge
+              entity: sensor.creality_ender_3_actual_tool0_temp
+              name: Extruder 
+              min: 0
+              max: 250
+              severity: 
+                green: 0
+                yellow: 160
+                red: 220
+            - type: gauge
+              entity: sensor.creality_ender_3_actual_bed_temp
+              name: Heated Bed
+              min: 0
+              max: 110
+              severity: 
+                green: 0
+                yellow: 40
+                red: 90
+            - type: gauge
+              entity: sensor.creality_ender_3_job_percentage
+              name: Job
+              min: 0
+              max: 100
+              severity: 
+                green: 80
+                yellow: 50
+                red: 0
+    - type: conditional
+      conditions:
+        - entity: binary_sensor.creality_ender_3_printing
+          state: "off"
+      card:
+        type: entities
+        title: Impressora 3D
+        show_header_toggle: false
+        entities:
+          - binary_sensor.creality_ender_3_printing
+          - sensor.creality_ender_3_actual_bed_temp
+          - sensor.creality_ender_3_actual_tool0_temp
     - type: entities
       title: Smart Plugs
       show_header_toggle: false
