@@ -18,6 +18,10 @@ sun:
 discovery:
 history: !include includes/history.yaml
 
+recorder:
+  purge_keep_days: 15
+  db_url: !secret db_connectionString
+
 #Core stuff
 http: !include includes/http.yaml
 frontend: !include includes/frontend.yaml
@@ -25,7 +29,6 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 zone: !include includes/zones.yaml
 tts: !include includes/tts.yaml
-influxdb: !include includes/influxdb.yaml
 panel_iframe: !include includes/iframe.yaml
 mqtt: !include includes/mqtt.yaml
 sensor: !include includes/sensor.yaml

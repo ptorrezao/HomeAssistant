@@ -243,6 +243,35 @@ views:
           name: Download Speed
         - entity: sensor.ssl
           name: Certificado SSL
+    - type: glance
+      title: Lights
+      show_header_toggle: false
+      show_state: false
+      entities:
+        - entity: light.office_ceiling_light
+          name: Tecto
+          tap_action:
+            action: toggle
+          hold_action:
+            action: more-info
+        - entity: light.office_desk_light
+          name: Secretária
+          tap_action:
+            action: toggle
+          hold_action:
+            action: more-info
+        - entity: light.office_rgb
+          name: RGB Candeiro
+          tap_action:
+            action: toggle
+          hold_action:
+            action: more-info
+        - entity: light.office_lego_light
+          name: RGB Lego
+          tap_action:
+            action: toggle
+          hold_action:
+            action: more-info
     - type: horizontal-stack
       cards:
         - type: sensor
@@ -253,19 +282,6 @@ views:
           entity: sensor.humidade_office
           name: Humidade
           graph: none
-    - type: glance
-      title: Lights
-      show_header_toggle: false
-      show_state: false
-      entities:
-        - entity: light.office_ceiling_light
-          name: Tecto
-        - entity: light.office_desk_light
-          name: Secretária
-        - entity: light.office_rgb
-          name: RGB Lego
-        - entity: light.office_lego_light
-          name: RGB Candeiro
     - type: conditional
       conditions:
         - entity: binary_sensor.creality_ender_3_printing
@@ -320,8 +336,6 @@ views:
         show_header_toggle: false
         entities:
           - binary_sensor.creality_ender_3_printing
-          - sensor.creality_ender_3_actual_bed_temp
-          - sensor.creality_ender_3_actual_tool0_temp
     - type: entity-filter
       show_header_toggle: false
       entities:
@@ -828,13 +842,22 @@ views:
               left: 45%
               width: 1.8vw
           - type: image
-            entity: binary_sensor.epsond11b70
-            image: /local/printer_on.png
+            entity: sensor.creality_ender_3_current_state
+            image: /local/3dprinter_on.png
             state_image:
-              'on': /local/printer_on.png
-              'off': /local/printer_off.png
+              'on': /local/3dprinter_on.png
+              'off': /local/3dprinter_on.png
             style:
               top: 64%
               left: 8.2%
               width: 1.8vw
-              
+          - type: image
+            entity: binary_sensor.epsond11b70
+            image: /local/printer_on.png
+            state_image:
+              'on': /local/printer_on.png
+              'off': /local/printer_on.png
+            style:
+              top: 64%
+              left: 10.2%
+              width: 1.8vw

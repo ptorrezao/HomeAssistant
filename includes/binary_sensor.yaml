@@ -87,4 +87,3 @@
   payload_on: "DBAFE9"
   payload_off: "DBAFE9off"
   qos: 1
-  retain: false
