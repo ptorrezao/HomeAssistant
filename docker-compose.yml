@@ -1,4 +1,3 @@
-
 version: '3.1'
 
 services:
@@ -10,6 +9,7 @@ services:
       - traefik_proxy
     volumes:
       - ha_config:/config
+      - node_red:/data_nodered
     links:
       - mqtt
       - mqtt:mqtt
@@ -17,44 +17,25 @@ services:
       - influxdb:influxdb
     labels:
        - "traefik.backend=homeassistant"
-       - "traefik.frontend.rule=Host:REDACTED"
+       - "traefik.frontend.rule=Host:ptorrezao.duckdns.org"
        - "traefik.port=8123"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
 #DB
-  influxdb:
-    image: influxdb:latest
-    ports:
-     - "8083:8083"
-     - "8086:8086"
-     - "8090:8090"
-    networks:
-      - traefik_proxy
-    environment:
-     - INFLUXDB_DATA_ENGINE=tsm1
-     - INFLUXDB_REPORTING_DISABLED=false
-    volumes:
-     - ha_influxdb:/var/lib/influxdb
-
-  grafana:
-    image: grafana/grafana
-    networks:
-      - traefik_proxy
+  db:
+    image: mariadb
+    restart: always
     deploy:
-      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
     environment:
-     - GF_INSTALL_PLUGINS=grafana-clock-panel,briangann-gauge-panel,natel-plotly-panel,grafana-simple-json-datasource
-    links:
-     - influxdb
-     - influxdb:database
+      MYSQL_ROOT_PASSWORD: "${MYSQL_PWD}"
+    networks:
+      - traefik_proxy
     volumes:
-     - ha_grafana:/var/lib/grafana
-    labels:
-       - "traefik.backend=grafana"
-       - "traefik.frontend.rule=Host:REDACTED"
-       - "traefik.port=3000"
-       - "traefik.docker.network=traefik_proxy"
-       - "traefik.enable=true"
+      - ha_mysql:/var/lib/mysql
+      
 #MQTT
   mqtt:
     image: eclipse-mosquitto:latest
@@ -78,7 +59,7 @@ services:
       - node_red:/data
     labels:
        - "traefik.backend=NodeRed"
-       - "traefik.frontend.rule=Host:REDACTED"
+       - "traefik.frontend.rule=Host:nodered.ptorrezao.duckdns.org"
        - "traefik.port=1880"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
@@ -94,7 +75,7 @@ services:
       - tasmoadmin:/data
     labels:
        - "traefik.backend=tasmoadmin"
-       - "traefik.frontend.rule=Host:REDACTED"
+       - "traefik.frontend.rule=Host:TasmoAdmin.ptorrezao.duckdns.org"
        - "traefik.port=80"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
@@ -112,19 +93,18 @@ services:
       - "445:445/tcp"
     volumes:
       - ha_config:/config
-      - ha_influxdb:/influxdb
       - tasmoadmin:/tasmoadmin
       - mqtt_data:/mqtt_data
-    command: '-u "${SAMBA_USER};${SAMBA_PWD}" -s "MQTT;/mqtt_data;yes;no;no;${SAMBA_USER}" -s "TasmoAdmin;/tasmoadmin;yes;no;no;${SAMBA_USER}" -s "HomeAssistant;/config;yes;no;no;${SAMBA_USER}" -s "InfluxDB;/influxdb;yes;no;no;${SAMBA_USER}" -p'
+      - home_data:/home_data
+    command: '-u "${SAMBA_USER};${SAMBA_PWD}" -s "backups;/home_data;yes;no;no;${SAMBA_USER}" -s "MQTT;/mqtt_data;yes;no;no;${SAMBA_USER}" -s "TasmoAdmin;/tasmoadmin;yes;no;no;${SAMBA_USER}" -s "HomeAssistant;/config;yes;no;no;${SAMBA_USER}" -p'
     
 volumes:
   ha_config:
-  ha_influxdb:
-  ha_grafana:
   node_red:
-  ssl_certificate:
   tasmoadmin:
   mqtt_data:
+  home_data:
+  ha_mysql: 
 
 networks:
   traefik_proxy:
