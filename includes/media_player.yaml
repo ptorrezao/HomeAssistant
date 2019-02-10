@@ -53,8 +53,14 @@
         {% else %}    
           {{ states('media_player.office_tv') }}    
         {% endif %}
-    {% elif is_state('media_player.office_tv', 'off') %}
-        {{ states('media_player.kodi_office') }}
+    {% elif is_state('media_player.kodi_office', 'off') %}
+        {% if is_state('media_player.office_tv', 'off') %}
+          on
+        {% else %}    
+          {{ states('media_player.office_tv') }}    
+        {% endif %}
+    {% elif is_state('media_player.kodi_office', 'off') %}
+        {{ states('media_player.office_tv') }}    
     {% endif %}
   commands:
     turn_on:
