@@ -11,15 +11,11 @@
   hostname: !secret dnsHostName
   resolver: 8.8.8.8
 - platform: mqtt
-  state_topic: "office/office_sensor/temperature"
+  state_topic: "office/office_sensor/tele/SENSOR"
+  value_template: "{{ value_json.BMP280.Temperature }}"
   name: "Temperatura Office"
   qos: 0
   unit_of_measurement: "°C"
-- platform: mqtt
-  state_topic: "office/office_sensor/humidity"
-  name: "Humidade Office"
-  qos: 0
-  unit_of_measurement: "%"
 - platform: cert_expiry
   host: !secret dnsHostName
   name: "SSL"
@@ -31,7 +27,7 @@
 - platform: mqtt
   state_topic: "nursery/nursery_sensor/tele/SENSOR"
   value_template: "{{ value_json.BMP280.Temperature }}"
-  name: "Temperatura Quarto Madalena"
+  name: "Temperatura Quarto"
   qos: 0
   unit_of_measurement: "°C"
 - platform: mqtt
@@ -46,3 +42,9 @@
   name: "Consumo Moto"
   qos: 0
   unit_of_measurement: "L/100 km"
+- platform: mqtt
+  state_topic: "nursery/nursery-bedlight/tele/SENSOR"
+  value_template: "{{ value_json.BMP280.Temperature }}"
+  name: "Temperatura Quarto Madalena"
+  qos: 0
+  unit_of_measurement: "°C"

@@ -5,6 +5,19 @@ pedro:
     - device_tracker.pedro_aquaris
     - device_tracker.pedro_smartwatch
 
+ana:
+  name: Ana
+  view: false
+  entities:
+    - device_tracker.ana_keychain
+    - device_tracker.ana_bq
+
+madalena:
+  name: Madalena
+  view: false
+  entities:
+    - device_tracker.madalena_keychain
+
 office_ligths:
   name: Office Lights
   entities:

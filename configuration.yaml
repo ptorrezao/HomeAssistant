@@ -8,6 +8,8 @@ homeassistant:
   customize: !include customize.yaml
   customize_glob: !include customize_glob.yaml
 
+system_health:
+
 lovelace: 
   mode: yaml
 

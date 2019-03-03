@@ -2,8 +2,8 @@
 - platform: googlehome
   host: 192.168.88.150    
   rssi_threshold: -100 
-  interval_seconds: 4
-  consider_home: 24    
+  interval_seconds: 10
+  consider_home: 180    
   new_device_defaults:
     track_new_devices: false
     hide_if_away: false

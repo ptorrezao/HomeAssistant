@@ -1,6 +1,8 @@
 broker: !secret mqttServer
 discovery: true
 port: 1883
+discovery: true
+discovery_prefix: homeassistant
 username: !secret mqttUser
 password: !secret mqttPassword
 birth_message:

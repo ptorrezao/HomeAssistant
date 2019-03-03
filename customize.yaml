@@ -42,6 +42,10 @@ switch.pc_mode:
   hidden: true
 group.pedro:
   entity_picture: /local/pedro.png
+group.ana:
+  entity_picture: /local/bq_ana.jpg
+group.madalena:
+  entity_picture: /local/madalena.jpg
 device_tracker.pedro_aquaris:
   entity_picture: /local/pedro.png
 switch.windowswol:

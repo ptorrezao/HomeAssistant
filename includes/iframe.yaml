@@ -6,10 +6,10 @@ nodered:
  title: 'Node-Red'
  icon: 'mdi:resistor-nodes'
  url: !secret noderedLink
-tasmoadmin:
- title: 'Tasmo Admin'
- icon: 'mdi:drag-variant'
- url: !secret tasmoAdminLink
+# tasmoadmin:
+#  title: 'Tasmo Admin'
+#  icon: 'mdi:drag-variant'
+#  url: !secret tasmoAdminLink
 portainer:
  title: 'Portainer'
  icon: 'mdi:docker'

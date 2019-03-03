@@ -39,7 +39,24 @@
   rgb_command_template: "{{ '%02x%02x%02x' | format(red, green, blue)}}"
   rgb_state_topic: "office/ledlight/stat/RESULT"
   rgb_value_template: "{{ value_json.Color[0:2] | int(base=16) }},{{ value_json.Color[2:4] | int(base=16) }},{{ value_json.Color[4:6] | int(base=16) }}"
-  
+
+- platform: mqtt
+  name: "Nursery BedLight"
+  state_topic: "nursery/nursery-bedlight/stat/POWER"
+  command_topic: "nursery/nursery-bedlight/cmnd/POWER"
+  qos: 1
+  retain: true
+  payload_on: "ON"
+  payload_off: "OFF"
+  brightness_scale: 100
+  brightness_command_topic: "nursery/nursery-bedlight/cmnd/DIMMER"
+  brightness_state_topic: "nursery/nursery-bedlight/stat/RESULT"
+  brightness_value_template: "{{ value_json.Dimmer }}"
+  rgb_command_topic: "nursery/nursery-bedlight/cmnd/COLOR"
+  rgb_command_template: "{{ '%02x%02x%02x' | format(red, green, blue)}}" 
+  rgb_state_topic: "nursery/nursery-bedlight/stat/RESULT"
+  rgb_value_template: "{{ value_json.Color[0:2] | int(base=16) }},{{ value_json.Color[2:4] | int(base=16) }},{{ value_json.Color[4:6] | int(base=16) }}"
+
 ##LivingRoom
 - platform: mqtt
   name: "Living Room Cabinet"

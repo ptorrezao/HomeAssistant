@@ -14,10 +14,12 @@ views:
     - type: entity-filter
       show_empty: false
       entities:
-        - entity: device_tracker.ana_bq
-          name: Ana
         - entity: group.pedro
           name: Pedro
+        - entity: group.madalena
+          name: Madalena
+        - entity: group.ana
+          name: Ana
         - entity: input_boolean.houseguest
           name: Convidados
       state_filter:
@@ -211,16 +213,19 @@ views:
       title: Luzes
       show_header_toggle: false
       entities:
-        - light.nursery_light
+        - entity: light.nursery_bedlight
+          name: Candeiro
+        - entity: light.nursery_light
+          name: Candeiro de Pé Alto
+    - type: sensor
+      entity: sensor.temperatura_quarto_madalena
+      name: Temperatura
+      graph: none
     - type: picture-glance
       title: Camera
       entities:
         - camera.baby_room
       camera_image: camera.baby_room
-    - type: sensor
-      entity: sensor.temperatura_quarto_madalena
-      name: Temperatura
-      graph: none
     badges: []
     icon: 'mdi:baby-buggy'
   - title: Escritório
@@ -277,11 +282,6 @@ views:
         - type: sensor
           entity: sensor.temperatura_office
           name: Temperatura
-          graph: none
-        - type: sensor
-          entity: sensor.humidade_office
-          name: Humidade
-          graph: none
     - type: conditional
       conditions:
         - entity: binary_sensor.creality_ender_3_printing
