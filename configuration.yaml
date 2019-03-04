@@ -28,7 +28,6 @@ recorder:
 http: !include includes/http.yaml
 frontend: !include includes/frontend.yaml
 automation: !include automations.yaml
-script: !include scripts.yaml
 zone: !include includes/zones.yaml
 tts: !include includes/tts.yaml
 panel_iframe: !include includes/iframe.yaml
