@@ -46,3 +46,4 @@ ffmpeg: !include includes/ffmpeg.yaml
 camera: !include includes/camera.yaml
 script: !include_dir_merge_named includes/scripts
 octoprint: !include includes/octoprint.yaml
+speedtestdotnet: !include includes/speedtestdotnet.yaml
