@@ -9,7 +9,6 @@
   host: 192.168.88.150
 - platform: cast
   host: 192.168.88.156
-  #host: chromecast-maintv
 - platform: cast
   host: 192.168.88.155
   hidden: true
