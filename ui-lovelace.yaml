@@ -169,12 +169,12 @@ views:
       - device_tracker.ana_bq
       - zone.home
       - device_tracker.pedro_aquaris
-    - type: weather-forecast
-      entity: weather.ipma
-      aspect_ratio: 62%
+    # - type: weather-forecast
+    #   entity: weather.ipma
+    #   aspect_ratio: 62%
     - type: iframe
       url: !secret weatherUrl
-      aspect_ratio: 38%   
+      aspect_ratio: 70%   
 
   - title: Sala de Estar
     cards: 
@@ -481,12 +481,13 @@ views:
       title: Presenças
       show_header_toggle: false
       entities:
-        - entity: device_tracker.192_168_88_150_cf_8a_6f_df_d6_37
-          name: Smart Watch
         - entity: device_tracker.pedro_aquaris
-          name: Telefone
+        - entity: device_tracker.192_168_88_150_cf_8a_6f_df_d6_37
+        - type: divider
         - entity: device_tracker.ana_bq
-          name: Telefone
+        - entity: device_tracker.192_168_88_150_ff_ff_3d_15_3d_15
+        - type: divider
+        - entity: device_tracker.192_168_88_150_ff_ff_3d_15_0d_82
     - type: glance
       title: Quarto Madalena
       show_header_toggle: false
@@ -501,23 +502,14 @@ views:
       show_name: true
       show_state: false
       show_header_toggle: false
-      columns: 4
+      columns: 2
       entities:
         - entity: binary_sensor.chromecast_office_tv
-          name: ChromeCast
-          icon: mdi:cast
-        - entity: media_player.office_tv
           name: ChromeCast
           icon: mdi:cast
         - entity: binary_sensor.hisense_h39n2110c
           name: Tv
           icon: mdi:television-classic
-        - entity: media_player.kodi_office
-          name: Kodi
-          icon: mdi:play-network
-        - entity: media_player.broadlink_office_tv
-          name: Broadlink
-          icon: mdi:google-circles-extended
     - type: glance
       title: Sala
       show_name: true

@@ -48,6 +48,14 @@ group.madalena:
   entity_picture: /local/madalena.jpg
 device_tracker.pedro_aquaris:
   entity_picture: /local/pedro.png
+device_tracker.ana_bq:
+  entity_picture: /local/bq_ana.jpg
+device_tracker.192_168_88_150_ff_ff_3d_15_3d_15:
+  entity_picture: /local/keychain.jpg
+device_tracker.192_168_88_150_ff_ff_3d_15_0d_82:
+  entity_picture: /local/keychain.jpg
+device_tracker.192_168_88_150_cf_8a_6f_df_d6_37:
+  entity_picture: /local/band3.jpg
 switch.windowswol:
   hidden: true
 group.attic_lights:
