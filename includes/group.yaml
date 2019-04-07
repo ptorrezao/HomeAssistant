@@ -10,7 +10,7 @@ ana:
   view: false
   entities:
     - device_tracker.192_168_88_150_ff_ff_3d_15_3d_15
-    #- device_tracker.ana_bq
+    - device_tracker.ana_bq
 
 madalena:
   name: Madalena

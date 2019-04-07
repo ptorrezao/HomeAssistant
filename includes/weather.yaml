@@ -1,4 +1,2 @@
-- platform: ipma 
-  latitude: !secret home_lat
-  longitude: !secret home_long
+- platform: ipma
   name: IPMA

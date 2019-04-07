@@ -21,34 +21,3 @@
   payload_available: "Online"
   payload_not_available: "Offline"
   retain: true
-
-- platform: mqtt
-  name: "PC Mode"
-  state_topic: "office/office-pcmode/stat/POWER"
-  command_topic: "office/office-pcmode/cmnd/POWER"
-  availability_topic: "office/office-pcmode/tele/LWT"
-  qos: 1
-  payload_on: "ON"
-  payload_off: "OFF"
-  payload_available: "Online"
-  payload_not_available: "Offline"
-  retain: true
-
-- platform: command_line
-  switches:
-    pc:
-      command_off: !secret officepc_shutdown
-- platform: wake_on_lan
-  name: windowswol
-  host: 192.168.88.30
-  mac_address: BC:5F:F4:D6:17:36
-- platform: template
-  switches:
-    dtoffice:
-      value_template: '{{ states.switch.windowswol.state }}'
-      turn_on:
-        service: switch.turn_on
-        entity_id: switch.windowswol
-      turn_off:
-        service: switch.turn_off
-        entity_id: switch.pc

@@ -481,7 +481,7 @@ views:
       title: Presenças
       show_header_toggle: false
       entities:
-        - entity: device_tracker.pedro_smartwatch
+        - entity: device_tracker.192_168_88_150_cf_8a_6f_df_d6_37
           name: Smart Watch
         - entity: device_tracker.pedro_aquaris
           name: Telefone
@@ -582,9 +582,6 @@ views:
       - group.attic_ligths
       - group.garage_ligths
       - group.kitchen_ligths
-      - switch.windowswol
-      - switch.pc_mode
-      - switch.pc
       - binary_sensor.sensor
     icon: 'mdi:marker-check'
   - title: Floorplan
@@ -609,13 +606,6 @@ views:
             entity: sensor.temperatura_office
             style:
               top: 37%
-              left: 31.5%
-              color: "#6b6a6a"
-              font-size: 0.8vw
-          - type: state-label
-            entity: sensor.humidade_office
-            style:
-              top: 40%
               left: 31.5%
               color: "#6b6a6a"
               font-size: 0.8vw
