@@ -99,56 +99,56 @@ views:
               navigation_path: /lovelace/2/
             tap_action: 
               action: toggle
-        - type: horizontal-stack
-          cards:
-          - title: Cozinha
-            type: picture-glance
-            aspect_ratio: 16x9
-            entities:
-              - group.kitchen_lights
-            state_image:
-              "On": /local/kitchen_photo_on.jpg
-              "Off": /local/kitchen_photo_off.jpg
-              "unknown": /local/kitchen_photo_off.jpg
-            entity: group.kitchen
-            image: /local/kitchen_photo_on.jpg
-            hold_action: 
-              action: navigate
-              navigation_path: /lovelace/5/
-            tap_action: 
-              action: toggle     
-          - title: Garagem
-            type: picture-glance
-            aspect_ratio: 16x9
-            entities:
-              - group.garage_lights
-            state_image:
-              "On": /local/garage_photo_on.jpg
-              "Off": /local/garage_photo_off.jpg
-              "unknown": /local/garage_photo_off.jpg
-            entity: group.garage
-            image: /local/garage_photo_off.jpg
-            hold_action: 
-              action: navigate
-              navigation_path: /lovelace/6/
-            tap_action: 
-              action: toggle  
-          - title: Sotão
-            type: picture-glance
-            aspect_ratio: 16x9
-            entities:
-              - group.nursery_lights
-            state_image:
-              "On": /local/attic_photo_on.jpg
-              "Off": /local/attic_photo_off.jpg
-              "unknown": /local/attic_photo_off.jpg
-            entity: group.attic
-            image: /local/attic_photo_on.jpg
-            hold_action: 
-              action: navigate
-              navigation_path: /lovelace/7/
-            tap_action: 
-              action: toggle     
+        # - type: horizontal-stack
+        #   cards:
+        #   - title: Cozinha
+        #     type: picture-glance
+        #     aspect_ratio: 16x9
+        #     entities:
+        #       - group.kitchen_lights
+        #     state_image:
+        #       "On": /local/kitchen_photo_on.jpg
+        #       "Off": /local/kitchen_photo_off.jpg
+        #       "unknown": /local/kitchen_photo_off.jpg
+        #     entity: group.kitchen
+        #     image: /local/kitchen_photo_on.jpg
+        #     hold_action: 
+        #       action: navigate
+        #       navigation_path: /lovelace/5/
+        #     tap_action: 
+        #       action: toggle     
+        #   - title: Garagem
+        #     type: picture-glance
+        #     aspect_ratio: 16x9
+        #     entities:
+        #       - group.garage_lights
+        #     state_image:
+        #       "On": /local/garage_photo_on.jpg
+        #       "Off": /local/garage_photo_off.jpg
+        #       "unknown": /local/garage_photo_off.jpg
+        #     entity: group.garage
+        #     image: /local/garage_photo_off.jpg
+        #     hold_action: 
+        #       action: navigate
+        #       navigation_path: /lovelace/6/
+        #     tap_action: 
+        #       action: toggle  
+        #   - title: Sotão
+        #     type: picture-glance
+        #     aspect_ratio: 16x9
+        #     entities:
+        #       - group.nursery_lights
+        #     state_image:
+        #       "On": /local/attic_photo_on.jpg
+        #       "Off": /local/attic_photo_off.jpg
+        #       "unknown": /local/attic_photo_off.jpg
+        #     entity: group.attic
+        #     image: /local/attic_photo_on.jpg
+        #     hold_action: 
+        #       action: navigate
+        #       navigation_path: /lovelace/7/
+        #     tap_action: 
+        #       action: toggle     
     - type: entities
       show_header_toggle: false
       entities:
@@ -249,9 +249,10 @@ views:
         - entity: sensor.ssl
           name: Certificado SSL
     - type: glance
-      title: Lights
+      title: Lights & Smart Plugs
       show_header_toggle: false
       show_state: false
+      columns: 4
       entities:
         - entity: light.office_ceiling_light
           name: Tecto
@@ -277,20 +278,21 @@ views:
             action: toggle
           hold_action:
             action: more-info
+        - entity: switch.remote_switch_1
+          name: Smart Plug 1
+          tap_action:
+            action: toggle
+          hold_action:
+            action: more-info
     - type: horizontal-stack
       cards:
         - type: sensor
           entity: sensor.temperatura_office
           name: Temperatura
-    - type: conditional
-      conditions:
-        - entity: binary_sensor.creality_ender_3_printing
-          state: "on"
-      card:
-         type: vertical-stack
-         cards:
+    - type: vertical-stack
+      cards:
           - type: entities
-            title: Impressora 3D
+            title: Impressora 3D 
             show_header_toggle: false
             entities:
               - entity: sensor.creality_ender_3_current_state
@@ -317,39 +319,6 @@ views:
                 green: 0
                 yellow: 40
                 red: 90
-            - type: gauge
-              entity: sensor.creality_ender_3_job_percentage
-              name: Job
-              min: 0
-              max: 100
-              severity: 
-                green: 0
-                yellow: 50
-                red: 0
-    - type: conditional
-      conditions:
-        - entity: binary_sensor.creality_ender_3_printing
-          state: "off"
-      card:
-        type: entities
-        title: Impressora 3D
-        show_header_toggle: false
-        entities:
-          - binary_sensor.creality_ender_3_printing
-    - type: entity-filter
-      show_header_toggle: false
-      entities:
-        - switch.remote_switch_1
-        - entity: switch.dtoffice
-          name: PC
-          icon: mdi:desktop-classic
-      state_filter:
-        - "on"
-        - "off"
-      card: 
-        type: glance
-        show_state: false
-        title: Smart Plugs
     - type: entity-filter
       show_header_toggle: false
       show_empty: false
@@ -380,25 +349,11 @@ views:
       card: 
         type: glance
         title: Encomendas
-    - type: vertical-stack
-      cards: 
-      - entity: media_player.escritorioghome
-        type: custom:mini-media-player
-        name: Google Home 
-        hide_controls: true6
-        artwork: cover
-        show_tts: google
-        icon: mdi:google-home
-        power_color: true
-      - entity: media_player.office_tv_2
-        type: custom:mini-media-player
-        icon: mdi:television-classic
-        artwork: cover
-        show_source: true
     - type: glance
       title: IT Devices (Networking/Infrastructure)
       show_header_toggle: false
       show_state: false
+      columns: 3
       entities:
         - entity: binary_sensor.openwrt
           name: OpenWrt
@@ -418,9 +373,9 @@ views:
         - entity: binary_sensor.dt_office
           name: DT-Office
           icon: mdi:desktop-classic
-        - entity: binary_sensor.openelec_office
-          name: OpenElec
-          icon: mdi:play-network
+        # - entity: binary_sensor.openelec_office
+        #   name: OpenElec
+        #   icon: mdi:play-network
         - entity: binary_sensor.playstation
           name: Playstation
           icon: mdi:gamepad-variant
