@@ -17,11 +17,10 @@
 #- platform: travisci
 #  api_key: !secret travis_api
 - platform: mqtt
-  state_topic: "nursery/nursery_sensor/tele/SENSOR"
-  value_template: "{{ value_json.BMP280.Temperature }}"
-  name: "Temperatura Quarto"
+  state_topic: "garage/moto/fuelio"
+  value_template: "{{ value_json.Veiculo }}"
+  name: "Moto"
   qos: 0
-  unit_of_measurement: "°C"
 - platform: mqtt
   state_topic: "garage/moto/fuelio"
   value_template: "{{ value_json.Odomentro }}"
@@ -34,6 +33,23 @@
   name: "Consumo Moto"
   qos: 0
   unit_of_measurement: "L/100 km"
+- platform: mqtt
+  state_topic: "garage/moto/fuelio"
+  value_template: "{{ value_json.VIN }}"
+  name: "VIN Moto"
+  qos: 0
+- platform: mqtt
+  state_topic: "garage/moto/fuelio"
+  value_template: "{{ value_json.TotalKms }}"
+  name: "Total Kms"
+  unit_of_measurement: "Km"
+  qos: 0
+- platform: mqtt
+  state_topic: "garage/moto/fuelio"
+  value_template: "{{ value_json.PrecoKm }}"
+  name: "Preço Km"
+  qos: 0
+  unit_of_measurement: "€"
 - platform: mqtt
   state_topic: "nursery/nursery-bedlight/tele/SENSOR"
   value_template: "{{ value_json.BMP280.Temperature }}"

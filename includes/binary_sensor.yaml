@@ -16,6 +16,10 @@
   name: Chromecast Livingroom Tv
   count: 2
 - platform: ping
+  host: 192.168.88.31
+  name: Octopi 
+  count: 2
+- platform: ping
   #host: EPSOND11B70
   host: 192.168.88.11
   name: EPSOND11B70
@@ -47,9 +51,9 @@
 #   name: Ares
 #   count: 2  
 - platform: ping
-  #host: Aphrodite
-  host: 192.168.88.157
-  name: OpenElec Office
+  #host: Ares
+  host: 192.168.88.21
+  name: Ares
   count: 2  
 - platform: command_line
   command: 'nmap -p 9295 192.168.88.100 | grep "9295/tcp open" | wc -l'

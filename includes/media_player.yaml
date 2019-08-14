@@ -1,0 +1,6 @@
+- platform: smartir
+  name: Hisense H39N2110C TV
+  unique_id: office_tv_broadlink
+  device_code: 1120
+  controller_data: 192.168.88.200
+  power_sensor: binary_sensor.hisense_h39n2110c

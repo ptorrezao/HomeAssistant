@@ -49,3 +49,9 @@ octoprint: !include includes/octoprint.yaml
 speedtestdotnet: !include includes/speedtestdotnet.yaml
 yeelight: !include includes/yeelight.yaml
 googlehome: !include includes/googlehome.yaml
+google_assistant: !include includes/google_assistant.yaml
+cast:
+  media_player:
+    - host: 192.168.88.155
+    - host: 192.168.88.156
+smartir:

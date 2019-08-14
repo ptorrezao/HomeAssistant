@@ -21,3 +21,7 @@
   payload_available: "Online"
   payload_not_available: "Offline"
   retain: true
+
+- platform: broadlink
+  host: 192.168.88.200
+  mac: '34:EA:34:42:A6:B2'
