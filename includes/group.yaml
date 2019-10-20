@@ -26,6 +26,7 @@ office_ligths:
     - light.office_rgb
     - light.office_lego_light
     - light.office_3d_printer_light
+    - light.3d_printer_led
 
 office:
   name: Office
