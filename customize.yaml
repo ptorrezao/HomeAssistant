@@ -66,3 +66,7 @@ group.kitchen_lights:
   hidden: true
 sensor.creality_ender_3_current_state:
   friendly_name: Creality Ender 3
+sensor.pedro_casa:
+  icon: mdi:motorbike
+sensor.pedro_trabalho:
+  icon: mdi:motorbike

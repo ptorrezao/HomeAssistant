@@ -32,6 +32,40 @@ views:
         title: Em casa  
     - type: conditional
       conditions:
+        - entity: binary_sensor.workday_sensor
+          state: "off"
+      card:
+        type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - entity: binary_sensor.workday_sensor
+                state: "on"
+            card:
+              type: entity-filter
+              state_filter:
+                - "on"
+                - operator: ">"
+                  value: 1
+              entities:
+                - entity: sensor.pedro_trabalho
+                  name: Pedro's ETA To Work
+          - type: entity-filter
+            show_empty: false
+            state_filter:
+              - "on"
+              - operator: ">"
+                value: 1
+            entities:
+              - entity: sensor.pedro_casa
+                name: Pedro's ETA To Home
+              - entity: sensor.ana_casa
+                name: Ana's ETA To Home
+            card:
+              type: glance
+              title: Travel Time
+    - type: conditional
+      conditions:
         - entity: input_boolean.home_occupied
           state: "on"
       card:
@@ -221,15 +255,15 @@ views:
           name: Candeiro de Pé Alto
     - type: sensor
       entity: sensor.temperatura_quarto_madalena
+      graph: line
       name: Temperatura
-      graph: none
     - type: picture-glance
       title: Camera
       entities:
         - camera.baby_room
       camera_image: camera.baby_room
     badges: []
-    icon: 'mdi:baby-buggy'
+    icon: 'mdi:baby'
   - title: Escritório
     cards:
     - type: conditional
@@ -296,6 +330,7 @@ views:
       cards:
         - type: sensor
           entity: sensor.temperatura_office
+          graph: line
         - type: entity-filter
           show_header_toggle: false
           show_empty: false

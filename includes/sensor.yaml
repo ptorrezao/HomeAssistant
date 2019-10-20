@@ -56,3 +56,22 @@
   name: "Temperatura Quarto Madalena"
   qos: 0
   unit_of_measurement: "°C"
+- platform: waze_travel_time
+  origin: device_tracker.ana_bq
+  destination: zone.home
+  name: Ana -> Casa
+  region: 'EU'
+- platform: waze_travel_time
+  name: Pedro -> Casa
+  origin: device_tracker.pedro_aquaris
+  destination: zone.home
+  excl_filter: A10
+  region: 'EU'
+  vehicle_type: motorcycle
+- platform: waze_travel_time
+  name: Pedro -> Trabalho
+  origin: device_tracker.pedro_aquaris
+  destination:  zone.work_pedro
+  excl_filter: A10
+  region: 'EU'
+  vehicle_type: motorcycle

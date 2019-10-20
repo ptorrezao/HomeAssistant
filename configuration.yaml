@@ -35,7 +35,7 @@ mqtt: !include includes/mqtt.yaml
 sensor: !include includes/sensor.yaml
 weather: !include includes/weather.yaml
 binary_sensor: !include includes/binary_sensor.yaml
-device_tracker: !include includes/device_tracker.yaml
+owntracks: !include includes/owntracks.yaml
 input_boolean: !include includes/input_boolean.yaml
 light: !include includes/light.yaml
 group: !include includes/group.yaml
@@ -48,8 +48,8 @@ script: !include_dir_merge_named includes/scripts
 octoprint: !include includes/octoprint.yaml
 speedtestdotnet: !include includes/speedtestdotnet.yaml
 yeelight: !include includes/yeelight.yaml
-googlehome: !include includes/googlehome.yaml
 google_assistant: !include includes/google_assistant.yaml
+updater:
 cast:
   media_player:
     - host: 192.168.88.155
