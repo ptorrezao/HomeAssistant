@@ -23,26 +23,11 @@
   payload_not_available: "Offline"
   retain: true
 
-- platform: mqtt
-  name: "3d Printer Led"
-  state_topic: "office/3dprinter_led/stat/POWER"
-  command_topic: "office/3dprinter_led/cmnd/POWER"
-  #brightness_state_topic: "008565AA/rgb/brightness/status"
-  #brightness_command_topic: "008565AA/rgb/brightness/set"
-  rgb_state_topic: "office/3dprinter_led/stat/color"
-  rgb_command_topic: "office/3dprinter_led/cmnd/color"
-  state_value_template: "{{ value_json.state }}"
-  brightness_command_topic: "office/3dprinter_led/cmnd/DIMMER"
-  brightness_state_topic: "office/3dprinter_led/stat/RESULT"
-  brightness_value_template: "{{ value_json.Dimmer }}"
-  rgb_value_template: "{{value_json.Color.split(',')[0:3]|join(',')}}"
-  qos: 0
-  payload_on: "ON"
-  payload_off: "OFF"
-  optimistic: false
-  brightness: true
-  rgb: true
-
+- platform: flux_led
+  devices:
+    192.168.88.169:
+      name: "3d Printer Led"
+      mode: "rgb"
 
 - platform: mqtt
   name: "Office Lego Light"
