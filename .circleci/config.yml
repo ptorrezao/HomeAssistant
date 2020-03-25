@@ -1,17 +1,12 @@
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/python:3.6.4
-    working_directory: ~/repo
-    steps:
-      - checkout
-      - run:
-          name: Check config
-          command: |
-            mv secrets_redacted.yaml secrets.yaml
-            mkdir fake_directory
-            python3.6 -m venv .
-            source bin/activate
-            pip3 install --pre --upgrade homeassistant
-            hass -c . --script check_config
+version: 2.1
+description: |
+  Basic usage of this orb
+  https://circleci.com/orbs/registry/orb/dallaso/home-assistant-config
+
+orbs:
+      hass: dallaso/home-assistant-config@0.0
+
+workflows:
+  main:
+    jobs:
+      - hass/check-config
