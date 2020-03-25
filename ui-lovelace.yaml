@@ -213,12 +213,25 @@ views:
 
   - title: Sala de Estar
     cards: 
-    - type: entities
-      title: Luzes
-      show_header_toggle: false
-      entities:
-        - light.living_room_cabinet
-        #- switch.christmas_lights
+    - type: horizontal-stack
+      cards:
+      - type: conditional
+        conditions:
+          - entity: binary_sensor.christmas_lights
+            state: "on"
+        card:
+          type: entity-button
+          entity: switch.christmas_lights
+          icon_height: 32px
+      - type: conditional
+        conditions:
+          - entity: binary_sensor.cabinet_light
+            state: "on"
+        card:
+          type: entity-button
+          entity: light.living_room_cabinet
+          icon_height: 32px
+
     # - entity: media_player.main_tv
     #   type: custom:mini-media-player
     #   artwork: full-cover
@@ -266,24 +279,6 @@ views:
     icon: 'mdi:baby'
   - title: Escritório
     cards:
-    - type: conditional
-      conditions:
-        - entity: binary_sensor.internet_check
-          state: "on"
-      card:
-        type: glance
-        title: Web Stuff
-        show_header_toggle: false
-        entities:
-        - entity: sensor.dnsip
-          name: External IP
-          secondary_info: last-changed
-        - entity: sensor.speedtest_upload
-          name: Upload Speed
-        - entity: sensor.speedtest_download
-          name: Download Speed
-        - entity: sensor.ssl
-          name: Certificado SSL
     - type: glance
       title: Lights & Smart Plugs
       show_header_toggle: false
@@ -363,6 +358,21 @@ views:
             title: Encomendas
     - type: vertical-stack
       cards:
+      - type: markdown
+        title: Impressora 3D 
+        content: |
+          {% if is_state("sensor.creality_ender_3_current_state", "Printing") -%}
+            A impressora encontra-se a imprimir ({{ states("sensor.creality_ender_3_job_percentage") }}%)
+          {%- else -%}
+          **Estado da Impressora** é *({{ states("sensor.creality_ender_3_current_state") }})* 
+          {%- endif %}
+      - type: picture-glance
+        title: Impressora 3D 
+        entities:
+          - sensor.creality_ender_3_current_state
+          - camera.3d_printer
+        camera_image: camera.3d_printer
+        camera_view: live
       - type: horizontal-stack
         cards:
         - type: gauge
@@ -383,23 +393,7 @@ views:
             green: 0
             yellow: 40
             red: 90      
-      - type: horizontal-stack
-        cards:    
-        - type: entities
-          title: Impressora 3D 
-          show_header_toggle: false
-          entities:
-            - entity: sensor.creality_ender_3_current_state
-              name: Estado
-            - entity: sensor.creality_ender_3_job_percentage
-              name: Percentagem
-        - type: picture-glance
-          title: Impressora 3D 
-          entities:
-            - sensor.creality_ender_3_current_state
-            - camera.3d_printer
-          camera_image: camera.3d_printer
-          camera_view: live
+
     # - entity: media_player.office_tv
     #   type: custom:mini-media-player
     #   artwork: full-cover
@@ -412,6 +406,24 @@ views:
     #   hide_icon: true
     #   hide_power: true
     #   hide_volume: true
+    - type: conditional
+      conditions:
+        - entity: binary_sensor.internet_check
+          state: "on"
+      card:
+        type: glance
+        title: Web Stuff
+        show_header_toggle: false
+        entities:
+        - entity: sensor.dnsip
+          name: External IP
+          secondary_info: last-changed
+        - entity: sensor.speedtest_upload
+          name: Upload Speed
+        - entity: sensor.speedtest_download
+          name: Download Speed
+        - entity: sensor.ssl
+          name: Certificado SSL
     - type: glance
       title: IT Devices (Networking/Infrastructure)
       show_header_toggle: false
@@ -450,6 +462,7 @@ views:
         - entity: binary_sensor.broadlink
           name: BroadLink
           icon: mdi:remote
+
     icon: 'mdi:network'
   
   - title: Cozinha 
@@ -718,7 +731,19 @@ views:
             style:
               top: 73.5%
               left: 62.5%
-              width: 1.5vw
+              width: 2vw
+            tap_action:
+              action: toggle
+          - type: image
+            entity: switch.christmas_lights
+            image: /local/xmas_tree_off.png
+            state_image:
+              'on': /local/xmas_tree_on.png
+              'off': /local/xmas_tree_off.png
+            style:
+              top: 43%
+              left: 86%
+              width: 2.5vw
             tap_action:
               action: toggle
           - type: image

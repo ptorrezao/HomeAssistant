@@ -7,12 +7,15 @@ nodered:
 #  title: 'Tasmo Admin'
 #  icon: 'mdi:drag-variant'
 #  url: !secret tasmoAdminLink
-portainer:
- title: 'Portainer'
- icon: 'mdi:docker'
- url: !secret portainerLink
+# portainer:
+#  title: 'Portainer'
+#  icon: 'mdi:docker'
+#  url: !secret portainerLink
 # 17track:
 #  title: '17track'
 #  icon: 'mdi:package-variant-closed'
 #  url: https://buyer.17track.net/en/myshipment
- 
+uptimerobot:
+ title: 'UptimeRobot'
+ icon: 'mdi:book-variant'
+ url: https://stats.uptimerobot.com/AQM38C93KR

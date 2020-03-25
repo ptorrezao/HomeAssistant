@@ -72,6 +72,14 @@
   name: Google-Home
   count: 2
 - platform: ping
+  host: 192.168.88.166
+  name: Christmas Lights
+  count: 2
+- platform: ping
+  host: 192.168.88.163
+  name: Cabinet Light
+  count: 2  
+- platform: ping
   host: 192.168.88.200
   name: Broadlink
   count: 2
