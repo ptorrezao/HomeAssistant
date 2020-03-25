@@ -48,7 +48,7 @@ script: !include_dir_merge_named includes/scripts
 octoprint: !include includes/octoprint.yaml
 speedtestdotnet: !include includes/speedtestdotnet.yaml
 yeelight: !include includes/yeelight.yaml
-google_assistant: !include includes/google_assistant.yaml
+# google_assistant: !include includes/google_assistant.yaml
 updater:
 cast:
   media_player:

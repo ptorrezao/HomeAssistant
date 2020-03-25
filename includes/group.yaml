@@ -1,20 +1,17 @@
 pedro:
   name: Pedro
-  view: false
   entities:
     - device_tracker.pedro_aquaris
     - device_tracker.192_168_88_150_cf_8a_6f_df_d6_37
 
 ana:
   name: Ana
-  view: false
   entities:
     - device_tracker.192_168_88_150_ff_ff_3d_15_3d_15
     - device_tracker.ana_bq
 
 madalena:
   name: Madalena
-  view: false
   entities:
     - device_tracker.192_168_88_150_ff_ff_3d_15_0d_82
 
