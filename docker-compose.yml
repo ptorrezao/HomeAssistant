@@ -17,7 +17,7 @@ services:
       - influxdb:influxdb
     labels:
        - "traefik.backend=homeassistant"
-       - "traefik.frontend.rule=Host:ptorrezao.duckdns.org"
+       - "traefik.frontend.rule=Host:REDACTED"
        - "traefik.port=8123"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
@@ -59,7 +59,7 @@ services:
       - node_red:/data
     labels:
        - "traefik.backend=NodeRed"
-       - "traefik.frontend.rule=Host:nodered.ptorrezao.duckdns.org"
+       - "traefik.frontend.rule=Host:nodered.REDACTED"
        - "traefik.port=1880"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
@@ -75,7 +75,7 @@ services:
       - tasmoadmin:/data
     labels:
        - "traefik.backend=tasmoadmin"
-       - "traefik.frontend.rule=Host:TasmoAdmin.ptorrezao.duckdns.org"
+       - "traefik.frontend.rule=Host:TasmoAdmin.REDACTED"
        - "traefik.port=80"
        - "traefik.docker.network=traefik_proxy"
        - "traefik.enable=true"
