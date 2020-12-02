@@ -1,57 +1,26 @@
-homeassistant:
-  name: Casa
-  latitude: !secret home_lat
-  longitude: !secret home_long
-  elevation: 13
-  unit_system: metric
-  time_zone: Europe/Lisbon
-  customize: !include customize.yaml
-  customize_glob: !include customize_glob.yaml
 
-system_health:
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
 
-lovelace: 
-  mode: yaml
-
-map:
-config:
-logbook:
-sun: 
-discovery:
-history: !include includes/history.yaml
-
+# Text to speech
+tts:
+  - platform: google_translate
+  
+# Recorder
 recorder:
   purge_keep_days: 15
   db_url: !secret db_connectionString
-
-#Core stuff
-http: !include includes/http.yaml
-frontend: !include includes/frontend.yaml
+  
+group: !include groups.yaml
 automation: !include automations.yaml
-zone: !include includes/zones.yaml
-tts: !include includes/tts.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
 panel_iframe: !include includes/iframe.yaml
-mqtt: !include includes/mqtt.yaml
-sensor: !include includes/sensor.yaml
-weather: !include includes/weather.yaml
-binary_sensor: !include includes/binary_sensor.yaml
-owntracks: !include includes/owntracks.yaml
-input_boolean: !include includes/input_boolean.yaml
-light: !include includes/light.yaml
-group: !include includes/group.yaml
-switch: !include includes/switch.yaml
-digital_ocean: !include includes/digital_ocean.yaml
-media_player: !include includes/media_player.yaml
-ffmpeg: !include includes/ffmpeg.yaml
-camera: !include includes/camera.yaml
-script: !include_dir_merge_named includes/scripts
+
+light: !include_dir_merge_list includes/lights/
+switch: !include_dir_merge_list includes/switch/
+sensor: !include_dir_merge_list includes/sensor/
+
 octoprint: !include includes/octoprint.yaml
-speedtestdotnet: !include includes/speedtestdotnet.yaml
-yeelight: !include includes/yeelight.yaml
-# google_assistant: !include includes/google_assistant.yaml
-updater:
-cast:
-  media_player:
-    - host: 192.168.88.155
-    - host: 192.168.88.156
-smartir:
+camera: !include includes/camera.yaml
+owntracks: !include includes/owntracks.yaml

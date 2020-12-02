@@ -1,2 +1,11 @@
 max_gps_accuracy: 200
 waypoints: true
+mqtt_topic: "owntracks/#"
+events_only: false
+waypoint_whitelist:
+  - pedro
+region_mapping:
+  cabin: home
+  globalshares: work_pedro
+  contialto: work_ana
+  

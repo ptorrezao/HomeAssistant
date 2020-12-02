@@ -1,0 +1,64 @@
+[2020-12-01 03:55:34.693] [exthost] [info] extension host started
+[2020-12-01 03:55:34.809] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-12-01 03:55:34.810] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/debug-auto-launch/dist/extension
+[2020-12-01 03:55:34.827] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-12-01 03:55:34.827] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/emmet/dist/node/emmetNodeMain
+[2020-12-01 03:55:34.918] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-01 03:55:34.919] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/git/dist/main
+[2020-12-01 03:55:35.091] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-12-01 03:55:35.092] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/merge-conflict/dist/mergeConflictMain
+[2020-12-01 03:55:35.106] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-12-01 03:55:35.107] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/search-result/dist/extension.js
+[2020-12-01 03:55:35.291] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-01 03:55:35.291] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/github/dist/extension.js
+[2020-12-01 03:55:35.379] [exthost] [info] eager extensions activated
+[2020-12-01 03:55:35.477] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2020-12-01 03:55:35.478] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/ms-vscode.js-debug/src/extension.js
+[2020-12-01 03:55:51.487] [exthost] [info] extension host started
+[2020-12-01 03:55:51.543] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-12-01 03:55:51.544] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/debug-auto-launch/dist/extension
+[2020-12-01 03:55:51.559] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-12-01 03:55:51.560] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/emmet/dist/node/emmetNodeMain
+[2020-12-01 03:55:51.643] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-01 03:55:51.643] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/git/dist/main
+[2020-12-01 03:55:51.800] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-12-01 03:55:51.801] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/merge-conflict/dist/mergeConflictMain
+[2020-12-01 03:55:51.813] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-12-01 03:55:51.813] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/search-result/dist/extension.js
+[2020-12-01 03:55:51.989] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-01 03:55:51.989] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/github/dist/extension.js
+[2020-12-01 03:55:52.061] [exthost] [info] eager extensions activated
+[2020-12-01 03:55:52.179] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2020-12-01 03:55:52.179] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/ms-vscode.js-debug/src/extension.js
+[2020-12-01 03:56:07.793] [exthost] [info] extension host started
+[2020-12-01 03:56:07.870] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-12-01 03:56:07.871] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/debug-auto-launch/dist/extension
+[2020-12-01 03:56:07.886] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-12-01 03:56:07.887] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/emmet/dist/node/emmetNodeMain
+[2020-12-01 03:56:07.970] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-01 03:56:07.970] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/git/dist/main
+[2020-12-01 03:56:08.135] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-12-01 03:56:08.135] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/merge-conflict/dist/mergeConflictMain
+[2020-12-01 03:56:08.147] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-12-01 03:56:08.147] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/search-result/dist/extension.js
+[2020-12-01 03:56:08.331] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-01 03:56:08.331] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/github/dist/extension.js
+[2020-12-01 03:56:08.401] [exthost] [info] eager extensions activated
+[2020-12-01 03:56:08.517] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2020-12-01 03:56:08.517] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/ms-vscode.js-debug/src/extension.js
+[2020-12-01 03:57:11.562] [exthost] [info] extension host started
+[2020-12-01 03:57:11.639] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-12-01 03:57:11.642] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/debug-auto-launch/dist/extension
+[2020-12-01 03:57:11.664] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-12-01 03:57:11.665] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/emmet/dist/node/emmetNodeMain
+[2020-12-01 03:57:11.752] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-01 03:57:11.755] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/git/dist/main
+[2020-12-01 03:57:11.920] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-12-01 03:57:11.922] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/merge-conflict/dist/mergeConflictMain
+[2020-12-01 03:57:11.941] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-12-01 03:57:11.941] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/search-result/dist/extension.js
+[2020-12-01 03:57:12.140] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-01 03:57:12.142] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/github/dist/extension.js
+[2020-12-01 03:57:12.257] [exthost] [info] eager extensions activated
+[2020-12-01 03:57:12.776] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2020-12-01 03:57:12.779] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/extensions/ms-vscode.js-debug/src/extension.js
