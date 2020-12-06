@@ -1,4 +1,0 @@
-host: octopi
-api_key: !secret octoprintAPIKey
-name: Ender 3
-number_of_tools: 2
