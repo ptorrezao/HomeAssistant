@@ -1,0 +1,37 @@
+- platform: group
+  name: Office Lights
+  entities:
+    - light.office_desktop_light
+    - light.office_ceiling_light
+    - light.yeelight_color_0x000000000534bf30
+    - light.3d_printer_cabinet
+
+- platform: mqtt
+  name: "Office Ceiling Light"
+  state_topic: "officelight/stat/POWER1"
+  command_topic: "officelight/cmnd/Power"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
+  unique_id: "office_ceiling_light"
+
+- platform: mqtt
+  name: "Office Desktop Light"
+  state_topic: "officelight-desk/stat/POWER"
+  command_topic: "officelight-desk/cmnd/Power"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
+  unique_id: "office_desktop_light"
+
+- platform: flux_led
+  devices:
+    192.168.88.169:
+      name: "3d Printer Cabinet"
+      mode: "rgb"

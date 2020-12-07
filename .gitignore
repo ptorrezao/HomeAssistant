@@ -1,3 +1,9 @@
 secrets.yaml
-/.*
-/data
+.HA_VERSION
+home-assistant.log
+
+/.storage
+!/.storage/person
+/.cloud
+/deps
+/image
