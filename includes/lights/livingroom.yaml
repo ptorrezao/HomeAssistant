@@ -1,0 +1,17 @@
+- platform: group
+  name: Living Room Lights
+  entities:
+    - light.cabinet_lights
+    - light.xmas_lights
+    
+- platform: mqtt
+  name: "Cabinet Lights"
+  state_topic: "cabinet_light/stat/POWER"
+  command_topic: "cabinet_light/cmnd/Power"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
+  unique_id: "livingroom_cabinet"

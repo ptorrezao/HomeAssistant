@@ -1,20 +1,19 @@
-
-nodered:
- title: 'Node-Red'
- icon: 'mdi:resistor-nodes'
- url: !secret noderedLink
-# tasmoadmin:
-#  title: 'Tasmo Admin'
-#  icon: 'mdi:drag-variant'
-#  url: !secret tasmoAdminLink
-# portainer:
-#  title: 'Portainer'
-#  icon: 'mdi:docker'
-#  url: !secret portainerLink
-# 17track:
-#  title: '17track'
-#  icon: 'mdi:package-variant-closed'
-#  url: https://buyer.17track.net/en/myshipment
+codeserver:
+ title: 'Code Server'
+ icon: 'mdi:code-braces'
+ url: https://codeserver.ptorrezao.duckdns.org
+portainer:
+ title: 'Portainer'
+ icon: 'mdi:docker'
+ url: https://portainer.ptorrezao.duckdns.org/
+rabbitmq:
+ title: 'RabbitMQ'
+ icon: 'mdi:email-check'
+ url: https://rabbitmq.ptorrezao.duckdns.org
+traefik:
+ title: 'Traefik'
+ icon: 'mdi:webhook'
+ url: https://traefik.ptorrezao.duckdns.org
 uptimerobot:
  title: 'UptimeRobot'
  icon: 'mdi:book-variant'

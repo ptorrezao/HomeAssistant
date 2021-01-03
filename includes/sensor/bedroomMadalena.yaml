@@ -1,0 +1,7 @@
+- platform: mqtt
+  state_topic: "nursery-bedlight/tele/SENSOR"
+  value_template: "{{ value_json.BMP280.Temperature }}"
+  name: "Temperatura Quarto Madalena"
+  qos: 0
+  unit_of_measurement: "°C"
+  unique_id: "temp_qt_madalena"

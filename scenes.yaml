@@ -1,0 +1,85 @@
+- id: '1607467352180'
+  name: Night Shift
+  entities:
+    light.yeelight_color_0x000000000534bf30:
+      min_mireds: 153
+      max_mireds: 588
+      effect_list:
+      - Strobe color
+      - Police
+      - Christmas
+      - RGB
+      - Random Loop
+      - Fast Random Loop
+      - LSD
+      - Slowdown
+      - Disco
+      - Strobe epilepsy!
+      - Alarm
+      - Police2
+      - WhatsApp
+      - Facebook
+      - Twitter
+      - Slow Temp
+      - Stop
+      brightness: 255
+      color_temp: 350
+      hs_color:
+      - 28.077
+      - 60.925
+      rgb_color:
+      - 255
+      - 172
+      - 99
+      xy_color:
+      - 0.51
+      - 0.386
+      flowing: false
+      friendly_name: RGB Light (Office)
+      supported_features: 63
+      state: 'on'
+    light.office_ceiling_light:
+      friendly_name: Office Ceiling Light
+      supported_features: 0
+      state: 'off'
+    light.office_desktop_light:
+      friendly_name: Office Desktop Light
+      supported_features: 0
+      state: 'on'
+    light.3d_printer_cabinet:
+      effect_list:
+      - blue_fade
+      - blue_strobe
+      - colorjump
+      - colorloop
+      - colorstrobe
+      - cyan_fade
+      - cyan_strobe
+      - gb_cross_fade
+      - green_fade
+      - green_strobe
+      - purple_fade
+      - purple_strobe
+      - rb_cross_fade
+      - red_fade
+      - red_strobe
+      - rg_cross_fade
+      - white_fade
+      - white_strobe
+      - yellow_fade
+      - yellow_strobe
+      - random
+      brightness: 82
+      hs_color:
+      - 180
+      - 100
+      rgb_color:
+      - 0
+      - 255
+      - 255
+      xy_color:
+      - 0.151
+      - 0.343
+      friendly_name: 3d Printer Cabinet
+      supported_features: 21
+      state: 'on'

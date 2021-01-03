@@ -1,0 +1,31 @@
+- platform: mqtt
+  state_topic: "firefly/accounts/CGDPedro"
+  value_template: "{{ value_json.Balance }}"
+  name: "CGD Pedro"
+  qos: 0
+  unit_of_measurement: "€"
+  unique_id: "money_cgdpedro"
+
+- platform: mqtt
+  state_topic: "firefly/accounts/BPI"
+  value_template: "{{ value_json.Balance }}"
+  name: "BPI"
+  qos: 0
+  unit_of_measurement: "€"
+  unique_id: "money_bpi"
+
+- platform: mqtt
+  state_topic: "firefly/accounts/N26"
+  value_template: "{{ value_json.Balance }}"
+  name: "N26"
+  qos: 0
+  unit_of_measurement: "€"
+  unique_id: "money_n26"
+
+- platform: mqtt
+  state_topic: "firefly/accounts/Revolut"
+  value_template: "{{ value_json.Balance }}"
+  name: "Revolut"
+  qos: 0
+  unit_of_measurement: "€"
+  unique_id: "money_revolut"

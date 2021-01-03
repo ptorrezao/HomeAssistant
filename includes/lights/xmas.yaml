@@ -1,0 +1,16 @@
+- platform: group
+  name: Xmas Lights
+  entities:
+    - light.xmas_lights
+
+- platform: mqtt
+  name: "Xmas Lights"
+  state_topic: "xmas_lights/stat/POWER"
+  command_topic: "xmas_lights/cmnd/Power"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
+  unique_id: "xmas_tree_lights"

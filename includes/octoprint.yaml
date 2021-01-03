@@ -1,6 +1,5 @@
-- host: 192.168.88.31
-  api_key: !secret octoprint
+- host: octopi
+  api_key: !secret octoprintAPIKey
   name: Creality Ender 3
   number_of_tools: 2
   bed: true
-   

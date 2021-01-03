@@ -1,1 +1,4 @@
-- platform: owntracks
+- platform: luci
+  host: openwrt
+  username: !secret OpenWrt_Username 
+  password: !secret OpenWrt_Password

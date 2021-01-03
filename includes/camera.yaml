@@ -1,7 +1,7 @@
+- platform: mjpeg
+  name: OctoPrint
+  still_image_url: http://octopi/webcam/?action=snapshot
+  mjpeg_url: http://octopi/webcam/?action=stream
 - platform: ffmpeg
   name: Baby Room
-  input: !secret babyRoomCameraURL
-- platform: generic
-  name: 3d Printer
-  still_image_url: http://octopi:8080/?action=snapshot
-  stream_source: http://octopi:8080/?action=stream
+  input: rtsp://admin:@ipcam01/onvif2
