@@ -1,0 +1,4 @@
+- platform: miio2
+  host: 192.168.88.110
+  token: !secret xiaomiVacuum
+  name: Xiaomi STYJ02YM

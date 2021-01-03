@@ -15,19 +15,17 @@ recorder:
   purge_keep_days: 15
   db_url: !secret db_connectionString
 
-device_tracker:
-  - platform: luci
-    host: openwrt
-    username: !secret OpenWrt_Username 
-    password: !secret OpenWrt_Password
-
-octoprint: 
-  - host: octopi
-    api_key: !secret octoprintAPIKey
-    name: Creality Ender 3
-    number_of_tools: 2
-    bed: true
-
+api:
+device_tracker: !include includes/device_tracker.yaml
+speedtestdotnet: 
+octoprint: !include includes/octoprint.yaml
+panel_iframe: !include includes/iframe.yaml
 light: !include_dir_merge_list includes/lights/
 switch: !include_dir_merge_list includes/switch/
 sensor: !include_dir_merge_list includes/sensor/
+owntracks: !include includes/owntracks.yaml
+duckdns: !include includes/duckdns.yaml
+geo_location: !include includes/geo_location.yaml
+vacuum: !include includes/vacuum.yaml
+camera: !include includes/camera.yaml
+ffmpeg:

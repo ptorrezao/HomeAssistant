@@ -7,3 +7,7 @@ home-assistant.log
 /.cloud
 /deps
 /image
+tts/*
+custom_components/erse/*
+custom_components/hacs/*
+www/community/*

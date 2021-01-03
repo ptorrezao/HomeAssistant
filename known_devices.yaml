@@ -222,3 +222,61 @@ d8_f1_5b_d4_73_b4:
   icon:
   picture:
   track: false
+
+e0_cb_4e_99_99_e3:
+  name: e0_cb_4e_99_99_e3
+  mac: E0:CB:4E:99:99:E3
+  icon:
+  picture:
+  track: false
+
+24_2e_02_69_44_62:
+  name: 24_2e_02_69_44_62
+  mac: 24:2E:02:69:44:62
+  icon:
+  picture:
+  track: false
+
+e4_5e_37_ec_3a_1a:
+  name: e4_5e_37_ec_3a_1a
+  mac: E4:5E:37:EC:3A:1A
+  icon:
+  picture:
+  track: false
+
+b4_9d_0b_5f_c1_4b:
+  name: b4_9d_0b_5f_c1_4b
+  mac: B4:9D:0B:5F:C1:4B
+  icon:
+  picture:
+  track: false
+
+#Xiaomi Vaccum.home
+64_90_c1_6c_7f_b2:
+  name: 64_90_c1_6c_7f_b2
+  mac: 64:90:C1:6C:7F:B2
+  icon:
+  picture:
+  track: false
+
+#filament_sensor_monitor.home
+30_ae_a4_98_bb_30:
+  name: filament_sensor_monitor
+  mac: 30:AE:A4:98:BB:30
+  icon:
+  picture:
+  track: true
+
+24_0a_c4_16_35_b8:
+  name: 24_0a_c4_16_35_b8
+  mac: 24:0A:C4:16:35:B8
+  icon:
+  picture:
+  track: false
+
+4c_74_03_4a_8f_9d:
+  name: 4c_74_03_4a_8f_9d
+  mac: 4C:74:03:4A:8F:9D
+  icon:
+  picture:
+  track: false
