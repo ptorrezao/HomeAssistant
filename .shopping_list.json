@@ -1,1 +1,107 @@
-[]
+[
+    {
+        "name": "IOGURTES",
+        "id": "e6dd02d018de40a99a5dc439321a5731",
+        "complete": true
+    },
+    {
+        "name": "iogurtes madalena",
+        "id": "8a10568ed38d4baebe0c3e63b30b8677",
+        "complete": true
+    },
+    {
+        "name": "queijio cabra",
+        "id": "2f41a3b3baac46829dfc1441cbe28814",
+        "complete": true
+    },
+    {
+        "name": "fiambre",
+        "id": "72f778bd6d484b6bbffb238b85938ca5",
+        "complete": true
+    },
+    {
+        "name": "carne",
+        "id": "038553290e4f418c91e3d310c5188299",
+        "complete": true
+    },
+    {
+        "name": "peixe",
+        "id": "4cfda0e57b1141c598e6d57c19c4a4de",
+        "complete": true
+    },
+    {
+        "name": "pipocas",
+        "id": "65bbadeca2a74932a1c176d67c4ec09b",
+        "complete": true
+    },
+    {
+        "name": "sumo",
+        "id": "862797c86180445fb8f206681f22434f",
+        "complete": true
+    },
+    {
+        "name": "cafe",
+        "id": "d99c3ccfea2d41ec88bc1da67d4561bd",
+        "complete": true
+    },
+    {
+        "name": "shampo",
+        "id": "a1473d51cfee4d4c8748560d7886502f",
+        "complete": true
+    },
+    {
+        "name": "fruta",
+        "id": "3fa937557ebd4b1dad50753ffb441967",
+        "complete": true
+    },
+    {
+        "name": "sacos de frruta",
+        "id": "49220556acfe40d39f453539eb24ee71",
+        "complete": true
+    },
+    {
+        "name": "bebidas energeticas",
+        "id": "7eaf8bfcf4684b7b8f44bcec04777198",
+        "complete": true
+    },
+    {
+        "name": " batatas sopa ",
+        "id": "12d9a5675236444f85ae76ff2f9be40a",
+        "complete": false
+    },
+    {
+        "name": "abobora\\",
+        "id": "7fee62778c204ea1a109b5693797acd2",
+        "complete": true
+    },
+    {
+        "name": "chocolate",
+        "id": "07f7fb9b6df444a4986a342a74474e66",
+        "complete": true
+    },
+    {
+        "name": "ovos",
+        "id": "e1798a9b4afa48db8d8f3da762906279",
+        "complete": true
+    },
+    {
+        "name": "pure de batata",
+        "id": "08f27135a7564528a2f94850178bac66",
+        "complete": true
+    },
+    {
+        "name": "salchicha",
+        "id": "5a7958d4c3ff41a2a2cbe5b931066c93",
+        "complete": true
+    },
+    {
+        "name": "bolachas",
+        "id": "26e33626782745a38fbd30a2ff8db388",
+        "complete": true
+    },
+    {
+        "name": "azeite",
+        "id": "c6be007a8f744a33850286a58f1fed89",
+        "complete": true
+    }
+]

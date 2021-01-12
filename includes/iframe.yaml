@@ -1,20 +1,20 @@
 codeserver:
  title: 'Code Server'
  icon: 'mdi:code-braces'
- url: https://codeserver.ptorrezao.duckdns.org
+ url: !secret codeserver_url
 portainer:
  title: 'Portainer'
  icon: 'mdi:docker'
- url: https://portainer.ptorrezao.duckdns.org/
+ url: !secret portainer_url
 rabbitmq:
  title: 'RabbitMQ'
  icon: 'mdi:email-check'
- url: https://rabbitmq.ptorrezao.duckdns.org
+ url: !secret rabbitmq_url
 traefik:
  title: 'Traefik'
  icon: 'mdi:webhook'
- url: https://traefik.ptorrezao.duckdns.org
+ url: !secret traefik_url
 uptimerobot:
  title: 'UptimeRobot'
  icon: 'mdi:book-variant'
- url: https://stats.uptimerobot.com/AQM38C93KR
+ url: !secret traefik_url

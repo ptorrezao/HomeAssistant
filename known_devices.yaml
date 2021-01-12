@@ -280,3 +280,31 @@ b4_9d_0b_5f_c1_4b:
   icon:
   picture:
   track: false
+
+10_52_1c_5d_bc_9c:
+  name: 10_52_1c_5d_bc_9c
+  mac: 10:52:1C:5D:BC:9C
+  icon:
+  picture:
+  track: true
+
+10_52_1c_5d_30_d4:
+  name: 10_52_1c_5d_30_d4
+  mac: 10:52:1C:5D:30:D4
+  icon:
+  picture:
+  track: true
+
+60_01_94_8c_8b_59:
+  name: 60_01_94_8c_8b_59
+  mac: 60:01:94:8C:8B:59
+  icon:
+  picture:
+  track: true
+
+24_3c_20_08_ee_51:
+  name: 24_3c_20_08_ee_51
+  mac: 24:3C:20:08:EE:51
+  icon:
+  picture:
+  track: true

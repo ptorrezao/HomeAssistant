@@ -13,6 +13,13 @@
       - Fast Random Loop
       - LSD
       - Slowdown
+      - Night Mode
+      - Date Night
+      - Movie
+      - Sunrise
+      - Sunset
+      - Romance
+      - Happy Birthday
       - Disco
       - Strobe epilepsy!
       - Alarm
@@ -20,13 +27,15 @@
       - WhatsApp
       - Facebook
       - Twitter
+      - Home
+      - Candle Flicker
       - Slow Temp
       - Stop
       brightness: 255
-      color_temp: 350
+      color_temp: 250
       hs_color:
       - 28.077
-      - 60.925
+      - 61.176
       rgb_color:
       - 255
       - 172
@@ -45,7 +54,7 @@
     light.office_desktop_light:
       friendly_name: Office Desktop Light
       supported_features: 0
-      state: 'on'
+      state: 'off'
     light.3d_printer_cabinet:
       effect_list:
       - blue_fade
@@ -82,4 +91,9 @@
       - 0.343
       friendly_name: 3d Printer Cabinet
       supported_features: 21
+      state: 'on'
+    light.cabinet_tv_light:
+      brightness: 100
+      friendly_name: Cabinet TV Light
+      supported_features: 17
       state: 'on'
