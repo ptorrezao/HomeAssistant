@@ -5,6 +5,14 @@
     - light.office_ceiling_light
     - light.yeelight_color_0x000000000534bf30
     - light.3d_printer_cabinet
+    - light.cabinet_tv_light
+
+- platform: group
+  name: Office Mood Lights
+  entities:
+    - light.yeelight_color_0x000000000534bf30
+    - light.3d_printer_cabinet
+    - light.cabinet_tv_light
 
 - platform: mqtt
   name: "Office Ceiling Light"
@@ -35,3 +43,22 @@
     192.168.88.169:
       name: "3d Printer Cabinet"
       mode: "rgb"
+
+- platform: mqtt
+  name: "Cabinet TV Light"
+  state_topic: "ledlight/stat/POWER"
+  command_topic: "ledlight/cmnd/Power"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: true
+  unique_id: "ledlight_light"  
+  brightness_command_topic: "ledlight/cmnd/DIMMER"
+  brightness_state_topic: "ledlight/stat/RESULT"
+  brightness_value_template: "{{ value_json.Dimmer }}"
+  rgb_command_topic: "ledlight/cmnd/COLOR"
+  rgb_command_template: "{{ '%02x%02x%02x' | format(red, green, blue)}}" 
+  rgb_state_topic: "ledlight/stat/RESULT"
+  rgb_value_template: "12"

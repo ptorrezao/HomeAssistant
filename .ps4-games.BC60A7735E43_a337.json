@@ -11,12 +11,6 @@
         "media_content_type": "game",
         "locked": false
     },
-    "CUSA15277": {
-        "media_title": "Call of Duty\u00ae: Modern Warfare\u00ae",
-        "media_image_url": "https://store.playstation.com/store/api/chihiro/00_09_000/container/PT/pt/19/EP0002-CUSA15277_00-CODMWSTANDARD001/1608214765000/image",
-        "media_content_type": "game",
-        "locked": false
-    },
     "CUSA04294": {
         "media_title": "Watch Dogs\u00ae2",
         "media_image_url": "https://store.playstation.com/store/api/chihiro/00_09_000/container/PT/pt/19/EP0001-CUSA04294_00-WD2FULLGAME00000/1608117916000/image",
@@ -26,6 +20,30 @@
     "CUSA18131": {
         "media_title": "Paraiso Island",
         "media_image_url": "https://store.playstation.com/store/api/chihiro/00_09_000/container/PT/pt/19/EP1580-CUSA18131_00-PARAISOISLANDEUR/1606698678000/image",
+        "media_content_type": "game",
+        "locked": false
+    },
+    "CUSA15277": {
+        "media_title": "Call of Duty\u00ae: Modern Warfare\u00ae",
+        "media_image_url": "https://store.playstation.com/store/api/chihiro/00_09_000/container/PT/pt/19/EP0002-CUSA15277_00-CODMWSTANDARD001/1608628320000/image",
+        "media_content_type": "game",
+        "locked": false
+    },
+    "CUSA05399": {
+        "media_title": "Overcooked",
+        "media_image_url": "https://store.playstation.com/store/api/chihiro/00_09_000/container/PT/pt/19/EP4064-CUSA05399_00-OVERCOOKED000000/1608628387000/image",
+        "media_content_type": "game",
+        "locked": false
+    },
+    "CUSA03137": {
+        "media_title": "Snoopy's Grand Adventure",
+        "media_image_url": null,
+        "media_content_type": null,
+        "locked": false
+    },
+    "CUSA06782": {
+        "media_title": "ARK: Survival Evolved",
+        "media_image_url": "https://store.playstation.com/store/api/chihiro/00_09_000/container/PT/pt/19/EP0688-CUSA06782_00-ARKSEGAME0000000/1609881821000/image",
         "media_content_type": "game",
         "locked": false
     }
