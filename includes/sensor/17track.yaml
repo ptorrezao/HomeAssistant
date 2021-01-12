@@ -1,3 +1,3 @@
 - platform: seventeentrack
-  username: pedro.torrezao@gmail.com 
-  password: Filipe#88
+  username: !secret seventeentrack_user 
+  password: !secret seventeentrack_pass
